@@ -19,12 +19,9 @@ mermaid: false
 #  alt: image alternative text
 ---
 
-# UPDATE:
-⚠️ There is an easier way to do this!! ⚠️
-
-Please see my updated blog post [here](/posts/updated-how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2022/) for the details!
-
-Below is the old method...
+> There is an easier way to do this! Please see my updated blog post [here](/posts/updated-how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2022/) for the details!
+> Below is the old method...
+{: .prompt-warning }
 
 <div style="text-align:center">
 <iframe width="560" height="315"
@@ -69,15 +66,17 @@ You can copy to either one, but `/Applications` is easier (you need to create th
 # Testing the Resynthesizer Plugin (Heal selection)
 Now that we have installed the Resynthesizer plugin, we can give it a quick test to see if it will work (likely not). Let's start by importing an image into GIMP (click and drag an image into GIMP, then [if necessary] click convert to change the color profile to what GIMP prefers). Next, we can select an area that contains an object we want to remove (by selecting the "Free Select" tool [press "f"] and clicking around the outside of our object or by selecting the "Rectangle Select" tool [press "r"] and making a rectangle around our object (less precise)). Finally, we can try to run the Resynthesizer plugin: Filters --> Enhance --> "Heal selection..." --> OK. If it works, you're good to go! Unfortunately for me, I was presented with [the following errors](https://github.com/aferrero2707/gimp-plugins-collection/issues/10):
 
-```
+```console
 Calling error for procedure 'gimp-procedural-db-proc-info':
 Procedure 'plug-in-resynthesizer' not found
 ```
-```
+
+```console
 An error occurred running python_fu_heal_selection
 error: procedure not found
 ```
-```
+
+```console
 Traceback (most recent call last):
   File "/Applications/GIMP-2.10.app/Contents/Resources/lib/gimp/2.0/python/gimpfu.py", line 740, in response
     dialog.res = run_script(params)
