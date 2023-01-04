@@ -27,6 +27,9 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
 allowfullscreen></iframe>
 </div>
 
+> After this article was published, [GIMP released separate builds for ARM Macs and Intel Macs](TODO:link/here). Neither of these builds work with the instructions in this article. Please download and install [GIMP 2.10.32 revision 0 released in June](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg) in order for this article to successfully enable the resynthesizer plugin.
+{: prompt-danger }
+
 # Intro
 Ok folks, welcome back! This is a long overdue update to the [Resynthesizer Plugin installation tutorial for Mac](/posts/how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/) that I posted about a year and a half ago. I apologize for everyone that jumped through all those hoops to install the plugin. At the time, that was the only way I knew how to make it work. It did work for many, but for some, they got lost along the way and didn’t have the same success.
 
@@ -41,11 +44,13 @@ I have verified that this updated fix works with:
 Before we get started, I want to give a shoutout to Philip Brown. He sent me an email after he read my [previous blog post on how to install the Resynthesizer Plugin](/posts/how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/). He’s the one that introduced me to this easier method and I’d like to thank him for that. It’s great to see the community help each other out like this and it’s just something you love to see.
 
 # [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
-1. Download and install [GIMP](https://www.gimp.org/downloads/)
-1. Download the Resynthesizer plugin for Mac: [ResynthesizerPlugin-Gimp-2.10-osx.tgz
+1. Download and install [GIMP `2.10.32 revision 0`](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg)
+  * ⚠️ Note that the latest version of GIMP: `2.10.32 revision 1`, which creates separate builds for ARM Macs and Intel Macs, **will not** work with the following instructions ⚠️
+  * You can check what version of GIMP you have by opening GIMP, going to GIMP in the menu bar --> About GIMP. If it says `2.10.32`, then the rest of this article will work. If it says `2.10.32 (revision 1)`, the rest of this article **will not** work.
+2. Download the Resynthesizer plugin for Mac: [ResynthesizerPlugin-Gimp-2.10-osx.tgz
 ](https://github.com/aferrero2707/gimp-plugins-collection/releases/download/continuous/ResynthesizerPlugin-Gimp-2.10-osx.tgz)
 1. Extract the `.tgz` plugin and copy the contents in the `ResynthesizerPlugin-Gimp-2.10-osx` folder to `/Applications/GIMP-2.10.app/Contents/Resources/lib/gimp/2.0/plug-ins`
-1. Try to run the Resynthesizer plugin on an image (Filters --> Enhance --> "Heal selection...") in GIMP.
+2. Try to run the Resynthesizer plugin on an image (Filters --> Enhance --> "Heal selection...") in GIMP.
   * If it works, you're good to go! If not, continue
 1. Change directories to GIMP's library folder
   * `cd /Applications/GIMP-2.10.app/Contents/Resources/lib`
@@ -55,10 +60,15 @@ Before we get started, I want to give a shoutout to Philip Brown. He sent me an 
   * If you have neither or something entirely different, comment below and I'll try to help you!
 1. Create a symbolic link to "fake" that you have `libintl.9.dylib` installed:
    * `ln -s libintl.8.dylib libintl.9.dylib`
-1. Restart GIMP, *Heal selection...* should now work! 🤞
+2. Restart GIMP, *Heal selection...* should now work! 🤞
 
 # Download and Install GIMP
-For starters, we need to download and install GIMP. You can download it from [here](https://www.gimp.org/downloads/). The current version (that I used for this tutorial) is 2.10.32. If you're on Mac, you can open (mount) that downloaded file then click and drag GIMP to the Applications folder. If you're on another OS, follow the instructions GIMP gives you :)
+For starters, we need to download and install GIMP. You need to download GIMP `2.10.32 revision 0` from [here](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg).
+
+> Note that if you download the latest version of GIMP (`2.10.32 revision 1`) from [here](https://www.gimp.org/downloads/), this tutorial **will not work** to enable the resynthesizer plugin. In order for this article to work, you will need to remove GIMP `2.10.32 revision 1` (and/or other GIMP versions) and install GIMP `2.10.32 revision 0` from the link above.
+{: prompt-danger }
+
+The version that I used for this tutorial is `2.10.32 (revision 0)`. If you're on Mac, you can open (mount) that downloaded file then click and drag GIMP to the Applications folder. If you're on another OS, follow the instructions GIMP gives you :)
 
 # Download and Install the Resynthesizer Plugin
 We can download the Resynthesizer plugin from aferrero2707's repo on GitHub: [gimp-plugin-collections](https://github.com/aferrero2707/gimp-plugins-collection). If you navigate to the releases and then to continuous build, you can scroll down and see all the plugins available. We want to download [ResynthesizerPlugin-Gimp-2.10-osx.tgz
@@ -72,15 +82,15 @@ You can copy to either one, but `/Applications` is easier (you need to create th
 # Testing the Resynthesizer Plugin (Heal selection)
 Now that we have installed the Resynthesizer plugin, we can give it a quick test to see if it will work (likely not). Let's start by importing an image into GIMP (click and drag an image into GIMP, then [if necessary] click convert to change the color profile to what GIMP prefers). Next, we can select an area that contains an object we want to remove (by selecting the "Free Select" tool [press "f"] and clicking around the outside of our object or by selecting the "Rectangle Select" tool [press "r"] and making a rectangle around our object (less precise)). Finally, we can try to run the Resynthesizer plugin: Filters --> Enhance --> "Heal selection..." --> OK. If it works, you're good to go! Unfortunately for me, I was presented with [the following errors](https://github.com/aferrero2707/gimp-plugins-collection/issues/10):
 
-```
+```console
 Calling error for procedure 'gimp-procedural-db-proc-info':
 Procedure 'plug-in-resynthesizer' not found
 ```
-```
+```console
 An error occurred running python_fu_heal_selection
 error: procedure not found
 ```
-```
+```console
 Traceback (most recent call last):
   File "/Applications/GIMP-2.10.app/Contents/Resources/lib/gimp/2.0/python/gimpfu.py", line 741, in response
     dialog.res = run_script(params)
