@@ -35,7 +35,7 @@ allowfullscreen></iframe>
 
 ## <small>Hello</small>
 
-Many people have been asking me[*](#-correction-), "Matt, now that you're a big wig on YouTube with a massive 200 subscriber base, how much [dough](https://www.urbandictionary.com/define.php?term=dough) are you bringing in?"
+Many people have been asking me[^correction], "Matt, now that you're a big wig on YouTube with a massive 200 subscriber base, how much [dough](https://www.urbandictionary.com/define.php?term=dough) are you bringing in?"
 
 And while that's a complicated question with many moving parts, the long story short is, still...... ✨ nothing ✨
 
@@ -76,6 +76,7 @@ allow="encrypted-media">
 
 &nbsp;
 
-## \* <small>**CORRECTION** </small>
-Not a single person has asked me [this](#hello).
+## <small>Corrections:</small>
+
+[^correction]: Not a single person has asked me this... 🥺
 
