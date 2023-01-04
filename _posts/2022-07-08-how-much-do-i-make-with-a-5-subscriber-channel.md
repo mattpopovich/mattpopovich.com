@@ -3,7 +3,7 @@ title: "How much do I make with a five subscriber channel???"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 date: 2021-04-01 18:37:30 -0700
 categories: [Blog, YouTube]     # <=2 values here: top category and sub category
-tags: [youtube, youtube channel updates]       # TAG names should always be lowercase
+tags: [youtube, youtube channel updates, wowgo, wowgo 2s]   # TAG names should always be lowercase
 layout: post
 pin: false
 toc: true
