@@ -44,7 +44,7 @@ After parking too far away from the American flag and having spotty connection (
 I'm fairly pleased with how it all turned out! 🎆
 
 **Filmed via:**
-[DJI Mavic Air 2 (affiliate link)](https://amzn.to/3uyCyiz) <small>(newer model: [Mavic Air 2S](https://amzn.to/3yvv7d1))</small>:
+[DJI Mavic Air 2](https://amzn.to/3uyCyiz) (affiliate links) <small>(newer model: [Mavic Air 2S](https://amzn.to/3yvv7d1))</small>:
 * 4K
 * [HEVC](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding)
 * 24 fps

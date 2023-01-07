@@ -27,15 +27,13 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
 allowfullscreen></iframe>
 </div>
 
-&nbsp;
-
 ![GIF of my YouTube channel's live subscriber count hitting 200](/assets/img/posts/2022-07-09-how-much-do-i-make-with-a-200-subscriber-channel/200subscribers-live-count_444.gif){: width="100}
 
 ![Girls gossiping over Matt having a 200 subscriber YouTube channel](/assets/img/posts/2022-07-09-how-much-do-i-make-with-a-200-subscriber-channel/jojo-whispering-to-surprised-emma-roberts-memed.jpg){: width="240" .right}
 
 ## <small>Hello</small>
 
-Many people have been asking me[*](#-correction-), "Matt, now that you're a big wig on YouTube with a massive 200 subscriber base, how much [dough](https://www.urbandictionary.com/define.php?term=dough) are you bringing in?"
+Many people have been asking me[^correction], "Matt, now that you're a big wig on YouTube with a massive 200 subscriber base, how much [dough](https://www.urbandictionary.com/define.php?term=dough) are you bringing in?"
 
 And while that's a complicated question with many moving parts, the long story short is, still...... ✨ nothing ✨
 
@@ -76,6 +74,7 @@ allow="encrypted-media">
 
 &nbsp;
 
-## \* <small>**CORRECTION** </small>
-Not a single person has asked me [this](#hello).
+## <small>Corrections:</small>
+
+[^correction]: Not a single person has asked me this... 🥺
 
