@@ -19,13 +19,7 @@ mermaid: false
 #  alt: image alternative text
 ---
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/IR93qJZix6Q"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='IR93qJZix6Q' %}
 
 ![GIF of my YouTube channel's live subscriber count hitting 200](/assets/img/posts/2022-07-09-how-much-do-i-make-with-a-200-subscriber-channel/200subscribers-live-count_444.gif){: width="100}
 

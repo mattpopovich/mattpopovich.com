@@ -23,13 +23,7 @@ mermaid: false
 > Below is the old method...
 {: .prompt-warning }
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/MHwtKg0tws8"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='MHwtKg0tws8' %}
 
 # Intro
 This article goes over how to install the Resynthesizer plugin for GIMP on Mac. It likely will not work when you immediately install it, but there's a pretty simple solution. I spent *waaaay* too much time one Sunday trying fix this, from building GIMP from source, then trying to rebuild this plugin, etc... thankfully none of that is necessary. There's a very easy solution that [Werner Eugster](http://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/) found and below I'll elaborate on how to successfully use his solution to run the Resynthesizer plugin to automatically remove an object from an image. Let's go!

@@ -19,14 +19,7 @@ mermaid: false
 #  alt: image alternative text
 ---
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/A3U3xpzBH2c"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
-
+{% include embed/youtube.html id='A3U3xpzBH2c' %}
 
 ## Intro
 Quick post on how to replace the wipers in your Audi A3. The A3 owner's manual states that you should replace your windshield wiper blades [once or twice every year](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-52). It’s very easy to do and only takes a few minutes. I didn’t see a great tutorial on YouTube so I decided to make my own!

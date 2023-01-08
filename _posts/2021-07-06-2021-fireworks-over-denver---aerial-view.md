@@ -19,13 +19,7 @@ mermaid: false
 #  alt: image alternative text
 ---
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/DlzOvmqFLeI"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='DlzOvmqFLeI' %}
 
 ### July 4, 2020
 Last year (2020) was one of the first years in recent memory that I did not go out and see the fireworks. However, it was almost as if the fireworks came to me. Normally I'm with family out in the wilderness, but in 2020 I was with roommates at home in the city. The pandemic changed a lot of things and this was no exception.

@@ -19,13 +19,7 @@ mermaid: false
 #  alt: image alternative text
 ---
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/uQCvAZjiesw"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='uQCvAZjiesw' %}
 
 ## What I'm working on
 
@@ -64,13 +58,7 @@ Anywho, that's about a wrap for now. We'll see you very shortly once the full ra
 </details>
 </p>
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/hIAzeN5Y_1g"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='hIAzeN5Y_1g' %}
 
 Pretty cool video!
 

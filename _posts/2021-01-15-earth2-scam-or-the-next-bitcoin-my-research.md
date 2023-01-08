@@ -19,13 +19,7 @@ mermaid: false
 #  alt: image alternative text
 ---
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/1Z18tK6zB8I"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='1Z18tK6zB8I' %}
 
 **Good evening, YouTube!**
 
@@ -81,13 +75,7 @@ Well, we were comparing this to someone's post that we read on Quora, let's actu
 
 And a side note that if you're scrolling through their website, you will come across their intro video, which, I will give them credit, is *pretty slick*!
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/fa4hHBP-kOw"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='fa4hHBP-kOw' %}
 
 Continuing to scroll down the page you will find a section titled "Make profit now". Oof. That's quite blatant and I don't think I need to elaborate on that any further. 🚩
 

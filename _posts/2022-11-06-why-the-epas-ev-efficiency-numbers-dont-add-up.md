@@ -19,7 +19,7 @@ mermaid: false
 #  alt: image alternative text
 ---
 
-<!-- TODO: Add YouTube link here-->
+{% include embed/youtube.html id='PyvtK7amSAg' %}
 
 ## Intro
 Happy belated halloween!
