@@ -2,8 +2,8 @@
 #   It will create a new post in _posts/, auto-populate it with some basic
 #   text, and create a folder in assets/img/posts/
 # TOOD: Clean up this mess
-# WARNING: This cannot not run in the jekyll/jekyll Dockerfile
-# REMINDER: I have a conda environment that can run this on MBP 2014
+# REMINDER: I have a conda environment that can run the requests for
+#           YouTube scraping on MBP 2014
 
 # Imports
 import argparse
@@ -24,6 +24,7 @@ from bs4 import BeautifulSoup as bs # importing BeautifulSoup
 # Via: https://www.thepythoncode.com/article/get-youtube-data-python
 #      https://github.com/x4nth055/pythoncode-tutorials/blob/master/web-scraping/youtube-extractor/extract_video_info.py
 def get_video_info(url):
+    sys.exit("ERROR: YouTube flag is currently not working... :(")
     # init session
     session = HTMLSession()
 
