@@ -19,15 +19,9 @@ mermaid: false
 #  alt: image alternative text
 ---
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/rRbSVmFteuY"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='rRbSVmFteuY' %}
 
-
+## Intro
 Hey guys! Matt Popovich here. Today in my [series of Audi A3 tutorials](/tags/audi/), I’m going to explain what it means to have a “low coolant” warning and how to fix it from the prospective of a 2015 Audi A3 8V. When you first start your car, beeps and chimes will start going off like your car is very unhappy with you, but don’t freak out as it’s not the end of the world yet... although it *could* be if you don’t keep an eye on things.
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. Check the engine temperature gauge
@@ -95,7 +89,7 @@ Distilled water can be bought from anywhere such as grocery stores.
 Now that we’ve made our coolant, we need to add it to the reservoir. Before you open the reservoir, make sure you let the engine cool down. Do not open the reservoir when the engine is hot as coolant will typically be around 200°F (93°C). So to prevent burns, let the engine cool down beforehand. If you can’t or don’t have time, use a large, thick cloth to open the reservoir to protect you from escaping coolant and steam. Be careful not to get drips anywhere as ethylene glycol (AKA coolant) hitting a hot engine can catch fire under certain circumstances.
 
 
-![Hot Coolant Warning from Owner's Manual](/assets/img/posts/2022-03-20-how-to-diagnose-and-fix-low-coolant-warning-for-audi-a3-8v--vw/owners-manual_hot-coolant-warning.png){: width="300" .right}
+![Hot Coolant Warning from Owner's Manual](/assets/img/posts/2022-03-20-how-to-diagnose-and-fix-low-coolant-warning-for-audi-a3-8v--vw/owners-manual_hot-coolant-warning.png){: width="350" .right}
 
 Once open, add your coolant to get you between the min and max lines. Do this slowly, especially if the coolant tank is empty so that you don’t trap any air in the line. I decided to take the anti-bill nye approach and it required multiple refill attempts to get me between the lines... "Our actions have consequences".
 

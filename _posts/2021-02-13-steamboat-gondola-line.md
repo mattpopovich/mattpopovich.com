@@ -19,12 +19,6 @@ mermaid: false
 #  alt: image alternative text
 ---
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/-xtlX7jyPV8"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='-xtlX7jyPV8' %}
 
 The line to Steamboat Gondola this morning at Steamboat Springs. They got ~a foot of snow last night. Line took 50mins. Arrived at 8:30AM.

@@ -22,13 +22,7 @@ mermaid: false
 > After this article was published, [GIMP released (Dec. 2, 2022) separate builds for ARM Macs and Intel Macs](https://www.gimp.org/news/2022/12/02/gimp-2.10.32-apple-silicon/). Neither of these builds work with the instructions in this article. Please download and install [GIMP 2.10.32 revision 0 (released on June 12, 2022)](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg) in order for this article to successfully enable the resynthesizer plugin.
 {: .prompt-danger }
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/iU4HRAkZ1-U"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='iU4HRAkZ1-U' %}
 
 # Intro
 Ok folks, welcome back! This is a long overdue update to the [Resynthesizer Plugin installation tutorial for Mac](/posts/how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/) that I posted about a year and a half ago. I apologize for everyone that jumped through all those hoops to install the plugin. At the time, that was the only way I knew how to make it work. It did work for many, but for some, they got lost along the way and didn’t have the same success.

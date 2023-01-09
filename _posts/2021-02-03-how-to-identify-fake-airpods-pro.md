@@ -19,13 +19,7 @@ mermaid: false
 #  alt: image alternative text
 ---
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/ALsLiy4sLIQ"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
+{% include embed/youtube.html id='ALsLiy4sLIQ' %}
 
 **Top o' the mornin'!**
 
