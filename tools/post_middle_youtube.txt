@@ -15,6 +15,4 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  alt: image alternative text
 ---
 
-<div style="text-align:center">
-<iframe width="560" height="315"
-src="
+{% include embed/youtube.html id='

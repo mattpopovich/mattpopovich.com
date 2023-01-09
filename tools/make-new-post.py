@@ -2,6 +2,8 @@
 #   It will create a new post in _posts/, auto-populate it with some basic
 #   text, and create a folder in assets/img/posts/
 # TOOD: Clean up this mess
+# WARNING: This cannot not run in the jekyll/jekyll Dockerfile
+# REMINDER: I have a conda environment that can run this on MBP 2014
 
 # Imports
 import argparse
@@ -141,7 +143,7 @@ elif args.youtube_link:
     with open('post_ending_youtube.txt', 'r') as f:
         post_ending = f.read()
 
-    finish_post = post_middle + 'https://www.youtube.com/embed/' + video_id + post_ending
+    finish_post = post_middle + video_id + post_ending
 
 elif args.title:
     title=args.title
