@@ -22,9 +22,52 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 ## Intro
 As a [Turo host](https://turo.com/us/en/drivers/325768) (car sharing) and a guy that moved to Denver when only knowing two people that were living here, I have lots of guests and friends visiting me asking for recommendations on things to do in Denver and Colorado. I aim to combine my thoughts here to serve as a reference for myself...and others!
 
+P.S. To keep this post to appear shorter than it is, I have included "spoilers" in some of the sections. Click on them to expand additional information. (Look for the ❗️)
+
+<details markdown="1">
+  <summary> Example, click to show more ❗️</summary>
+
+  Good job! Keep reading 😎
+</details>
+
+## Skiing / Snowboarding
+Colorado is home to some of the [best skiing in all of North America](https://www.snowpak.com/usa/best-ski-resorts-north-america), many of it an hour or two drive from Denver. I **have** to start this post by covering [the gnar](https://www.powder7.com/ski-blog/ski-slang-explained-shred-the-gnar-and-beyond/#:~:text=Shred%20the%20Gnar%20%E2%80%93%20the%20far,blower%20lines%20with%20reckless%20abandon.) 🤙⛷🏂
+
+If you have an [Epic](https://www.epicpass.com/) or [Ikon](https://www.ikonpass.com/) pass, you probably already have a plan of where you're going. If you want to go to one of those resorts, your options will either be a season pass or a (multi) day pass. Season passes are only sold until ~November. Season passes are $500-$1200 depending on when you buy them (cheaper the sooner you buy them) and how much access you want (blackout dates on holidays will result in cheaper passes). Day passes go for ~$200 nowadays (ridiculous), with slight discounts for purchasing a multi-day (2, 3, 4+) pass. If you ski with a season pass holder, they can buy you reduced day passes but they're still expensive (~$150/day).
+
+If you don't have an Epic or Ikon pass, there are a few resorts left that are still holding out from getting bought out by a conglomerate. Their day passes will be more reasonable. And if you're a beginner shredder, they're a great place to learn. Day tickets at these places are around $100. I have a few of them listed below (ordered for proximity to Denver with closest at the top of the list):
+
+<details markdown="1">
+  <summary>Click to show independent resorts ❗️</summary>
+
+  * [Echo Mountain](https://echomntn.com/)
+    * 50min from Denver
+  * [Loveland](https://skiloveland.com/)
+    * 1h from Denver
+  * [Arapahoe Basin](https://www.arapahoebasin.com/)
+    * 1h 30min from Denver
+    * Very well known
+      * Known as "The Legend"
+    * On Ikon pass but still mostly independent
+    * Largely for experienced/advanced skiiers.
+    * Not a resort. No spa. No hotel. Just skiing with a small restaurant known for its bloody marys.
+  * [Cooper](https://www.skicooper.com/) (note this is different than Copper, the resort on the Ikon pass)
+    * 1h 45min from Denver
+  * [Granby Ranch](https://granbyranch.com/)
+    * 1h 45min from Denver
+  * [Monarch](https://skimonarch.com/)
+    * 3h from Denver
+  * [Powderhorn](https://www.powderhorn.com/)
+    * 4h from Denver
+  * [Wolf Creek](https://wolfcreekski.com/)
+    * 4h30min from Denver
+    * Known for getting the most snow in all of Colorado
+  * [Silverton](https://silvertonmountain.com/)
+    * 7h from Denver
+</details>
 
 ## Hiking
-Unlike skiing, hiking is something to do in Denver and its nearby areas **year-round**.
+Unlike skiing, hiking is something to do in Denver and its nearby areas **year-round** (yes, even in the winter). Denver [averages highs nearing 50°F (10°C) in winter](https://www.google.com/search?q=denver+climate). Combine that with nearly "[300 days of sunshine](https://www.westword.com/news/denvers-claim-of-300-days-of-sunshine-a-year-is-clouded-10565181)" and winter hiking can be very enjoyable!
 
 AllTrails ([Apple App Store](https://alltrails.io/ujRkr9MGmgb), [Google Play Store](https://alltrails.io/pW7o6i6Lmgb)) is the *de facto* app for finding places to hike and recording your hiking activities. I highly recommend it for any prospective hikers, no matter where you live.
 
@@ -33,38 +76,42 @@ If you are in shape and active, you can do most AllTrails hikes rated as "hard" 
 The best thing about AllTrails is their ratings and information about hikes. [This](https://www.alltrails.com/us/colorado) is a link to their most highly ranked hikes in Colorado (I have done half of them and can confirm). [This](https://www.alltrails.com/us/colorado/denver) is a link to their best hikes in Denver (more like walks in the park). Search for the area you are staying in or what is near you and go from there.
 
 Here are some of my favorites (ordered for proximity to Denver with closest at the top of the list):
-* [Washington Park](https://www.alltrails.com/trail/us/colorado/washington-park-loop)
-  * 2.3mi easy paved loop 15min from Denver
-  * An easy walk in Denver's best park (my opinion)
-  * Also has a gravel running/jogging trail, paved loop for bicycling/roller blading.
-  * Plenty of geese and people playing volleball and enjoying time with friends here
-  * Very popular but lots of space
-* [Red Rocks Trail](https://www.alltrails.com/trail/us/colorado/red-rocks-trading-post-trail)
-  * 1.5mi moderate dirt hike 25min from Denver
-  * I have never actually done this hike but Red Rocks is gorgeous and while you're there you can even walk over to the stadium to check it out as well
-* [South Table Mountain](https://www.strava.com/activities/5988975770)
-  * 2.6mi moderate dirt hike located in Golden, CO (20min from Denver)
-  * Fantastic views of Golden, Colorado Scool of Mines, and Coors Brewing
-  * The left trail of the link is a much more difficult trail that is fairly steep with loose dirt. The right trail is much easier but longer distance.
-  * Not on AllTrails due to apparently a part of the trail goes though private land, but I've never seen anyone have an issue
-* [Royal Arch](https://www.alltrails.com/trail/us/colorado/royal-arch-trail)
-  * 3.4mi hard hike located in Boulder, CO (35min from Denver)
-  * Fantastic views of Boulder
-  * Lots of other hikes here, be careful making a wrong turn
-  * Very popular
-* [Mount Sanitas](https://www.alltrails.com/trail/us/colorado/mount-sanitas-and-sanitas-valley-loop-trail)
-  * 3.2mi hard hike located in Boulder, CO (35min from Denver)
-  * I think it is easier than Royal Arch
-  * Not as crowded as Royal Arch
-* [Lake Isabelle](https://www.alltrails.com/trail/us/colorado/lake-isabelle-via-pawnee-pass-trail--2)
-  * 6.6mi moderate hike located in 30min west of Boulder, CO (1hr 15min from Denver)
-  * Fanntastic scenery in the mountains
-  * Limited to no cell service. Download maps beforehand
-  * [Reservation needed](https://www.recreation.gov/timed-entry/10087515/ticket/10087517) for parking. Cheap but difficult to get as they are in high demand
-  * Will first hit [Long Lake](https://www.alltrails.com/trail/us/colorado/long-lake-trail) on the way to Lake Isabelle, so you could also not continue to Lake Isabelle and just see Long Lake then turn around for a shorter hike
-  * Or, you can continue past Lake Isablle to [Isabelle Glacier](https://www.alltrails.com/trail/us/colorado/isabelle-glacier-trail-full-loop) to turn this into a long and hard hike.
-  * Chance to see Moose (I am 2/3)
 
+<details markdown="1">
+  <summary>Click to show some of my favorite hikes ❗️</summary>
+
+  * [Washington Park](https://www.alltrails.com/trail/us/colorado/washington-park-loop)
+    * 2.3mi easy paved loop 15min from Denver
+    * An easy walk in Denver's best park (my opinion)
+    * Also has a gravel running/jogging trail, paved loop for bicycling/roller blading.
+    * Plenty of geese and people playing volleball and enjoying time with friends here
+    * Very popular but lots of space
+  * [Red Rocks Trail](https://www.alltrails.com/trail/us/colorado/red-rocks-trading-post-trail)
+    * 1.5mi moderate dirt hike 25min from Denver
+    * I have never actually done this hike but Red Rocks is gorgeous and while you're there you can even walk over to the stadium to check it out as well
+  * [South Table Mountain](https://www.strava.com/activities/5988975770)
+    * 2.6mi moderate dirt hike located in Golden, CO (20min from Denver)
+    * Fantastic views of Golden, Colorado Scool of Mines, and Coors Brewing
+    * The left trail of the link is a much more difficult trail that is fairly steep with loose dirt. The right trail is much easier but longer distance.
+    * Not on AllTrails due to apparently a part of the trail goes though private land, but I've never seen anyone have an issue
+  * [Royal Arch](https://www.alltrails.com/trail/us/colorado/royal-arch-trail)
+    * 3.4mi hard hike located in Boulder, CO (35min from Denver)
+    * Fantastic views of Boulder
+    * Lots of other hikes here, be careful making a wrong turn
+    * Very popular
+  * [Mount Sanitas](https://www.alltrails.com/trail/us/colorado/mount-sanitas-and-sanitas-valley-loop-trail)
+    * 3.2mi hard hike located in Boulder, CO (35min from Denver)
+    * I think it is easier than Royal Arch
+    * Not as crowded as Royal Arch
+  * [Lake Isabelle](https://www.alltrails.com/trail/us/colorado/lake-isabelle-via-pawnee-pass-trail--2)
+    * 6.6mi moderate hike located in 30min west of Boulder, CO (1hr 15min from Denver)
+    * Fanntastic scenery in the mountains
+    * Limited to no cell service. Download maps beforehand
+    * [Reservation needed](https://www.recreation.gov/timed-entry/10087515/ticket/10087517) for parking. Cheap but difficult to get as they are in high demand
+    * Will first hit [Long Lake](https://www.alltrails.com/trail/us/colorado/long-lake-trail) on the way to Lake Isabelle, so you could also not continue to Lake Isabelle and just see Long Lake then turn around for a shorter hike
+    * Or, you can continue past Lake Isablle to [Isabelle Glacier](https://www.alltrails.com/trail/us/colorado/isabelle-glacier-trail-full-loop) to turn this into a long and hard hike.
+    * Chance to see Moose (I am 2/3)
+</details>
 
 ## Concerts
 * Red rocks
@@ -73,40 +120,17 @@ Here are some of my favorites (ordered for proximity to Denver with closest at t
 * Ball Arena (aka Pepsi Center)
 * TODO
 
-## Skiing / Snowboarding
-If you have an Epic or Ikon pass, you probably already have a plan of where you're going. If you want to go to one of those resorts, your options will either be a season pass or a day pass. Season passes are only sold until ~November. Season passes are $500-$1200 depending on when you buy them (cheaper the sooner you buy them) and how much access you want (blackout dates on holidays will result in cheaper passes). Day passes go for ~$200 nowadays (ridiculous). If you ski with a season pass holder, they can buy you reduced day passes but they're still very expensive.
-
-If you don't have an Epic or Ikon pass, there are a few resorts left that have refused to get bought out by a conglomerate. Their day passes will be much more reasonable. And if you're a beginner shredder, they're a great place to learn. Day tickets at these places are around $100.
-
-<!-- TODO: Make this a click to reveal spoiler-->
-* [Loveland](https://skiloveland.com/)
-  * 1h from Denver
-* [Cooper](https://www.skicooper.com/) (note this is different than Copper, the resort on the Ikon pass)
-  * 1h 45min from Denver
-* [Arapahoe Basin](https://www.arapahoebasin.com/)
-  * 1h 30min from Denver
-  * Very well known
-    * Known as "The Legend"
-  * On Ikon pass but still mostly independent
-  * Largely for experienced/advanced skiiers.
-  * Not a resort. No spa. No hotel. Just skiing with a small restaurant known for its bloody marys.
-* [Echo Mountain](https://echomntn.com/)
-  * 50min from Denver
-* [Monarch](https://skimonarch.com/)
-  * 3h from Denver
-* [Powderhorn](https://www.powderhorn.com/)
-  * 4h from Denver
-* [Granby Ranch](https://granbyranch.com/)
-  * 1h 45min from Denver
-* [Silverton](https://silvertonmountain.com/)
-  * 7h from Denver
-* [Wolf Creek](https://wolfcreekski.com/)
-  * 4h30min from Denver
-  * Known for getting the most snow in all of Colorado
-
 
 ## Food
-Disclaimer: I am not a picky eater
+Disclaimer: I am not a picky eater and I very rarely go to expensive restaurants, so keep that in mind:
+### Breakfast/Brunch
+* [Waffle Brothers](https://wafflebrothers.com/)
+  * Chicken & waffles is what you should order here
+  * Locations in both [City Park](https://goo.gl/maps/MB9mWXaYJV66RkUx6) (with cute outdoor seating!) and ~[South Capitol Hill](https://goo.gl/maps/cTFbhqX5hVavNhWR6)
+* [The Lobby](https://goo.gl/maps/aepNLKgmXuCYhtZ19)
+  * You go here for the bottomless mimosas and uptempo atmosphere
+
+### Lunch/Dinner
 * [The first Chipotle ever](https://goo.gl/maps/37f6fgkqPny91xxL9)
   * Will taste like all the other Chipotles but is something to say you've been there
   * Very limited indoor seating
@@ -116,12 +140,21 @@ Disclaimer: I am not a picky eater
 * [J's Noodles Star Thai](http://jnst2.blogspot.com/)
   * The best thai I've had
   * Great, cheap food
-  * Limited indoor seating. Best to order takeout in advance
+  * Limited indoor seating. Best to order takeout in advance via [DoorDash](https://www.doordash.com/store/j's-noodle-&-star-thai-denver-31260/)
     * Not uncommon to have wait times ~1hr (for both online takeout and dine-in). Very popular place
 * [Milk Market](https://www.denvermilkmarket.com/)
   * Basically a food court with a bunch of different options
     * Does everyone want something different? Go here
   * Very cool side alley with art and outdoor seating
+* [Sushi-Rama](https://sushi-rama.com/)
+  * Conveyor-belt sushi (fun+fast!) at reasonable prices (yay!)
+  * Locations in [River North (RiNo)](https://goo.gl/maps/86dseXBB51tveueA7), [Denver Tech Center](https://goo.gl/maps/K35tm9DMpWRDhKmu6), [Centennial / Lone Tree](https://goo.gl/maps/QSwo18tkTLifyhdK7), and [Aurora](https://goo.gl/maps/1Nni6xwcmuuJjqK46)
+* [Sushi Den](https://goo.gl/maps/iTp5kZTsVi6JjjwCA) and [Izakaya Den](https://goo.gl/maps/q2yw7uG7kD6Eipx16)
+  * Located right next to each other
+  * Apparently fresh fish is flown in daily from Tokyo
+  * Special occassion spot ($$$)
+
+### Dessert
 * [Little Man Ice Cream](https://www.littlemanicecream.com/)
   * Just some really good ice cream that will probably have a 20 minute line
 
@@ -156,7 +189,7 @@ It gets hot here in the summer!
     * Reminds me of Disney's Blizzard Beach in Orlando, but with smaller features
   * ~$50, cheaper when purchased online or in advance
     * Season ticket prices go for 2-3x what a day pass costs
-  * Water is a little chilly so best to go on a warm/hot day
+  * Water temperature is "refreshing" so best to go on a sunny/hot day
 
 
 ## Other
@@ -174,4 +207,21 @@ It gets hot here in the summer!
 * Colorado Rockies, Denver Broncos, Colorado Avalanche, Colorado Rapids (soccer)
   * Common to go to Rockies games on a Friday or Saturday night, then walk to bars downtown.
     * "The Rooftop" in Coors Field is the spot to pregame
+    *
+
+&nbsp;
+
+<div style="text-align:center">
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/1ngygj9MIxtLvDFJxZj0vE?utm_source=generator&theme=0"
+width="100%" height="352" frameBorder="0"
+allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>{: .dark }
+
+<div style="text-align:center">
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/1ngygj9MIxtLvDFJxZj0vE?utm_source=generator"
+width="100%" height="352" frameBorder="0"
+allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>{: .light }
 
