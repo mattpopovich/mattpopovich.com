@@ -33,7 +33,7 @@ P.S. To keep this post to appear shorter than it is, I have included "spoilers" 
 ## Skiing / Snowboarding
 Colorado is home to some of the [best skiing in all of North America](https://www.snowpak.com/usa/best-ski-resorts-north-america), many of it an hour or two drive from Denver. I **have** to start this post by covering [the gnar](https://www.powder7.com/ski-blog/ski-slang-explained-shred-the-gnar-and-beyond/#:~:text=Shred%20the%20Gnar%20%E2%80%93%20the%20far,blower%20lines%20with%20reckless%20abandon.) 🤙⛷🏂
 
-If you have an [Epic](https://www.epicpass.com/) or [Ikon](https://www.ikonpass.com/) pass, you probably already have a plan of where you're going. If you want to go to one of those resorts, your options will either be a season pass or a (multi) day pass. Season passes are only sold until ~November. Season passes are $500-$1200 depending on when you buy them (cheaper the sooner you buy them) and how much access you want (blackout dates on holidays will result in cheaper passes). Day passes go for ~$200 nowadays (ridiculous), with slight discounts for purchasing a multi-day (2, 3, 4+) pass. If you ski with a season pass holder, they can buy you reduced day passes but they're still expensive (~$150/day).
+If you have an [Epic](https://www.epicpass.com/) or [Ikon](https://www.ikonpass.com/) pass, you probably already have a plan of where you're going. If you want to go to one of those resorts, your options will either be a season pass or a (multi) day pass. Season passes are only sold until ~November. Season passes are $500-$1200 depending on when you buy them (cheaper the sooner you buy them) and how much access you want (blackout dates on holidays will result in cheaper passes). Day passes go for ~$200 nowadays (ridiculous), with slight discounts for purchasing a multi-day (2, 3, 4+) pass. If you ski with a season pass holder, they can buy you reduced day (buddy/friend) passes but they're still expensive (~$150/day).
 
 If you don't have an Epic or Ikon pass, there are a few resorts left that are still holding out from getting bought out by a conglomerate. Their day passes will be more reasonable. And if you're a beginner shredder, they're a great place to learn. Day tickets at these places are around $100. I have a few of them listed below (ordered for proximity to Denver with closest at the top of the list):
 
@@ -41,20 +41,67 @@ If you don't have an Epic or Ikon pass, there are a few resorts left that are st
   <summary>Click to show independent resorts ❗️</summary>
 
   * [Echo Mountain](https://echomntn.com/)
-    * 50min from Denver
+    * [50min drive from Denver](https://www.google.com/maps/dir/Denver,+Colorado/Echo+Mountain,+Colorado+103,+Idaho+Springs,+CO) (to Idaho Springs)
+    * Very small
+      * 60 acres (day), 40 acres (night skiing)
+      * 0.7mi (1.1km) longest run
+      * 600 feet (182m) vertical drop
+    * [Lift tickets](https://echomntn.com/lift-tickets) ~$70 as of 2023
+    * [Trail map](https://echomntn.com/mountain-conditions)
+    * Also has [tubing](https://echomntn.com/tubing) ~$35 as of 2023
   * [Loveland](https://skiloveland.com/)
-    * 1h from Denver
+    * [1h from Denver](https://www.google.com/maps/dir/Denver,+Colorado/Loveland+Ski+Area,+Interstate+70,+Dillon,+CO) (to Eisenhower tunnel, between Silverthorne and Georgetown)
+    * Quite large
+      * 1800 acres
+      * 2mi (3.2km) longest run
+      * 2210 feet (630m) vertical drop
+      * 10 lifts, 94 runs
+    * [Lift tickets](https://skiloveland.com/lift-tickets/) ~$120 as of 2023
+    * [Trail map](https://skiloveland.com/the-mountain/trail-map-mountain-stats/)
   * [Arapahoe Basin](https://www.arapahoebasin.com/)
-    * 1h 30min from Denver
-    * Very well known
-      * Known as "The Legend"
+    * [1h 30min from Denver](https://www.google.com/maps/dir/Denver,+Colorado/Arapahoe+Basin+Ski+Area,+White+River+National+Forest,+U.S.+6,+Dillon,+CO) (to Loveland pass, between Silverthorne and Georgetown)
+    * Well known, known as "The Legend"
+    * Fairly large
+      * 1428 acres
+      * 1.5mi (2.4km) longest run
+      * 2530 feet (770m) vertical drop
+      * 9 lifts, 147 runs
     * On Ikon pass but still mostly independent
-    * Largely for experienced/advanced skiiers.
-    * Not a resort. No spa. No hotel. Just skiing with a small restaurant known for its bloody marys.
+    * Best for experienced/advanced skiiers.
+    * Not a "resort": no spa, no hotel, just gnarly skiing with a few small restaurants.
+      * [The Legends Cafè](https://www.arapahoebasin.com/to-do/dining/legends-cafe/) has a ~$10 breakfast: egg + potato + biscuit + sausage
+        * Cafeteria style, no wait for food
+      * [Black Mountain Lodge](https://www.arapahoebasin.com/to-do/dining/black-mountain-lodge/) has "award winning" bloody Marys
+    * [Lift tickets](https://store.arapahoebasin.com/s/lift-tickets) ~$100 to ~$200 as of 2023
+    * [Trail map](https://www.arapahoebasin.com/the-mountain/trail-maps/)
+  * [Winter Park](https://www.winterparkresort.com/)
+    * [1h 30min drive from Denver](https://www.google.com/maps/dir/Denver,+Colorado/Winter+Park+Resort,+Parsenn+Road,+Winter+Park,+CO) (to north of Georgetown)
+    * Ikon resort, but I am mentioning it because this is the only resort you can get to by traveling on **train only** from Denver International Airport
+      * [Amtrak train runs from Denver Union Station to Winter Park](https://www.winterparkresort.com/plan-your-trip/getting-here/winter-park-express) from January to March, Friday through Sunday
+      * Fares from ~$35 to ~$70 one way
+    * Big resort
+      * 3081 acres
+      * 4.9mi longest run (7.9km)
+      * 25 lifts, 168 runs
+      * 2220 feet (677m) vertical drop
+    * Resort is divided into different sections
+      * "Winter Park" for beginner+
+      * "Mary Jane" for intermediate+
+    * [Lift tickets](https://www.winterparkresort.com/plan-your-trip/tickets-and-passes) ~$200 as of 2023
+    * [Trail map](https://www.winterparkresort.com/-/media/winter-park/winter-2223/maps/2223_wintertrailmapdownloadablefinal.pdf)
   * [Cooper](https://www.skicooper.com/) (note this is different than Copper, the resort on the Ikon pass)
-    * 1h 45min from Denver
+    * [1h 45min from Denver](https://www.google.com/maps/dir/Denver,+CO/Ski+Cooper,+232+Co+Rd+29,+Leadville,+CO+80461/) (to Leadville)
   * [Granby Ranch](https://granbyranch.com/)
     * 1h 45min from Denver
+  * [Sunlight](https://sunlightmtn.com/)
+    * 3h drive from Denver
+    * Decently sized
+      * 730 acres
+      * 2.5mi (4km) longest run
+      * 2,000 foot (610m) vertical drop
+      * 3 lifts, 72 runs
+    * [Lift tickets](https://sunlightmtn.com/tickets-passes/buy-lift-tickets) ~$85 as of 2023
+    * [Trail map](https://sunlightmtn.com/the-mountain/trail-map)
   * [Monarch](https://skimonarch.com/)
     * 3h from Denver
   * [Powderhorn](https://www.powderhorn.com/)
@@ -64,6 +111,9 @@ If you don't have an Epic or Ikon pass, there are a few resorts left that are st
     * Known for getting the most snow in all of Colorado
   * [Silverton](https://silvertonmountain.com/)
     * 7h from Denver
+  * Purgatory
+  * Eldora
+  * Hesperus Ski Area
 </details>
 
 ## Hiking
@@ -92,12 +142,13 @@ Here are some of my favorites (ordered for proximity to Denver with closest at t
   * [South Table Mountain](https://www.strava.com/activities/5988975770)
     * 2.6mi moderate dirt hike located in Golden, CO (20min from Denver)
     * Fantastic views of Golden, Colorado Scool of Mines, and Coors Brewing
-    * The left trail of the link is a much more difficult trail that is fairly steep with loose dirt. The right trail is much easier but longer distance.
+      * Especially during sunset
+    * The left trail of the Strava link above is a much more difficult trail that is fairly steep with loose dirt. The right trail is much easier but longer distance.
     * Not on AllTrails due to apparently a part of the trail goes though private land, but I've never seen anyone have an issue
   * [Royal Arch](https://www.alltrails.com/trail/us/colorado/royal-arch-trail)
     * 3.4mi hard hike located in Boulder, CO (35min from Denver)
     * Fantastic views of Boulder
-    * Lots of other hikes here, be careful making a wrong turn
+    * Lots of other hikes here, easy to make a wrong turn
     * Very popular
   * [Mount Sanitas](https://www.alltrails.com/trail/us/colorado/mount-sanitas-and-sanitas-valley-loop-trail)
     * 3.2mi hard hike located in Boulder, CO (35min from Denver)
@@ -181,6 +232,14 @@ Note that there are many, many more than this. These are just some of my favorit
 
 ## Water things
 It gets hot here in the summer!
+* Float the Platte!
+  * Decent article on it [here](https://denverite.com/2017/07/21/tube-south-platte-river-denver-safely-respectfully/)
+  * Drop in / take out spots:
+    * E470
+    * Breckenridge Brewery
+    * Baseball fields
+* Float in Golden
+  * Much shorter route and rougher than the Platte
 * Cherry Creek Reservoir
 * Chatfield Reservoir
 * Bear Creek Lake
@@ -194,20 +253,19 @@ It gets hot here in the summer!
 
 ## Other
 * Rent a scooter/bicycle and explore the city
- * Easier when you have a tour guide that can lead you to bicycle friendly roads
- * E-bikes are great for older / less active family members
- * Some scooter companies offer unlimited use day passes for ~$25
-   * Ex. [Lime](https://www.li.me/blog/limes-new-day-pass-lets-you-lock-in-low-prices-for-memorial-day-riding)
+  * Easier when you have a tour guide that can lead you to bicycle friendly roads
+  * E-bikes are great for older / less active family members
+  * Some scooter companies offer unlimited use day passes for ~$25
+    * Ex. [Lime](https://www.li.me/blog/limes-new-day-pass-lets-you-lock-in-low-prices-for-memorial-day-riding)
 * [Bicycle around Dillon reservoir](https://www.strava.com/activities/5545799525)
   * The most scenic bicycle ride that I've ever done
   * 20.5mi loop with one steep section (but you can always turn around once you get there!)
   * E-bikes available for rent nearby that make this ride accessible for almost everyone no matter their fitness
 * [Aquarium](https://www.aquariumrestaurants.com/downtownaquariumdenver/)
   * I haven't been there but it's gotta be a good spot for families, right?
-* Colorado Rockies, Denver Broncos, Colorado Avalanche, Colorado Rapids (soccer)
+* Colorado Rockies (baseball), Denver Broncos (American football), Colorado Avalanche (hockey), Colorado Rapids (soccer)
   * Common to go to Rockies games on a Friday or Saturday night, then walk to bars downtown.
     * "The Rooftop" in Coors Field is the spot to pregame
-    *
 
 &nbsp;
 
