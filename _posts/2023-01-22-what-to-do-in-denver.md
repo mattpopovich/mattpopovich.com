@@ -33,13 +33,27 @@ P.S. To keep this post to appear shorter than it is, I have included "spoilers" 
 ## Skiing / Snowboarding
 Colorado is home to some of the [best skiing in all of North America](https://www.snowpak.com/usa/best-ski-resorts-north-america), many of it an hour or two drive from Denver. I **have** to start this post by covering [the gnar](https://www.powder7.com/ski-blog/ski-slang-explained-shred-the-gnar-and-beyond/#:~:text=Shred%20the%20Gnar%20%E2%80%93%20the%20far,blower%20lines%20with%20reckless%20abandon.) 🤙⛷🏂
 
+If you're a beginner, take a look at [Ruby Hill](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Activities-Programs/Outdoor-Recreation#section-9) and Winter Park's Galloping Goose lift. Click on "Click to show an outline of the best resorts for day passes ❗️" below for some more information.
+
+Visit [COtrip.org](https://maps.cotrip.org/@-106.1268,39.77425,9?show=winterDriving,roadReports) for webcams and road conditions provided by the state. The webcams are actually very handy and the road closures are useful during big snow storms.
+
 If you have an [Epic](https://www.epicpass.com/) or [Ikon](https://www.ikonpass.com/) pass, you probably already have a plan of where you're going. If you want to go to one of those resorts, your options will either be a season pass or a (multi) day pass. Season passes are only sold until ~November. Season passes are $500-$1200 depending on when you buy them (cheaper the sooner you buy them) and how much access you want (blackout dates on holidays will result in cheaper passes). Day passes go for ~$200 nowadays (ridiculous), with slight discounts for purchasing a multi-day (2, 3, 4+) pass. If you ski with a season pass holder, they can buy you reduced day (buddy/friend) passes but they're still expensive (~$150/day).
 
 If you don't have an Epic or Ikon pass, there are a few resorts left that are still holding out from getting bought out by a conglomerate. Their day passes will be more reasonable. And if you're a beginner shredder, they're a great place to learn. Day tickets at these places are around $100. I have a few of them listed below (ordered for proximity to Denver with closest at the top of the list):
 
 <details markdown="1">
-  <summary>Click to show independent resorts ❗️</summary>
+  <summary>Click to show an outline of the best resorts for day passes ❗️</summary>
 
+  * [Ruby Hill Rail Yard](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Activities-Programs/Outdoor-Recreation#section-9)
+    * [15min from Denver!](https://www.google.com/maps/dir/Denver,+Colorado/Ruby+Hill+Sledding+Area,+Community+Garden,+S+Pecos+St,+Denver,+CO+80223)
+    * One small hill with a section for beginners and a small park
+    * No lift, hike up the hill
+    * Open from February - March
+      * Lights are on until 9PM
+    * **FREE** access
+    * **FREE** rental board + boots + helmet + pants
+      * Thursdays 4PM - 9PM
+      * Saturdays 11AM - 6PM
   * [Echo Mountain](https://echomntn.com/)
     * [50min drive from Denver](https://www.google.com/maps/dir/Denver,+Colorado/Echo+Mountain,+Colorado+103,+Idaho+Springs,+CO) (to Idaho Springs)
     * Very small
@@ -54,7 +68,7 @@ If you don't have an Epic or Ikon pass, there are a few resorts left that are st
     * Quite large
       * 1800 acres
       * 2mi (3.2km) longest run
-      * 2210 feet (630m) vertical drop
+      * 2,210 feet (630m) vertical drop
       * 10 lifts, 94 runs
     * [Lift tickets](https://skiloveland.com/lift-tickets/) ~$120 as of 2023
     * [Trail map](https://skiloveland.com/the-mountain/trail-map-mountain-stats/)
@@ -64,7 +78,7 @@ If you don't have an Epic or Ikon pass, there are a few resorts left that are st
     * Fairly large
       * 1428 acres
       * 1.5mi (2.4km) longest run
-      * 2530 feet (770m) vertical drop
+      * 2,530 feet (770m) vertical drop
       * 9 lifts, 147 runs
     * On Ikon pass but still mostly independent
     * Best for experienced/advanced skiiers.
@@ -81,39 +95,114 @@ If you don't have an Epic or Ikon pass, there are a few resorts left that are st
       * Fares from ~$35 to ~$70 one way
     * Big resort
       * 3081 acres
-      * 4.9mi longest run (7.9km)
+      * 4.9mi (7.9km) longest run
       * 25 lifts, 168 runs
-      * 2220 feet (677m) vertical drop
-    * Resort is divided into different sections
+      * 2,220 feet (677m) vertical drop
+    * Resort is divided into [different sections](https://www.winterparkresort.com/the-mountain/seven-territories)
       * "Winter Park" for beginner+
       * "Mary Jane" for intermediate+
+      * Potentially has a $10 pass for unlimited access to their "Galloping Goose" lift, which is a perfect place for beginers
+        * Short, green run with a lift
+        * Close to the base of Mary Jane (bar+food+warmth)
     * [Lift tickets](https://www.winterparkresort.com/plan-your-trip/tickets-and-passes) ~$200 as of 2023
     * [Trail map](https://www.winterparkresort.com/-/media/winter-park/winter-2223/maps/2223_wintertrailmapdownloadablefinal.pdf)
   * [Cooper](https://www.skicooper.com/) (note this is different than Copper, the resort on the Ikon pass)
     * [1h 45min from Denver](https://www.google.com/maps/dir/Denver,+CO/Ski+Cooper,+232+Co+Rd+29,+Leadville,+CO+80461/) (to Leadville)
+    * Smallish
+      * 480 acres
+      * 1.4mi (2.25km) longest run
+      * 5 lifts, 64 runs
+      * 1,200 feet (365m) vertical drop
+      * [Lift tickets](https://www.skicooper.com/cooper-day-pass/) ~$95 as of 2023
+      * [Trail map](https://www.skicooper.com/mountain-stats/)
   * [Granby Ranch](https://granbyranch.com/)
-    * 1h 45min from Denver
+    * [1h 45min from Denver](https://www.google.com/maps/dir/Denver,+CO/Granby+Ranch,+1000+Village+Rd,+Granby,+CO+80446)
+    * Smallish
+      * 406 acres
+      * 1.3mi (2.1km) longest run
+      * 5 lifts, 41 runs
+      * 1,000 feet (305m) vertical drop
+    * [Lift tickets](https://granbyranch.com/tickets-passes/?keyword=DayTickets) ~$125 as of 2023
+    * [Trail map](https://granbyranch.com/trail-maps/)
   * [Sunlight](https://sunlightmtn.com/)
-    * 3h drive from Denver
+    * [3h drive from Denver](https://www.google.com/maps/dir/Denver,+CO/Sunlight+Mountain+Resort,+County+Road+117,+Glenwood+Springs,+CO)
     * Decently sized
       * 730 acres
       * 2.5mi (4km) longest run
-      * 2,000 foot (610m) vertical drop
+      * 2,000 feet (610m) vertical drop
       * 3 lifts, 72 runs
     * [Lift tickets](https://sunlightmtn.com/tickets-passes/buy-lift-tickets) ~$85 as of 2023
     * [Trail map](https://sunlightmtn.com/the-mountain/trail-map)
   * [Monarch](https://skimonarch.com/)
-    * 3h from Denver
+    * [3h from Denver](https://www.google.com/maps/dir/Denver,+CO/Monarch+Mountain,+U.S.+50,+Salida,+CO)
+    * Decently sized
+      * 800 acres
+      * 1mi (1.6km) longest run
+      * 7 lifts, 67 runs
+      * 1,162 feet (355m) vertical drop
+    * [Lift tickets](https://skimonarch.com/tickets/) ~$135 as of 2023
+    * [Trail map](https://skimonarch.com/mountain-maps/)
   * [Powderhorn](https://www.powderhorn.com/)
-    * 4h from Denver
+    * [4h15m from Denver](https://www.google.com/maps/dir/Denver,+CO/Powderhorn+Mountain+Resort,+Powderhorn+Road,+Mesa,+CO)
+    * Fairly large
+      * 1,600 acres
+      * 1.5mi (2.4km) longest run
+      * 5 lifts, 54 runs
+      * 1,650 feet (500m) vertical drop
+    * [Lift tickets](https://www.powderhorn.com/plan-purchase/purchase/lift-tickets.html) ~$90 as of 2023
+    * [Trail map](https://www.powderhorn.com/explore/conditions/trail-map.html)
   * [Wolf Creek](https://wolfcreekski.com/)
-    * 4h30min from Denver
+    * [4h30min from Denver](https://www.google.com/maps/dir/Denver,+CO/Wolf+Creek+Ski+Area,+U.S.+160+E,+Pagosa+Springs,+CO)
     * Known for getting the most snow in all of Colorado
-  * [Silverton](https://silvertonmountain.com/)
-    * 7h from Denver
-  * Purgatory
-  * Eldora
-  * Hesperus Ski Area
+    * Large
+      * 1,600 acres
+      * 2mi (3.2km) longest run
+      * 10 lifts, 133 runs
+      * 1,600 feet (490m) vertical drop
+    * [Lift tickets](https://shop.wolfcreekski.com/tickets) ~$85 as of 2023
+    * [Trail map](https://wolfcreekski.com/area-maps/)
+  * [Silverton Mountain](https://silvertonmountain.com/)
+    * [7h from Denver](https://www.google.com/maps/dir/Denver,+CO/Silverton+Mountain+Ski+Area,+State+Highway+110,+Silverton,+CO)
+    * Not your typical resort
+      * Only for advanced shredders
+      * Only guided skiing Jan. - Mar., Thursday - Sunday
+    * As big as you want it to be
+      * "26,891 acres"
+      *   1,819 acres via chair lift
+      * 1 lift, 69 "runs"
+      * 1.5mi (2.4km) longest run
+      * 1,900 feet (580m) vertical drop
+    * ["Lift" tickets](https://silvertonmountain.com/mountain/pricing/) ~$270 as of 2023
+    * [Trail map](https://silvertonmountain.com/mountain/trail-map/)
+  * [Purgatory](https://www.purgatory.ski/)
+    * [6h45m from Denver](https://www.google.com/maps/dir/Denver,+CO/Purgatory+Resort,+Skier+Place,+Durango,+CO)
+    * Fairly large
+      * 1099 acres
+      * 12 lifts, 105 trails
+      * 1.3mi (2.1km) longest run
+      * 2,029 feet (618m) vertical drop
+    * [Lift tickets](https://www.purgatory.ski/mountain/lift-tickets/) ~$100 as of 2023
+    * [Trail map](https://www.purgatory.ski/mountain/purgatory-mountain/trail-maps/)
+  * [Eldora](https://www.eldora.com/)
+    * [1h15m from Denver](https://www.google.com/maps/dir/Denver,+CO/Eldora+Mountain,+Eldora+Ski+Rd,+Nederland,+CO)
+    * On the Ikon pass
+    * Decently sized
+      * 680 acres
+      * 10 lifts, 61 runs
+      * 3mi (4.8km) longest run
+      * 1,200 feet (365m) vertical drop
+    * [Lift tickets](https://store.eldora.com/s/daily-access/c/daily-alpine) ~$140 as of 2023
+    * [Trail map](https://www.eldora.com/the-mountain/trail-area-maps/alpine-trail-map)
+  * [Hesperus Ski Area](https://www.ski-hesperus.com/)
+    * [6h30m from Denver](https://www.google.com/maps/dir/Denver,+CO/Hesperus+Ski+Area,+U.S.+160,+Hesperus,+CO)
+    * Open Thursday - Sunday, January 1 - March 12
+    * Very small
+      * 60 acres
+      * 1 lift, 26 runs
+      * 0.75mi (1.2km) longest run <!-- Outback via Google Maps -->
+      * 700 feet (210m) vertical drop
+    * [Lift tickets](https://www.ski-hesperus.com/lift-tickets/) ~$48 as of 2023
+    * [Trail map](https://www.ski-hesperus.com/wp-content/uploads/2023/01/Hesperus-Trail-Map-Updated-scaled.jpg)
 </details>
 
 ## Hiking
