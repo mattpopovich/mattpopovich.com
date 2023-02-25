@@ -182,40 +182,42 @@ Disclaimer: I am not a picky eater and I very rarely go to expensive restaurants
   * You go here for the bottomless mimosas and uptempo atmosphere
 
 ### Lunch/Dinner
-* [The first Chipotle ever](https://goo.gl/maps/37f6fgkqPny91xxL9)
-  * Will taste like all the other Chipotles but is something to say you've been there
-  * Very limited indoor seating
-* [La Chiva Colombian Cuisine](https://www.lachivacolombian.com/)
-  * I recommend the La Chiva Picada, a sample platter for 2 (~$38)
-  * Lots of meats with some plantains
-* [J's Noodles Star Thai](http://jnst2.blogspot.com/)
-  * The best thai I've had
-  * Great, cheap food
-  * Limited indoor seating. Best to order takeout in advance via [DoorDash](https://www.doordash.com/store/j's-noodle-&-star-thai-denver-31260/)
-    * Not uncommon to have wait times ~1hr (for both online takeout and dine-in). Very popular place
-* [Milk Market](https://www.denvermilkmarket.com/)
-  * Basically a food court with a bunch of different options
-    * Does everyone want something different? Go here
-  * Very cool side alley with art and outdoor seating
-* [Sushi-Rama](https://sushi-rama.com/)
-  * Conveyor-belt sushi (fun+fast!) at reasonable prices (yay!)
-  * Locations in [River North (RiNo)](https://goo.gl/maps/86dseXBB51tveueA7), [Denver Tech Center](https://goo.gl/maps/K35tm9DMpWRDhKmu6), [Centennial / Lone Tree](https://goo.gl/maps/QSwo18tkTLifyhdK7), and [Aurora](https://goo.gl/maps/1Nni6xwcmuuJjqK46)
-* [Sushi Den](https://goo.gl/maps/iTp5kZTsVi6JjjwCA) and [Izakaya Den](https://goo.gl/maps/q2yw7uG7kD6Eipx16)
-  * Located right next to each other
-  * Apparently fresh fish is flown in daily from Tokyo
-  * Special occassion spot ($$$)
+
+* <details markdown="1">
+    <summary>Click to show some of my lunch recommendations ❗️</summary>
+
+    * [The first Chipotle ever](https://goo.gl/maps/37f6fgkqPny91xxL9)
+      * Will taste like all the other Chipotles but is something to say you've been there
+      * Very limited indoor seating
+    * [La Chiva Colombian Cuisine](https://www.lachivacolombian.com/)
+      * I recommend the La Chiva Picada, a sample platter for 2 (~$40)
+      * Lots of meats with some plantains
+    * [J's Noodles Star Thai](http://jnst2.blogspot.com/)
+      * The best thai I've had
+      * Great, cheap food (~$15)
+      * Limited indoor seating. Best to order takeout in advance via [DoorDash](https://www.doordash.com/store/j's-noodle-&-star-thai-denver-31260/)
+        * Not uncommon to have wait times ~1hr (for both online takeout and dine-in). Very popular place
+    * [Milk Market](https://www.denvermilkmarket.com/)
+      * Basically a food court with a bunch of different options (~$20)
+        * Does everyone want something different? Go here
+      * Very cool side alley with art and outdoor seating
+    * [Sushi-Rama](https://sushi-rama.com/)
+      * Conveyor-belt sushi (fun+fast!) at reasonable prices (~$20, yay!)
+      * Locations in [River North (RiNo)](https://goo.gl/maps/86dseXBB51tveueA7), [Denver Tech Center](https://goo.gl/maps/K35tm9DMpWRDhKmu6), [Centennial / Lone Tree](https://goo.gl/maps/QSwo18tkTLifyhdK7), and [Aurora](https://goo.gl/maps/1Nni6xwcmuuJjqK46)
+    * [Sushi Den](https://goo.gl/maps/iTp5kZTsVi6JjjwCA) and [Izakaya Den](https://goo.gl/maps/q2yw7uG7kD6Eipx16)
+      * Located right next to each other
+      * Apparently fresh fish is flown in daily from Tokyo
+      * Special occassion spot ($$$)
+  </details>
 
 ### Dessert
 * [Little Man Ice Cream](https://www.littlemanicecream.com/)
-  * Just some really good ice cream that will probably have a 20 minute line
+  * Just some really good ice cream that will probably have a 20 minute (outdoor) line no matter the month
 
 
 ## Nightlife
 <!-- TODO: Add a pic of denver with all the surrounding areas highlighted -->
 Note that there are many, many more than this. These are just some of my favorites.
-* The Grizzly Rose
-  * A massive bar located 10mins north of Denver
-  * The premier spot for country dancing, mechanical bull riding, etc.
 * Downtown
   * Larimer street and Market street
     * Dierks Bentley's Whiskey Row, Larimer Beer Hall, ViewHouse (Ballpark location), Retro Room, Gin Mill, Star Bar (karaoke), Herb's (live music)
@@ -228,6 +230,9 @@ Note that there are many, many more than this. These are just some of my favorit
     * 5 min drive away from other bars
 * LoHi
   * I don't go out in LoHi very often but Avanti is very popular
+* The Grizzly Rose
+  * A massive bar located 10mins north of Denver
+  * The premier spot for country dancing, mechanical bull riding, etc. Yee to the haw!
 
 
 ## Water things
@@ -246,7 +251,7 @@ It gets hot here in the summer!
 * [Water World](https://www.waterworldcolorado.com/)
   * A surprisingly large water park 20min north of Denver
     * Reminds me of Disney's Blizzard Beach in Orlando, but with smaller features
-  * ~$50, cheaper when purchased online or in advance
+  * ~$50, cheaper when purchased online or in advance or for half days
     * Season ticket prices go for 2-3x what a day pass costs
   * Water temperature is "refreshing" so best to go on a sunny/hot day
 
