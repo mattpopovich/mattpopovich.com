@@ -41,10 +41,10 @@ Before we get started, I want to give a shoutout to Philip Brown. He sent me an 
 1. Download and install [GIMP `2.10.32 revision 0`](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg)
   * ⚠️ Note that the latest version of GIMP: `2.10.32 revision 1`, which creates separate builds for ARM Macs and Intel Macs, **will not** work with the following instructions ⚠️
   * You can check what version of GIMP you have by opening GIMP, going to GIMP in the menu bar --> About GIMP. If it says `2.10.32`, then the rest of this article will work. If it says `2.10.32 (revision 1)`, the rest of this article **will not** work.
-2. Download the Resynthesizer plugin for Mac: [ResynthesizerPlugin-Gimp-2.10-osx.tgz
+1. Download the Resynthesizer plugin for Mac: [ResynthesizerPlugin-Gimp-2.10-osx.tgz
 ](https://github.com/aferrero2707/gimp-plugins-collection/releases/download/continuous/ResynthesizerPlugin-Gimp-2.10-osx.tgz)
 1. Extract the `.tgz` plugin and copy the contents in the `ResynthesizerPlugin-Gimp-2.10-osx` folder to `/Applications/GIMP-2.10.app/Contents/Resources/lib/gimp/2.0/plug-ins`
-2. Try to run the Resynthesizer plugin on an image (Filters --> Enhance --> "Heal selection...") in GIMP.
+1. Try to run the Resynthesizer plugin on an image (Filters --> Enhance --> "Heal selection...") in GIMP.
   * If it works, you're good to go! If not, continue
 1. Change directories to GIMP's library folder
   * `cd /Applications/GIMP-2.10.app/Contents/Resources/lib`
@@ -54,7 +54,7 @@ Before we get started, I want to give a shoutout to Philip Brown. He sent me an 
   * If you have neither or something entirely different, comment below and I'll try to help you!
 1. Create a symbolic link to "fake" that you have `libintl.9.dylib` installed:
    * `ln -s libintl.8.dylib libintl.9.dylib`
-2. Restart GIMP, *Heal selection...* should now work! 🤞
+1. Restart GIMP, *Heal selection...* should now work! 🤞
 
 # Download and Install GIMP
 For starters, we need to download and install GIMP. You need to download GIMP `2.10.32 revision 0` from [here](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg).
