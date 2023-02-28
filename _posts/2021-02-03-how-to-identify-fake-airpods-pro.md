@@ -102,3 +102,12 @@ allowtransparency="true"
 allow="encrypted-media">
 </iframe>
 </div>
+
+&nbsp;
+
+&nbsp;
+
+<small><small>
+Disclaimer:
+Matt Popovich does not work for nor have any affiliation with Apple Inc. Please do your own research before making any purchases. Matt Popovich does not provide a warranty for any of the listed information and does not guarantee any expressed or implied result. As the technology sector is constantly evolving and changing, use the information provided at your own risk as some of the information provided may be outdated, no longer applicable, or even, unfortunately, incorrect.
+</small></small>

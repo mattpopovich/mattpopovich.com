@@ -101,3 +101,12 @@ allowtransparency="true"
 allow="encrypted-media">
 </iframe>
 </div>
+
+&nbsp;
+
+&nbsp;
+
+<small><small>
+Disclaimer:
+Matt Popovich is not a mechanic. Please do your own research and consult with a professional before attempting any DIY repairs. Matt Popovich assumes no liability for property damage or injury incurred as a result of any of the information contained in this video. Matt Popovich does not provide a warranty for any of the listed information and does not guarantee any expressed or implied result. Use this information at your own risk. Matt Popovich recommends safe practices when working on vehicles and or with tools seen or implied in this video. Any injury, damage, or loss that may result from improper use of these tools, equipment, or from the information contained in this video is the sole responsibility of the user and not Matt Popovich.
+</small></small>

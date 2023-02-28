@@ -25,16 +25,16 @@ mermaid: false
 Hey guys! Matt Popovich here. Today in my [series of Audi A3 tutorials](/tags/audi/), I’m going to explain what it means to have a “low coolant” warning and how to fix it from the prospective of a 2015 Audi A3 8V. When you first start your car, beeps and chimes will start going off like your car is very unhappy with you, but don’t freak out as it’s not the end of the world yet... although it *could* be if you don’t keep an eye on things.
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. Check the engine temperature gauge
-  - If it stays in the middle, you are fine to keep driving.
-  - If it goes above the middle, you will want to pull over, shut the engine off, and add coolant (if low).
+    - If it stays in the middle, you are fine to keep driving.
+    - If it goes above the middle, you will want to pull over, shut the engine off, and add coolant (if low).
 2. Check coolant reservoir level
-  - The coolant reservoir is on the passenger side of the engine bay.
-  - When the car is cold, coolant should be between the maximum and minimum line. When the engine is warm, the coolant can rise to be slightly above the maximum marking.
+    - The coolant reservoir is on the passenger side of the engine bay.
+    - When the car is cold, coolant should be between the maximum and minimum line. When the engine is warm, the coolant can rise to be slightly above the maximum marking.
 3. Add coolant
-  - Use G13 coolant as stated on the reservoir. Cut coolant concentrate 50/50 with distilled water.
-    - The manual states that you can also use G12++, but I will follow what is printed on my reservoir.
+    - Use [G13 coolant](https://www.fcpeuro.com/products/pp-coolant-antifreeze-g012a8gm1-1-5l) as stated on the reservoir. Cut coolant concentrate 50/50 with distilled water.
+        - The manual states that you can also use G12++, but I will follow what is printed on my reservoir.
 4. Done
-  - You do not have to reset anything in the car for the low coolant warning to go away. Once you drive it again, the sensor should read the coolant levels and the coolant light should turn off.
+    - You do not have to reset anything in the car for the low coolant warning to go away. Once you drive it again, the sensor should read the coolant levels and the coolant light should turn off.
 
 ## First steps: can you keep driving?
 
@@ -77,7 +77,7 @@ When you mix it, you don’t have to go full Bill Nye with it to make sure it’
       * [1.5L concentrate](https://www.fcpeuro.com/products/pp-coolant-antifreeze-g012a8gm1-1-5l) (~$15 + shipping from FCP Euro)
       * [1.5L concentrate](https://shop.advanceautoparts.com/p/pentosin-pentofrost-e-g13-hoat-silicate-european-concentrate-antifreeze-coolant-1.5-liters-8113106-8112106/10007846-P) (~$20 from Advance Auto Parts)
     * 5L Part Number: 8113206
-      * [5L concentrate](https://www.fcpeuro.com/products/copy-of-pp-coolant-antifreeze-g012a8gm1-1-5l) (~$40 + shipping from FCP Euro)
+      * [5L concentrate](https://www.fcpeuro.com/products/audi-vw-coolant-antifreeze-pentosin-g013a8j1g) (~$40 + shipping from FCP Euro)
       * [5L concentrate](https://shop.advanceautoparts.com/p/pentosin-pentofrost-e-g13-hoat-silicate-european-concentrate-antifreeze-coolant-5-liters-8113206-8112206/10024262-P) (~$60 from Advance Auto Parts)
 
 Distilled water can be bought from anywhere such as grocery stores.
@@ -101,7 +101,7 @@ Once we close the lid, we’re free to drive off and keep an eye on the engine t
 ## Outro
 That’s a wrap! Hopefully this helped. If there’s anything I missed, feel free to let me know in the comments. I’m working on a whole series of Audi A3 [videos](https://www.youtube.com/playlist?list=PLjsTlizXPX-Ehv0dsmDnp5B3oHIYXBM02) and [posts](/tags/audi), so feel free to check some of those out as well. Thanks for reading! I’ll catch you in the next one.
 
-
+&nbsp;
 
 <div style="text-align:center">
 <iframe
@@ -112,3 +112,11 @@ allow="encrypted-media">
 </iframe>
 </div>
 
+&nbsp;
+
+&nbsp;
+
+<small><small>
+Disclaimer:
+Matt Popovich is not a mechanic nor a chemist. Please do your own research and consult with a professional before attempting any DIY repairs. Matt Popovich assumes no liability for property damage or injury incurred as a result of any of the information contained in this video. Matt Popovich does not provide a warranty for any of the listed information and does not guarantee any expressed or implied result. Use this information at your own risk. Matt Popovich recommends safe practices when working on vehicles and or with tools seen or implied in this video. Any injury, damage, or loss that may result from improper use of these tools, equipment, or from the information contained in this video is the sole responsibility of the user and not Matt Popovich.
+</small></small>
