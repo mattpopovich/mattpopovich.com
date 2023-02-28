@@ -44,25 +44,7 @@ If you don't have an Epic or Ikon pass, there are a few resorts left that are st
 <details markdown="1">
   <summary>Click to show an outline of the best resorts for day passes ❗️</summary>
 
-  * [Ruby Hill Rail Yard](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Activities-Programs/Outdoor-Recreation#section-9)
-    * [15min from Denver!](https://www.google.com/maps/dir/Denver,+Colorado/Ruby+Hill+Sledding+Area,+Community+Garden,+S+Pecos+St,+Denver,+CO+80223)
-    * One small hill with a section for beginners and a small park
-    * No lift, hike up the hill
-    * Open from February - March
-      * Lights are on until 9PM
-    * **FREE** access
-    * **FREE** rental board + boots + helmet + pants
-      * Thursdays 4PM - 9PM
-      * Saturdays 11AM - 6PM
-  * [Echo Mountain](https://echomntn.com/)
-    * [50min drive from Denver](https://www.google.com/maps/dir/Denver,+Colorado/Echo+Mountain,+Colorado+103,+Idaho+Springs,+CO) (to Idaho Springs)
-    * Very small
-      * 60 acres (day), 40 acres (night skiing)
-      * 0.7mi (1.1km) longest run
-      * 600 feet (182m) vertical drop
-    * [Lift tickets](https://echomntn.com/lift-tickets) ~$70 as of 2023
-    * [Trail map](https://echomntn.com/mountain-conditions)
-    * Also has [tubing](https://echomntn.com/tubing) ~$35 as of 2023
+
   * [Loveland](https://skiloveland.com/)
     * [1h from Denver](https://www.google.com/maps/dir/Denver,+Colorado/Loveland+Ski+Area,+Interstate+70,+Dillon,+CO) (to Eisenhower tunnel, between Silverthorne and Georgetown)
     * Quite large
