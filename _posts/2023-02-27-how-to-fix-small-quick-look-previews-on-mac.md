@@ -42,7 +42,7 @@ All right everyone, a really quick post for you here today. I was out shooting s
 
 ![Quick Look giving small windows / previews](/assets/img/posts/2023-02-27-how-to-fix-small-quick-look-previews-on-mac/QuickLook_not-fully-working.png){: width="480"} *Quick Look not properly working with a small window/preview*
 
-Fortunately, it's a really quick fix to get Quick Look fully working again. All you have to do is click on the Apple logo in the top left, and then go to "Force Quit", select "Finder", then click "Relaunch".
+Fortunately, it's a really quick fix to get Quick Look fully working again. All you have to do is click on the Apple logo in the top left, and then go to "Force Quit" (or press Option+Command+Escape), select "Finder", then click "Relaunch".
 
 ![Window to Relaunch Finder](/assets/img/posts/2023-02-27-how-to-fix-small-quick-look-previews-on-mac/ForceQuit_Finder.png) *Window to Relaunch Finder*
 
@@ -73,8 +73,6 @@ allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen
 </div>{: .light }
 
 -->
-
-
 
 
 <!-- Video transcript
