@@ -19,9 +19,9 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  alt: image alternative text
 ---
 
-<!-- TODO
-{% include embed/youtube.html id='TODO' %}
--->
+
+{% include embed/youtube.html id='JMtz9G-F67U' %}
+
 
 # Intro
 [Quick Look](https://support.apple.com/guide/mac-help/preview-a-file-mh14119/mac) is a simple feature on macOS that lets users view certain file types without opening any applications. In my opinion, it is one of Mac's best features. To use it, just [select one or more items](https://support.apple.com/guide/mac-help/aside/glos3b057c3a/13.0/mac/13.0) in Finder, then press the space bar. It is especially handy for viewing images and videos.
