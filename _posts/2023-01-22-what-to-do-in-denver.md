@@ -93,7 +93,7 @@ Here are some of my favorites (ordered for proximity to Denver with closest at t
 * Red rocks
 * Fillmore
 * Fiddler's Green
-* Ball Arena (aka Pepsi Center)
+* Ball Arena (formerly known as the Pepsi Center)
 * TODO
 
 
@@ -105,6 +105,8 @@ Disclaimer: I am not a picky eater and I very rarely go to expensive restaurants
   * Locations in both [City Park](https://goo.gl/maps/MB9mWXaYJV66RkUx6) (with cute outdoor seating!) and ~[South Capitol Hill](https://goo.gl/maps/cTFbhqX5hVavNhWR6)
 * [The Lobby](https://goo.gl/maps/aepNLKgmXuCYhtZ19)
   * You go here for the bottomless mimosas and uptempo atmosphere
+* [Denver Biscuit Company](https://www.denbisco.com/)
+  * Five locations throughout Denver: [South Broadway](https://goo.gl/maps/ewvvZ65uPgxiipvu8), [Highland](https://goo.gl/maps/qdA46z4zRdjUYbNg7), [City Park](https://goo.gl/maps/zTeSbUvVWSrWDgwN9), [Centennial](https://goo.gl/maps/vwMRJoUdnKvzBv2H6), and [Stanley Marketplace](https://goo.gl/maps/8G87bUDoSbX415Jw9).
 
 ### Lunch/Dinner
 
