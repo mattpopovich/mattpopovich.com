@@ -90,11 +90,60 @@ Here are some of my favorites (ordered for proximity to Denver with closest at t
 </details>
 
 ## Concerts
-* Red rocks
-* Fillmore
-* Fiddler's Green
-* Ball Arena (formerly known as the Pepsi Center)
-* TODO
+Find all concerts going on in Denver's venues by looking at a ticket reseller, such as [SeatGeek](https://seatgeek.com/cities/denver/concerts). Below I provide information on my favorite venues to see shows:
+
+![Red Rocks Amphitheatre Concert at Dusk](https://media.9news.com/assets/KUSA/images/c9cfd3fe-b9d3-49f2-bb5a-e6b5972abddf/c9cfd3fe-b9d3-49f2-bb5a-e6b5972abddf_1140x641.jpeg){: width="360" .right}
+* [Red Rocks](https://www.redrocksonline.com/events/)
+  * One of the best ([if not the best](https://www.rollingstone.com/music/music-lists/the-best-amphitheaters-in-america-47179/red-rocks-amphitheatre-morrison-colorado-32337/) amphitheaters in America.
+    * 9,500 capacity
+  * Outdoor during summer nights with the stars and Denver's city lights in the background.
+  * Shows run April to October
+  * Expect to pay $50-$100 per ticket, with popular shows in the $100-$300 range.
+  * Free parking + tailgating before the show with free overnight parking allowing you to easily take an Uber/Lyft home.
+  * You have to do it once, even if you aren't familiar with the performer!
+  * Also has sunrise yoga on the weekends in the summer, but they tend to sell out quickly
+* [Fillmore Auditorium](https://www.livenation.com/venue/KovZpZAE6eJA/fillmore-auditorium-denver-events)
+  * Fairly large indoor venue (3,900 capacity)
+  * Visibility can be sub-par on the floor if you are short
+  * Parking can be difficult
+* [Fiddler's Green Amphitheatre](https://www.fiddlersgreenamp.com/events)
+  * Large outdoor venue (2x the capacity of Red Rocks)
+    * 17,000 capacity
+  * Accessible via RTD light rail E line and R line
+* [Ball Arena](https://www.ballarena.com/misc/all-events/) (formerly known as the Pepsi Center)
+  * Home of the Colorado Avalanche (hockey), Denver Nuggets (Basketball), and Colorado Mammoth (Lacrosse)
+    * Occassional concert as well!
+  * Easily accessible via RTD light rail C line, E line, and W line
+  * Large indoor venue (21,000 capacity)
+* [Mission Ballroom](https://www.missionballroom.com/upcoming-events/)
+  * 3,950 capacity
+  * Parking can be difficult
+* [Ogden Theatre](https://www.ogdentheatre.com/events)
+  * Medium sized
+    * 1,600 capacity
+  * Parking can be difficult
+* [Larimer Lounge](https://larimerlounge.com/events/?view=list)
+  * Very small = intimate shows (250 person capacity)
+  * Should be able to find street parking
+* [Bluebird Theater](https://www.bluebirdtheater.net/events)
+  * Small indoor venue (550 capacity)
+  * Should be able to find street parking if willing to walk a few blocks (City Park)
+* [Levitt Pavilion](https://www.levittdenver.org/ticketed-events)
+  * Pavillion in a park, expect seating on the grass (bring a blanket / folding chairs!)
+    * 7,500 capacity (rarely that many people there)
+  * One of the only places with [free shows](https://www.levittdenver.org/free-concert-series) available!
+* [Grizzly Rose](https://grizzlyrose.com/event-list/)
+  * Large country bar with country music + dancing + mechanical bull riding
+    * 2,000 capacity
+  * Has country concerts on Fridays
+  * Large parking lot
+* [City Park "Jazz in the Park"](https://cityparkjazz.org/)
+  * Free concert series on Sundays in the summer from 6-8PM
+  * [Crowds can reach 10,000 people](https://yellowscene.com/2022/04/29/spotlight-on-andy-bercaw-and-city-park-jazz/), but it doesn't feel crowded
+* [Dillon Amphitheater](https://dillonamphitheater.com/events/upcoming-events)
+  * Medium sized outdoor venue (3,656 capacity)
+  * Spectacular waterfront views of the rocky mountains + sunsets
+  * 1.5hr west of Denver
 
 
 ## Food
