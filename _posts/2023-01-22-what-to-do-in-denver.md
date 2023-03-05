@@ -42,7 +42,7 @@ If you have an [Epic](https://www.epicpass.com/) or [Ikon](https://www.ikonpass.
 If you don't have an Epic or Ikon pass, there are a few resorts left that are still holding out from getting bought out by a conglomerate. Their day passes will be more reasonable. And if you're a beginner shredder, they're a great place to learn. Day tickets at these places are around $100. View my separate post for best resorts without a season pass: ["The Best Places to Ski in Colorado without a Season Pass"](/posts/the-best-places-to-ski-in-colorado-without-a-season-pass)
 
 ## Hiking
-Unlike skiing, hiking is something to do in Denver and its nearby areas **year-round** (yes, even in the winter). Denver [averages highs nearing 50°F (10°C) in winter](https://www.google.com/search?q=denver+climate). Combine that with nearly "[300 days of sunshine](https://www.westword.com/news/denvers-claim-of-300-days-of-sunshine-a-year-is-clouded-10565181)" and winter hiking can be very enjoyable!
+Unlike skiing, hiking is something to do in Denver and its nearby areas **year-round** (yes, even in the winter). Denver [averages highs nearing 50°F (10°C) in the winter](https://www.google.com/search?q=denver+climate). Combine that with nearly "[300 days of sunshine](https://www.westword.com/news/denvers-claim-of-300-days-of-sunshine-a-year-is-clouded-10565181)" and winter hiking can be very enjoyable!
 
 AllTrails ([Apple App Store](https://alltrails.io/ujRkr9MGmgb), [Google Play Store](https://alltrails.io/pW7o6i6Lmgb)) is the *de facto* app for finding places to hike and recording your hiking activities. I highly recommend it for any prospective hikers, no matter where you live.
 
@@ -99,6 +99,15 @@ Here are some of my favorites (ordered for proximity to Denver with closest at t
 
 ## Food
 Disclaimer: I am not a picky eater and I very rarely go to expensive restaurants, so keep that in mind:
+
+### Map
+Note that yellow is for breakfast/brunch spots, orange for lunch/dinner, purple for dessert.
+<iframe
+src="https://www.google.com/maps/d/u/0/embed?mid=1cr7pELFNoTc0ik3gG1oitvNqJnbufXs&ehbc=2E312F"
+width="100%" height="500">
+</iframe>
+
+
 ### Breakfast/Brunch
 * [Waffle Brothers](https://wafflebrothers.com/)
   * Chicken & waffles is what you should order here
@@ -135,6 +144,9 @@ Disclaimer: I am not a picky eater and I very rarely go to expensive restaurants
       * Located right next to each other
       * Apparently fresh fish is flown in daily from Tokyo
       * Special occassion spot ($$$)
+    * [Blue Moon Brewery](https://goo.gl/maps/izdTUrHRoVHv7iP3A)
+      * Higher quality food than a typical "brewery"
+        * I recommend the Bison Burger
   </details>
 
 ### Dessert

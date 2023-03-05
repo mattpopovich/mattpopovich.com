@@ -19,20 +19,26 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  alt: image alternative text
 ---
 
-# Intro
+## Intro
 Colorado is home to some of the [best skiing in all of North America](https://www.snowpak.com/usa/best-ski-resorts-north-america). However, [more and more resorts are being bought up](https://www.bloomberg.com/news/features/2019-03-01/epic-vs-ikon-battle-for-the-best-ski-pass) by [Vail Resorts Inc. (Epic Pass)](https://www.epicpass.com/) and [Alterra Mountain Company (Ikon Pass)](https://www.ikonpass.com/). Their business model seems to be very expensive day passes which ultimately pushes the consumer to buy season passes to "save money": "If I go more than 4 times this year, this season pass will pay for itself!" This ultimately pushes consumers to the slopes more than they otherwise would visit in order to "get their moneys worth". Combine this with season passes only being available until November (regardless if it snows at all this year, your purchase will already be finalized!), the winter sports fan has found themselves with not much of a choice: buy the season pass.
 
 However, not all of us plan our lives months in advance. Not all of us are avid shredders. Some don't even like the cold. If that sounds like you but you still want to head to the mountains a few times a year without paying an arm and a leg to do it, this post is for you. I've tried to compile a list of the best resorts in Colorado to visit when you do not have a season pass. [Google Sheets link](https://docs.google.com/spreadsheets/d/1HJLHBiZSWD6DOl-XPknKbN51Gi17jALX05pBi_6OWxI/edit?usp=sharing) and shown below.
 
 If you're a beginner, I'd *highly recommend* going to Ruby Hill (free rentals!) or Winter Park's "Galloping Goose" lift (both are free) to learn the basics. I don't think it's worth paying >$100 for a lift ticket when you'll be stuck on the bunny slopes and won't be able to get your money's worth.
 
-# Table
+## Table
 <iframe
 width="100%" height="500px"
 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSwU7KbCkOJJUVLx22MGpKR_GK_fH_-C2pDbi8uojdkUqpCC0wmyzXXgypeZsgl4yHlHIh979c1CXdI/pubhtml?widget=true&amp;headers=false">
 </iframe>
 
-# Additional Information
+## Map
+<iframe
+src="https://www.google.com/maps/d/u/0/embed?mid=123VnBvyPxHJl-pu3lg-R9067W97BPoI&ehbc=2E312F"
+width="100%" height="500px">
+</iframe>
+
+## Additional Information
 Additional information for some of the resorts listed above:
 
 
