@@ -1,7 +1,8 @@
 ---
 title: "The Best Places to Ski in Colorado Without a Season Pass"
 author: matt_popovich           # Reference author_id in _data/authors.yml
-# Can also use `authors: [<author1_id>, <author2_id>]` for multiple entriesdate: 2023-02-28 01:25:37 -0700
+# Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
+date: 2023-02-28 01:25:37 -0700
 categories: [Blog]    # <=2 values here: top category and sub category
 tags: [denver, colorado, ski, snowboard]    # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit

@@ -1,7 +1,8 @@
 ---
 title: "What to do in Denver"
 author: matt_popovich           # Reference author_id in _data/authors.yml
-# Can also use `authors: [<author1_id>, <author2_id>]` for multiple entriesdate: 2023-01-22 19:42:13 -0700
+# Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
+date: 2023-01-22 19:42:13 -0700
 categories: [Blog]          # <=2 values here: top category and sub category
 tags: [denver, turo, not youtube, snowboard, ski] # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
