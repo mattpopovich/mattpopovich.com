@@ -12,6 +12,20 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
+	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
+    "runArgs": [
+		"-p",
+			"4000:4000"
+		// "-e",
+		// 	"DISPLAY=${env:DISPLAY}",
+    ],
+
+	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
+	// "mounts": [
+	// 	"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+	// 	"source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+	// ],
+
 	// Uncomment the next line to run commands after the container is created - for example installing curl.
 
 	// Tell git that our workspace folder is safe, otherwise because our docker
@@ -20,29 +34,21 @@
 	// https://www.kenmuse.com/blog/avoiding-dubious-ownership-in-dev-containers/
 	"postStartCommand": "git config --system --add safe.directory ${containerWorkspaceFolder} && bundle",
 
-	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
-	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
-    "runArgs": [
-		"-p",
-			"4000:4000"
-		// "-e",
-		// 	"DISPLAY=${env:DISPLAY}",
-    ],
 
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		// "ms-python.python",
-		// "ms-python.vscode-pylance",
-		"shardulm94.trailing-spaces",
-		"yzhang.markdown-all-in-one",
-		"eamodio.gitlens"
-	]
-
-	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
-	// "mounts": [
-	// 	"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
-	// 	"source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
-	// ],
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				// "ms-python.python",
+				// "ms-python.vscode-pylance",
+				"shardulm94.trailing-spaces",
+				"yzhang.markdown-all-in-one",
+				"eamodio.gitlens"
+			]
+		}
+	}
 
 	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
