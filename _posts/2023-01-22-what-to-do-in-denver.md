@@ -20,6 +20,8 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  alt: image alternative text
 ---
 
+<!-- TODO: Make a YouTube video on all this?? -->
+
 ## Intro
 As a [Turo host](https://turo.com/us/en/drivers/325768) (car sharing) and a guy that moved to Denver when only knowing two people that were living here, I have lots of guests and friends visiting me asking for recommendations on things to do in Denver and Colorado. I aim to combine my thoughts here to serve as a reference for myself...and others!
 
@@ -36,7 +38,7 @@ Colorado is home to some of the [best skiing in all of North America](https://ww
 
 Visit [COtrip.org](https://maps.cotrip.org/@-106.1268,39.77425,9?show=winterDriving,roadReports) for webcams and road conditions provided by the state. The webcams are actually very handy and the road closures are useful during big snow storms.
 
-If you're a beginner, take a look at [Ruby Hill](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Activities-Programs/Outdoor-Recreation#section-9) and [Winter Park](https://www.winterparkresort.com/)'s Galloping Goose lift (both are free). View my post ["The Best Places to Ski in Colorado without a Season Pass"](/posts/the-best-places-to-ski-in-colorado-without-a-season-pass) for additional information.
+If you're a beginner, take a look at [Ruby Hill](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Activities-Programs/Outdoor-Recreation#section-9) and [Winter Park](https://www.winterparkresort.com/)'s Galloping Goose lift (both are free). Winter Park doesn't advertise that Galloping Goose is a free lift for beginners, but I have confirmed it myself as of the 2022-2023 season that it still is (although I've heard [it can change from year-to-year](https://www.reddit.com/r/COsnow/comments/tcpe14/do_any_of_the_resorts_let_you_use_the/i0ev93g/?context=10000)). View my post ["The Best Places to Ski in Colorado without a Season Pass"](/posts/the-best-places-to-ski-in-colorado-without-a-season-pass) for additional information.
 
 If you have an [Epic](https://www.epicpass.com/) or [Ikon](https://www.ikonpass.com/) pass, you probably already have a plan of where you're going. If you want to go to one of those resorts, your options will either be a season pass or a (multi) day pass. Season passes are only sold until ~November. Season passes are $500-$1200 depending on when you buy them (cheaper the sooner you buy them) and how much access you want (blackout dates on holidays will result in cheaper passes). Day passes go for ~$200 nowadays (ridiculous), with slight discounts for purchasing a multi-day (2, 3, 4+) pass. If you ski with a season pass holder, they can buy you reduced day (buddy/friend) passes but they're still expensive (~$150/day).
 
@@ -51,7 +53,11 @@ If you are in shape and active, you can do most AllTrails hikes rated as "hard" 
 
 The best thing about AllTrails is their ratings and information about hikes. [This](https://www.alltrails.com/us/colorado) is a link to their most highly ranked hikes in Colorado (I have done half of them and can confirm). [This](https://www.alltrails.com/us/colorado/denver) is a link to their best hikes in Denver (more like walks in the park). Search for the area you are staying in or what is near you and go from there.
 
-Here are some of my favorites (ordered for proximity to Denver with closest at the top of the list):
+If you're big into hiking, Colorado has [over 50 peaks](https://thenextsummit.org/how-many-fourteeners-are-in-colorado/) that are above 14,000ft (4,267m). These are known as "14ers". There are no easy 14ers. Even the "easier" ones are multi-hour hikes, 5+mi round trip, rapidly changing weather conditions (normal to have thunderstorms in the afternoon that pushes the astute mountaineerer to start around sunrise and finish around noon), and noticeably less oxygen at the top than the bottom. Do your research before attempting to summit [one of these](https://www.alltrails.com/lists/14ers-in-colorado).
+
+Here are some of my favorite hikes (ordered for proximity to Denver with closest at the top of the list):
+
+<!-- TODO: Make this its own page -->
 
 <details markdown="1">
   <summary>Click to show some of my favorite hikes ❗️</summary>
@@ -62,6 +68,7 @@ Here are some of my favorites (ordered for proximity to Denver with closest at t
     * Also has a gravel running/jogging trail, paved loop for bicycling/roller blading.
     * Plenty of geese and people playing volleball and enjoying time with friends here
     * Very popular but lots of space
+  * Any of [Denver's parks](https://www.denvergov.org/Maps/map/parks): [Cheeseman Park](https://goo.gl/maps/nG1USDFBEcvxsbs89), [City Park](https://goo.gl/maps/VebCHKPurRsRUy1RA), [Sloan's Lake](https://goo.gl/maps/Ts7cbvkqqPASh8zv9), etc.
   * [Red Rocks Trail](https://www.alltrails.com/trail/us/colorado/red-rocks-trading-post-trail)
     * 1.5mi moderate dirt hike 25min from Denver
     * I have never actually done this hike but Red Rocks is gorgeous and while you're there you can even walk over to the stadium to check it out as well
@@ -76,6 +83,7 @@ Here are some of my favorites (ordered for proximity to Denver with closest at t
     * Fantastic views of Boulder
     * Lots of other hikes here, easy to make a wrong turn
     * Very popular
+    * My go-to that I show friends that are visiting
   * [Mount Sanitas](https://www.alltrails.com/trail/us/colorado/mount-sanitas-and-sanitas-valley-loop-trail)
     * 3.2mi hard hike located in Boulder, CO (35min from Denver)
     * I think it is easier than Royal Arch
@@ -90,6 +98,10 @@ Here are some of my favorites (ordered for proximity to Denver with closest at t
     * Chance to see Moose (I am 2/3)
 </details>
 
+<!-- TOOD: A paragraph after details does not have double spacing -->
+
+<!-- TODO: Mountain biking -->
+
 ## Concerts
 Find all concerts going on in Denver's venues by looking at a ticket reseller, such as [SeatGeek](https://seatgeek.com/cities/denver/concerts). Below I provide information on my favorite venues to see shows:
 
@@ -100,7 +112,7 @@ Find all concerts going on in Denver's venues by looking at a ticket reseller, s
   * Outdoor during summer nights with the stars and Denver's city lights in the background.
   * Shows run April to October
   * Expect to pay $50-$100 per ticket, with popular shows in the $100-$300 range.
-  * Free parking + tailgating before the show with free overnight parking allowing you to easily take an Uber/Lyft home.
+  * Free parking + tailgating before the show with free overnight parking allowing you to easily take an Uber/Lyft home to prevent drinking and driving.
   * You have to do it once, even if you aren't familiar with the performer!
   * Also has sunrise yoga on the weekends in the summer, but they tend to sell out quickly
 * [Fillmore Auditorium](https://www.livenation.com/venue/KovZpZAE6eJA/fillmore-auditorium-denver-events)
@@ -146,6 +158,7 @@ Find all concerts going on in Denver's venues by looking at a ticket reseller, s
   * Spectacular waterfront views of the rocky mountains + sunsets
   * 1.5hr west of Denver
 
+<!-- TODO: Make this into its own page with a map -->
 
 ## Food
 Disclaimer: I am not a picky eater and I very rarely go to expensive restaurants, so keep that in mind:
@@ -166,9 +179,12 @@ width="100%" height="500">
   * You go here for the bottomless mimosas and uptempo atmosphere
 * [Denver Biscuit Company](https://www.denbisco.com/)
   * Five locations throughout Denver: [South Broadway](https://goo.gl/maps/ewvvZ65uPgxiipvu8), [Highland](https://goo.gl/maps/qdA46z4zRdjUYbNg7), [City Park](https://goo.gl/maps/zTeSbUvVWSrWDgwN9), [Centennial](https://goo.gl/maps/vwMRJoUdnKvzBv2H6), and [Stanley Marketplace](https://goo.gl/maps/8G87bUDoSbX415Jw9).
+  * There will be a wait on weekends.
+  * My favorite is "The Franklin".
 
 ### Lunch/Dinner
 
+<!-- TODO: Add Aurora lunch spots: LL, Sabor, Taco Selene, etc. -->
 * <details markdown="1">
     <summary>Click to show some of my lunch recommendations ❗️</summary>
 
@@ -197,15 +213,21 @@ width="100%" height="500">
     * [Blue Moon Brewery](https://goo.gl/maps/izdTUrHRoVHv7iP3A)
       * Higher quality food than a typical "brewery"
         * I recommend the Bison Burger
+    <!-- TODO: Add tacos: Agave, Adelitas (will be packed on tuesdays), tacos tequila whiskey, torchys -->
+    <!-- TODO: Add food specials for days of week -->
+    <!-- TODO: Pizza: Homegrown tap and dough, fat sully's -->
+    <!-- TODO: Add Breckenridge Brewery -->
   </details>
 
 ### Dessert
 * [Little Man Ice Cream](https://www.littlemanicecream.com/)
   * Just some really good ice cream that will probably have a 20 minute (outdoor) line no matter the month
+  * I like salted oreo if it's available!
 
 
 ## Nightlife
 <!-- TODO: Add a pic of denver with all the surrounding areas highlighted -->
+<!-- TODO: Add links to google maps -->
 Note that there are many, many more than this. These are just some of my favorites.
 * Downtown
   * Larimer street and Market street
@@ -221,22 +243,33 @@ Note that there are many, many more than this. These are just some of my favorit
   * I don't go out in LoHi very often but Avanti is very popular
 * The Grizzly Rose
   * A massive bar located 10mins north of Denver
-  * The premier spot for country dancing, mechanical bull riding, etc. Yee to the haw!
+  * The premier spot for country dancing, mechanical bull riding, etc. Yee to the haw! 🤠
 
 
 ## Water things
-It gets hot here in the summer!
+It gets hot here in the summer! <!-- TODO: Add links to google maps + pricing -->
 * Float the Platte!
   * Decent article on it [here](https://denverite.com/2017/07/21/tube-south-platte-river-denver-safely-respectfully/)
   * Drop in / take out spots:
-    * E470
-    * Breckenridge Brewery
-    * Baseball fields
-* Float in Golden
+    * [E470 near Chatfield Reservoir](https://goo.gl/maps/iE9i3UhquXsTNTj97)
+      * Very limited parking here.
+      * You'll probably have to drop people off here, then go drive to the pull out spot and Uber / walk along the bike trail back.
+    * [Breckenridge Brewery](https://goo.gl/maps/94HUCxPrjnu6qf1u6) / [Reynolds Landing](https://goo.gl/maps/Q3J54ewKhJasnPk78)
+      * ~1.5hr, 3mi downstream.
+      * Lots of parking here
+    * [Centennial Park](https://goo.gl/maps/SxeEjFXQBQtA7w6P6) / [Brent Mayne Baseball Field](https://goo.gl/maps/ZWusYc1hfBN7GK4K7)
+      * An additional ~2.5hr, 3.5mi downstream from Breckenridge Brewery / Reynolds Landing
+    * You can technically keep floating past here but I've yet to do that.
+  * Example full float [here](https://www.strava.com/activities/2608193842), [half float](https://www.strava.com/activities/7304584997)
+* [Float in Golden](https://www.cityofgolden.net/play/recreation-attractions/clear-creek-white-water-park/)
   * Much shorter route and rougher than the Platte
+  * Example route [here](https://www.strava.com/activities/7523339917)
+* [Float in Deckers](https://discoverdeckers.com/tubing-paddle-boarding-kayaking/)
+  * Cold water but gives an extremely scenic and mountain experience
+  * Example route [here](https://www.strava.com/activities/5756015816)
 * Cherry Creek Reservoir
 * Chatfield Reservoir
-* Bear Creek Lake
+* Bear Creek Lake Park
 * [Water World](https://www.waterworldcolorado.com/)
   * A surprisingly large water park 20min north of Denver
     * Reminds me of Disney's Blizzard Beach in Orlando, but with smaller features
@@ -257,9 +290,20 @@ It gets hot here in the summer!
   * E-bikes available for rent nearby that make this ride accessible for almost everyone no matter their fitness
 * [Aquarium](https://www.aquariumrestaurants.com/downtownaquariumdenver/)
   * I haven't been there but it's gotta be a good spot for families, right?
-* Colorado Rockies (baseball), Denver Broncos (American football), Colorado Avalanche (hockey), Colorado Rapids (soccer)
+* Colorado Rockies (baseball), Denver Broncos (American football), Colorado Avalanche (hockey), Denver Nuggets (basketball), Colorado Rapids (soccer), Colorado Mammoth (Lacrosse)
   * Common to go to Rockies games on a Friday or Saturday night, then walk to bars downtown.
     * "The Rooftop" in Coors Field is the spot to pregame
+* Drinking! 🍻
+  * [Coors brewery tour](https://www.coorsbrewerytour.com/) (Golden, CO. ~25min from downtown)
+    * $20 for the guided tour or $10 for samples only
+    * Reservations required
+    * Available Friday - Sunday (and maybe some Thursdays)
+    * ~1.5hr tour
+  * Visit one or many of Denver's local [breweries](https://www.denver.org/food-drink/breweries/), [distilleries](https://www.denver.org/food-drink/distilleries/?view=list&sort=qualityScore&bounds=false), or even [wineries](https://www.denver.org/food-drink/wineries/?view=list&sort=qualityScore&bounds=false).
+  * *[PubPass](https://getpubpass.com/)* offers a $25 book that includes buy one get one drinks at 25 different places. Consider it an *investment*.
+* [Gamble in Black Hawk](https://visitblackhawk.org/casinos/)
+  * Black Hawk is the Las Vegas of Colorado
+<!-- TODO: Add fly fishing -->
 
 &nbsp;
 

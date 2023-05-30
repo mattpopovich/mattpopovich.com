@@ -23,15 +23,35 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 ## Intro
 Colorado is home to some of the [best skiing in all of North America](https://www.snowpak.com/usa/best-ski-resorts-north-america). However, [more and more resorts are being bought up](https://www.bloomberg.com/news/features/2019-03-01/epic-vs-ikon-battle-for-the-best-ski-pass) by [Vail Resorts Inc. (Epic Pass)](https://www.epicpass.com/) and [Alterra Mountain Company (Ikon Pass)](https://www.ikonpass.com/). Their business model seems to be very expensive day passes which ultimately pushes the consumer to buy season passes to "save money": "If I go more than 4 times this year, this season pass will pay for itself!" This ultimately pushes consumers to the slopes more than they otherwise would visit in order to "get their moneys worth". Combine this with season passes only being available until November (regardless if it snows at all this year, your purchase will already be finalized!), the winter sports fan has found themselves with not much of a choice: buy the season pass.
 
-However, not all of us plan our lives months in advance. Not all of us are avid shredders. Some don't even like the cold. If that sounds like you but you still want to head to the mountains a few times a year without paying an arm and a leg to do it, this post is for you. I've tried to compile a list of the best resorts in Colorado to visit when you do not have a season pass. [Google Sheets link](https://docs.google.com/spreadsheets/d/1HJLHBiZSWD6DOl-XPknKbN51Gi17jALX05pBi_6OWxI/edit?usp=sharing) and shown below.
+However, not all of us plan our lives months in advance. Not all of us are avid shredders. Some don't even like the cold. If that sounds like you but you still want to head to the mountains a few times a year without paying an arm and a leg to do it, this post is for you. I've tried to compile a list of the best resorts in Colorado to visit when you do not have a season pass. [Google Sheets link](https://docs.google.com/spreadsheets/d/1HJLHBiZSWD6DOl-XPknKbN51Gi17jALX05pBi_6OWxI/edit?usp=sharing) and shown [below](#table).
 
-If you're a beginner, I'd *highly recommend* going to Ruby Hill (free rentals!) or Winter Park's "Galloping Goose" lift (both are free) to learn the basics. I don't think it's worth paying >$100 for a lift ticket when you'll be stuck on the bunny slopes and won't be able to get your money's worth.
+## Beginners
+
+If you're a beginner, I'd *highly recommend* going to [Ruby Hill](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Activities-Programs/Outdoor-Recreation#section-9) (free rentals!) or Winter Park's "Galloping Goose" lift (bring your own gear, free lift up the hill) to learn the basics. I don't think it's worth paying >$100 for a lift ticket when you'll be stuck on the bunny slopes and won't be able to get your money's worth anyway.
+
+> Winter Park doesn't advertise that Galloping Goose is a free lift for beginners, but I have confirmed it myself as of the 2022-2023 season that it still is free and available (although I've heard [it can change from year-to-year](https://www.reddit.com/r/COsnow/comments/tcpe14/do_any_of_the_resorts_let_you_use_the/i0ev93g/?context=10000)).
+{: .prompt-info}
+
+## Skiing with a Season Pass Holder
+
+I will also mention that if you have a friend that has a season Ikon or Epic pass, they may be able to get you discounts on day passes.
+* Ikon: "Friends and Family discount". 25% off the window rate . Valid for 8-10 (8 = Ikon base, 10 = "Full" Ikon Pass) day passes per season pass holder per year. [Source](https://www.ikonpass.com/en/faq?faq_category=discounts+%26+perks&faq_item=what+are+the+ikon+pass+friends+%26+family+discount+policies%3F)
+    * Blackout dates apply and correspond to the pass holder’s blackout days.
+    * Valid for use at all Ikon Pass destinations except Pico, Chamonix Mont Blanc Valley, Zermatt, Dolomiti Superski, Kitzbühel, Grandvalira Andorra Resorts, Lotte Arai.
+* Epic: "Ski with a Friend" (SWAF) and "Buddy Tickets". A little more convoluted than Ikon. [Source](https://epicpass.zendesk.com/hc/en-us/articles/4411494253723-What-are-Ski-With-A-Friend-and-Buddy-Tickets-)
+    * Ski with a friend: discounted single day lift tickets varying by day and resort. 6 or less per passholder (2023-24).
+    * Buddy tickets: "deeply discounted" single day lift tickets with a fixed price for each resort. 2 or less per passholder (2023-24).
+        * Only available to season pass holders who purchased their pass in the spring (the spring before the season began).
+    * Not valid at Andermatt-Sedrun-Disentis in Switzerland or Perisher, Falls Creek or Hotham in Australia.
+    * [Somewhat of a pricing example](https://www.epicpass.com/benefits/swaf.aspx)
 
 ## Table
 <iframe
 width="100%" height="500px"
 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSwU7KbCkOJJUVLx22MGpKR_GK_fH_-C2pDbi8uojdkUqpCC0wmyzXXgypeZsgl4yHlHIh979c1CXdI/pubhtml?widget=true&amp;headers=false">
 </iframe>
+
+[Google Sheets link](https://docs.google.com/spreadsheets/d/1HJLHBiZSWD6DOl-XPknKbN51Gi17jALX05pBi_6OWxI/edit?usp=sharing)
 
 ## Map
 <iframe
