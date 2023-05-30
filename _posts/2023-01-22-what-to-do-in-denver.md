@@ -95,7 +95,7 @@ Find all concerts going on in Denver's venues by looking at a ticket reseller, s
 
 ![Red Rocks Amphitheatre Concert at Dusk](https://media.9news.com/assets/KUSA/images/c9cfd3fe-b9d3-49f2-bb5a-e6b5972abddf/c9cfd3fe-b9d3-49f2-bb5a-e6b5972abddf_1140x641.jpeg){: width="360" .right}
 * [Red Rocks](https://www.redrocksonline.com/events/)
-  * One of the best ([if not the best](https://www.rollingstone.com/music/music-lists/the-best-amphitheaters-in-america-47179/red-rocks-amphitheatre-morrison-colorado-32337/) amphitheaters in America.
+  * One of the best ([if not the best](https://www.rollingstone.com/music/music-lists/the-best-amphitheaters-in-america-47179/red-rocks-amphitheatre-morrison-colorado-32337/)) amphitheaters in America.
     * 9,500 capacity
   * Outdoor during summer nights with the stars and Denver's city lights in the background.
   * Shows run April to October
