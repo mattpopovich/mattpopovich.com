@@ -29,9 +29,10 @@ P.S. To keep this post to appear shorter than it is, I have included "spoilers" 
 
 <details markdown="1">
   <summary> Example, click to show more ❗️</summary>
-
   Good job! Keep reading 😎
 </details>
+
+P.S.S. Think I'm missing something? [Contact me](/about/) or [comment below](#disqus_thread)!
 
 ## Skiing / Snowboarding
 Colorado is home to some of the [best skiing in all of North America](https://www.snowpak.com/usa/best-ski-resorts-north-america), many of it an hour or two drive from Denver. I **have** to start this post by covering [the gnar](https://www.powder7.com/ski-blog/ski-slang-explained-shred-the-gnar-and-beyond/#:~:text=Shred%20the%20Gnar%20%E2%80%93%20the%20far,blower%20lines%20with%20reckless%20abandon.) 🤙⛷🏂
@@ -304,6 +305,9 @@ It gets hot here in the summer! <!-- TODO: Add links to google maps + pricing --
 * [Gamble in Black Hawk](https://visitblackhawk.org/casinos/)
   * Black Hawk is the Las Vegas of Colorado
 <!-- TODO: Add fly fishing -->
+
+## Outro
+If you made it this far, thanks for reading! Think I'm missing something? [Contact me](/about/) or [comment below](#disqus_thread)!
 
 &nbsp;
 
