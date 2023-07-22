@@ -248,33 +248,55 @@ Note that there are many, many more than this. These are just some of my favorit
 
 
 ## Water things
-It gets hot here in the summer! <!-- TODO: Add links to google maps + pricing -->
-* Float the Platte!
-  * Decent article on it [here](https://denverite.com/2017/07/21/tube-south-platte-river-denver-safely-respectfully/)
+It gets hot here in the summer!
+* [Float the South Platte River](https://denverite.com/2017/07/21/tube-south-platte-river-denver-safely-respectfully/)
+  * 30 minutes south of Denver
   * Drop in / take out spots:
     * [E470 near Chatfield Reservoir](https://goo.gl/maps/iE9i3UhquXsTNTj97)
       * Very limited parking here.
-      * You'll probably have to drop people off here, then go drive to the pull out spot and Uber / walk along the bike trail back.
+      * If you can't find a spot to park, you can drop people off here, then go drive to the pull out spot and Uber / walk along the bike trail back.
     * [Breckenridge Brewery](https://goo.gl/maps/94HUCxPrjnu6qf1u6) / [Reynolds Landing](https://goo.gl/maps/Q3J54ewKhJasnPk78)
       * ~1.5hr, 3mi downstream.
       * Lots of parking here
     * [Centennial Park](https://goo.gl/maps/SxeEjFXQBQtA7w6P6) / [Brent Mayne Baseball Field](https://goo.gl/maps/ZWusYc1hfBN7GK4K7)
       * An additional ~2.5hr, 3.5mi downstream from Breckenridge Brewery / Reynolds Landing
     * You can technically keep floating past here but I've yet to do that.
+  * Ideal water flows for tubing: 100-350cfs
+    * Manageable: 65-500cfs
+    * Current flow [here](https://dwr.state.co.us/tools/stations/LNBC10CO?params=DISCHRG)
   * Example full float [here](https://www.strava.com/activities/2608193842), [half float](https://www.strava.com/activities/7304584997)
 * [Float in Golden](https://www.cityofgolden.net/play/recreation-attractions/clear-creek-white-water-park/)
-  * Much shorter route and rougher than the Platte
-  * Example route [here](https://www.strava.com/activities/7523339917)
+  * [30 minutes west of Denver](https://goo.gl/maps/iZKdcTbPjEmQ5TST7), a convenient parking lot [here](https://goo.gl/maps/tCsrALN5S4xcVJ3Y9)
+  * Shorter and more exciting route (more rapids) through the city of Golden
+  * Lots of people floating + watching
+  * Plan for a 30 minute walk up the river, then a 30 minute ride down the river
+    * Loop it as many times as you'd like!
+  * Example float route [here](https://www.strava.com/activities/7523339917)
+  * Ideal water flows for tubing: 100-300cfs
+    * Manageable: 40-500cfs
+    * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06719505/#parameterCode=00060&period=P7D)
 * [Float in Deckers](https://discoverdeckers.com/tubing-paddle-boarding-kayaking/)
+  * [1.5hr south of Denver](https://goo.gl/maps/YKegkP6ZgM7gjP1o6)
+  * Example float route [here](https://www.strava.com/activities/5756015816)
   * Cold water but gives an extremely scenic and mountain experience
-  * Example route [here](https://www.strava.com/activities/5756015816)
-* Cherry Creek Reservoir
-* Chatfield Reservoir
-* Bear Creek Lake Park
+  * Limited parking, $10/vehicle
+  * Will likely need a vehicle at "put in" and another vehicle downstream for "pull out"
+  * Ideal water flows for tubing: 250-400cfs
+    * Manageable: 175-600cfs
+    * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06701900/#parameterCode=00060&period=P7D)
+* [Cherry Creek Reservoir](https://cpw.state.co.us/placestogo/parks/CherryCreek)
+  * [25 minutes SE of Denver](https://goo.gl/maps/6qeJJ2JRJKxP1u3J7)
+  * [$11 per vehicle](https://cpw.state.co.us/placestogo/parks/CherryCreek/Pages/Fees.aspx), bicyclists get in for free
+* [Chatfield Reservoir](https://cpw.state.co.us/placestogo/parks/Chatfield)
+  * [30 minutes south of Denver](https://goo.gl/maps/9KccsnpHa4GXKDt18)
+  * [$10 per vehicle](https://cpw.state.co.us/placestogo/parks/Chatfield/Pages/Fees.aspx), bicyclists get in for free
+* [Bear Creek Lake Park](https://www.lakewood.org/Government/Departments/Community-Resources/Parks-Forestry-and-Open-Space/A-to-Z-Park-List/Bear-Creek-Lake-Park)
+  * [25 minutes SW of Denver](https://goo.gl/maps/5rgiK195yByrzyadA)
+  * [$10 per vehicle](https://www.lakewood.org/Government/Departments/Community-Resources/Parks-Forestry-and-Open-Space/A-to-Z-Park-List/Bear-Creek-Lake-Park/Bear-Creek-Lake-Park-Entrance-Fees-and-Pass)
 * [Water World](https://www.waterworldcolorado.com/)
-  * A surprisingly large water park 20min north of Denver
-    * Reminds me of Disney's Blizzard Beach in Orlando, but with smaller features
-  * ~$50, cheaper when purchased online or in advance or for half days
+  * A surprisingly large water park [20min north of Denver](https://goo.gl/maps/us1uVBqZ1UF89sWe8)
+    * Reminds me of Disney's Blizzard Beach in Orlando, but with slightly smaller rides
+  * [~$50 for a day pass](https://prod-b2c-hhs.vivaticket.com/generaladmission.html), cheaper when purchased online or in advance or for half days
     * Season ticket prices go for 2-3x what a day pass costs
   * Water temperature is "refreshing" so best to go on a sunny/hot day
 
