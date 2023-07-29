@@ -104,7 +104,6 @@ GEM
 PLATFORMS
   aarch64-linux
   x86_64-linux
-  x86_64-linux-musl
 
 DEPENDENCIES
   html-proofer (~> 3.18)
