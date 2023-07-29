@@ -265,7 +265,7 @@ It gets hot here in the summer!
     * Manageable: 65-500cfs
     * Current flow [here](https://dwr.state.co.us/tools/stations/LNBC10CO?params=DISCHRG)
   * Example full float [here](https://www.strava.com/activities/2608193842), [half float](https://www.strava.com/activities/7304584997)
-* [Float in Golden](https://www.cityofgolden.net/play/recreation-attractions/clear-creek-white-water-park/)
+* [Float in Golden (Clear Creek)](https://www.cityofgolden.net/play/recreation-attractions/clear-creek-white-water-park/)
   * [30 minutes west of Denver](https://goo.gl/maps/iZKdcTbPjEmQ5TST7), a convenient parking lot [here](https://goo.gl/maps/tCsrALN5S4xcVJ3Y9)
   * Shorter and more exciting route (more rapids) through the city of Golden
   * Lots of people floating + watching
@@ -275,7 +275,10 @@ It gets hot here in the summer!
   * Ideal water flows for tubing: 100-300cfs
     * Manageable: 40-500cfs
     * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06719505/#parameterCode=00060&period=P7D)
-* [Float in Deckers](https://discoverdeckers.com/tubing-paddle-boarding-kayaking/)
+* [Float in Boulder (Boulder Creek)](https://www.allthingsboulder.com/a-beginners-guide-to-tubing-boulder-creek/)
+  * Ideal water flows for tubing: 100-300cfs
+    * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06730200/#parameterCode=00060&period=P7D)
+* [Float in Deckers (South Platte River)](https://discoverdeckers.com/tubing-paddle-boarding-kayaking/)
   * [1.5hr south of Denver](https://goo.gl/maps/YKegkP6ZgM7gjP1o6)
   * Example float route [here](https://www.strava.com/activities/5756015816)
   * Cold water but gives an extremely scenic and mountain experience
@@ -284,6 +287,15 @@ It gets hot here in the summer!
   * Ideal water flows for tubing: 250-400cfs
     * Manageable: 175-600cfs
     * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06701900/#parameterCode=00060&period=P7D)
+* Float in Fort Collins (Poudre River)
+  * [1hr 15min north of Denver](https://goo.gl/maps/rZ9tiZdcAoyaN6Ms6)
+  * [Map of put in and takeout](https://www.poudre-fire.org/Home/ShowPublishedImage/3256)
+  * Ideal water flows for tubing: TODO
+    * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06752260/#parameterCode=00060&period=P7D)
+* [Float in Steamboat Springs (Yampa River)](https://www.steamboatchamber.com/activities/water-activities/tubing/)
+  * [3hr NW of Denver](https://goo.gl/maps/TkBkYyiHJT8NoCkf8)
+  * Ideal water flows for tubing: TODO
+    * Current flow [here](https://waterdata.usgs.gov/monitoring-location/09239500/#parameterCode=00060&period=P7D)
 * [Cherry Creek Reservoir](https://cpw.state.co.us/placestogo/parks/CherryCreek)
   * [25 minutes SE of Denver](https://goo.gl/maps/6qeJJ2JRJKxP1u3J7)
   * [$11 per vehicle](https://cpw.state.co.us/placestogo/parks/CherryCreek/Pages/Fees.aspx), bicyclists get in for free
