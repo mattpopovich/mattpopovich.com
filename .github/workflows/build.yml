@@ -5,19 +5,11 @@ on:
       - .gitignore
       - README.md
       - LICENSE
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: read
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  contents: read  # permits an action to list the commits (unsure if necessary for us)
 
 jobs:
   build:
@@ -34,17 +26,9 @@ jobs:
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
 
       - name: Debug
-        run: |
-          echo "Current git commit:"
-          git log | head
-          echo "Base path:"
-          echo ${{ steps.pages.outputs.base_path }}
-
         # confirmed that rsync is installed
-
-      # - name: Setup Pages
-      #   id: pages
-      #   uses: actions/configure-pages@v1
+        run: |
+          echo "Debugging..."
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -72,3 +56,20 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: "_site"
+
+      - name: Dry-run deployment to mattpopovich.com
+        uses: easingthemes/ssh-deploy@v4.1.8
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.HOSTNAME }}
+          REMOTE_USER: ${{ secrets.USERNAME }}
+          ARGS: "-ahv --delete --dry-run"
+          SOURCE: "_site/"
+          TARGET: ${{ secrets.SERVER_DESTINATION }}
+          SCRIPT_BEFORE: |
+            whoami
+            ls -lah
+          SCRIPT_AFTER: |
+            whoami
+            ls -lah
+            ls -lah mattpopovich.com

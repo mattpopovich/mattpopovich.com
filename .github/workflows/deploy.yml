@@ -8,18 +8,15 @@ on:
       - .gitignore
       - README.md
       - LICENSE
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: read
-  id-token: write
+  contents: read  # permits an action to list the commits (unsure if necessary for us)
 
-# Allow one concurrent deployment
+# Allow one deploy.yml file to run at the same time
 concurrency:
-  group: "pages"
+  group: "deployment"
   cancel-in-progress: true
 
 jobs:
@@ -34,10 +31,6 @@ jobs:
           # submodules: true
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
-
-      # - name: Setup Pages
-      #   id: pages
-      #   uses: actions/configure-pages@v1
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -79,6 +72,5 @@ jobs:
             whoami
             ls -lah
             ls -lah mattpopovich.com
-            echo $RSYNC_STDOUT
         # run: |
         #   rsync -ahv --delete --dry-run ${{ steps.pages.outputs.base_path }} ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.SERVER_DESTINATION}}
