@@ -14,7 +14,7 @@ on:
 permissions:
   contents: read  # permits an action to list the commits (unsure if necessary for us)
 
-# Allow one deploy.yml file to run at the same time
+# Only one deploy.yml file can run at the same time
 concurrency:
   group: "deployment"
   cancel-in-progress: true
@@ -26,8 +26,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        # with:
+        #   fetch-depth: 0
           # submodules: true
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
@@ -62,7 +62,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.HOSTNAME }}
           REMOTE_USER: ${{ secrets.USERNAME }}
-          ARGS: "-ahv --delete --dry-run"
+          ARGS: "-ahv --delete"
           SOURCE: "_site/"
           TARGET: ${{ secrets.SERVER_DESTINATION }}
           SCRIPT_BEFORE: |
