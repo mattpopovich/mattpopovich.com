@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  build_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -46,6 +46,7 @@ jobs:
           bundler-cache: true
 
       # TODO: Don't duplicate building the site again?
+      # TOOD: If we have to duplicate, reference the job/steps from build.yml
 
       - name: Build site
         run: |
@@ -62,13 +63,6 @@ jobs:
     #     with:
     #       path: "_site"
 
-  deploy:
-    # environment:
-    #   name: github-pages
-    #   url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Deploy to mattpopovich.com
         uses: easingthemes/ssh-deploy@v4.1.8
         env:
