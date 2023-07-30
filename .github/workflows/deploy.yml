@@ -14,7 +14,7 @@ on:
 
 permissions:
   contents: read
-  pages: write
+  pages: read
   id-token: write
 
 # Allow one concurrent deployment
@@ -48,14 +48,19 @@ jobs:
       # TODO: Don't duplicate building the site again?
 
       - name: Build site
-        run: bundle exec jekyll b -d "_site"
+        run: |
+          pwd
+          ls -lah
+          bundle exec jekyll b
+          ls -lah
+          ls -lah _site
         env:
           JEKYLL_ENV: "production"
 
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: "_site"
+    #   - name: Upload site artifact
+    #     uses: actions/upload-pages-artifact@v1
+    #     with:
+    #       path: "_site"
 
   deploy:
     # environment:

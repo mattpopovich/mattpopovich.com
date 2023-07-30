@@ -11,7 +11,7 @@ on:
 
 permissions:
   contents: read
-  pages: write
+  pages: read
   id-token: write
 
 # Allow one concurrent deployment
@@ -39,8 +39,8 @@ jobs:
           git log | head
           echo "Base path:"
           echo ${{ steps.pages.outputs.base_path }}
-          which rsync
-          rsync --version
+
+        # confirmed that rsync is installed
 
       # - name: Setup Pages
       #   id: pages
@@ -53,15 +53,22 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        run: |
+          pwd
+          ls -lah
+          bundle exec jekyll b
+          ls -lah
+          ls -lah _site
         env:
           JEKYLL_ENV: "production"
 
       - name: Test site
         run: |
+          ls -alh
+          ls -lah _site
           bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "_site${{ steps.pages.outputs.base_path }}"
+          path: "_site"
