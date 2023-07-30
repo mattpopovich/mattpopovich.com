@@ -75,11 +75,10 @@ jobs:
           SCRIPT_BEFORE: |
             whoami
             ls -lah
-            ls -lah _site
           SCRIPT_AFTER: |
             whoami
             ls -lah
-            ls -lah _site
+            ls -lah mattpopovich.com
             echo $RSYNC_STDOUT
         # run: |
         #   rsync -ahv --delete --dry-run ${{ steps.pages.outputs.base_path }} ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.SERVER_DESTINATION}}
