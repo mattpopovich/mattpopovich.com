@@ -296,6 +296,22 @@ It gets hot here in the summer!
   * [3hr NW of Denver](https://goo.gl/maps/TkBkYyiHJT8NoCkf8)
   * Ideal water flows for tubing: TODO
     * Current flow [here](https://waterdata.usgs.gov/monitoring-location/09239500/#parameterCode=00060&period=P7D)
+* [Float the Colorado (near Kremmling, 1hr North of Vail)](https://www.uncovercolorado.com/river-tubing-kayaking/colorado-river/)
+  * [BLM website](https://www.blm.gov/visit/upper-colorado-river-recreation-area)
+  * [Pumphouse (BLM) (1hr north of Vail)](https://goo.gl/maps/NLFAk8tt1n1CJKvx9) to [Radium Campground (BLM)](https://goo.gl/maps/vC11eaRzrzqjyz3F7) 4-6hr, 4mi float
+  * [Radium Campground (BLM)](https://goo.gl/maps/vC11eaRzrzqjyz3F7) to [Rancho del Rio (private)](https://goo.gl/maps/F5mtZjbWKhkXJEqr7) 6-8hr
+  * [Rancho del Rio (private)](https://goo.gl/maps/F5mtZjbWKhkXJEqr7) to [State Bridge](https://goo.gl/maps/LUEFoHtdvpcVXLz69) 4-6hr
+  * [State Bridge](https://goo.gl/maps/LUEFoHtdvpcVXLz69) to [Two Bridges](https://goo.gl/maps/H2r5ydQdfzCyMx6q8) 4-5hr
+  * [Cottonwood boat ramp](https://goo.gl/maps/pSjVNaH9tkaWRBC36) to [Lyons Gulch](https://goo.gl/maps/fyuAswo9CRnRpzyq7) 2-3hr, 2.25mi
+  * [Lyons Gulch](https://goo.gl/maps/fyuAswo9CRnRpzyq7) to [Dotsero Landing](https://goo.gl/maps/8wo7XpydVvSV9DY3A) (free site for day use) 4-5hr, 4mi
+  * [Dotsero Landing](https://goo.gl/maps/8wo7XpydVvSV9DY3A) to [Bair Ranch](https://goo.gl/maps/N87LqLjckXfjR3y49) 6-7hr (3-3.5hr per turtle tubing), 6mi
+  * Not recommended between pumphouse recreation site to rancho del rio
+  * Call the BLM Kremmling Field Office for questions about the river between Pumphouse and State Bridge at (970) 724-3000 and the BLM Colorado River Valley Field Office (2300 river frontage road philps? CO M-F 8-430p) for questions between State Bridge and Dotsero at (970) 876-9000.
+    * Recommended cfs rate
+    * Can I tube past dotsero or does turtle tubing have those exclusive rights?
+    * Do I need a permit? Or was teh $5/vehicle for parking?
+  * [Flow rate at Dotsero](https://waterdata.usgs.gov/monitoring-location/09070500/#parameterCode=00060&period=P7D)
+  * Permit required? [No](https://www.inaraft.com/rivers/upper-colorado/dotsero/)
 * [Cherry Creek Reservoir](https://cpw.state.co.us/placestogo/parks/CherryCreek)
   * [25 minutes SE of Denver](https://goo.gl/maps/6qeJJ2JRJKxP1u3J7)
   * [$11 per vehicle](https://cpw.state.co.us/placestogo/parks/CherryCreek/Pages/Fees.aspx), bicyclists get in for free
