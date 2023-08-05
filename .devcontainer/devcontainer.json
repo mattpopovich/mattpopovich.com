@@ -45,7 +45,8 @@
 				// "ms-python.vscode-pylance",
 				"shardulm94.trailing-spaces",
 				"yzhang.markdown-all-in-one",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"github.vscode-github-actions"
 			]
 		}
 	}
