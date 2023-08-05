@@ -1,5 +1,5 @@
 ---
-title: "How to install the Resynthesizer plugin for GIMP on Mac (2021)"
+title: "How to Install the Resynthesizer Plugin for GIMP on Mac (2021)"
 author: matt_popovich         # Reference author_id in _data/authors.yml
 date: 2021-04-10 12:23:02 -0600
 categories: [Blog, YouTube]   # <=2 values here: top category and sub category

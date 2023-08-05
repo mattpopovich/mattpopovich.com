@@ -1,0 +1,76 @@
+name: "Deploy"
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: read  # permits an action to list the commits (unsure if necessary for us)
+
+# Only one deploy.yml file can run at the same time
+concurrency:
+  group: "deployment"
+  cancel-in-progress: true
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        # with:
+        #   fetch-depth: 0
+          # submodules: true
+          # If using the 'assets' git submodule from Chirpy Starter, uncomment above
+          # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
+          bundler-cache: true
+
+      # TODO: Don't duplicate building the site again?
+      # TOOD: If we have to duplicate, reference the job/steps from build.yml
+
+      - name: Build site
+        run: |
+          pwd
+          ls -lah
+          bundle exec jekyll b
+          ls -lah
+          ls -lah _site
+        env:
+          JEKYLL_ENV: "production"
+
+    #   - name: Upload site artifact
+    #     uses: actions/upload-pages-artifact@v1
+    #     with:
+    #       path: "_site"
+
+      - name: Deploy to mattpopovich.com
+        uses: easingthemes/ssh-deploy@v4.1.8
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.HOSTNAME }}
+          REMOTE_USER: ${{ secrets.USERNAME }}
+          ARGS: "-ahv --delete"
+          SOURCE: "_site/"
+          TARGET: ${{ secrets.SERVER_DESTINATION }}
+          SCRIPT_BEFORE: |
+            whoami
+            ls -lah
+          SCRIPT_AFTER: |
+            whoami
+            ls -lah
+            ls -lah mattpopovich.com
+        # run: |
+        #   rsync -ahv --delete --dry-run ${{ steps.pages.outputs.base_path }} ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.SERVER_DESTINATION}}
