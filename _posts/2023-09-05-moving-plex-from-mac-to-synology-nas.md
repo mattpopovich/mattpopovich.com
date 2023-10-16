@@ -166,3 +166,18 @@ Obviously if you are importing a database and config, you’re going to want to 
 It is recommended to enable the QuickConnect relay service at Control Panel > External Access > QuickConnect > Advanced Settings
 
 
+
+
+Updating Plex
+To update plex, there is no need to do it through the web GUI anymore. All you need to do is restart docker, and the plex image will automatically redownload the latest version of plex media server:
+Note that this is only applicable to the plexpass tag.
+```
+MattAdmin@DS1520plus:/volume1/docker/plex$ sudo docker-compose -f plex-pms-docker-compose.yaml down
+[+] Running 1/1
+ ⠿ Container plex  Removed                                                                                                                                           17.6s
+MattAdmin@DS1520plus:/volume1/docker/plex$ sudo docker-compose -f plex-pms-docker-compose.yaml up -d
+[+] Running 1/1
+ ⠿ Container plex  Started
+```
+
+
