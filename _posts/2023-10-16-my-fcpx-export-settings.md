@@ -46,7 +46,7 @@ The only thing I didn't like about this was that there was no *Video Codec* opti
 
 ![FCPX share button](/assets/img/posts/2023-10-16-my-fcpx-export-settings/FCPX_export_file_video_codecs.png) *FCPX Export File Video Codec Options*
 
-However, since [YouTube recommends uploading files in H.264](https://support.google.com/youtube/answer/1722171?hl=en), and most of my FPCX videos were being uploaded to YouTube, I was content with H.264.
+However, since [YouTube recommends uploading files in H.264](https://support.google.com/youtube/answer/1722171?hl=en), and most of my FPCX videos were being uploaded to YouTube, I was content with H.264. Note that YouTube does support [many more file versions](https://support.google.com/youtube/troubleshooter/2888402?hl=en&ref_topic=2888648#ts=2888407) than just H.264 in `.MP4`.
 
 ## Exported Compression Artifacts
 
