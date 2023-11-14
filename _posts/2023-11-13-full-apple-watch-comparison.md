@@ -33,5 +33,15 @@ Ken Rockwell has a [detailed comparison page](https://www.kenrockwell.com/apple/
 
 
 
-## TODO: Add Heading Here
-TODO: Add text here
+## My Recommendation
+
+I wouldn't get anything below a Series 4. Mainly because watchOS 10 only supports Series 4 and higher, but the 4 has some serious upgrades over the 3 as well (screen size, processor, ECG, fall detection, Bluetooth 5.0, 16GB storage).
+Series 5 adds an always on display (or better battery life if you turn off the always-on display)
+Series 6 adds a blood oxygen sensor (not very useful in my opinion)
+Series 7 adds basically nothing
+Series 8 adds basically nothing
+Series 9 adds a new processor and brighter screen. They also advertise a feature called ["double tap"](https://www.youtube.com/watch?v=pm-ZXg3uA0Y), but that is actually available in older watches as an [accessibility feature](https://www.youtube.com/watch?v=oDpIhooDyaY).
+
+The first gen SE is basically a Series 5 witout the ECG and always-on display. The second gen SE is pretty similar to the first but with a newer processor, crash detection, and better WiFi and bluetooth.
+
+Basically nobody *needs* the Apple Watch Ultra vs. a normal Series X, but if you really want double the battery life and an additional button, go for it.
