@@ -20,6 +20,44 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  alt: image alternative text
 ---
 
+<!-- TODO: Add YouTube video link here -->
+
+## Intro
+
+### What is this post about?
+This post documents my experience moving my [Plex](TODO) server from my Macbook to a [Synology NAS](TODO). The Plex server was installed using the Mac Plex app (`.dmg`) and I will be transitioning to docker on the Synology NAS to make future moves (if necessary) much easier due to docker being operating system independent.
+
+I use [Tautulli](TODO) for Plex statistics, so I will also be moving that from the Mac (running via Python) to a docker container on the Synology NAS as well.
+
+### What is Plex?
+Plex is an server/client utility that lets you host your own music, pictures, videos, live TV, etc. and view/download them on any device with a streaming service-esque app. You can think of it as your own custom Netflix! Here are the main pieces:
+1. Dowload and install the Plex server onto a computer. This computer will be the host of your content.
+  * Note that you can only stream and download your content when this computer is powered on and connected to your network/the internet.
+2. Copy all of the content that you want to stream/download onto your host computer
+3. Tell Plex which folder your content is in
+4. Download the Plex app onto your client (phone, TV, etc.)
+5. Login on the client and stream/download your content!
+
+### Why move to a NAS?
+I previously hosted my Plex server on a Macbook that was constantly powered on and plugged in. My Mac was old (2012) so it struggled to convert some of the newer video codecs + leaving it plugged in all the time isn't great on its battery. I also had all of my content on an external hard drive so in the event of a disk failure (can happen randomly as drives get older), I would have lost all my content. Sure, I could have made a backup but it can be annoying to constantly keep the backup up to date. My solution: buy a NAS (network attached storage). Why? A NAS is a:
+* Computer that is designed to be a server (always on)
+* Accepts hard disks (HDDs) that are designed to be always on (NAS hard drives)
+* Automatically supports RAID (redundant array of independent (or inexpensive) disks)
+  * RAID automatically duplicates your data on multiple disks such that, in the event of a disk failure, your data is not lost
+
+### Additional reasons to get a NAS
+* Easily expandable storage once a hard drive gets full (just plug another one in!)
+* A place to host [Time Machine](TODO) backups of your Mac (or other machines)
+* A place to host storage that can be easily accessible from multiple machines
+  * Think of it as your own personal cloud (with no monthly fees)
+* [And more](TODO)
+
+## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
+* TODO
+
+
+
+
 Moving my Plex Library from a Mac to Synology
 
 [This](https://support.plex.tv/articles/201154537-move-media-content-to-a-new-location/) is the official documentation from Plex for how to move media content to a new location.
