@@ -35,8 +35,8 @@ Oh! Happy St. Patrick's Day, and, happy Tie Tuesday 👔
 ## Avoid this by Buying Directly from a Reputable Seller
 You can be confident that you are buying genuine AirPods Pro if you buy from a reputable seller. I'd recommend buying [directly from Apple ($250)](https://www.apple.com/shop/product/MLWK3AM/A/airpods-pro) or, to get the best price, [buy from Amazon ($199)](https://amzn.to/3ynaBva). If you buy from Amazon, make sure that the seller you select is both "Ships from Amazon.com" and "Sold by Amazon.com":
 
-[![Look on the right side of the checkout, below "Buy Now" to see who the item is sold and shipped by](/assets/img/posts/2021-02-03-how-to-identify-fake-airpods-pro/buying-from-amazon.png)](https://amzn.to/3ynaBva)
-*Buy from Amazon only if it is both shipped and sold by Amazon.com*
+![Look on the right side of the checkout, below "Buy Now" to see who the item is sold and shipped by](/assets/img/posts/2021-02-03-how-to-identify-fake-airpods-pro/buying-from-amazon.png)
+*[Buy from Amazon](https://amzn.to/3ynaBva) only if it is both shipped and sold by Amazon.com*
 
 ## Visual Check
 Getting down to business, there are three quick ways to check if you have genuine AirPods Pros. The easiest is to just **take off the ear tips and see if you see a black oval** speaker looking thing. That contains an inward facing microphone for more advanced noise cancellation.
