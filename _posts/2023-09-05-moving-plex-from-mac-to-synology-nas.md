@@ -2,7 +2,7 @@
 title: "Moving My Plex Library from a Mac to a Synology NAS"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2023-09-5 02:22:47 -0600
+date: 2023-09-05 02:22:47 -0600
 categories: [Blog, TODO]    # <=2 values here: top category and sub category
 tags: [todo]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
@@ -25,12 +25,12 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 ## Intro
 
 ### What is this post about?
-This post documents my experience moving my [Plex](TODO) server from my Macbook to a [Synology NAS](TODO). The Plex server was installed using the Mac Plex app (`.dmg`) and I will be transitioning to docker on the Synology NAS to make future moves (if necessary) much easier due to docker being operating system independent.
+This post documents my experience moving my [Plex](https://www.plex.tv/) server from my Macbook to a [Synology NAS](https://www.synology.com/dsm/solution/what-is-nas/for-home). The Plex server was installed using the [Mac Plex app](https://www.plex.tv/media-server-downloads/?cat=computer&plat=macos) (`.dmg`) and I will be transitioning to docker on the Synology NAS to make future moves (if necessary) much easier due to docker being operating system independent.
 
-I use [Tautulli](TODO) for Plex statistics, so I will also be moving that from the Mac (running via Python) to a docker container on the Synology NAS as well.
+I use [Tautulli](https://tautulli.com/) for Plex statistics, so I will also be moving that from the Mac (running via Python) to a docker container on the Synology NAS as well.
 
 ### What is Plex?
-Plex is an server/client utility that lets you host your own music, pictures, videos, live TV, etc. and view/download them on any device with a streaming service-esque app. You can think of it as your own custom Netflix! Here are the main pieces:
+Plex is an server/client utility that lets you host your own music, pictures, videos, live TV, etc. and view/download them on any device with a streaming service-esque app. You can think of it as your own custom Netflix! Here are the main steps to get it up and running:
 1. Dowload and install the Plex server onto a computer. This computer will be the host of your content.
   * Note that you can only stream and download your content when this computer is powered on and connected to your network/the internet.
 2. Copy all of the content that you want to stream/download onto your host computer
@@ -39,7 +39,7 @@ Plex is an server/client utility that lets you host your own music, pictures, vi
 5. Login on the client and stream/download your content!
 
 ### Why move to a NAS?
-I previously hosted my Plex server on a Macbook that was constantly powered on and plugged in. My Mac was old (2012) so it struggled to convert some of the newer video codecs + leaving it plugged in all the time isn't great on its battery. I also had all of my content on an external hard drive so in the event of a disk failure (can happen randomly as drives get older), I would have lost all my content. Sure, I could have made a backup but it can be annoying to constantly keep the backup up to date. My solution: buy a NAS (network attached storage). Why? A NAS is a:
+I previously hosted my Plex server on a Macbook that was constantly powered on and plugged in. My Mac was old (2012) so it struggled to convert some of the newer video codecs (H.265/HEVC) + leaving it plugged in all the time isn't great on its battery. I also had all of my content on an external hard drive so in the event of a disk failure (can happen randomly as drives get older), I would have lost all my content. Sure, I could have made a backup but it can be annoying to constantly keep the backup up to date. My solution: buy a NAS (network attached storage). Why? A NAS is a:
 * Computer that is designed to be a server (always on)
 * Accepts hard disks (HDDs) that are designed to be always on (NAS hard drives)
 * Automatically supports RAID (redundant array of independent (or inexpensive) disks)
@@ -47,13 +47,35 @@ I previously hosted my Plex server on a Macbook that was constantly powered on a
 
 ### Additional reasons to get a NAS
 * Easily expandable storage once a hard drive gets full (just plug another one in!)
-* A place to host [Time Machine](TODO) backups of your Mac (or other machines)
+* A place to host [Time Machine](https://support.apple.com/en-us/HT201250) backups of your Mac (or other machines)
 * A place to host storage that can be easily accessible from multiple machines
   * Think of it as your own personal cloud (with no monthly fees)
-* [And more](TODO)
+* [And more](https://www.synology.com/dsm/solution/what-is-nas/for-home)
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
-* TODO
+* [Official Plex documentation on how to move media content to a new location](https://support.plex.tv/articles/201154537-move-media-content-to-a-new-location/)
+* Disable the `Empty trash automatically after every scan` option by clicking the wrench —> Settings —> Library
+* Shut down your Plex Media Server
+* [Back up your Plex media server data](https://support.plex.tv/articles/201539237-backing-up-plex-media-server-data/)
+  * Your Plex Media Server (PMS) data location can be found [here](https://support.plex.tv/articles/202915258-where-is-the-plex-media-server-data-directory-located/)
+    * `~/Library/Application Support/Plex Media Server/` for macOS.
+  * Additional Plex settings can be found [here](https://support.plex.tv/articles/201539237-backing-up-plex-media-server-data/)
+    * `~/Library/Preferences/com.plexapp.plexmediaserver.plist` for macOS.
+* Install [container manager](TODO) onto NAS
+* Make a `plex` folder in the `/docker` folder
+  * In the `plex` folder I made 3 more folders: `config`, `data`, `transcode`.
+* Start copying over Plex data to `/docker/plex/data/*`
+* Create a docker compose file: `plex-pms-docker-compose.yaml` from [this template](https://github.com/plexinc/pms-docker/blob/master/docker-compose-host.yml.template)
+  * Set the `TZ` (timezone) environment variable (TODO: How?)
+    * Find valid options [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+  * Set the `PLEX_CLAIM` environment variable which connects your docker instance to your Plex account TODO: How/where?
+    * Get your plex claim value from https://www.plex.tv/claim/
+  * Mount `config`, `data`, and `transcode` into the docker container
+    *  `- /volume1/docker/plex/config:/config`
+    *  `- /volume1/docker/plex/transcode:/transcode`
+    *  `- /volume1/docker/plex/data:/data:ro`
+* Run the docker container using docker compose:
+  * `sudo docker-compose -f plex-pms-docker-compose.yaml up`
 
 
 
@@ -62,13 +84,13 @@ Moving my Plex Library from a Mac to Synology
 
 [This](https://support.plex.tv/articles/201154537-move-media-content-to-a-new-location/) is the official documentation from Plex for how to move media content to a new location.
 
-In there, step 1 is to [back up your Plex media server data](https://support.plex.tv/articles/201539237-backing-up-plex-media-server-data/) before making major changes to your library. It probably is a good idea to quit your Plex Media Server before backing anything up just to make sure the files aren’t changing while you’re doing it. But before you do that, disable the `Empty trash automatically after every scan` option you can find by clicking the wrench —> Settings —> Library. Then you can shut down your Plex Media Server.
+In there, step 1 is to [back up your Plex media server data](https://support.plex.tv/articles/201539237-backing-up-plex-media-server-data/) before making major changes to your library. It probably is a good idea to quit your Plex Media Server before backing anything up just to make sure the files aren’t changing while you’re doing it. But before you do that, disable the `Empty trash automatically after every scan` option you can find by clicking the [wrench](TODO: where?]) —> Settings —> Library. Then you can shut down your Plex Media Server.
 
 Your Plex Media Server (PMS) data location can be found [here](https://support.plex.tv/articles/202915258-where-is-the-plex-media-server-data-directory-located/). `~/Library/Application Support/Plex Media Server/` for macOS. Mine was quite large at ~60GB in size.
 
 Additional Plex settings can be found [here](https://support.plex.tv/articles/201539237-backing-up-plex-media-server-data/), `~/Library/Preferences/com.plexapp.plexmediaserver.plist` for macOS.
 
-Additionally, I’d recommend upgrading your Synology box to 7.2+ as 7.2 was an update that changes the docker utitlity that was installed (docker vs container manager). Also, in your down time, I’d start transferring over your Plex movies, tv shows, music, pictures, etc. as that could take some time.
+Additionally, I’d recommend upgrading your Synology box to 7.2+ if you haven't already as 7.2 was an update that changes the docker utitlity that was installed (docker (7.2) vs container manager (7.2+)). Also, in your down time, I’d start transferring over your Plex movies, tv shows, music, pictures, etc. as that could take some time.
 
 Next, I’m going to install container manager (formerly known as docker) to my Synology NAS
 
@@ -90,14 +112,14 @@ Now, we need to mount /config, /data, and /transcode into the docker container. 
       - /volume1/NAS/elements14TB/MATT/Documents/PlexMBPr12Backup:/Volumes/Plex_8TB:ro
 
 Where
-```
-$ ls /volume1/docker/plex/config
+``` console
+admin@NAS:/ $ ls /volume1/docker/plex/config
 com.plexapp.plexmediaserver.plist  @eaDir  Library
-MattAdmin@DS1520plus:/volume1/docker/plex$ ls /volume1/docker/plex/config/Library/
+admin@NAS:/$ ls /volume1/docker/plex/config/Library/
 'Application Support'
-MattAdmin@DS1520plus:/volume1/docker/plex$ ls /volume1/docker/plex/config/Library/Application\ Support/
+admin@NAS:/$ ls /volume1/docker/plex/config/Library/Application\ Support/
 'Plex Media Server'
-MattAdmin@DS1520plus:/volume1/docker/plex$ ls /volume1/docker/plex/config/Library/Application\ Support/Plex\ Media\ Server/
+admin@NAS:/$ ls /volume1/docker/plex/config/Library/Application\ Support/Plex\ Media\ Server/
  Cache   'Crash Reports'   Drivers   Media      plexmediaserver.pid  'Plug-in Support'   Scanners  'Setup Plex.html'   update-log.txt
  Codecs   Diagnostics      Logs      Metadata   Plug-ins              Preferences.xml    Scripts    Thumbnails         Updates
 ```
@@ -111,14 +133,18 @@ sudo docker-compose -f plex-pms-docker-compose.yaml up
 
 
 
-To make sure all your files got transferred over from the Mac to the NAS:
-rsync -avin --no-p Movies/  nas:/volume1/NAS/elements14TB/MATT/Documents/PlexMBPr12Backup/Movies/ | grep -v .DS_Store
+To make sure all your files got transferred over from the Mac to the NAS (optional, just to double check):
+```console
+$ rsync -avin --no-p Movies/  nas:/volume1/NAS/elements14TB/MATT/Documents/PlexMBPr12Backup/Movies/ | grep -v .DS_Store
+```
 
+If you have some weird characters in filenames, you can ignore them with:
+```console
 rsync -avin --no-p Movies/ --iconv=utf-8-mac,utf-8 nas:/volume1/NAS/elements14TB/MATT/Documents/PlexMBPr12Backup/Movies/ | grep -v .DS_Store
-To ignore weird characters in filenames
+```
 
-This will output all the files that are in your local directory but not on the nas. This checks file size and file modification time but ignores permissions
-If you also want to check the contents of the file to make sure they are the same, you can add the -c (checksum) flag.
+This will output all the files that are in your local directory but not on the NAS. This checks file size and file modification time but ignores permissions
+If you also want to check the contents of the file to make sure they are the same, you can add the `-c` (checksum) flag.
 
 MAKE SURE YOU ADD TRAILING /
 Otherwise it does not do this correctly (TODO explain why)
@@ -129,9 +155,11 @@ If you are seeing A TON of files (like all of them) showing up, you probably hav
 
 
 Now that all my files are moved over, I’m going to move their location in Plex to better represent where they actually are. I’m moving all the content to `/volume1/docker/plex/data/`
-MattAdmin@DS1520plus:/volume1/docker/plex/data$ ls
+```console
+admin@nas:/volume1/docker/plex/data$ ls
  Movies
  TV Shows
+```
 
 https://support.plex.tv/articles/201370363-move-an-install-to-another-system/
 
