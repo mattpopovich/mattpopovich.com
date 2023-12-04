@@ -195,7 +195,7 @@ width="100%" height="500">
     * [La Chiva Colombian Cuisine](https://www.lachivacolombian.com/)
       * I recommend the La Chiva Picada, a sample platter for 2 (~$40)
       * Lots of meats with some plantains
-    * [J's Noodles Star Thai](http://jnst2.blogspot.com/)
+    * [J's Noodles Star Thai](https://jnst2.blogspot.com/)
       * The best thai I've had
       * Great, cheap food (~$15)
       * Limited indoor seating. Best to order takeout in advance via [DoorDash](https://www.doordash.com/store/j's-noodle-&-star-thai-denver-31260/)

@@ -50,7 +50,7 @@ jobs:
         run: |
           ls -alh
           ls -lah _site
-          bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
+          bundle exec htmlproofer _site --disable-external --check-html --ignore-urls http://www.mathmatique.com/articles/left-exercise-reader
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1

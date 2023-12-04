@@ -3,10 +3,12 @@
 - type: twitter
   icon: "fa-brands fa-x-twitter"
 
-- icon: 'fab fa-youtube'
+- type: youtube
+  icon: 'fab fa-youtube'
   url: https://www.youtube.com/@mattpopovich
 
-- icon: 'fab fa-instagram'
+- type: instagram
+  icon: 'fab fa-instagram'
   url: https://www.instagram.com/mattcracklepops/
 
 - type: linkedin
@@ -15,10 +17,6 @@
 
 - type: github
   icon: 'fab fa-github'
-
-- type: email
-  icon: 'fas fa-envelope'
-  noblank: true            # open link in current tab
 
 # TOOD: Add link to bitcoin donation address
 #-

@@ -26,7 +26,7 @@ mermaid: false
 {% include embed/youtube.html id='MHwtKg0tws8' %}
 
 # Intro
-This article goes over how to install the Resynthesizer plugin for GIMP on Mac. It likely will not work when you immediately install it, but there's a pretty simple solution. I spent *waaaay* too much time one Sunday trying fix this, from building GIMP from source, then trying to rebuild this plugin, etc... thankfully none of that is necessary. There's a very easy solution that [Werner Eugster](http://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/) found and below I'll elaborate on how to successfully use his solution to run the Resynthesizer plugin to automatically remove an object from an image. Let's go!
+This article goes over how to install the Resynthesizer plugin for GIMP on Mac. It likely will not work when you immediately install it, but there's a pretty simple solution. I spent *waaaay* too much time one Sunday trying fix this, from building GIMP from source, then trying to rebuild this plugin, etc... thankfully none of that is necessary. There's a very easy solution that [Werner Eugster](https://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/)  ([archived site](https://web.archive.org/web/20221004075649/https://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/))found and below I'll elaborate on how to successfully use his solution to run the Resynthesizer plugin to automatically remove an object from an image. Let's go!
 
 # [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. Download and install [GIMP](https://www.gimp.org/downloads/)
@@ -187,7 +187,8 @@ Pretty nice for an automatic tool!
 If the above seemed like too much, we can get similar results to the Resynthesizer tool manually by using the *heal* and *clone* tools that GIMP provides. I'm not going to do a full writeup about it here, but I did go into a quick example in the [YouTube video above](https://youtu.be/MHwtKg0tws8?t=802). I'm sure you could find some similar or even better tutorials on those tools online.
 
 
-That's a wrap! Thanks again to [Werner Eugster](http://homepage.agrl.ethz.ch/eugsterw/).
+That's a wrap! Thanks again to [Werner Eugster](https://homepage.agrl.ethz.ch/eugsterw/) ([archived site](https://web.archive.org/web/20210623115035/https://homepage.agrl.ethz.ch/eugsterw/)).
+* **2022 update**: Werner Eugster [has now passed](https://usys.ethz.ch/en/department/professuren/in-memoriam/werner-eugster.html), may he rest in peace.
 
 If you have any questions or suggestions, feel free to comment in Disqus below.
 
