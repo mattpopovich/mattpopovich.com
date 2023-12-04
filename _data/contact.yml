@@ -1,27 +1,22 @@
 #  The contact options.
 
--
-  type: twitter
-  icon: 'fab fa-twitter'
+- type: twitter
+  icon: "fa-brands fa-x-twitter"
 
--
-  icon: 'fab fa-youtube'
+- icon: 'fab fa-youtube'
   url: https://www.youtube.com/@mattpopovich
 
--
-  icon: 'fab fa-instagram'
+- icon: 'fab fa-instagram'
   url: https://www.instagram.com/mattcracklepops/
 
--
+- type: linkedin
   icon: 'fab fa-linkedin'
   url:  'https://www.linkedin.com/in/popovichmatt/'
 
--
-  type: github
+- type: github
   icon: 'fab fa-github'
 
--
-  type: email
+- type: email
   icon: 'fas fa-envelope'
   noblank: true            # open link in current tab
 
@@ -30,19 +25,21 @@
 #  icon: 'fab fa-bitcoin'
 #  url: 'bitcoin:xxxx'
 
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true # open link in current tab
+
 # TODO: Look into what this is and how do I use it
-# -
-#   type: rss
-#   icon: 'fas fa-rss'
+# - type: rss
+#   icon: "fas fa-rss"
 #   noblank: true
 
 # Uncomment and complete the url below to enable more contact options
-# -
-#   type: mastodon
+#
+# - type: mastodon
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 
-# -
-#   type: stack-overflow
+# - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
