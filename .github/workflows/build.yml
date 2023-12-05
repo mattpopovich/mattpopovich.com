@@ -40,6 +40,8 @@ jobs:
         run: |
           pwd
           ls -lah
+          echo $JEKYLL_ENV
+          which git
           bundle exec jekyll b
           ls -lah
           ls -lah _site
