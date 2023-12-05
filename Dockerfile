@@ -16,3 +16,7 @@ RUN apt-get update && apt-get install -y \
 
 # For pulling data from YouTube in tools/make-new-post.py
 RUN pip3 install requests-html
+
+# Required to run `bundle exec htmlproofer`
+RUN apt-get update && apt-get install -y \
+    libcurl4-gnutls-dev
