@@ -18,17 +18,12 @@ jobs:
     steps:
       # Pull our repository
       - name: Checkout
-        uses: actions/checkout@v3
-        # with:
-          # fetch-depth: 0
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # for posts's lastmod
           # submodules: true
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
-
-      - name: Debug
-        # confirmed that rsync is installed
-        run: |
-          echo "Debugging..."
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -38,24 +33,13 @@ jobs:
 
       - name: Build site
         run: |
-          pwd
-          ls -lah
           bundle exec jekyll b
-          ls -lah
-          ls -lah _site
         env:
           JEKYLL_ENV: "production"
 
       - name: Test site
         run: |
-          ls -alh
-          ls -lah _site
           bundle exec htmlproofer _site --disable-external --check-html --ignore-urls http://www.mathmatique.com/articles/left-exercise-reader
-
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: "_site"
 
       - name: Dry-run deployment to mattpopovich.com
         uses: easingthemes/ssh-deploy@v4.1.8
