@@ -56,20 +56,39 @@ You line up in front of a set of stairs ("The Grand Stair") closed off with glas
 
 TODO: Image of stairs
 
-To go up the stairs, you'll show a copy of your email (the .pdf says to please print this ticket but most people just had it on their phones and that was fine) + show photo IDs for you and your guest (to make sure you're above 16 and to check the name matches your lottery email).
+To go up the stairs, you'll show a copy of your email (the .pdf says to please print this ticket but most people just had it on their phones and that was allowed) + show photo IDs for you and your guest (to make sure you're above 16 and to check the name matches your lottery email).
 
 Once you're up the stairs, you'll be in a "staging/queueing area". I believe this is where they decide who will be getting seats on the floor and who will be in the stands. Reddit says to ["wear darker things without logos to have a better chance of getting floor seats"](https://www.reddit.com/r/LiveFromNewYork/comments/yl6e3q/i_am_attending_snl_for_the_first_time_next/iux0jfb/). I had a navy button up on and my friend had a beige sweater... and we both got on the floor!!! In my observation, either you and your guest will both get on the floor, or neither of you will. They won't split you up.
 
 TODO: Image of staging/queuing area
 
-Once you leave this staging/queueing area, you'll be given two wristbands, your ticket, and you'll go through metal detectors. Continue walking and you'll be given a few canned alcoholic drinks to choose from (**this will be your only chance at alcohol until the show is over**), then you'll arrive at the *Peacock Lounge*.
+Once you leave this staging/queueing area, you'll be given two wristbands, your ticket, and you'll go through metal detectors. Continue walking and you'll be given a few canned alcoholic drinks to choose from (you may grab one + **this will be your only chance at alcohol until the show is over**), then you'll arrive at the *Peacock Lounge*.
 
 ### The Peacock Lounge
+As I mentioned above, the people with reservations had to be there at 9PM. This was the earliest requirement of everyone else I talked to. I think this is so they can start letting standby people into the show if reservation holders didn't show up. I met some people who knew NBC employees, and their requirement was 10PM. VIPs seemed to stroll in whenever they wanted and were seated in a section that was separate from non-VIPs.
 
+TODO Image of VIP section
 
+The Peacock Lounge has a bunch of couch/bench things and you're told what general area to sit in. TV screens show iconic SNL performers, there's a photo booth / selfie station people take turns at, and there is water and soda around for you to drink (no alcohol besides for the one drink you grabbed after security). At this point, the acute observer would notice that there is one color wristbands that most people have, and there is another color that a few have. The less common wristband wearer will be making it to floor seating tonight.
+
+At around 1020PM they announce you should go to the bathroom now if you need to. I went before this as to try and avoid a line, but there wasn't much of a line in my experience. If you have to go to the restroom during the show, it should only be during a commercial break and you aren't let back into the show until the next commercial break.
 
 ## The Show: Studio 8H
+At around 1035PM they call the people sitting on the floor to the elevators (this was me, so the rest of this post will be from floor seating perspective), which you will ride to studio 8H. The earlier you get on the elevator, the better chance you'll have to sit in the front (best chance being the last person in the first elevator they send up, as you will be the first person getting off the elevator). When you get up to 8H, they have pictures of past casts on the wall, as well as the sets for that evening in the hallway (try and guess the skits!). I'd highly recommend to look around and take it all in. You'll probably be able to recongize the hallways from past cold opens that [happen in the hallways](TODO). While waiting in the hallway, they might ask you if you'd be willing to split up with your group in order to get a seat at the front (there are 3 seats in the very first row). I said yes but no luck. You'll probably catch a glimpse or two of some cast members while here as well. In this hallway is the final last chance of going to the bathroom before the show.
+
+At around 11PM they will start seating you. This is where you will be for the next two hours. You'll be able to see the set and all the planning and teamwork that goes into the show. Michael Che came out for a few minutes before the show ~1110PM to pump up the crowd, as well as a musical number headlined by Kenan Thompson with background dancers/singers TODO: girl 1,2,3.
+
+At 1130PM, the show is live and the magic begins. I'd highly recommend not looking at the various screens throughout showing the live broadcast, you'll be able to watch those when you get home. Watching the cue cards is interesting to see what is adlib'd, seeing who comes out to watch the musical guests is interesting, seeing cast members being usered around by their guide (TODO: Link) is interesting. The whole show is a fantastic experience and glimpse into live television. It was awesome to be at the place that you see on your TV every Saturday night. It looks just like it does on TV! 😅 It was also a humbling experience to somewhat realize that these actors and actresses are real people, just like us.
 
 ## Post-Show
+The show ends at 1AM and you start to get ushered out of the studio. You're led back into the elevators and into the NBC gift shop with a 10% off coupon. The one thing that you **will want to get** out of the gift shop is they make a handful (not enough) t-shirts for each individual show, showing the season on the front and the date/hosts + music guest on the back. This will be the first thing that you want to get. There is also a chance that there won't be any left / they won't have any in your size. To prevent this from happening, you could go to the [NBC store](TODO: google maps link) before the show to get the size that you want. I'd probably recommend this, even though I was lucky enough to get a shirt in my size after the show (I probably used up a years worth of luck in this one weekend).
+
+You're then led back out onto the streets of New York City to make your way home, to Times Square, or wherever you'd like to go.
+
+The experience may be over, but the memories will stay.
 
 
+
+Do you have tips or tricks for seeing SNL in person? Did this post help you out? Let me know in the comments below!
+
+TODO: Spotify, New York City playlist
