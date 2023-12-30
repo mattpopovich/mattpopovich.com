@@ -24,15 +24,24 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 
 > [Live from New York, it's Saturday Night!](https://youtu.be/tajtbq-1vC0)
 
-That iconic phrase is the last line from Saturday Night Live's (SNL) [*cold open*](https://en.wikipedia.org/wiki/Cold_open#:~:text=A%20cold%20open%20\(also%20called,or%20opening%20credits%20are%20shown.). I was **extremely lucky** to have the chance to see SNL in person for season 49's episode 7 on December 9, 2023. The show was hosted by [Adam Driver](https://www.imdb.com/name/nm3485845/) with musical guest [Olivia Rodrigo](https://www.youtube.com/@OliviaRodrigo/videos).
+That iconic phrase is the last line from Saturday Night Live's (SNL) [*cold open*](https://en.wikipedia.org/wiki/Cold_open#:~:text=A%20cold%20open%20\(also%20called,or%20opening%20credits%20are%20shown.). I was **extremely lucky** to have the chance to see SNL in person for season 49's episode 7 ([NBC.com](https://www.nbc.com/saturday-night-live/video/december-9-adam-driver/9000283425), [YouTube](https://www.youtube.com/playlist?list=PLS_gQd8UB-hKp4T1H5b-HujaKq-VFfVbh)) on December 9, 2023. The show was hosted by [Adam Driver](https://www.imdb.com/name/nm3485845/) with musical guest [Olivia Rodrigo](https://www.youtube.com/@OliviaRodrigo/videos).
 
 TODO: Image of ticket
 
 In this post, I'm going to walk you through what it was like to see SNL in person as well as giving you some tips and tricks if you ever get the same opportunity!
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
-* Show up to Rockefeller Center **before** 9PM
-* TODO
+* Send an email to SNLTICKETS@NBCUNI.COM during the month of August detailing "why you would like to be a part of SNL's studio audience"
+* Receive an email from ticketing.reservations@nbcuni.com on Tuesday ~6:30PM ET the week of the show telling you that you have won the lottery
+  * Accept the tickets within 24hrs of receiving the email
+* Show up to the [Rockefeller Center](https://maps.app.goo.gl/Q1y2TthuYt1gY5xU6) **before** 9PM
+  * ["Wear darker things without logos to have a better chance of getting floor seats"](https://www.reddit.com/r/LiveFromNewYork/comments/yl6e3q/i_am_attending_snl_for_the_first_time_next/iux0jfb/)
+* Relax / mingle in the *Peacock Lounge* from 9-11PM
+  * Notice what color wristband you were given. The less common color will be sitting on the floor!
+  * Go to the restroom when they recommend it
+* Enjoy the show, try not to look at the screens showing the live broadcast, you can watch that at home afterwards
+* Buy the T-shirt made for your specific episode (mentions the host + musical guest) in *[The Shop at NBC Studios](https://maps.app.goo.gl/AoBVZv96tH5iBHBV7)* after the show
+  * To ensure you get a shirt, let alone your size, buy the shirt before the show airs. The shirt will be sold out afterwards.
 
 ## Getting Tickets
 This year, I found out that SNL tickets are free!! All you have to do is apply for them and win the lottery! [Applying for tickets](https://www.nbc.com/nbc-insider/how-to-get-SNL-tickets) is done by [sending an email](mailto:SNLTICKETS@NBCUNI.COM) during the month of August. The main thing they ask is you include "why you would like to be a part of SNL's studio audience", which I imagine is a main part of the selection process.
@@ -43,7 +52,7 @@ Caption: In typical Matt Popovich fashion, I was right on time
 You can also [apply for standby tickets](https://www.nbc.com/nbc-insider/how-to-get-SNL-tickets) at 10AM Thursdays before the show, but I'm not terribly familiar with how that works.
 
 ## Getting to the Show
-The show is at the Rockefeller Center at 30 Rockefeller Plaza. They say you have to be there by 9PM, otherwise your tickets won't be honored. **Don't be late!!** Even I, with my great talent of always being late, managed to show up around 8:40PM. I'd recommend getting dinner downtown before the show so that worst case, if you're late, you skip dinner and don't miss the show.
+The show is at the Rockefeller Center at [30 Rockefeller Plaza](https://maps.app.goo.gl/Q1y2TthuYt1gY5xU6). They say you have to be there by 9PM, otherwise your tickets won't be honored. **Don't be late!!** Even I, with my great talent of always being late, managed to show up around 8:40PM. I'd recommend getting dinner downtown before the show so that worst case, if you're late, you skip dinner and don't miss the show.
 
 TODO: Image of NBC Studios at Rockefeller Center.
 
@@ -81,7 +90,7 @@ At around 11PM they will start seating you. This is where you will be for the ne
 At 1130PM, the show is live and the magic begins. I'd highly recommend not looking at the various screens throughout showing the live broadcast, you'll be able to watch those when you get home. Watching the [cue cards](https://youtu.be/3djg59JUrmc) is interesting to see what is adlib'd and what lines got modified throughout rehearsals, watching the sets get [stood up and tore down between skits](https://youtu.be/wszO190L-os?si=K2_9ikTqb8KMeR40) is super fascinating, seeing who comes out to watch the musical guests is neat (they'll be standing right behind the floor seats), and seeing cast members being [usered around by their handler](https://youtu.be/MRsBTw_1-iE&t=199s) can be comical. The whole show is a fantastic experience and glimpse into live television. It was awesome to be at the place that you see on your TV every Saturday night. It looks just like it does on TV! 😅 It was also a humbling experience to somewhat realize that these actors and actresses are real people, just like us.
 
 ## Post-Show
-The show ends at 1AM and you start to get ushered out of the studio. You're led back into the elevators and into the NBC gift shop with a 10% off coupon. The one thing that you **will want to get** out of the gift shop is they make a handful (not enough) t-shirts for each individual show, showing the season on the front and the date/hosts + music guest on the back. This will be the first thing that you want to get. There is also a chance that there won't be any left / they won't have any in your size. To prevent this from happening, you could go to *[The Shop at NBC Studios](https://maps.app.goo.gl/AoBVZv96tH5iBHBV7)* before the show to get the size that you want. I'd probably recommend this, even though I was lucky enough to get a shirt in my size after the show (I probably used up a years worth of luck in this one weekend).
+The show ends at 1AM and you start to get ushered out of the studio. You're led back into the elevators and into the NBC gift shop with a 10% off coupon. The one thing that you **will want to get** out of the gift shop is they make a handful (not enough) t-shirts for each individual show (~$40/ea), showing the season on the front and the date/hosts + music guest on the back. This will be the first thing that you want to get. There is also a chance that there won't be any left / they won't have any in your size. To prevent this from happening, you could go to *[The Shop at NBC Studios](https://maps.app.goo.gl/AoBVZv96tH5iBHBV7)* before the show to get the size that you want. I'd probably recommend this, even though I was lucky enough to get a shirt in my size after the show (I probably used up a years worth of luck in this one weekend).
 
 You're then led back out onto the streets of New York City to make your way home, to Times Square, or wherever you'd like to go.
 
