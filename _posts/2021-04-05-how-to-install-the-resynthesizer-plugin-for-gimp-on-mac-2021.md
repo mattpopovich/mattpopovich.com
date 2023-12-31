@@ -26,7 +26,7 @@ mermaid: false
 {% include embed/youtube.html id='MHwtKg0tws8' %}
 
 # Intro
-This article goes over how to install the Resynthesizer plugin for GIMP on Mac. It likely will not work when you immediately install it, but there's a pretty simple solution. I spent *waaaay* too much time one Sunday trying fix this, from building GIMP from source, then trying to rebuild this plugin, etc... thankfully none of that is necessary. There's a very easy solution that [Werner Eugster](https://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/)  ([archived site](https://web.archive.org/web/20221004075649/https://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/))found and below I'll elaborate on how to successfully use his solution to run the Resynthesizer plugin to automatically remove an object from an image. Let's go!
+This article goes over how to install the Resynthesizer plugin for GIMP on Mac. It likely will not work when you immediately install it, but there's a pretty simple solution. I spent *waaaay* too much time one Sunday trying fix this, from building GIMP from source, then trying to rebuild this plugin, etc... thankfully none of that is necessary. There's a very easy solution that [Werner Eugster](https://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/) ([archived site](https://web.archive.org/web/20221004075649/https://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/)) found and below I'll elaborate on how to successfully use his solution to run the Resynthesizer plugin to automatically remove an object from an image. Let's go!
 
 # [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. Download and install [GIMP](https://www.gimp.org/downloads/)
