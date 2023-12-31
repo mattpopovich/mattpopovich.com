@@ -4,7 +4,7 @@ author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2023-02-28 01:25:37 -0700
 categories: [Blog]    # <=2 values here: top category and sub category
-tags: [denver, colorado, ski, snowboard]    # TAG names should always be lowercase
+tags: [denver, colorado, ski, snowboard, not youtube]    # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -66,7 +66,7 @@ Additional information for some of the resorts listed above:
 * [Ruby Hill Rail Yard](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Activities-Programs/Outdoor-Recreation#section-9)
   * One small hill with a section for beginners and a small park
   * No lift, hike up the hill
-![Snowboarder hitting a rail at Ruby Hill Rail Yard](https://denvergov.org/files/assets/public/parks-and-recreation/images/outdoor-rec/rubyhillrailyard1.jpg){: width="400" .right}
+![Snowboarder hitting a rail at Ruby Hill Rail Yard](/assets/img/posts/2023-02-28-the-best-places-to-ski-in-colorado-without-a-season-pass/ruby-hill-rail-yard.jpg){: width="400" .right}
   * Open from February - March
     * Lights are on until 9PM
   * **FREE** access
@@ -77,7 +77,7 @@ Additional information for some of the resorts listed above:
 * [Arapahoe Basin](https://www.arapahoebasin.com/)
   * Well known, known as "The Legend"
   * On Ikon pass but still mostly independent
-  * Best for experienced/advanced skiiers.
+  * Best for experienced/advanced skiers.
   * Not a "resort": no spa, no hotel, just gnarly skiing with a few small restaurants.
     * [The Legends Cafè](https://www.arapahoebasin.com/to-do/dining/legends-cafe/) has a ~$10 breakfast: egg + potato + biscuit + sausage
       * Cafeteria style, no wait for food
@@ -87,13 +87,13 @@ Additional information for some of the resorts listed above:
   * Ikon resort, but I am mentioning it because this is the only resort you can get to by traveling on **train only** from Denver International Airport (DIA)
     * [RTD A Line from DIA to Denver Union Station](https://www.rtd-denver.com/fastracks/a-line)
       * $10.50, trains run every 15 minutes, 37 minute total travel time
-    * ![Winter Park Amtrak Train](https://www.winterparkresort.com/-/media/widen/winter-park/stock-photography/2019-1-04-wp-wpexpress-03-ebrumm.jpg){: width="400" .right}
+    * ![Winter Park Amtrak Train](/assets/img/posts/2023-02-28-the-best-places-to-ski-in-colorado-without-a-season-pass/2019-1-04-wp-wpexpress-03-ebrumm.jpg){: width="400" .right}
     * [Amtrak train runs from Denver Union Station to Winter Park](https://www.winterparkresort.com/plan-your-trip/getting-here/winter-park-express) from January to March, Friday through Sunday
       * Fares from ~$35 to ~$70 one way
   * Resort is divided into [different sections](https://www.winterparkresort.com/the-mountain/seven-territories)
     * "Winter Park" for beginner+
     * "Mary Jane" for intermediate+
-    * Offers **FREE access** to their "Galloping Goose" lift, which is a perfect place for beginers
+    * Offers **FREE access** to their "Galloping Goose" lift, which is a perfect place for beginners
       * Not advertised on their website, but I have confirmed it (and used it) as of March 2, 2023.
       * Short, green run with a lift
       * Close to the base of Mary Jane (bar+food+warmth)
@@ -110,7 +110,7 @@ Additional information for some of the resorts listed above:
     * Guided skiing January - March, Thursday - Sunday
       * Groups of 8 with hiking 5 minutes to an hour after the lift for each run
     * Unguided skiing March - May for $100
-  * ![Some shredders earning their turns (hiking) in Silverton Mountain](https://silvertonmountain.com/wp-content/uploads/2015/08/guided-1.jpg){: width="400" .right}
+  * ![Some shredders earning their turns (hiking) in Silverton Mountain](/assets/img/posts/2023-02-28-the-best-places-to-ski-in-colorado-without-a-season-pass/Silverton-Mountain_Guided-Skiing.jpg){: width="400" .right}
   * As big as you want it to be
     * "26,891 acres"
     *   1,819 acres via chair lift

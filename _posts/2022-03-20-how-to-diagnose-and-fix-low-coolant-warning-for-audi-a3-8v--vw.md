@@ -115,17 +115,10 @@ That’s a wrap! Hopefully this helped. If there’s anything I missed, feel fre
 
 <div style="text-align:center">
 <iframe style="border-radius:12px"
-src="https://open.spotify.com/embed/track/29XO76OgiJZpD6ySALy1h8?si=7e419ee6027940dd?utm_source=generator&theme=0"
-width="100%" height="352" frameBorder="0"
-allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>{: .dark }
-
-<div style="text-align:center">
-<iframe style="border-radius:12px"
 src="https://open.spotify.com/embed/track/29XO76OgiJZpD6ySALy1h8?si=7e419ee6027940dd?utm_source=generator"
-width="100%" height="352" frameBorder="0"
+width="80%" height="352" frameBorder="0"
 allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>{: .light }
+</div>
 
 &nbsp;
 

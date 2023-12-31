@@ -39,10 +39,10 @@ Also shared on my Instagram:
 Audio from:
 
 <div style="text-align:center">
-<iframe
-src="https://open.spotify.com/embed/track/4lSxh3PwrVFBUXKelvEU5p?si=pq1i4NAGR7K9LALGhijYYQ"
-width="300" height="380" frameborder="0"
-allowtransparency="true"
-allow="encrypted-media">
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/4lSxh3PwrVFBUXKelvEU5p?utm_source=generator"
+width="80%" height="352" frameBorder="0"
+allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy">
 </iframe>
 </div>

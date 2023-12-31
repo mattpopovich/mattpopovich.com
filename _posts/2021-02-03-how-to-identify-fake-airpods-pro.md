@@ -95,12 +95,12 @@ That's a wrap! If you have any questions or concerns, feel free to comment in Di
 &nbsp;
 
 <div style="text-align:center">
-<iframe
-src="https://open.spotify.com/embed/track/2VguK07DWqquo0CloS5sSX"
-width="300" height="380" frameborder="0"
-allowtransparency="true"
-allow="encrypted-media">
-</iframe>
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/2VguK07DWqquo0CloS5sSX?utm_source=generator"
+width="80%" height="352" frameBorder="0"
+allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy"></iframe>
 </div>
 
 &nbsp;
