@@ -61,14 +61,14 @@ Thanks for watching, I hope this helped. Let me know if it did or did not in the
 
 <div style="text-align:center">
 <iframe style="border-radius:12px"
-src="https://open.spotify.com/embed/track/1ngygj9MIxtLvDFJxZj0vE?utm_source=generator&theme=0"
+src="https://open.spotify.com/embed/track/xxxx?utm_source=generator&theme=0"
 width="100%" height="352" frameBorder="0"
 allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>{: .dark }
 
 <div style="text-align:center">
 <iframe style="border-radius:12px"
-src="https://open.spotify.com/embed/track/1ngygj9MIxtLvDFJxZj0vE?utm_source=generator"
+src="https://open.spotify.com/embed/track/xxxx?utm_source=generator"
 width="100%" height="352" frameBorder="0"
 allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>{: .light }

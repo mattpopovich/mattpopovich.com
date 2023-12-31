@@ -67,7 +67,7 @@ Here are some of my favorite hikes (ordered for proximity to Denver with closest
     * 2.3mi easy paved loop 15min from Denver
     * An easy walk in Denver's best park (my opinion)
     * Also has a gravel running/jogging trail, paved loop for bicycling/roller blading.
-    * Plenty of geese and people playing volleball and enjoying time with friends here
+    * Plenty of geese and people playing volleyball and enjoying time with friends here
     * Very popular but lots of space
   * Any of [Denver's parks](https://www.denvergov.org/Maps/map/parks): [Cheeseman Park](https://goo.gl/maps/nG1USDFBEcvxsbs89), [City Park](https://goo.gl/maps/VebCHKPurRsRUy1RA), [Sloan's Lake](https://goo.gl/maps/Ts7cbvkqqPASh8zv9), etc.
   * [Red Rocks Trail](https://www.alltrails.com/trail/us/colorado/red-rocks-trading-post-trail)
@@ -75,7 +75,7 @@ Here are some of my favorite hikes (ordered for proximity to Denver with closest
     * I have never actually done this hike but Red Rocks is gorgeous and while you're there you can even walk over to the stadium to check it out as well
   * [South Table Mountain](https://www.strava.com/activities/5988975770)
     * 2.6mi moderate dirt hike located in Golden, CO (20min from Denver)
-    * Fantastic views of Golden, Colorado Scool of Mines, and Coors Brewing
+    * Fantastic views of Golden, Colorado School of Mines, and Coors Brewing
       * Especially during sunset
     * The left trail of the Strava link above is a much more difficult trail that is fairly steep with loose dirt. The right trail is much easier but longer distance.
     * Not on AllTrails due to apparently a part of the trail goes though private land, but I've never seen anyone have an issue
@@ -91,15 +91,15 @@ Here are some of my favorite hikes (ordered for proximity to Denver with closest
     * Not as crowded as Royal Arch
   * [Lake Isabelle](https://www.alltrails.com/trail/us/colorado/lake-isabelle-via-pawnee-pass-trail--2)
     * 6.6mi moderate hike located in 30min west of Boulder, CO (1hr 15min from Denver)
-    * Fanntastic scenery in the mountains
+    * Fantastic scenery in the mountains
     * Limited to no cell service. Download maps beforehand
     * [Reservation needed](https://www.recreation.gov/timed-entry/10087515/ticket/10087517) for parking. Cheap but difficult to get as they are in high demand
     * Will first hit [Long Lake](https://www.alltrails.com/trail/us/colorado/long-lake-trail) on the way to Lake Isabelle, so you could also not continue to Lake Isabelle and just see Long Lake then turn around for a shorter hike
-    * Or, you can continue past Lake Isablle to [Isabelle Glacier](https://www.alltrails.com/trail/us/colorado/isabelle-glacier-trail-full-loop) to turn this into a long and hard hike.
+    * Or, you can continue past Lake Isabelle to [Isabelle Glacier](https://www.alltrails.com/trail/us/colorado/isabelle-glacier-trail-full-loop) to turn this into a long and hard hike.
     * Chance to see Moose (I am 2/3)
 </details>
 
-<!-- TOOD: A paragraph after details does not have double spacing -->
+<!-- TODO: A paragraph after details does not have double spacing -->
 
 <!-- TODO: Mountain biking -->
 
@@ -126,7 +126,7 @@ Find all concerts going on in Denver's venues by looking at a ticket reseller, s
   * Accessible via RTD light rail E line and R line
 * [Ball Arena](https://www.ballarena.com/misc/all-events/) (formerly known as the Pepsi Center)
   * Home of the Colorado Avalanche (hockey), Denver Nuggets (Basketball), and Colorado Mammoth (Lacrosse)
-    * Occassional concert as well!
+    * Occasional concert as well!
   * Easily accessible via RTD light rail C line, E line, and W line
   * Large indoor venue (21,000 capacity)
 * [Mission Ballroom](https://www.missionballroom.com/upcoming-events/)
@@ -143,7 +143,7 @@ Find all concerts going on in Denver's venues by looking at a ticket reseller, s
   * Small indoor venue (550 capacity)
   * Should be able to find street parking if willing to walk a few blocks (City Park)
 * [Levitt Pavilion](https://www.levittdenver.org/ticketed-events)
-  * Pavillion in a park, expect seating on the grass (bring a blanket / folding chairs!)
+  * Pavilion in a park, expect seating on the grass (bring a blanket / folding chairs!)
     * 7,500 capacity (rarely that many people there)
   * One of the only places with [free shows](https://www.levittdenver.org/free-concert-series) available!
 * [Grizzly Rose](https://grizzlyrose.com/event-list/)
@@ -210,7 +210,7 @@ width="100%" height="500">
     * [Sushi Den](https://goo.gl/maps/iTp5kZTsVi6JjjwCA) and [Izakaya Den](https://goo.gl/maps/q2yw7uG7kD6Eipx16)
       * Located right next to each other
       * Apparently fresh fish is flown in daily from Tokyo
-      * Special occassion spot ($$$)
+      * Special occasion spot ($$$)
     * [Blue Moon Brewery](https://goo.gl/maps/izdTUrHRoVHv7iP3A)
       * Higher quality food than a typical "brewery"
         * I recommend the Bison Burger
@@ -335,15 +335,8 @@ If you made it this far, thanks for reading! Think I'm missing something? [Conta
 
 <div style="text-align:center">
 <iframe style="border-radius:12px"
-src="https://open.spotify.com/embed/track/1ngygj9MIxtLvDFJxZj0vE?utm_source=generator&theme=0"
-width="100%" height="352" frameBorder="0"
-allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>{: .dark }
-
-<div style="text-align:center">
-<iframe style="border-radius:12px"
 src="https://open.spotify.com/embed/track/1ngygj9MIxtLvDFJxZj0vE?utm_source=generator"
-width="100%" height="352" frameBorder="0"
+width="80%" height="352" frameBorder="0"
 allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>{: .light }
+</div>
 

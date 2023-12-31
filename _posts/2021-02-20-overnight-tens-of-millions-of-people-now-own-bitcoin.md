@@ -21,6 +21,10 @@ mermaid: false
 
 {% include embed/youtube.html id='bCK13hlw0yw' %}
 
+> In July of 2022, [Tesla sold ~75% of their bitcoin holdings](https://www.cnbc.com/2022/07/20/tesla-converted-75percent-of-bitcoin-purchases-to-fiat-currency-in-q2-2022.html). The numbers in this article will not be updated and they reflect things as they were on the date of posting (February 20, 2021). An updated status on Tesla's bitcoin holdings can be found [here](https://bitcointreasuries.net/entities/2).
+> [Tesla Q2 2022 Shareholder Deck](https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2022-Update)
+{: .prompt-warning }
+
 **Good evening, YouTube!**
 
 ## Intro
@@ -70,10 +74,10 @@ Remember to [HODL](https://www.investopedia.com/terms/h/hodl.asp), because we're
 &nbsp;
 
 <div style="text-align:center">
-<iframe
-src="https://open.spotify.com/embed/track/29gVTYMqXVV47mrY4qkm4b"
-width="300" height="380" frameborder="0"
-allowtransparency="true"
-allow="encrypted-media">
-</iframe>
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/29gVTYMqXVV47mrY4qkm4b?utm_source=generator"
+width="80%" height="352" frameBorder="0"
+allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy"></iframe>
 </div>

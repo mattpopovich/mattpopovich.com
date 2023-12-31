@@ -26,7 +26,7 @@ mermaid: false
 {% include embed/youtube.html id='MHwtKg0tws8' %}
 
 # Intro
-This article goes over how to install the Resynthesizer plugin for GIMP on Mac. It likely will not work when you immediately install it, but there's a pretty simple solution. I spent *waaaay* too much time one Sunday trying fix this, from building GIMP from source, then trying to rebuild this plugin, etc... thankfully none of that is necessary. There's a very easy solution that [Werner Eugster](https://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/)  ([archived site](https://web.archive.org/web/20221004075649/https://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/))found and below I'll elaborate on how to successfully use his solution to run the Resynthesizer plugin to automatically remove an object from an image. Let's go!
+This article goes over how to install the Resynthesizer plugin for GIMP on Mac. It likely will not work when you immediately install it, but there's a pretty simple solution. I spent *waaaay* too much time one Sunday trying fix this, from building GIMP from source, then trying to rebuild this plugin, etc... thankfully none of that is necessary. There's a very easy solution that [Werner Eugster](https://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/) ([archived site](https://web.archive.org/web/20221004075649/https://homepage.agrl.ethz.ch/eugsterw/knowhow/gimp-resynthesizer/)) found and below I'll elaborate on how to successfully use his solution to run the Resynthesizer plugin to automatically remove an object from an image. Let's go!
 
 # [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. Download and install [GIMP](https://www.gimp.org/downloads/)
@@ -52,7 +52,7 @@ For starters, we need to download and install GIMP. You can download it from [he
 We can download the Resynthesizer plugin from aferrero2707's repo on GitHub: [gimp-plugin-collections](https://github.com/aferrero2707/gimp-plugins-collection). If you navigate to the releases and then to continuous build, you can scroll down and see all the plugins available. We want to download [ResynthesizerPlugin-Gimp-2.10-osx.tgz
 ](https://github.com/aferrero2707/gimp-plugins-collection/releases/download/continuous/ResynthesizerPlugin-Gimp-2.10-osx.tgz). Once downloaded, you can extract it and open up the resulting folder to see a bunch of Python files. We need to copy them to GIMP's plugin folder. To find GIMP's plugin folder, you can open GIMP, then go to GIMP-2.10 (in the menu bar) --> Preferences --> scroll down on the left column to Folders, click on Folders to expand it --> Plug-ins. You will likely see two different options for placing these plugin files:
 ```
-/Users/<username>/Libary/Application Support/GIMP/2.10/plug-ins
+/Users/<username>/Library/Application Support/GIMP/2.10/plug-ins
 /Applications/GIMP-2.10.app/Contents/Resources/lib/gimp/2.0/plug-ins
 ```
 You can copy to either one, but `/Applications` is easier (you need to create the folder for `/Users`). You can click on the `/Applications/...` path in the window to select it, then you can open that path by clicking on the office cabinet-looking icon on the top right which will show the tooltip "Show file location in the file manager". Once that is open, we can select and drag all of the python files over to that window, quit GIMP (Command (⌘) + Q or GIMP-2.10 --> Quit GIMP-2.10), re-open GIMP, and the Resynthesizer plugin should appear as an option under Filters --> Enhance --> "Heal selection..."!
@@ -197,11 +197,11 @@ Catch you in the next one!
 &nbsp;
 
 <div style="text-align:center">
-<iframe
-src="https://open.spotify.com/embed/track/4MAJ62sRxctluSpGf76HA5"
-width="300" height="380" frameborder="0"
-allowtransparency="true"
-allow="encrypted-media">
-</iframe>
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/4MAJ62sRxctluSpGf76HA5?utm_source=generator"
+width="80%" height="352" frameBorder="0"
+allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy"></iframe>
 </div>
 

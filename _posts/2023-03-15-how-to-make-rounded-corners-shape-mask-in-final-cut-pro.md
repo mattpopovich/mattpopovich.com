@@ -62,3 +62,5 @@ And this makes sense, for example, if you had many different clips and effects r
 That's about all there is to the Shape Mask. Feel free to customize and mess around with it. I will leave the other parameters of the Shape Mask Inspector as an [exercise for the reader](http://www.mathmatique.com/articles/left-exercise-reader) 😉
 
 Hope this helps!
+
+<!-- TODO: Could not find "Sweet Tea" by Travis Loafman anyhere -->
