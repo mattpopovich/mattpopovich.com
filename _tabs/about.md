@@ -2,6 +2,8 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+# This will populate the og:image meta property
+image: /assets/img/logos/logo_1200x630.png
 ---
 
 Just a young man out here trying to get his ~~blog~~ ~~code~~ ~~squid~~ ~~sports~~ ~~photography~~ ~~influencer~~ ~~snapgram~~ ***brand*** on.
