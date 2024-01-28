@@ -17,7 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
-description: "New logo for the **brand**!!"
+description: New logo for the **brand**!!
 ---
 
 Just had some inspiration tonight on a new logo for the ***brand***.
