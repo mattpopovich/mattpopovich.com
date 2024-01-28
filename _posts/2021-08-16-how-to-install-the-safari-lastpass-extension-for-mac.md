@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: The Mac App Store version of LastPass does not include the Safari extension, here's how to properly install it
 ---
 
 LastPass extension for Safari not showing? Safari LastPass extension not working? Read on!

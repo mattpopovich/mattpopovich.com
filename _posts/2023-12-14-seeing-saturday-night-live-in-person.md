@@ -18,6 +18,7 @@ image:
 #  width: 100   # in pixels
 #  height: 40   # in pixels
  alt: SNL Ticket December 9th, 2023
+description: I was *extremely* lucky and won tickets to see SNL live. Here's how to make the most of the experience!
 ---
 
 ## Intro

@@ -13,6 +13,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+#description:               # A short sentence to describe the article, used when sharing links on social media
 ---
 
 ## TODO: Add Heading Here

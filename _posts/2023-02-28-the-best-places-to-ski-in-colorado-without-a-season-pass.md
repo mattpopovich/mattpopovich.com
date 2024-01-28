@@ -18,6 +18,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Large ski resorts have outrageous single day pass prices. If you only need to ski for a day or two, try this!
 ---
 
 ## Intro

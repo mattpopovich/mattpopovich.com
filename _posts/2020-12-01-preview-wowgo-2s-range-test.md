@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: "I'm working on testing the range of the WowGo 2S electric longboard..."
 ---
 
 {% include embed/youtube.html id='uQCvAZjiesw' %}

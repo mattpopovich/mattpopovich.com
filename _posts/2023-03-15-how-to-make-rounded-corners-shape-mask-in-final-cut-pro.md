@@ -18,6 +18,7 @@ img_path: /assets/img/posts/2023-03-15-how-to-make-rounded-corners-shape-mask-in
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Making rounded corners in FCPX is very simple to do but I couldn't find any simple tutorials, so I made one!
 ---
 
 {% include embed/youtube.html id='5dp_S5vU_xI' %}
