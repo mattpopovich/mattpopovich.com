@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Here's what to do if you get a warning to "switch off engine and check coolant level!"
 ---
 
 {% include embed/youtube.html id='rRbSVmFteuY' %}

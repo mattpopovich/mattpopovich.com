@@ -18,6 +18,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: I've lived in Denver since 2018, here are my favorite things to do here!
 ---
 
 <!-- TODO: Make a YouTube video on all this?? -->

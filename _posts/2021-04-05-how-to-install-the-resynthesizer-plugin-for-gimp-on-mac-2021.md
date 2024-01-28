@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: My trials and tribulations getting the Resynthesizer plugin installed...
 ---
 
 > There is an easier way to do this! Please see my updated blog post [here](/posts/updated-how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2022/) for the details!

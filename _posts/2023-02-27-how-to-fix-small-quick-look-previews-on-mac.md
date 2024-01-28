@@ -18,6 +18,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Quick Look was not showing me full previews of images, here's how to fix that!
 ---
 
 

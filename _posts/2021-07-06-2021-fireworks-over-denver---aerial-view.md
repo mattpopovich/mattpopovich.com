@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: I found a huge American flag on July 4th and shot some drone footy!
 ---
 
 {% include embed/youtube.html id='DlzOvmqFLeI' %}

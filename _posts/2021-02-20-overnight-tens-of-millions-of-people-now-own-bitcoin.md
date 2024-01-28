@@ -17,12 +17,12 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: A company in the S&P 500 holds bitcoin on their balance sheet, which means most investors now have exposure to it too!
 ---
 
 {% include embed/youtube.html id='bCK13hlw0yw' %}
 
-> In July of 2022, [Tesla sold ~75% of their bitcoin holdings](https://www.cnbc.com/2022/07/20/tesla-converted-75percent-of-bitcoin-purchases-to-fiat-currency-in-q2-2022.html). The numbers in this article will not be updated and they reflect things as they were on the date of posting (February 20, 2021). An updated status on Tesla's bitcoin holdings can be found [here](https://bitcointreasuries.net/entities/2).
-> [Tesla Q2 2022 Shareholder Deck](https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2022-Update)
+> In July of 2022, [Tesla sold ~75% of their bitcoin holdings](https://www.cnbc.com/2022/07/20/tesla-converted-75percent-of-bitcoin-purchases-to-fiat-currency-in-q2-2022.html). The numbers in this article will not be updated and they reflect things as they were on the date of posting (February 20, 2021). An updated status on Tesla's bitcoin holdings can be found [here](https://bitcointreasuries.net/entities/2). Additional source: [Tesla Q2 2022 Shareholder Deck](https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2022-Update), slide 5.
 {: .prompt-warning }
 
 **Good evening, YouTube!**

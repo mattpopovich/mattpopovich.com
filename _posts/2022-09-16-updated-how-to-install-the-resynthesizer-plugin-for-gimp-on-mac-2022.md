@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: There is an easier way to get the Resynthesizer plugin working. Here's how!
 ---
 
 > After this article was published, [GIMP released (Dec. 2, 2022) separate builds for ARM Macs and Intel Macs](https://www.gimp.org/news/2022/12/02/gimp-2.10.32-apple-silicon/). Neither of these builds work with the instructions in this article. Please download and install [GIMP 2.10.32 revision 0 (released on June 12, 2022)](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg) in order for this article to successfully enable the resynthesizer plugin.

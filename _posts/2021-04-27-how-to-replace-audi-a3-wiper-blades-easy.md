@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Wiper blade installation on an Audi A3 is very simple, here's how!
 ---
 
 {% include embed/youtube.html id='A3U3xpzBH2c' %}

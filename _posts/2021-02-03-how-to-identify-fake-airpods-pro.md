@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Some easy checks that can help identify fake AirPods Pro
 ---
 
 {% include embed/youtube.html id='ALsLiy4sLIQ' %}

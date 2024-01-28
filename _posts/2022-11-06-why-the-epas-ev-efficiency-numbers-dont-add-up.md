@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: The EPA's kWh/mi numbers do not seem to add up. Here's how to fix that!
 ---
 
 {% include embed/youtube.html id='PyvtK7amSAg' %}

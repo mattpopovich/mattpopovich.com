@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Business is *booming* for my 5 subscriber YouTube channel
 ---
 
 {% include embed/youtube.html id='p_zUQDfFkRI' %}

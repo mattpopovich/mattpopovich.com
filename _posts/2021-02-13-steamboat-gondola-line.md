@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: COVID + powder day = long line at the base of Steamboat
 ---
 
 {% include embed/youtube.html id='-xtlX7jyPV8' %}

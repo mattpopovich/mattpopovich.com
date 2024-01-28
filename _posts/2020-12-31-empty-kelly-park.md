@@ -17,11 +17,12 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: A quick drone video of Kelly Park - Rock Springs
 ---
 
 {% include embed/youtube.html id='axX71GkO85Y' %}
 
-Just a quick video that I took in [Kelly Park](https://www.ocfl.net/cultureparks/parks.aspx?m=dtlvw&d=22#.X_t48-lKhcK), a fantastic hidden gem northwest of Orlando, Florida.
+Just a quick video that I took in [Kelly Park Rock Springs](https://www.ocfl.net/cultureparks/parks.aspx?m=dtlvw&d=22#.X_t48-lKhcK), a fantastic hidden gem northwest of Orlando, Florida.
 
 Filmed via a (affiliate links) [DJI Mavic Pro](https://amzn.to/3uyZHkQ) <small>(But note that I'd now recommend a [Mavic Air 2](https://amzn.to/3uyCyiz) or [Mavic Air 2S](https://amzn.to/3yvv7d1))</small>:
 * 4K

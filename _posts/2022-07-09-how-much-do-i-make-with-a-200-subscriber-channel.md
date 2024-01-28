@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: My earnings haul now that I'm a big wig on YouTube
 ---
 
 {% include embed/youtube.html id='IR93qJZix6Q' %}
