@@ -86,7 +86,7 @@ My solution: buy a NAS (network attached storage). Why? A NAS is a:
 
 ## Moving my Plex library from a Mac to Synology NAS
 
-### Setting up Plex via Docker Compose
+### "Installing" Plex via Docker Compose
 
 [This](https://support.plex.tv/articles/201154537-move-media-content-to-a-new-location/) is the official documentation from Plex for how to move media content to a new location.
 
@@ -139,9 +139,14 @@ user@nas $ cd /path/to/docker-compose-file/TODO
 user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml up
 ```
 
-## Copying my Plex data from an external hard drive to Synology NAS
+### Copying my Plex data from an external hard drive to Synology NAS
 
-My Plex library is terabytes in size so this was a decent chore.
+My Plex library is terabytes in size so this was a decent chore. I’m moving all the plex content to `/volume1/docker/plex/data/`
+```console
+user@nas:/volume1/docker/plex/data$ ls
+ Movies
+ TV Shows
+```
 
 TODO You might be able to directly plug in your external hard drive to your NAS and do the transfer that way.
 
@@ -172,91 +177,58 @@ If you also want to check the contents of the file to make sure they are the sam
 >If you are seeing **A TON** of files (like all of them) showing up, you probably have a path wrong. For some reason, my tab complete for “TV Shows” was completing to `TV\\\ Shows` when it should have been `TV\ Shows`. Not sure why that was...
 {: .prompt-info}
 
+### Configuring Plex on the NAS
 
-
-
-
-Now that all my files are moved over, I’m going to move their location in Plex to better represent where they actually are. I’m moving all the content to `/volume1/docker/plex/data/`
-```console
-admin@nas:/volume1/docker/plex/data$ ls
- Movies
- TV Shows
-```
-
+TODO: Where does this link belong
 https://support.plex.tv/articles/201370363-move-an-install-to-another-system/
 
-Then, I need to tell Plex that I moved the location of all its content. https://support.plex.tv/articles/200289266-editing-libraries/
-To do that, you move the content, edit the library, add a source of where the new content is, Plex will rescan and associate the new content location with the old content, then you can delete the old content location.
+Now that we have our content moved over to the NAS, we need to tell Plex the new location of all its content (Plex support article [here](https://support.plex.tv/articles/200289266-editing-libraries/)).
+To properly do that, we need to edit our Plex library, add a source of where the new content is, Plex will rescan and associate the new content location with the old content, then you can delete the old content location.
+TODO: Image of this
 
-Once this is done for all of your libraries, you can then empty the library trash (settings —> Manage —> Libraries —> 3 dots next to library —> Empty Trash).
-https://support.plex.tv/articles/200289326-emptying-library-trash/
-You can then “Clean Bundles” (Settings —> Manage —> Troubleshooting —> Clean Bundles): https://support.plex.tv/articles/226836308-help/
-You can “Optimize Database” (Settings —> Manage —> Troubleshooting —> Optimize Database): https://support.plex.tv/articles/226836308-help/
+Once this is done for all of your libraries (Ex. I have a library for Movies, TV Shows, etc.), you can then [empty the library trash](https://support.plex.tv/articles/200289326-emptying-library-trash/) (settings —> Manage —> Libraries —> 3 dots next to library —> Empty Trash).
 
-Lastly, if you’re moving this Plex library to a new device, don’t forget to forward Plex’s ports (32400 by default) to the new device. (Settings —> Settings —> Remote Access —> Show Advanced).
+You can then “[Clean Bundles](https://support.plex.tv/articles/226836308-help/)” (Settings —> Manage —> Troubleshooting —> Clean Bundles)
+
+You can “[Optimize Database](https://support.plex.tv/articles/226836308-help/)" (Settings —> Manage —> Troubleshooting —> Optimize Database):
+
+If you’re moving this Plex library to a new device, don’t forget to forward Plex’s ports (32400 by default) to the new device. (Settings —> Settings —> Remote Access —> Show Advanced). TODO: link for this
 
 
-Lastly, I needed to give access to the new server to my other Plex accounts.
-For accounts external of your home account: Settings —> UserName (MattPopovich) —> Manage Library Access, then modify accordingly
-For accounts internal to your home account: Settings —> UserName (MattPopovich) —> Plex Home, then modify accordingly
-I then went into each account and changed their pin sources on the left to remove the old server and add the new one
+Lastly, I needed to give my other Plex accounts access to the new server.
+* For accounts external of your home account: Settings —> UserName (MattPopovich) —> Manage Library Access, then modify accordingly
+* For accounts internal to your home account: Settings —> UserName (MattPopovich) —> Plex Home, then modify accordingly
+I then went into each account and changed their pin sources on the left to remove the old server and add the new one.
 
-Enabling HW Transcoding
-If you have Plex pass, you can enable hardware transcoding to speed up video conversions https://www.plex.tv/plex-pass/
+### Enabling HW Transcoding
+If you have [Plex pass](https://www.plex.tv/plex-pass/), you can enable hardware transcoding to speed up video conversions.
 
-Before wasting time doing this, make sure your NAS supports it: https://docs.google.com/spreadsheets/d/1MfYoJkiwSqCXg8cm5-Ac4oOLPRtCkgUxU0jdj3tmMPc/edit#gid=1274624273
-Or, make sure your CPU supports it: https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_QuickSyncVideo=True
+Before wasting time doing this, make sure your [NAS supports it](https://docs.google.com/spreadsheets/d/1MfYoJkiwSqCXg8cm5-Ac4oOLPRtCkgUxU0jdj3tmMPc/edit#gid=1274624273).
+Or, make sure your [CPU supports it](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_QuickSyncVideo=True).
 
 To take full advantage of this, you need to check BOTH “Use hardware acceleration when available” AND “Use hardware-accelerated video encoding”. This is in settings —> settings —> Transcoder.
-“Use hardware acceleration when available” = encode and decode to to hardware-accelerated video codecs
-“Use hardware accelerated video encoding” = use hardware acceleration for the encoding / decoding
-https://support.plex.tv/articles/200250347-transcoder/
+* “Use hardware acceleration when available” = encode and decode to hardware-accelerated video codecs
+* “Use hardware accelerated video encoding” = use hardware acceleration for the encoding / decoding
+* [Source](https://support.plex.tv/articles/200250347-transcoder/)
+* Additional article [here](https://medium.com/@MrNick4B/plex-on-docker-on-synology-enabling-hardware-transcoding-fa017190cad7)
+* Plex's instructions [here](https://github.com/plexinc/pms-docker#intel-quick-sync-hardware-transcoding-support)
 
-Good article here: https://medium.com/@MrNick4B/plex-on-docker-on-synology-enabling-hardware-transcoding-fa017190cad7
-Plex instructions here: https://github.com/plexinc/pms-docker#intel-quick-sync-hardware-transcoding-support
+TODO: Show image
 
 There is one addition you need to make to the docker-compose.yaml file
+```
     devices:
       - "/dev/dri:/dev/dri"
-I did also switch to the plexpass tag: plexinc/pms-docker:plexpass. Not sure if that is necessary or not.
+```
+I did also switch to the plexpass tag: `plexinc/pms-docker:plexpass`. Not sure if that is necessary or not.
 
-As others have noted, using CPU transcoding, my CPU usage is around 100%, but after HW decoding gets enabled, I see it drop to ~35%.
-https://medium.com/@MrNick4B/plex-on-docker-on-synology-enabling-hardware-transcoding-fa017190cad7
+As [others have noted](https://medium.com/@MrNick4B/plex-on-docker-on-synology-enabling-hardware-transcoding-fa017190cad7), using CPU transcoding, my CPU usage is around 100%, but after HW decoding gets enabled, I see it drop to ~35%. This is a good indicator if things are working or not. TODO: Where to find these numbers?
 
-If this doesn’t work, some starting points for debugging is to search the logs for “transcoding”, “error”, or “ffmpeg”. You can find the logs at `docker logs plex`, settings —> manage —> console, and settings —> manage —> Troubleshooting.
+Another indicator if things are working is to look at Plex's status when streaming or to look in Tautulli's logs. TODO: Expand on this
 
+If this doesn’t work, some starting points for debugging is to search the logs for “transcoding”, “error”, or “ffmpeg”. You can find the logs by running `docker logs plex` in a terminal connected to the NAS, settings —> manage —> console, and settings —> manage —> Troubleshooting. TODO: Where are these last ones?
 
-
-Tautulli
-Next up is moving tautuilli. They have two good FAQ questions on their wiki:
-https://github.com/Tautulli/Tautulli/wiki/Frequently-Asked-Questions#q-i-moved-media-in-plex-now-tautulli-is-linking-to-the-wrong-itemshowing-up-twice
-https://github.com/Tautulli/Tautulli/wiki/Frequently-Asked-Questions#q-i-need-to-movereinstall-tautulli-can-i-keep-my-history-and-statistics
-
-Basically, you need to go into tautulli, settings, download your database and config.
-
-I created a new tautulli user in DSM that only had access to docker file mount share thing
-I got its user id and group id with id -u tautulli and id -g tautulli.
-Mount the database and config in /config
-Timezone is AMErica/Denver
-Then you can launch tautulli with docker compose. It will appear at NAS_IP:8181
-Once you’re in tautulli, go into settings —> Plex Media Server. We will need to connect a new server. To do this, click on “Fetch New Token”, sign in. Then the rest might auto populate? If not, put in the IP of your NAS, port, and I checked “use secure connection” because why not?
-
-Then I streamed a few videos in Plex and saw it show up in tautulli so I think we’re good to go!
-Obviously if you are importing a database and config, you’re going to want to see the history tab populated just as it was. That will tell you if you exported and imported it correctly.
-
-
-
-
-
-
-
-
-It is recommended to enable the QuickConnect relay service at Control Panel > External Access > QuickConnect > Advanced Settings
-
-
-
-
-Updating Plex
+### Updating Plex
 To update plex, there is no need to do it through the web GUI anymore. All you need to do is restart docker, and the plex image will automatically redownload the latest version of plex media server:
 Note that this is only applicable to the plexpass tag.
 ```
@@ -267,5 +239,56 @@ MattAdmin@DS1520plus:/volume1/docker/plex$ sudo docker-compose -f plex-pms-docke
 [+] Running 1/1
  ⠿ Container plex  Started
 ```
+
+If you don't have the plex pass, TODO
+
+
+## Moving Tautulli from a Mac to Synology NAS
+Next up is moving [Tautuilli](TODO). They have two good FAQ questions on their wiki:
+* [I moved media in Plex, how to move Tautulli? TODO verify this is what the article talks about](https://github.com/Tautulli/Tautulli/wiki/Frequently-Asked-Questions#q-i-moved-media-in-plex-now-tautulli-is-linking-to-the-wrong-itemshowing-up-twice)
+* [FAQ: I need to move/reinstall Tautulli, can I keep my history and statistics?](https://github.com/Tautulli/Tautulli/wiki/Frequently-Asked-Questions#q-i-need-to-movereinstall-tautulli-can-i-keep-my-history-and-statistics)
+
+Basically, you need to go into tautulli --> settings, download your database and config.
+
+I created a new user in DSM named `tautulli` that only had access to docker file mount share thing TODO: what? TODO: Did I also create a plex user?
+
+Here's how to get the newly created user's *user id* and *group id*:
+```console
+user@nas / $ id -u tautulli
+TODO
+user@nas / $ id -g tautulli
+TODO
+```
+
+We have a few configuration changes to make in tautulli's docker-compose file. We need to mount the database and config in /config + set the timezone to America/Denver just as we did for Plex's docker-compose:
+```
+TODO
+
+      - /volume1/docker/plex/todo
+
+TZ: 'America/Denver'
+```
+
+Now it's time to launch tautulli with docker compose. You can access tautulli in a web browser at `NAS_IP:8181`
+
+```
+user@nas $ cd /path/to/docker-compose-file/TODO
+user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml up
+```
+
+Once you’re in tautulli, go into settings —> Plex Media Server. We will need to connect a new server. To do this, click on “Fetch New Token”, sign in. Then the rest might auto populate? If not, put in the IP of your NAS, port, and I checked “use secure connection” because why not?
+
+Then I streamed a few videos in Plex and saw it show up in tautulli so I think we’re good to go!
+
+Obviously if you are importing a database and config, you’re going to want to see the history tab populated just as it was. That will tell you if you exported and imported it correctly.
+
+### Updating Tautulli
+TODO
+
+
+### Other
+TODO:
+
+It is recommended to enable the QuickConnect relay service at Control Panel > External Access > QuickConnect > Advanced Settings
 
 
