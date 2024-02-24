@@ -28,12 +28,15 @@ Expanding on [my previous project](my-fcpx-export-settings) converting image tim
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 ``` console
-matt@mac $ /Applications/Adobe\ DNG\ Converter.app/Contents/MacOS/Adobe\ DNG\ Converter -fl -d /path/to/DNG/folder /path/to/GPR/folder/*
+matt@mac $ /Applications/Adobe\ DNG\ Converter.app/Contents/MacOS/Adobe\ DNG\ Converter -fl -mp -d /path/to/output/folder /path/to/GPR/folder/*
 ```
 Where
-* `-d = output directory`
 * `-fl = embed fast load data`
-* Additional arguments can be found in [this .pdf](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf)
+* `-mp = process multiple files in parallel`
+  * `default is sequential (one image at a time)`
+* `-d = output directory`
+
+Additional arguments can be found in [this .pdf](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf)
 
 ## Installation
 Go [here](https://helpx.adobe.com/camera-raw/using/adobe-dng-converter.html), download and install the application.
@@ -82,10 +85,18 @@ Where
 
 And that's it! If you look in your `/path/to/output/folder`, you should see the converted `.DNG` files. 🎉
 
+But I'd recommend adding the `-mp` flag as it adds a [decent boost to processing times](TODO):
+```console
+matt@mac $ /Applications/Adobe\ DNG\ Converter.app/Contents/MacOS/Adobe\ DNG\ Converter -fl -mp -d /path/to/output/folder /path/to/GPR/folder/*
+```
+
+* `-mp = process multiple files in parallel`
+  * `default is sequential (one image at a time)`
+
 ## Advanced information
 
 ### Reproducibility
-Note that, by default, these files are not bitwise reproducible (but they are exactly the same size):
+Note that these files are not bitwise reproducible (but they are exactly the same size):
 ```console
 matt@mac $ ./reset.sh && ./organizeGoProDNG.sh
 total 58312
@@ -102,7 +113,7 @@ total 58312
 07cff6d3be3d8d9e3fdcd492c7a9f785fa6ae58e9dd10dff46a2b2538de3adc5  DNG/GOPR0925.dng
 ```
 
-### Argument file size comparison
+### Argument runtime and file size comparison
 
 I am using 3000x4000 `.GPR` (raw) files shot with my [GoPro](https://amzn.to/3ZUuXcD) Hero 8 Black:
 ```console
@@ -116,46 +127,40 @@ matt@mac $ ls -l GPR
 -rwxr-xr-x  1 mattpopovich  staff  3492368 Feb 23 18:19 GOPR0925.GPR
 ```
 
-I wrote a script to compare the output sizes of the different arguments for the script:
+<details markdown="1">
+  <summary>I wrote a script to compare the output sizes of the different arguments for the script:</summary>
+  ```console
+  matt@mac $ ./compareDNGsettings.sh
+  Default = 28492484B, .8896226s
+  Using flags -c -p1 -cr7.1 -dng1.7.1 = -.0081965s (0%), +0B (+0%) vs default
+  Using flags -u -p1 -cr7.1 -dng1.7.1 = -.0341326s (-3%), +0B (+0%) vs default
+  Using flags -l -p1 -cr7.1 -dng1.7.1 = +.0024795s (+0%), +0B (+0%) vs default
+  Using flags -c -e -p1 -cr7.1 -dng1.7.1 = -.0055936s (0%), +0B (+0%) vs default
+  Using flags -c -p0 -cr7.1 -dng1.7.1 = -.0499066s (-5%), -238840B (0%) vs default
+  Using flags -c -p2 -cr7.1 -dng1.7.1 = +.7349366s (+82%), +4165366B (+14%) vs default
+  Using flags -c -p1 -fl -cr7.1 -dng1.7.1 = +.0102043s (+1%), +1379742B (+4%) vs default
+  Using flags -c -p1 -lossy -cr7.1 -dng1.7.1 = +.1604536s (+18%), -18143172B (-63%) vs default
+  Using flags -c -mp -p1 -cr7.1 -dng1.7.1 = -.2128286s (-23%), +0B (+0%) vs default
+  ```
+</details>
 
-```console
-matt@mac $  ./compareDNGsettings.sh
-Using flags -c -p1 -cr7.1 -dng1.4
--rw-r--r--  1 mattpopovich  staff  14565304 Feb 23 18:37 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  13927180 Feb 23 18:37 GOPR0925.dng
+This particular example was ran using the two `*.GPR` files I mentioned above.
 
-Using flags -u -p1 -cr7.1 -dng1.4
--rw-r--r--  1 mattpopovich  staff  14565304 Feb 23 18:37 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  13927180 Feb 23 18:37 GOPR0925.dng
+| [Flags](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) | Speedup (s) | Speedup (%) | Size (bytes) | Size (%) |
+|-------|-------------|-------------|--------------|----------|
+| `-c -p1        -cr7.1 -dng1.7.1` | -.0081965s | 0% | +0B | +0% |
+| `-u -p1        -cr7.1 -dng1.7.1` | -.0341326s | -3% | +0B | +0% |
+| `-l -p1        -cr7.1 -dng1.7.1` | +.0024795s | +0% | +0B | +0% |
+| `-c -p1 -e     -cr7.1 -dng1.7.1` | -.0055936s | 0% | +0B | +0% |
+| `-c -p0        -cr7.1 -dng1.7.1` | -.0499066s | -5% | -238,840B | 0% |
+| `-c -p2        -cr7.1 -dng1.7.1` | +.7349366s | +82% | +4,165,366B | +14% |
+| `-c -p1 -fl    -cr7.1 -dng1.7.1` | +.0102043s | +1% | +1,379,742B | +4% |
+| `-c -p1 -lossy -cr7.1 -dng1.7.1` | +.1604536s | +18% | -18,143,172B | -63% |
+| `-c -p1 -mp    -cr7.1 -dng1.7.1` | -.2128286s | -23% | +0B | +0% |
 
-Using flags -l -p1 -cr7.1 -dng1.4
--rw-r--r--  1 mattpopovich  staff  14565304 Feb 23 18:37 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  13927180 Feb 23 18:37 GOPR0925.dng
-
-Using flags -c -e -p1 -cr7.1 -dng1.4
--rw-r--r--  1 mattpopovich  staff  14565304 Feb 23 18:37 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  13927180 Feb 23 18:37 GOPR0925.dng
-
-Using flags -c -p0 -cr7.1 -dng1.4
--rw-r--r--  1 mattpopovich  staff  14433712 Feb 23 18:37 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  13819932 Feb 23 18:37 GOPR0925.dng
-
-Using flags -c -p2 -cr7.1 -dng1.4
--rw-r--r--  1 mattpopovich  staff  16865604 Feb 23 18:37 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  15944830 Feb 23 18:37 GOPR0925.dng
-
-Using flags -c -p1 -fl -cr7.1 -dng1.4
--rw-r--r--  1 mattpopovich  staff  15302818 Feb 23 18:37 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  14546400 Feb 23 18:37 GOPR0925.dng
-
-Using flags -c -p1 -lossy -cr7.1 -dng1.4
--rw-r--r--  1 mattpopovich  staff  5391570 Feb 23 18:37 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  4716642 Feb 23 18:37 GOPR0925.dng
-
-Using flags -c -mp -p1 -cr7.1 -dng1.4
--rw-r--r--  1 mattpopovich  staff  14565304 Feb 24 00:41 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  13927180 Feb 24 00:41 GOPR0925.dng
-```
+Where
+* Speedup = smaller (negative) is better
+* Size = smaller (negative) is better
 
 ## Outro
 Hope this was helpful and can save you some time!
