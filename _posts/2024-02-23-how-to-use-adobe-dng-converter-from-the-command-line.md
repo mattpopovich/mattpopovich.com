@@ -2,9 +2,9 @@
 title: "How to Use Adobe DNG Converter from the Command Line"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2023-10-25 05:20:06 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [apple, how to, mac, video editing, tech, tutorial, adobe]                # TAG names should always be lowercase
+date: 2024-02-24 03:17:06 -500
+categories: [Blog]    # <=2 values here: top category and sub category
+tags: [apple, how to, mac, video editing, tech, tutorial, adobe, dng, gpr, cli, gui, adobe dng converter, programming, bash]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -20,8 +20,10 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  alt: image alternative text
 ---
 
+<!-- TODO: Link to "my FCPX export settings blog post. Start this blog with "expanding on my previous project" -->
+
 ## Intro
-Expanding on [my previous project](my-fcpx-export-settings) converting image time lapses into videos, every time I shoot a timelapse with my [GoPro (affiliate link)](https://amzn.to/3ZUuXcD) in raw, I end up with a folder full of `*.JPG` and `*.GPR` files. I want to put those two into their own folders and convert the `.GPR` files into `.DNG` files that can be used by [Final Cut Pro (FCP/FCPX)](https://www.apple.com/final-cut-pro/). I do this with [Adobe Digital Negative (DNG) Converter](https://helpx.adobe.com/camera-raw/using/adobe-dng-converter.html). It's a [graphical user interface (GUI)](https://www.computerhope.com/jargon/g/gui.htm) program which requires me to use the mouse and select files... it's repetive and I select the same settings every time... I just want something I can double click that will immediately kick off the conversion for me. Turns out, as I suspected, the Adobe DNG Converter is running a command line program underneath the hood. Here's how we can use it without the GUI:
+Whenever I shoot a time lapse in raw on my [GoPro (affiliate link)](https://amzn.to/3ZUuXcD), it creates one folder that is full of `*.JPG` and `*.GPR` files. I then find myself moving all the `*.JPG` files into a `JPG` folder, and all the `*.GPR` files into a `GPR` folder. I then use [Adobe Digital Negative (DNG) Converter](https://helpx.adobe.com/camera-raw/using/adobe-dng-converter.html) to convert the `.GPR` files into `.DNG` so that I can import them to [Final Cut Pro (FCP/FCPX)](https://www.apple.com/final-cut-pro/). Adobe DNG Converter is a [graphical user interface (GUI)](https://www.computerhope.com/jargon/g/gui.htm) program which means I need to open the program, select input and ouput destinations, select my seetings, all while using the mouse to make my selections. It's slow and repetive (not to mention I make the same selections every time). I just want something that I can double click that will move the pictures to their respective folders and start the `GPR` to `DNG` conversion process. Turns out, as I suspected, the Adobe DNG Converter is running a command line program underneath the hood. Here's how we can use it without the GUI to "automate" away this repetitive task:
 
 > Note that this article assumes you have basic familiarity with the terminal and shell commands
 {: .prompt-warning }
@@ -73,7 +75,7 @@ total 551496
 -rwxr-xr-x  1 root  wheel  282361984 Jun  1  2023 Adobe DNG Converter
 ```
 
-I'm not sure how to bring up a help menu for it... The CLI for Adobe DNG Converter has about 0 documentation that I've been able to find. [This .pdf](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) is about all I can find, thankfully it explains some of the acceptable arguments that the executable understands.
+I'm not sure how to bring up a help menu for it... The CLI for Adobe DNG Converter has limited documentation available. [This .pdf](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) is about all I can find. Thankfully it explains some of the acceptable arguments that the executable understands.
 
 If you want the same default settings that the GUI provides, you can use the following command:
 ```console
@@ -83,9 +85,9 @@ Where
 * `-d = output directory`
 * `-fl = embed fast load data`
 
-And that's it! If you look in your `/path/to/output/folder`, you should see the converted `.DNG` files. 🎉
+And that's it! If you look in your `/path/to/output/folder`, you should see the converted `.DNG` files 🎉
 
-But I'd recommend adding the `-mp` flag as it adds a [decent boost to processing times](TODO):
+But I'd recommend adding the `-mp` flag as it adds a [decent boost to processing times](#argument-runtime-and-file-size-comparison):
 ```console
 matt@mac $ /Applications/Adobe\ DNG\ Converter.app/Contents/MacOS/Adobe\ DNG\ Converter -fl -mp -d /path/to/output/folder /path/to/GPR/folder/*
 ```
@@ -98,19 +100,18 @@ matt@mac $ /Applications/Adobe\ DNG\ Converter.app/Contents/MacOS/Adobe\ DNG\ Co
 ### Reproducibility
 Note that these files are not bitwise reproducible (but they are exactly the same size):
 ```console
-matt@mac $ ./reset.sh && ./organizeGoProDNG.sh
-total 58312
--rw-r--r--  1 mattpopovich  staff  15302818 Feb 23 17:55 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  14546400 Feb 23 17:55 GOPR0925.dng
-f1f7e65b828b030cf51dbe5fa7007548910a072a0c6fe525cd8b03425e26d1fa  DNG/GOPR0924.dng
-fbcd20d29a58756f9078376d4387fc3e40098f1be76ed5e94e83111b69a9c209  DNG/GOPR0925.dng
-
-matt@mac $ ./reset.sh && ./organizeGoProDNG.sh
-total 58312
--rw-r--r--  1 mattpopovich  staff  15302818 Feb 23 17:55 GOPR0924.dng
--rw-r--r--  1 mattpopovich  staff  14546400 Feb 23 17:55 GOPR0925.dng
-89c647242e6348a2275dfda381e674fa462476bb5f7868f250c1849f3879fa21  DNG/GOPR0924.dng
-07cff6d3be3d8d9e3fdcd492c7a9f785fa6ae58e9dd10dff46a2b2538de3adc5  DNG/GOPR0925.dng
+matt@mac $ /Applications/Adobe\ DNG\ Converter.app/Contents/MacOS/Adobe\ DNG\ Converter -fl *.GPR
+matt@mac $ /Applications/Adobe\ DNG\ Converter.app/Contents/MacOS/Adobe\ DNG\ Converter -fl *.GPR
+matt@mac $ shasum -a 256 *.dng
+486395fba712ddaf3265d503f53a21a0977401e95e935857863239017692d49f  GOPR0924.dng
+66a4c517d62a396977cf101e49026e0dc2d4f9ab0775a6dd96b81e5dcd41daaa  GOPR0924_1.dng
+5c647d26c98bbcb34f66c7c8530cc006fab6a716d13f42dc98fa63ddb1b0b3e7  GOPR0925.dng
+2864621bea9c221750bcea31b52009a063a36ebfd025bc892267e20a22c3986f  GOPR0925_1.dng
+matt@mac $ ls -l *.dng
+-rw-r--r--  1 matt  staff  15166544 Feb 30 03:17 GOPR0924.dng
+-rw-r--r--  1 matt  staff  15166544 Feb 30 03:17 GOPR0924_1.dng
+-rw-r--r--  1 matt  staff  14433870 Feb 30 03:17 GOPR0925.dng
+-rw-r--r--  1 matt  staff  14433870 Feb 30 03:17 GOPR0925_1.dng
 ```
 
 ### Argument runtime and file size comparison
@@ -145,6 +146,8 @@ matt@mac $ ls -l GPR
 </details>
 
 This particular example was ran using the two `*.GPR` files I mentioned above.
+
+<!-- Had to add <code> &nbsp; </code> here because spaces are not kept between `` unfortunately -->
 
 | [Flags](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) | Speedup (s) | Speedup (%) | Size (bytes) | Size (%) |
 |-------|-------------|-------------|--------------|----------|
