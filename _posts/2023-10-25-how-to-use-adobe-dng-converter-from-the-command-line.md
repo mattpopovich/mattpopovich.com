@@ -128,19 +128,19 @@ matt@mac $ ls -l GPR
 ```
 
 <details markdown="1">
-  <summary>I wrote a script to compare the output sizes of the different arguments for the script:</summary>
+  <summary><a href="https://github.com/mattpopovich/AdobeDNGConverterScripts/blob/main/compare_adobe_dng_converter_arguments.sh">I wrote a script</a> to compare the runtime and output file sizes of the different arguments for the executable</summary>
   ```console
   matt@mac $ ./compareDNGsettings.sh
   Default = 28492484B, .8896226s
-  Using flags -c -p1 -cr7.1 -dng1.7.1 = -.0081965s (0%), +0B (+0%) vs default
-  Using flags -u -p1 -cr7.1 -dng1.7.1 = -.0341326s (-3%), +0B (+0%) vs default
-  Using flags -l -p1 -cr7.1 -dng1.7.1 = +.0024795s (+0%), +0B (+0%) vs default
-  Using flags -c -e -p1 -cr7.1 -dng1.7.1 = -.0055936s (0%), +0B (+0%) vs default
-  Using flags -c -p0 -cr7.1 -dng1.7.1 = -.0499066s (-5%), -238840B (0%) vs default
-  Using flags -c -p2 -cr7.1 -dng1.7.1 = +.7349366s (+82%), +4165366B (+14%) vs default
-  Using flags -c -p1 -fl -cr7.1 -dng1.7.1 = +.0102043s (+1%), +1379742B (+4%) vs default
+  Using flags -c -p1        -cr7.1 -dng1.7.1 = -.0081965s (0%), +0B (+0%) vs default
+  Using flags -u -p1        -cr7.1 -dng1.7.1 = -.0341326s (-3%), +0B (+0%) vs default
+  Using flags -l -p1        -cr7.1 -dng1.7.1 = +.0024795s (+0%), +0B (+0%) vs default
+  Using flags -c -p1 -e     -cr7.1 -dng1.7.1 = -.0055936s (0%), +0B (+0%) vs default
+  Using flags -c -p0        -cr7.1 -dng1.7.1 = -.0499066s (-5%), -238840B (0%) vs default
+  Using flags -c -p2        -cr7.1 -dng1.7.1 = +.7349366s (+82%), +4165366B (+14%) vs default
+  Using flags -c -p1 -fl    -cr7.1 -dng1.7.1 = +.0102043s (+1%), +1379742B (+4%) vs default
   Using flags -c -p1 -lossy -cr7.1 -dng1.7.1 = +.1604536s (+18%), -18143172B (-63%) vs default
-  Using flags -c -mp -p1 -cr7.1 -dng1.7.1 = -.2128286s (-23%), +0B (+0%) vs default
+  Using flags -c -p1 -mp    -cr7.1 -dng1.7.1 = -.2128286s (-23%), +0B (+0%) vs default
   ```
 </details>
 
@@ -148,15 +148,15 @@ This particular example was ran using the two `*.GPR` files I mentioned above.
 
 | [Flags](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) | Speedup (s) | Speedup (%) | Size (bytes) | Size (%) |
 |-------|-------------|-------------|--------------|----------|
-| `-c -p1        -cr7.1 -dng1.7.1` | -.0081965s | 0% | +0B | +0% |
-| `-u -p1        -cr7.1 -dng1.7.1` | -.0341326s | -3% | +0B | +0% |
-| `-l -p1        -cr7.1 -dng1.7.1` | +.0024795s | +0% | +0B | +0% |
-| `-c -p1 -e     -cr7.1 -dng1.7.1` | -.0055936s | 0% | +0B | +0% |
-| `-c -p0        -cr7.1 -dng1.7.1` | -.0499066s | -5% | -238,840B | 0% |
-| `-c -p2        -cr7.1 -dng1.7.1` | +.7349366s | +82% | +4,165,366B | +14% |
-| `-c -p1 -fl    -cr7.1 -dng1.7.1` | +.0102043s | +1% | +1,379,742B | +4% |
-| `-c -p1 -lossy -cr7.1 -dng1.7.1` | +.1604536s | +18% | -18,143,172B | -63% |
-| `-c -p1 -mp    -cr7.1 -dng1.7.1` | -.2128286s | -23% | +0B | +0% |
+| <code>-c -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0081965s | 0% | +0B | +0% |
+| <code>-u -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0341326s | -3% | +0B | +0% |
+| <code>-l -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | +.0024795s | +0% | +0B | +0% |
+| <code>-c -p1 -e &nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0055936s | 0% | +0B | +0% |
+| <code>-c -p0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0499066s | -5% | -238,840B | 0% |
+| <code>-c -p2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | +.7349366s | +82% | +4,165,366B | +14% |
+| <code>-c -p1 -fl &nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | +.0102043s | +1% | +1,379,742B | +4% |
+| <code>-c -p1 -lossy -cr7.1 -dng1.7.1</code> | +.1604536s | +18% | -18,143,172B | -63% |
+| <code>-c -p1 -mp &nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.2128286s | -23% | +0B | +0% |
 
 Where
 * Speedup = smaller (negative) is better
