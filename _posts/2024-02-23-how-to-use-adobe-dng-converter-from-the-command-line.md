@@ -97,6 +97,31 @@ matt@mac $ /Applications/Adobe\ DNG\ Converter.app/Contents/MacOS/Adobe\ DNG\ Co
 * `-mp = process multiple files in parallel`
   * `default is sequential (one image at a time)`
 
+## My GoPro Organization Script
+[I wrote a script](https://github.com/mattpopovich/AdobeDNGConverterScripts/blob/main/organizeGoProDNG.sh) that will convert take my GoPro's standard RAW timelapse output:
+* `GOPR0000.GPR`
+* `GOPR0000.JPG`
+* `GOPR0001.GPR`
+* `GOPR0001.JPG`
+
+and convert it to:
+* `GPR/`
+  * `GOPR0000.GPR`
+  * `GOPR0001.GPR`
+* `JPG/`
+  * `GOPR0000.JPG`
+  * `GOPR0001.JPG`
+* `DNG/`
+  * `GOPR0000.dng`
+  * `GOPR0001.dng`
+
+You can place [organizeGoProDNG.sh](https://github.com/mattpopovich/AdobeDNGConverterScripts/blob/main/organizeGoProDNG.sh) into the folder with your GoPro's images and run it to begin the organization and conversion.
+
+**Pro tip**: If you change the extension of the script from `.sh` to `.command`, you can "double click" it in Finder to run it!
+
+> **DO NOT** run random scripts from the internet, especially from untrusted parties. Please review scripts before running them. Even if you don't understand the script, it's worth pasting it into a large language model (LLM) such as [ChatGPT](https://chat.openai.com/) and asking it to explain the script for you, ask if there is anything dangerous or malicious in it, etc.
+{: .prompt-danger }
+
 ## Advanced information
 
 ### Reproducibility
