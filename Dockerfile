@@ -6,7 +6,7 @@
 # FROM bretfisher/jekyll
 
 # Updated Jekyll image built on Debian
-FROM bretfisher/jekyll-serve
+FROM bretfisher/jekyll-serve:stable-20240215-2119a31
 
 # Install python3 and pip
 RUN apt-get update && apt-get upgrade -y
@@ -14,5 +14,5 @@ RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip
 
-# For pulling data from YouTube in tools/make-new-post.py
-RUN pip3 install requests-html
+# For pulling data from YouTube's API in tools/make-new-post.py
+RUN pip3 install google-auth-oauthlib google-api-python-client

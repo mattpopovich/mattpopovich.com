@@ -41,8 +41,8 @@
         "vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				// "ms-python.python",
-				// "ms-python.vscode-pylance",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
 				"shardulm94.trailing-spaces",
 				"yzhang.markdown-all-in-one",
 				"eamodio.gitlens",
