@@ -2,8 +2,7 @@
 #   It will create a new post in _posts/, auto-populate it with some basic
 #   text, and create a folder in assets/img/posts/
 # TOOD: Clean up this mess
-# REMINDER: I have a conda environment that can run the requests for
-#           YouTube scraping on MBP 2014
+
 
 # Imports
 import argparse
@@ -17,63 +16,65 @@ import sys              # To exit script on error
 
 from pathlib import Path
 
-# For getting html file and parsing it
-from requests_html import HTMLSession
-from bs4 import BeautifulSoup as bs # importing BeautifulSoup
+# For reading Google's YouTube API
+import os
+import google_auth_oauthlib.flow
+import googleapiclient.discovery
+import googleapiclient.errors
+
+# Constants
+API_KEY_FILENAME = "api_key.txt"
+
+# Get API key
+if os.path.exists(API_KEY_FILENAME):
+    print("API key file found: " + API_KEY_FILENAME)
+else:
+    sys.exit("ERROR: API key file not found: " + API_KEY_FILENAME)
+
+with open(API_KEY_FILENAME, 'r') as api_key_file:
+    api_key = api_key_file.read().strip()
+    if api_key:
+        print("API key found: " + api_key)
+    else:
+        sys.exit("ERROR: Nothing found in API key file: " + API_KEY_FILENAME)
+
+# Set up the YouTube API client
+youtube = googleapiclient.discovery.build("youtube", "v3", developerKey=api_key)
 
 # Via: https://www.thepythoncode.com/article/get-youtube-data-python
 #      https://github.com/x4nth055/pythoncode-tutorials/blob/master/web-scraping/youtube-extractor/extract_video_info.py
-def get_video_info(url):
-    sys.exit("ERROR: YouTube flag is currently not working... :(")
-    # init session
-    session = HTMLSession()
+def get_video_info(video_id):
 
-    # download HTML code
-    response = session.get(url)
-    # execute Javascript
-    response.html.render(timeout=60)
-    # create beautiful soup object to parse HTML
-    soup = bs(response.html.html, "html.parser")
-    # open("index.html", "w").write(response.html.html)
+    # Request the video resource
+    video_request = youtube.videos().list(
+        # part="snippet,contentDetails,statistics",
+        part="snippet",
+        id=video_id
+    )
+
+    # Execute the request and extract relevant information
+    response = video_request.execute()
+    video = response["items"][0]
+
     # initialize the result
     result = {}
     # video title
-    result["title"] = soup.find("meta", itemprop="name")['content']
+    result["title"] = video["snippet"]["title"]
     # video views
-    result["views"] = soup.find("meta", itemprop="interactionCount")['content']
+    # result["views"] = video["statistics"]["viewCount"]
     # video description
-    result["description"] = soup.find("meta", itemprop="description")['content']
+    result["description"] = video["snippet"]["description"]
     # date published
-    result["date_published"] = soup.find("meta", itemprop="datePublished")['content']
+    result["date_published"] = video["snippet"]["publishedAt"]
     # get the duration of the video
-    result["duration"] = soup.find("span", {"class": "ytp-time-duration"}).text
+    # result["duration"] = video["contentDetails"]["duration"]
     # get the video tags
-    result["tags"] = ', '.join([ meta.attrs.get("content") for meta in soup.find_all("meta", {"property": "og:video:tag"}) ])
+    result["tags"] = video["snippet"]["tags"]
 
-    # Additional video and channel information (with help from: https://stackoverflow.com/a/68262735)
-    data = re.search(r"var ytInitialData = ({.*?});", soup.prettify()).group(1)
-    data_json = json.loads(data)
-    videoPrimaryInfoRenderer = data_json['contents']['twoColumnWatchNextResults']['results']['results']['contents'][0]['videoPrimaryInfoRenderer']
-    videoSecondaryInfoRenderer = data_json['contents']['twoColumnWatchNextResults']['results']['results']['contents'][1]['videoSecondaryInfoRenderer']
     # number of likes
-    likes_label = videoPrimaryInfoRenderer['videoActions']['menuRenderer']['topLevelButtons'][0]['toggleButtonRenderer']['defaultText']['accessibility']['accessibilityData']['label'] # "No likes" or "###,### likes"
-    likes_str = likes_label.split(' ')[0].replace(',','')
-    result["likes"] = '0' if likes_str == 'No' else likes_str
-    # number of dislikes - YouTube does not publish this anymore...?
-    # result["dislikes"] = ''.join([ c for c in text_yt_formatted_strings[1].attrs.get("aria-label") if c.isdigit() ])
-    # result["dislikes"] = '0' if result['dislikes'] == '' else result['dislikes']
+    # result["likes"] = video["statistics"]["likeCount"]
     result['dislikes'] = 'UNKNOWN'
 
-    # channel details
-    channel_tag = soup.find("meta", itemprop="channelId")['content']
-    # channel name
-    channel_name = soup.find("span", itemprop="author").next.next['content']
-    # channel URL
-    # channel_url = soup.find("span", itemprop="author").next['href']
-    channel_url = f"https://www.youtube.com{channel_tag}"
-    # number of subscribers as str
-    channel_subscribers = videoSecondaryInfoRenderer['owner']['videoOwnerRenderer']['subscriberCountText']['accessibility']['accessibilityData']['label']
-    result['channel'] = {'name': channel_name, 'url': channel_url, 'subscribers': channel_subscribers}
     return result
 
 # ---- Main part of script ----
@@ -120,22 +121,13 @@ elif args.youtube_link:
         video_id = url_parts.query.replace('v=', '')
     print(f"Identified the YouTube video ID as: {video_id}")
 
-    # Get YouTube video title from video ID
-    params = {"format": "json", "url": "https://www.youtube.com/watch?v=%s" % video_id}
-    url = "https://www.youtube.com/oembed"
-    query_string = urllib.parse.urlencode(params)
-    url = url + "?" + query_string
-
-    with urllib.request.urlopen(url) as response:
-        response_text = response.read()
-        data = json.loads(response_text.decode())
-
-    # Get video's date of publish from HTML
-    date_published = get_video_info(params['url'])['date_published']
-    date_time_obj = datetime.datetime.strptime(date_published, '%Y-%m-%d')
+    # Get video's date of publish and title
+    params = get_video_info(video_id)
+    date_published = params['date_published']
+    date_time_obj = datetime.datetime.strptime(date_published, '%Y-%m-%dT%H:%M:%SZ')
     date_for_folder = date_time_obj.strftime("%Y-%m-%d")    # YYYY-MM-DD
 
-    title = data['title']
+    title = params['title']
 
     # Make template post with header
     with open('post_middle_youtube.txt', 'r') as f:
