@@ -16,3 +16,7 @@ RUN apt-get update && apt-get install -y \
 
 # For pulling data from YouTube's API in tools/make-new-post.py
 RUN pip3 install google-auth-oauthlib google-api-python-client
+
+# Required to run `bundle exec htmlproofer`
+RUN apt-get update && apt-get install -y \
+    libcurl4-gnutls-dev

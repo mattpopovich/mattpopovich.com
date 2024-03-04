@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Business is *booming* for my 5 subscriber YouTube channel
 ---
 
 {% include embed/youtube.html id='p_zUQDfFkRI' %}
@@ -73,11 +74,13 @@ Yeah... nothing. I make no moniez.
 
 As I mentioned in my [previous post](/posts/preview-wowgo-2s-range-test/), WowGo was having a promotion where they were paying creators to make a video about their electric longboard.
 
-![WowGo Promotion](/assets/img/posts/2020-12-01-preview-wowgo-2s-range-test/wow-go-promotion.jpg){: width="400"} *WowGo's Promotion*
+![WowGo Promotion](/assets/img/posts/2020-12-01-preview-wowgo-2s-range-test/wow-go-promotion.jpg){: width="400" .shadow}
+*WowGo's Promotion*
 
 I made a video. I got paid.
 
-![Receipt of $15 payment sent via PayPal](/assets/img/posts/2021-04-01-how-much-do-i-make-with-a-5-subscriber-channel/WowGoPayment.png){: width="400"} *Receipt*
+![Receipt of $15 payment sent via PayPal](/assets/img/posts/2021-04-01-how-much-do-i-make-with-a-5-subscriber-channel/WowGoPayment.png){: width="400" .shadow}
+*Receipt*
 
 In other words:
 

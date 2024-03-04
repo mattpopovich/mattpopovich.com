@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: I found a huge American flag on July 4th and shot some drone footy!
 ---
 
 {% include embed/youtube.html id='DlzOvmqFLeI' %}
@@ -26,7 +27,8 @@ Last year (2020) was one of the first years in recent memory that I did not go o
 
 As the sun went down, fireworks began to go off in all directions all around me in Denver. I took the drone up to get a better viewpoint [and was mesmerized](https://youtu.be/GnFZZjRAnOE?t=163)! I vowed to be more prepared next year and to properly capture what I was seeing.
 
-[![... One year later ...](/assets/img/posts/2021-07-06-2021-fireworks-over-denver---aerial-view/spongebob_one-year-later.jpg){: width="480"}](https://www.deviantart.com/mjegameandcomicfan89/art/SpongeBob-One-Year-Later-Time-Card-834974119)
+![... One year later ...](/assets/img/posts/2021-07-06-2021-fireworks-over-denver---aerial-view/spongebob_one-year-later.jpg){: width="480"}
+*[Source](https://www.deviantart.com/mjegameandcomicfan89/art/SpongeBob-One-Year-Later-Time-Card-834974119)*
 
 ### July 4, 2021
 After being mesmerized by the fireworks throughout Denver last year (2020), this year I wanted to make sure I captured it.
