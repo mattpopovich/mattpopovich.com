@@ -23,8 +23,6 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 
 TODO: Recreate this post using a youtube link
 
-{% include embed/youtube.html id='TODO' %}
-
 
 
 ## Into
@@ -37,12 +35,17 @@ My Tesla Model 3 is running autopilot (not FSD) `v10.2 (2021.24.12)`.
 
 This is not a complaint or anything against autopilot. Autopilot is a great piece of software. I am just doing this for documentations sake and to repeat this test to see how much better the software (does or doesn't) get.
 
+## Video
+
+{% include embed/youtube.html id='TODO' %}
 
 
-
+## Outro
 All right boys and girls, I think that’s a wrap, thanks for watching. Moral of the story, don’t fall asleep while your Tesla is driving... yet. In the future, I plan on making a bunch of Tesla model 3 videos, once they’re up, I’ll put a link to a playlist of them here. Also in the future, my next Tesla video will just be a roundup of everything I saw on sentry mode and Tesla’s dash cam in 2021.
 
+Lastly, there's about 10 days left until the big jolly man comes (🎅), hope you're all on the nice list!
 
+Merry early Christmas to all, and to all, goodnight.
 
 
 
