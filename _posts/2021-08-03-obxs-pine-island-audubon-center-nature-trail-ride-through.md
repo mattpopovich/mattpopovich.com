@@ -1,10 +1,10 @@
 ---
-title: "Pine Island Audubon Center Nature Trail Ridethrough"
+title: "OBX's Pine Island Audubon Center Nature Trail Ride-through"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2024-02-25 19:43:10 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+date: 2021-08-03 08:05:50 -0600
+categories: [Blog, YouTube] # <=2 values here: top category and sub category
+tags: [youtube, todo]       # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -18,14 +18,10 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
-#description:               # A short sentence to describe the article, used when sharing links on social media
+description: A bicycle ride I took on the Pine Island Audubon Center Nature Trail located in Corolla, North Carolina.
 ---
 
-TODO: Recreate this post using a youtube link
-
-{% include embed/youtube.html id='TODO' %}
-
-
+{% include embed/youtube.html id='YlQLeMSQD0Y' %}
 
 ## Into
 This video documents a bicycle ride I took on the Pine Island Audubon Center Nature Trail located in Corolla, North Carolina. It is a 4.4 mile (7km) out and back trail (2.2mi (3.5km) out, an additional 2.2mi (3.5km) back). It is open to walkers, runners, and cyclists. It has two scenic overlooks that look over the Currituck Sound (0.8mi (1.3km) and 2mi (3.2km) from trail start).
@@ -43,7 +39,10 @@ At the entrance of the trail is the Pine Island Racquet and fitness center. Ther
 
 
 
-View this ride on Strava: https://www.strava.com/activities/5303657216
+[View this ride on Strava](https://www.strava.com/activities/5303657216):
+<div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="5303657216" data-style="standard"></div><script src="https://strava-embeds.com/embed.js"></script>
+
+
 Check out the trail on AllTrails: https://www.alltrails.com/trail/us/north-carolina/pine-island-audubon-center-nature-trail
 
 I will link to the mentioned photography video that I shot in the Outer Banks here when it is complete! ⌛
