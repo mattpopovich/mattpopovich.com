@@ -2,7 +2,7 @@
 title: "Bitcoin just crashed 25%! What should you do?!?"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2024-02-25 19:13:36 -0600
+date: 2021-02-24 02:51:08 -0600
 categories: [Blog, YouTube] # <=2 values here: top category and sub category
 tags: [youtube, todo]       # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
@@ -20,9 +20,8 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  alt: image alternative text
 ---
 
-TODO: Recreate this post using a youtube link
+{% include embed/youtube.html id='XGjModt6o4I' %}
 
-{% include embed/youtube.html id='TODO' %}
 
 ## Intro
 All right boys and girls, big day today in the crypto community. As the legendary trader ([/s](TODO: SARCASM)) "[Davey Day Trader Global](TODO)" (DDTG) would say:
