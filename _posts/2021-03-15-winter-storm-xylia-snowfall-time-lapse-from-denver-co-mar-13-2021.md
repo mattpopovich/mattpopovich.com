@@ -26,7 +26,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 ## Intro
 This post documents the snowfall at my house in Denver, CO during the winter storm Xylia from Friday March 12, 2021 through Sunday March 14, 2021.
 
-It started with some brief rain on the 13th around 11AM, then snow, then it all melted by 3PM. Snow dabbled on and off until 1AM on the 14th, which is when things really started picking up. We went from 2" on the ground at 1AM to 12" by noon ~ about an inch an hour! My external battery bank died (I [went snowboarding](TODO:strava) and neglected to swap in some new batteries beforehand) to around this time. The next picture I took was at 10PM when we had about 16".
+It started with some brief rain on the 13th around 11AM, then snow, then it all melted by 3PM. Snow dabbled on and off until 1AM on the 14th, which is when things really started picking up. We went from 2" on the ground at 1AM to 12" by noon ~ about an inch an hour! My external battery bank died (I [went snowboarding]([TODO:strava](https://www.strava.com/activities/4953024038)) and neglected to swap in some new batteries beforehand) to around this time. The next picture I took was at 10PM when we had about 16".
 
 ## TLDR
 Denver metro received ~16" of snow in ~12 hours from 1AM March 14th, 2021 to noon on the same day.
@@ -44,13 +44,14 @@ TODO: Create and add graph along with downloadable .csv file
 
 [Image of tripod covered in snow](TODO)
 
-TODO: Song "I'll be home for Christmas" by Babylion
 <div style="text-align:center">
 <iframe
-src="https://open.spotify.com/embed/track/29gVTYMqXVV47mrY4qkm4b"
-width="300" height="380" frameborder="0"
-allowtransparency="true"
-allow="encrypted-media">
+width="400" height="120"
+src="https://www.youtube.com/embed/HitYKEANclU"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </div>
 
+<!-- Could not find this song on Spotify... -->
