@@ -1,10 +1,10 @@
 ---
-title: "Winter Storm Xylia Snowfall Time-lapse from Denver, CO"
+title: "Winter Storm Xylia Snowfall Time-lapse from Denver, CO (Mar. 13, 2021)"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2024-03-08 03:05:44 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+date: 2021-03-15 05:37:44 -0600
+categories: [Blog, YouTube] # <=2 values here: top category and sub category
+tags: [youtube, todo]       # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -21,7 +21,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #description:               # A short sentence to describe the article, used when sharing links on social media
 ---
 
-TODO: Remake this post with the youtube link template
+{% include embed/youtube.html id='n7fOENeADLg' %}
 
 ## Intro
 This post documents the snowfall at my house in Denver, CO during the winter storm Xylia from Friday March 12, 2021 through Sunday March 14, 2021.
@@ -45,4 +45,12 @@ TODO: Create and add graph along with downloadable .csv file
 [Image of tripod covered in snow](TODO)
 
 TODO: Song "I'll be home for Christmas" by Babylion
-SPOTIFY
+<div style="text-align:center">
+<iframe
+src="https://open.spotify.com/embed/track/29gVTYMqXVV47mrY4qkm4b"
+width="300" height="380" frameborder="0"
+allowtransparency="true"
+allow="encrypted-media">
+</iframe>
+</div>
+
