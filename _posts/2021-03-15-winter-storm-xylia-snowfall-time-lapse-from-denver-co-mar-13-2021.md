@@ -4,7 +4,7 @@ author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2021-03-15 05:37:44 -0600
 categories: [Blog, YouTube] # <=2 values here: top category and sub category
-tags: [youtube, todo]       # TAG names should always be lowercase
+tags: [youtube, apple, shot on iphone, colorado, denver, photography, time-lapse, weather, snow, winter, data]       # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -18,7 +18,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
-#description:               # A short sentence to describe the article, used when sharing links on social media
+description: "A time-lapse of snow falling from winter storm Xylia taken in Denver, CO on the weekend of March 13, 2021"
 ---
 
 {% include embed/youtube.html id='n7fOENeADLg' %}
@@ -26,14 +26,15 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 ## Intro
 This post documents the snowfall at my house in Denver, CO during winter storm Xylia from Friday March 12, 2021 through Sunday March 14, 2021.
 
-It started with some brief rain on the 13th around 11AM, then snow, then it all melted by 3PM that same day. Snow dabbled on and off until 1AM on the 14th, which is when things really started picking up. We went from 2" on the ground at 1AM to 12" by noon = about an inch an hour! My external battery bank died (I [went snowboarding](https://www.strava.com/activities/4953024038) and neglected to swap in some new batteries beforehand) around this time. The next picture I took was at 10PM when we had about 16".
+It started with some brief rain on the 13th around 11AM, then snow, then it all melted by 3PM that same day. Snow dabbled on and off until 1AM on the 14th. The early hours of the 14th is when things started picking up. We went from 5" on the ground at 9AM to 15" by 1PM = over two inches an hour! My external battery bank died (I [went snowboarding hehe](https://www.strava.com/activities/4953024038) and neglected to swap in some new batteries beforehand) around this time. The next picture I took was at 10PM when the storm was over with 16" of total snowfall.
 
 ## TLDR
-Denver metro received ~16" of snow in ~12 hours from 1AM March 14th, 2021 to noon on the same day.
-TODO: Is this a record of some sort?
+Denver metro received ~16" of snow in ~12 hours from 1AM March 14th, 2021 to 1PM on the same day. While not a record, Weather Underground says "[Xylia was the fourth-heaviest snowstorm on record in Denver (27.1 inches)](https://www.wunderground.com/article/storms/winter/news/2021-03-11-winter-storm-xylia-snow-records-since-fall-2020)", Wikipedia says [it was Denver's second-largest March snowfall on record](https://en.wikipedia.org/wiki/March_2021_North_American_blizzard).
 
 ## Graph
-I went through the [YouTube video above](https://youtu.be/n7fOENeADLg) and made a rough estimate at snowfall totals whenever there was ~a half inch (1.27cm) change from the previous measurement. Download links to my data is below:
+I went through the [YouTube video above](https://youtu.be/n7fOENeADLg) and made a rough estimate at snowfall totals whenever there was ~a half inch (1.27cm) change from the previous measurement.
+
+Download links to my data:
 * [Microsoft Excel Spreadsheet](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver.xlsx)
 * [.csv with AM/PM time values](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_12hr.csv)
 * [.csv with 24hr (military time) values](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_24hr.csv)
@@ -49,7 +50,12 @@ I went through the [YouTube video above](https://youtu.be/n7fOENeADLg) and made 
 >
 > Also note that when I say "some people", I only know of one person that does this 😉
 
-[Image of tripod covered in snow](TODO)
+![The camera setup for recording the time-lapse: iPhone 11 Pro + tripod + battery backup](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaTimelapseRig.jpg){: .shadow}
+*The camera setup for recording the time-lapse of Xylia: iPhone 11 Pro + tripod + battery backup*
+
+&nbsp;
+
+&nbsp;
 
 <div style="text-align:center">
 <iframe
