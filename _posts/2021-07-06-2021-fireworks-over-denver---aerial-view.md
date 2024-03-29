@@ -61,13 +61,23 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
 </iframe>
 </div>
 
-
+<!-- TODO: Whenever you switch from light/dark, the album cover is lost for some reason... -->
 <div style="text-align:center">
 <iframe
-style="border: 0; width: 100%; height: 120px;"
+style="border: 0; width: 81%; height: 120px;"
+src="https://bandcamp.com/EmbeddedPlayer/album=1403600629/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2002198240/transparent=true/"
+seamless>
+<a href="https://soundkeeper.bandcamp.com/album/the-laws-of-gravity">The Laws Of Gravity by The Soundkeeper</a>
+</iframe>
+</div>{: .light}
+<div style="text-align:center">
+
+<iframe
+style="border: 0; width: 81%; height: 120px;"
 src="https://bandcamp.com/EmbeddedPlayer/album=1403600629/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/track=2002198240/transparent=true/"
 seamless>
 <a href="https://soundkeeper.bandcamp.com/album/the-laws-of-gravity">The Laws Of Gravity by The Soundkeeper</a>
 </iframe>
-</div>
+</div>{: .dark}
+
 
