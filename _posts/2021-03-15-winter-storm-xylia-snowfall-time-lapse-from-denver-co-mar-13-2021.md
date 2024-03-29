@@ -24,23 +24,30 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 {% include embed/youtube.html id='n7fOENeADLg' %}
 
 ## Intro
-This post documents the snowfall at my house in Denver, CO during the winter storm Xylia from Friday March 12, 2021 through Sunday March 14, 2021.
+This post documents the snowfall at my house in Denver, CO during winter storm Xylia from Friday March 12, 2021 through Sunday March 14, 2021.
 
-It started with some brief rain on the 13th around 11AM, then snow, then it all melted by 3PM. Snow dabbled on and off until 1AM on the 14th, which is when things really started picking up. We went from 2" on the ground at 1AM to 12" by noon ~ about an inch an hour! My external battery bank died (I [went snowboarding]([TODO:strava](https://www.strava.com/activities/4953024038)) and neglected to swap in some new batteries beforehand) to around this time. The next picture I took was at 10PM when we had about 16".
+It started with some brief rain on the 13th around 11AM, then snow, then it all melted by 3PM that same day. Snow dabbled on and off until 1AM on the 14th, which is when things really started picking up. We went from 2" on the ground at 1AM to 12" by noon = about an inch an hour! My external battery bank died (I [went snowboarding](https://www.strava.com/activities/4953024038) and neglected to swap in some new batteries beforehand) around this time. The next picture I took was at 10PM when we had about 16".
 
 ## TLDR
 Denver metro received ~16" of snow in ~12 hours from 1AM March 14th, 2021 to noon on the same day.
 TODO: Is this a record of some sort?
 
 ## Graph
-TODO: Create and add graph along with downloadable .csv file
+I went through the [YouTube video above](https://youtu.be/n7fOENeADLg) and made a rough estimate at snowfall totals whenever there was ~a half inch (1.27cm) change from the previous measurement. Download links to my data is below:
+* [Microsoft Excel Spreadsheet](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver.xlsx)
+* [.csv with AM/PM time values](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_12hr.csv)
+* [.csv with 24hr (military time) values](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_24hr.csv)
+
+![Winter storm Xylia graph of snowfall from Denver, Colorado](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_dark.png){: .dark}
+![Winter storm Xylia graph of snowfall from Denver, Colorado](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_light.png){: .light .shadow}
+
 
 ## Outro
 16" is a lot for metro denver!
 
 > Note that some people refer to this as 32" of snowfall: 16" in the front yard, 16" in the back yard
 >
-> Also note that when I say "some people", I am referencing one person. I don't think that is actually a thing.
+> Also note that when I say "some people", I only know of one person that does this 😉
 
 [Image of tripod covered in snow](TODO)
 
