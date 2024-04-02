@@ -1,10 +1,10 @@
 ---
-title: "How to find out if a car is on Turo"
+title: "How to find out if a specific car is listed on Turo"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2024-03-08 02:27:07 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+date: 2021-07-15 00:57:06 -0600
+categories: [Blog, YouTube] # <=2 values here: top category and sub category
+tags: [youtube, todo]       # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -20,6 +20,8 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  alt: image alternative text
 #description:               # A short sentence to describe the article, used when sharing links on social media
 ---
+
+{% include embed/youtube.html id='Xpy55E0jbyg' %}
 
 ## Intro
 Good afternoon! Matt Popovich here for my first video discussing Turo things. I recently just hit 100 trips on Turo! Eventually I want to put up a video talking through my thoughts on Turo after my first 100 trips. But, for now, I want to talk about how to tell if a car a car is currently listed on Turo or not. Maybe you're looking at purchasing and you don't want to purchase a car that's been rented, or maybe your buddy just pulled up in a brand new lambo and you know he can't afford it and you're really hoping it's rented...
@@ -56,4 +58,14 @@ Fast forward, I end up buying the car and when I got to try to add it to my acco
 
 But, that's how we got here, thanks for reading. Hope this helps!
 
-TODO: Song via spotify
+
+TODO: Add spotify link here (if applicable)
+<div style="text-align:center">
+<iframe
+src="https://open.spotify.com/embed/track/29gVTYMqXVV47mrY4qkm4b"
+width="300" height="380" frameborder="0"
+allowtransparency="true"
+allow="encrypted-media">
+</iframe>
+</div>
+
