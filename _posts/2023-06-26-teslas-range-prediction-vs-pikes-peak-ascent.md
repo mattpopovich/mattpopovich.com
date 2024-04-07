@@ -18,13 +18,13 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
-#description:               # A short sentence to describe the article, used when sharing links on social media
+description: I drive my 2020 Tesla Model 3 LR AWD up Pikes Peak to see how accurate Tesla's range prediction software is!
 ---
 
 {% include embed/youtube.html id='LKJFCuxWdmI' %}
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
-* My 2020 LR AWD Tesla Model 3 started at the bottom of Pikes Peak entrance at 49% state-of-charge
+* My 2020 LR AWD Tesla Model 3 started at the bottom of [Pikes Peak toll road entrance](TODO google maps link) at 49% state-of-charge
   * Elevation 7764ft (2366m)
   * Tesla navigation predicted 26% state-of-charge upon arrival at the peak
 * Arrival at the peak was at 25% state-of-charge (-1% from prediction)
