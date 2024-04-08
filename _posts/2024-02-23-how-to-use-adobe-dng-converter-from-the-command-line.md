@@ -4,7 +4,7 @@ author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2024-02-24 03:17:06 -500
 categories: [Blog]    # <=2 values here: top category and sub category
-tags: [apple, how to, mac, video editing, tech, tutorial, adobe, dng, gpr, cli, gui, adobe dng converter, programming, bash]                # TAG names should always be lowercase
+tags: [apple, how to, mac, video editing, tech, tutorial, adobe, dng, gpr, cli, gui, adobe dng converter, programming, bash, not youtube]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -176,7 +176,7 @@ This particular example was ran using the two `*.GPR` files I mentioned above (a
 
 <!-- Had to add <code> &nbsp; </code> here because spaces are not kept between `` unfortunately -->
 
-| [Flags](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) | Speedup (s) | Speedup (%) | Size (bytes) | Size (%) |
+| [Flags](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) | Runtime (s) | Runtime (%) | Size (bytes) | Size (%) |
 |-------|-------------|-------------|--------------|----------|
 | <code>-c -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0003828s | 0%   | +0B         | +0% |
 | <code>-u -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0146741s | -1%  | +0B         | +0% |
@@ -189,7 +189,7 @@ This particular example was ran using the two `*.GPR` files I mentioned above (a
 | <code>-c -p1 -mp &nbsp;&nbsp; -cr7.1 -dng1.7.1</code>                     | -.3165521s | -31% | +0B         | +0% |
 
 Where
-* Speedup = smaller (negative) is better
+* Runtime = smaller (negative) is better
 * Size = smaller (negative) is better
 
 ## Outro
