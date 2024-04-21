@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Wiper blade installation on an Audi A3 is very simple, here's how!
 ---
 
 {% include embed/youtube.html id='A3U3xpzBH2c' %}
@@ -71,7 +72,7 @@ To take the old wipers off, you'll need to push the button on the wipers, then l
 
 Screenshot from my Tutorial Video | Screenshot from Owner's Manual |
 :--------------------------------:|:------------------------------:
-[![Screenshot of how to remove windshield wipers: push button, pull wiper away from harness, pull wioper out of harness](/assets/img/posts/2021-04-27-how-to-replace-audi-a3-wiper-blades-easy/wiper-blade-removal-crop.jpg)](https://youtu.be/A3U3xpzBH2c?t=102) | [![Audi A3 manual instructions to replace the front windshield wipers](/assets/img/posts/2021-04-27-how-to-replace-audi-a3-wiper-blades-easy/replace-wiper-blades.jpg)](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-52)
+[![Screenshot of how to remove windshield wipers: push button, pull wiper away from harness, pull wiper out of harness](/assets/img/posts/2021-04-27-how-to-replace-audi-a3-wiper-blades-easy/wiper-blade-removal-crop.jpg)](https://youtu.be/A3U3xpzBH2c?t=102) | [![Audi A3 manual instructions to replace the front windshield wipers](/assets/img/posts/2021-04-27-how-to-replace-audi-a3-wiper-blades-easy/replace-wiper-blades.jpg)](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-52)
 
 
 ## Put the new wipers on
@@ -80,7 +81,7 @@ To put the wipers back on, just do the opposite as when you took them off: Set t
 Always a smart idea to make sure you can't pull it back out of the harness to ensure that it's set and "locked" in the harness correctly.
 
 ## Taking the wipers out of “service position”
-Again, basically the opposite of when we put them into the service position: turn the ignition of the vehicle on then pull the wioper stalk down to position 4 and hold it there for a bit until the wipers retreat to their normal position.
+Again, basically the opposite of when we put them into the service position: turn the ignition of the vehicle on then pull the wiper stalk down to position 4 and hold it there for a bit until the wipers retreat to their normal position.
 
 And just like that, you're done! Good to go 👍
 
@@ -94,11 +95,11 @@ All of this information (and more) can be found in the instruction booklet to yo
 &nbsp;
 
 <div style="text-align:center">
-<iframe
-src="https://open.spotify.com/embed/track/4MAJ62sRxctluSpGf76HA5?si=10a56543ce804ae3"
-width="300" height="380" frameborder="0"
-allowtransparency="true"
-allow="encrypted-media">
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/3A7rbZ9N3CFzSrphOazU2y?utm_source=generator"
+width="80%" height="352" frameBorder="0" allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy">
 </iframe>
 </div>
 

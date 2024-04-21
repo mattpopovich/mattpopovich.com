@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: 👋
 ---
 
 [Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)

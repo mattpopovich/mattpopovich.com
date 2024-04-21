@@ -17,16 +17,17 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: I'm working on testing the range of the WowGo 2S electric longboard...
 ---
 
 {% include embed/youtube.html id='uQCvAZjiesw' %}
 
 ## What I'm working on
 
-So, I'm working on a post/video for the [WowGo 2S](https://wowgoboard.com/pages/wowgo-2s) electric longboard. I'm doing a range test in two of the three different modes and I'm also going to be doing a "highway" and a "city" range test. I have that *pretty much* wrapped up... I'm in the midst of doing the final highspeed city test right now, but, we're not done...yet.
+So, I'm working on a post/video for the [WowGo 2S](https://wowgoboard.com/pages/wowgo-2s) electric longboard. I'm doing a range test in two of the three different modes and I'm also going to be doing a "highway" and a "city" range test. I have that *pretty much* wrapped up... I'm in the midst of doing the final high-speed city test right now, but, we're not done...yet.
 
 As I said in my [first post](/posts/first/#big-quote-guy): I plan on dishing out quotes throughout my posts. There's another quote that I like for this week which I think is very relevant to me, as a person, is ["don't let perfect be the enemy of good"](https://hbr.org/2020/03/dont-let-perfection-be-the-enemy-of-productivity). And, unfortunately, I think I've let that happen to me for this next video that I'm working on. I've spent way too much time trying to get video overlays working and trying to get additional camera angles, etc. Because of this, it's taken more time than I originally budgeted.
-![WowGo Promotion](/assets/img/posts/2020-12-01-preview-wowgo-2s-range-test/wow-go-promotion.jpg){: width="400" .right}
+![WowGo Promotion](/assets/img/posts/2020-12-01-preview-wowgo-2s-range-test/wow-go-promotion.jpg){: width="400" .shadow .right}
 
 ## Why I'm working on it
 
@@ -43,7 +44,7 @@ I know that [Boosted](https://boostedboards.com) makes some really nice boards, 
 
 ## Unrelated (don't be a squid)
 
-I'm currently in the midst of doing the highspeed highway range test and I'm doing a very poor example by being a [squid](https://www.urbandictionary.com/define.php?term=Squid) (**squ**irrely k**id**) right now. As I'm going to say in the full video, always wear your [brain bucket](https://en.wiktionary.org/wiki/brain_bucket)! It doesn't make you any tougher to not wear a helmet. There's a reason why seat-belts are illegal to not wear...
+I'm currently in the midst of doing the high-speed highway range test and I'm doing a very poor example by being a [squid](https://www.urbandictionary.com/define.php?term=Squid) (**squ**irrely k**id**) right now. As I'm going to say in the full video, always wear your [brain bucket](https://en.wiktionary.org/wiki/brain_bucket)! It doesn't make you any tougher to not wear a helmet. There's a reason why seat-belts are illegal to not wear...
 
 ## Wrap-up
 

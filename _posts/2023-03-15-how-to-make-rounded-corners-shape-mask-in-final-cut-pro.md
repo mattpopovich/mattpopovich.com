@@ -18,6 +18,7 @@ img_path: /assets/img/posts/2023-03-15-how-to-make-rounded-corners-shape-mask-in
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Making rounded corners in FCPX is very simple to do but I couldn't find any simple tutorials, so I made one!
 ---
 
 {% include embed/youtube.html id='5dp_S5vU_xI' %}
@@ -62,3 +63,5 @@ And this makes sense, for example, if you had many different clips and effects r
 That's about all there is to the Shape Mask. Feel free to customize and mess around with it. I will leave the other parameters of the Shape Mask Inspector as an [exercise for the reader](http://www.mathmatique.com/articles/left-exercise-reader) 😉
 
 Hope this helps!
+
+<!-- TODO: Could not find "Sweet Tea" by Travis Loafman anyhere -->
