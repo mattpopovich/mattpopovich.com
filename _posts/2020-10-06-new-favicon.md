@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: New logo for the **brand**!!
 ---
 
 Just had some inspiration tonight on a new logo for the ***brand***.
@@ -26,3 +27,8 @@ I drew it up on the whiteboard and sent it down to graphic design to get me some
 Not too shabby if I say so myself. It has potential. More to come.
 
 ![New MDP Logo](/assets/img/sample/avatar2thiccccc.png)
+
+> January 4, 2023 update:
+> Even though the graphic design team is still on strike, I'm happy to announce we have updated the favicon. The original was used as inspiration, but it has a more professional look, thanks to [GIMP](https://www.gimp.org/) (and no thanks to our graphic design team).
+> ![New January 4, 2023 favicon](/assets/img/logos/logo_1200x630.png)
+{: .prompt-info }

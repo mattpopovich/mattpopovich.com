@@ -17,6 +17,7 @@ mermaid: false
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Here's what to do if you get a warning to "switch off engine and check coolant level!"
 ---
 
 {% include embed/youtube.html id='rRbSVmFteuY' %}
@@ -43,7 +44,7 @@ Hey guys! Matt Popovich here. Today in my [series of Audi A3 tutorials](/tags/au
 
 > Note that if you have an S3/RS3, the coolant temperature gauge is replaced with a boost gauge. You can find the S3's engine oil temperature by following [this video](https://www.youtube.com/watch?v=jSTC5FCfJdA&t=0s).
 > [This video](https://www.youtube.com/watch?v=--jgt7jy-xo) will show you how to modify an S3/RS3's settings via [OBD2](https://en.wikipedia.org/wiki/On-board_diagnostics) to add engine oil temperature to the instrument cluster.
-> However, oil temperature is different from coolant temperature, read [this article](http://www.tuneruniversity.com/blog/2011/05/keep-your-engine-alive-the-importance-of-oil-temperature/) for a good explanation.
+> However, oil temperature is different from coolant temperature, read [this article](https://www.tuneruniversity.com/blog/2011/05/keep-your-engine-alive-the-importance-of-oil-temperature/) for a good explanation.
 {: .prompt-info }
 
 The first thing you’re going to want to do is to keep an eye on your coolant temperature indicator. Coolant has two functions: it keeps the engine from overheating and it protects the engine from freezing in the winter. I just started my car after it was sitting for a ~day so the engine is cold. After a few minutes, the coolant temperature will creep back up to the normal level, which is where it should be while you are driving. It’s "okay" to keep driving with the low coolant light on as long as your coolant stays at normal operating temperature. You’ll need to keep an eye on it. Ideally, you’ll want to check the physical, liquid coolant level as soon as you can for some additional peace of mind. If the coolant doesn’t get to normal operating temperature or if it goes past the midpoint line, that’s a bad sign and you should pull over, open the hood and check the coolant level in the coolant reservoir. Let me show you how to do that now.
@@ -115,17 +116,10 @@ That’s a wrap! Hopefully this helped. If there’s anything I missed, feel fre
 
 <div style="text-align:center">
 <iframe style="border-radius:12px"
-src="https://open.spotify.com/embed/track/29XO76OgiJZpD6ySALy1h8?si=7e419ee6027940dd?utm_source=generator&theme=0"
-width="100%" height="352" frameBorder="0"
-allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>{: .dark }
-
-<div style="text-align:center">
-<iframe style="border-radius:12px"
 src="https://open.spotify.com/embed/track/29XO76OgiJZpD6ySALy1h8?si=7e419ee6027940dd?utm_source=generator"
-width="100%" height="352" frameBorder="0"
+width="80%" height="352" frameBorder="0"
 allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>{: .light }
+</div>
 
 &nbsp;
 
