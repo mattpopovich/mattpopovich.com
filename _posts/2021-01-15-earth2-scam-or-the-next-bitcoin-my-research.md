@@ -12,11 +12,12 @@ math: false
 mermaid: false
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+# image:
+#  path: TODO /assets/img/posts/2021-01-15-earth2-scam-or-the-next-bitcoin-my-research/earth2-thumbnail_1200x630.png
 #  width: 100   # in pixels
 #  height: 40   # in pixels
-#  alt: image alternative text
+#  alt: Earth 2: Scam or the next bitcoin?
+description: Is Earth2 something you should invest in? Read on for my analysis
 ---
 
 {% include embed/youtube.html id='1Z18tK6zB8I' %}
