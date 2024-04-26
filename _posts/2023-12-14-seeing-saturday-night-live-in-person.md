@@ -23,7 +23,7 @@ description: I was *extremely* lucky and won tickets to see SNL live. Here's how
 
 ## Intro
 
-> [Live from New York, it's Saturday Night!](https://youtu.be/tajtbq-1vC0)
+> [Live from New York, it's Saturday Night!](https://youtu.be/FpoKtpKjn3Q)
 
 That iconic phrase is the last line from Saturday Night Live's (SNL) [cold open](https://en.wikipedia.org/wiki/Cold_open). I was **extremely lucky** to have the chance to see SNL in person for season 49's episode 7 ([NBC.com](https://www.nbc.com/saturday-night-live/video/december-9-adam-driver/9000283425), [YouTube](https://www.youtube.com/playlist?list=PLS_gQd8UB-hKp4T1H5b-HujaKq-VFfVbh)) on December 9, 2023. The show was hosted by [Adam Driver](https://www.imdb.com/name/nm3485845/) with musical guest [Olivia Rodrigo](https://www.youtube.com/@OliviaRodrigo/videos).
 
@@ -103,7 +103,10 @@ At around 11PM they will start seating you. This is where you will be for the ne
 At 11:30PM, the show is live and the magic begins. I'd highly recommend not looking at the various screens throughout showing the live broadcast, you'll be able to watch those when you get home. Watching the [cue cards](https://youtu.be/3djg59JUrmc) is interesting to see what is adlib'd and what lines got modified throughout rehearsals, watching the sets get [stood up and tore down between skits](https://youtu.be/wszO190L-os) is super fascinating (behind the scenes look at the show I attended [here](https://www.youtube.com/watch?v=lV0vkCJt0mA&t=635s)), seeing who comes out to watch the musical guests is neat (they'll be standing right behind the floor seats), and seeing cast members being [ushered around by their handler](https://youtu.be/MRsBTw_1-iE&t=199s) can be comical. The whole show is a fantastic experience and glimpse into live television. It was awesome to be at the place that you see on your TV every Saturday night. It looks just like it does on TV! 😅 It was also a humbling experience to somewhat realize that these actors and actresses are real people, just like us.
 
 ## Post-Show
-<!-- TODO: Add an image of the tshirt here -->
+
+![SNL T-Shirt specific to my show](/assets/img/posts/2023-12-14-seeing-saturday-night-live-in-person/SNL-T-Shirt_noBackground.png)
+*The SNL T-Shirt specific to the show I attended*
+
 The show ends at 1AM and you start to get ushered out of the studio. You're led back into the elevators and into the NBC gift shop with a 10% off coupon. The one thing that you **will want to get** out of the gift shop is they make a handful (not enough) of t-shirts for each individual show (~$40/ea), showing the season on the front and the date/hosts + music guest on the back. This will be the first thing that you want to get. There is also a chance that there won't be any left / they won't have any in your size. To prevent this from happening, you could go to *[The Shop at NBC Studios](https://maps.app.goo.gl/AoBVZv96tH5iBHBV7)* before the show to get the size that you want. I'd probably recommend this, even though I was lucky enough to get a shirt in my size after the show (I probably used up a years worth of luck in this one weekend).
 
 You're then led back out onto the streets of New York City to make your way home, to Times Square, or wherever you'd like to go.
