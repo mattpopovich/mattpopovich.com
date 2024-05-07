@@ -115,6 +115,8 @@ The experience may be over, but the memories will stay.
 
 &nbsp;
 
+## Outro
+
 If you made it this far, thanks for reading and I hope this post can help your SNL adventure! Do you have tips or tricks for seeing SNL in person? Did this post help you out? Let me know in the comments below!
 
 Remember to apply for tickets during the month of August, and I wish you all the best of luck!
@@ -122,3 +124,7 @@ Remember to apply for tickets during the month of August, and I wish you all the
 <div style="text-align:center">
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXS0qyx76B7l?utm_source=generator" width="80%" height="420" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
+
+&nbsp;
+
+Additional reading: [blog post from that traveling family](https://thattravelingfamily.com/live-from-new-york-what-its-like-to-watch-saturday-night-live-in-person/).
