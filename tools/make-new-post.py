@@ -25,7 +25,7 @@ import googleapiclient.errors
 # Constants
 API_KEY_FILENAME = "api_key.txt"
 
-# Get API key
+# Get API key: https://console.cloud.google.com/project/_/google/maps-apis/credentials
 if os.path.exists(API_KEY_FILENAME):
     print("API key file found: " + API_KEY_FILENAME)
 else:
