@@ -4,7 +4,7 @@ author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2023-12-14 07:22:42 -0600
 categories: [Blog]    # <=2 values here: top category and sub category
-tags: [travel, new york, new york city, saturday night live, not youtube] # TAG names should always be lowercase
+tags: [travel, new york, new york city, saturday night live, youtube] # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -20,6 +20,8 @@ image:
  alt: SNL Ticket December 9th, 2023
 description: I was *extremely* lucky and won tickets to see SNL live. Here's how to make the most of the experience!
 ---
+
+{% include embed/youtube.html id='YdpeMMYUkpo' %}
 
 ## Intro
 
@@ -96,7 +98,7 @@ The Peacock Lounge has a bunch of couch/bench things and you're told what genera
 At around 10:20PM they announce you should go to the bathroom now if you need to. I went before this as to try and avoid a line, but there wasn't much of a line in my experience. If you have to go to the restroom during the show, it should only be during a commercial break and you aren't let back into the show until the next commercial break (this is something you really want to avoid).
 
 ## The Show: Studio 8H
-At around 10:35PM they call the people sitting on the floor to the elevators (this was me, so the rest of this post will be from floor seating perspective), which you will ride to studio 8H. The sooner you get up to studio 8H, the better chance you'll have to sit in the front of the floor (best chance being the last person in the first elevator they send up, as you will be the first person getting off the elevator). When you get up to 8H, they have pictures of past casts on the wall, as well as the sets for that evening in the hallway (try and guess the skits!). You won't be able to use your phones in or after this area so I'd highly recommend to look around and take it all in. You'll probably be able to recognize the hallways from [past host monologues](https://youtu.be/R7wZHVcxTrA?t=166) that venture off of the stage, or view [Tina Fey's 360° tour of studio 8H](https://youtu.be/i2c88eNZvwU) (you can click and drag to look around while the video is playing!). While waiting in the hallway, they might ask you if you'd be willing to split up with your group in order to get a seat at the front (there are 3 seats in the very first row on both sides). I said yes but no luck. These front three seats have the best chance of some face time during the show. You'll probably catch a glimpse or two of some cast members while here as well. In this hallway is the final last chance of going to the bathroom before the show (I recommend it).
+At around 10:35PM they call the people sitting on the floor to the elevators (this was me, so the rest of this post will be from floor seating perspective), which you will ride to studio 8H. The sooner you get up to studio 8H, the better chance you'll have to sit in the front of the floor (best chance being the last person in the first elevator they send up, as you will be the first person getting off the elevator). When you get up to 8H, they have pictures of past casts on the wall, as well as the sets for that evening in the hallway (try and guess the skits!). You won't be able to use your phones in or after this area so I'd highly recommend to look around and take it all in. You'll probably be able to recognize the hallways from [past host](https://youtu.be/AsupmN90wBk?t=154) [monologues](https://youtu.be/R7wZHVcxTrA?t=166) that venture off of the stage, or view [Tina Fey's 360° tour of studio 8H](https://youtu.be/i2c88eNZvwU) (you can click and drag to look around while the video is playing!). While waiting in the hallway, they might ask you if you'd be willing to split up with your group in order to get a seat at the front (there are 3 seats in the very first row on both sides). I said yes but no luck. These front three seats have the best chance of some face time during the show. You'll probably catch a glimpse or two of some cast members while here as well. In this hallway is the final last chance of going to the bathroom before the show (I recommend giving it a shot).
 
 At around 11PM they will start seating you. This is where you will be for the next two hours. You'll be able to see the set and all the planning and teamwork that goes into the show. Michael Che came out for a few minutes before the show ~1110PM to pump up the crowd, as well as a musical number headlined by Kenan Thompson with background dancers/singers Chloe Fineman, Heidi Gardner, and Ego Nwodim. These are not part of the show and are not aired on TV.
 
@@ -107,7 +109,7 @@ At 11:30PM, the show is live and the magic begins. I'd highly recommend not look
 ![SNL T-Shirt specific to my show](/assets/img/posts/2023-12-14-seeing-saturday-night-live-in-person/SNL-T-Shirt_noBackground.png)
 *The SNL T-Shirt specific to the show I attended*
 
-The show ends at 1AM and you start to get ushered out of the studio. You're led back into the elevators and into the NBC gift shop with a 10% off coupon. The one thing that you **will want to get** out of the gift shop is they make a handful (not enough) of t-shirts for each individual show (~$40/ea), showing the season on the front and the date/hosts + music guest on the back. This will be the first thing that you want to get. There is also a chance that there won't be any left / they won't have any in your size. To prevent this from happening, you could go to *[The Shop at NBC Studios](https://maps.app.goo.gl/AoBVZv96tH5iBHBV7)* before the show to get the size that you want. I'd probably recommend this, even though I was lucky enough to get a shirt in my size after the show (I probably used up a years worth of luck in this one weekend).
+The show ends at 1AM and you start to get ushered out of the studio. You're led back into the elevators and into the NBC gift shop with a 10% off coupon. The one thing that you **will want to get** out of the gift shop is they make a handful (not enough) of t-shirts for each individual show (~$40/ea), showing the season on the front and the date/hosts + music guest on the back. This will be the first thing that you want to get. There is also a chance that there won't be any left / they won't have any in your size. To prevent this from happening, you could go to *[The Shop at NBC Studios](https://maps.app.goo.gl/AoBVZv96tH5iBHBV7)* before the show to get the size that you want. I'd probably recommend this, even though I was lucky enough to get a shirt in my size after the show (I probably used up a years worth of luck in this one weekend). It also appears that you can just order this shirt [online the week of the show](https://www.nbcstore.com/collections/the-shop-at-nbc-studios)..? However, it looks like previous weeks' shirts are not available.
 
 You're then led back out onto the streets of New York City to make your way home, to Times Square, or wherever you'd like to go.
 
