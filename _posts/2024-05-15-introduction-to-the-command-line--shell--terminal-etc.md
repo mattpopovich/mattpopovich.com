@@ -24,7 +24,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 # Intro to the Terminal
 
 ## Disclaimer
-*Command line*, *command prompt*, *shell*, *terminal*, *console*, etc. can sometimes be used interchangeably. Normally, they are all referring to a window in which you input text commands and receive text output.
+*Command line*, *command prompt*, *shell*, *terminal*, *console*, etc. can sometimes be used interchangeably. I will be using them interchangeably in this article. Normally, they are all referring to a window in which you input text commands and receive text output.
 
 There are **a lot** of intricacies in the terminal. You might call them ["quirks"](https://youtu.be/2aiopbNnyF8) or ["features"](https://youtu.be/BQ0mlXQezxE?si=ijwZunxB5kDFciGI). You will never learn them all and some of them still stump me to this day. However, most of the terminal follows the same general pattern:
 
@@ -38,7 +38,7 @@ A `$` or `#` are common hints that this line is meant to be ran in a terminal
 
 * `program` is a small executable that resides on your system
   * *Required*
-  * Most common ones are in `/bin`
+  * Most common ones can be found in `/bin`
 * `flags` are normally either one letter or a full word that activate certain capabilities in a program
   * *Optional*
 * `arguments` are information given to a program for it to act upon (just like function arguments)
@@ -71,7 +71,7 @@ drwx------+   7 mattpopovich  staff          224 Apr 13 10:14 Pictures
 
 `ls` supports multiple flags. We can also include `-h` = *list files in a more **h**uman readable format*
 
-> Note that this gives you the size of the file. This does not give you the size of the files in the folder!! (Use `du` for that)
+> Note that this gives you the size of the file. This does not give you the size of the files in the folder!! ([Use `du` for that](TODO))
 {: .prompt-warning }
 
 ```console
@@ -85,8 +85,22 @@ drwx------   22 mattpopovich  staff         704B Apr  9 01:32 Movies
 drwx------+   5 mattpopovich  staff         160B Oct 10  2022 Music
 drwx------+   7 mattpopovich  staff         224B Apr 13 10:14 Pictures
 ```
+Note how the size of the files changed from being displayed in bytes to being converted to B, KB, GB, etc.
 
-Lastly, we can give `ls` an argument for which file or folder to list:
+If we were only interested in one specific file or folder, we can give `ls` an argument for which file or folder to list:
+
+```console
+$ ls -lh Documents
+-rw-r--r--@  1 mattpopovich  staff   774K Oct  1  2022 img1.png
+-rw-r--r--@  1 mattpopovich  staff   399K Oct  1  2022 img2.png
+-rw-r--r--@  1 mattpopovich  staff   404K Oct  1  2022 img3.png
+$ ls -lh Documents/img1.png
+-rw-r--r--@  1 mattpopovich  staff   774K Oct  1  2022 img1.png
+```
+
+Note that this showed us the *contents* of what was inside that folder, or if it was a file, it showed us information about **only** that file.
+
+If we wanted to see more detailed information about a folder (without listing its contents), we can use the `-d` flag:
 
 ```console
 $ ls -lhd Documents
@@ -95,11 +109,69 @@ $ ls -l -h -d Documents
 drwx------@ 32 mattpopovich  staff   1.0K Jul 19  2023 Documents
 ```
 
-Here, we add the `-d` flag to tell `ls` to show us information about the ***d**irectory* and not what is *inside the directory*. Also note that the flags can be together (`-lhd`) or separate (`-l -h -d`).
+Here, we add the `-d` flag to tell `ls` to show us information about the ***d**irectory* (and not what is *inside the directory*) named `Documents`. Also note that the flags can be together (`-lhd`) or separate (`-l -h -d`).
 
-Additionally, we tell `ls` to only show us information about the directory named *Documents*.
 
----
+### <big>**man**</big>
+
+`man` = *Display **man**ual documentation pages*
+
+Before we go too much further, I should mention the `man` command.
+> [Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime.](https://quoteinvestigator.com/2015/08/28/fish/)
+
+This command displays documentation for the argument you pass to it. This is what it looks like if you run it with an argument of `ls` (the command I explained above):
+
+```console
+$ man ls
+LS(1)                          General Commands Manual                         LS(1)
+
+NAME
+     ls – list directory contents
+
+SYNOPSIS
+     ls [-@ABCFGHILOPRSTUWabcdefghiklmnopqrstuvwxy1%,] [--color=when] [-D format]
+        [file ...]
+
+DESCRIPTION
+     For each operand that names a file of a type other than directory, ls displays
+     its name as well as any requested, associated information.  For each operand
+     that names a file of type directory, ls displays the names of files contained
+     within that directory, as well as any requested, associated information.
+
+     If no operands are given, the contents of the current directory are displayed.
+     If more than one operand is given, non-directory operands are displayed first;
+     directory and non-directory operands are sorted separately and in
+     lexicographical order.
+
+     The following options are available:
+
+     -@      Display extended attribute keys and sizes in long (-l) output.
+
+     -A      Include directory entries whose names begin with a dot (‘.’) except for
+             . and ...  Automatically set for the super-user unless -I is specified.
+
+     -B      Force printing of non-printable characters (as defined by ctype(3) and
+             current locale settings) in file names as \xxx, where xxx is the
+             numeric value of the character in octal.  This option is not defined in
+             IEEE Std 1003.1-2008 (“POSIX.1”).
+[...]
+```
+
+Note that once you run `man`, a new "window" in the terminal opens. You can advance to the next line with the enter key, up and down errors, or even scrolling (if enabled). Press `q` (quit) to exit. `q` to exit is [common in other programs (`vi`)](TODO) as as we will find out.
+
+If you scroll down in that `man` page, you will find information about the flags that I explained above:
+```console
+     -d      Directories are listed as plain files (not searched recursively).
+    [...]
+     -h      When used with the -l option, use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte in order to reduce the number of
+             digits to four or fewer using base 2 for sizes.  This option is not defined in IEEE Std 1003.1-2008 (“POSIX.1”).
+    [...]
+     -l      (The lowercase letter “ell”.) List files in the long format, as described in the The Long Format subsection below.
+```
+
+I will leave the other flags as an [exercise for the reader](http://www.mathmatique.com/articles/left-exercise-reader) 😉
+
+### <big>**glob**</big>
 
 Something else that's neat about the terminal is that it's created *by programmers, for programmers*. It has a lot of very powerful "shortcuts" that can be used. For example:
 
@@ -186,50 +258,6 @@ Downloads
 ```
 
 Notice that `/users/mattpopovich` is being displayed as `~`.
-
-### <big>**man**</big>
-
-`man` = *Display **man**ual documentation pages*
-
-This command displays documentation for the argument you pass to it.
-
-```console
-$ man ls
-LS(1)                          General Commands Manual                         LS(1)
-
-NAME
-     ls – list directory contents
-
-SYNOPSIS
-     ls [-@ABCFGHILOPRSTUWabcdefghiklmnopqrstuvwxy1%,] [--color=when] [-D format]
-        [file ...]
-
-DESCRIPTION
-     For each operand that names a file of a type other than directory, ls displays
-     its name as well as any requested, associated information.  For each operand
-     that names a file of type directory, ls displays the names of files contained
-     within that directory, as well as any requested, associated information.
-
-     If no operands are given, the contents of the current directory are displayed.
-     If more than one operand is given, non-directory operands are displayed first;
-     directory and non-directory operands are sorted separately and in
-     lexicographical order.
-
-     The following options are available:
-
-     -@      Display extended attribute keys and sizes in long (-l) output.
-
-     -A      Include directory entries whose names begin with a dot (‘.’) except for
-             . and ...  Automatically set for the super-user unless -I is specified.
-
-     -B      Force printing of non-printable characters (as defined by ctype(3) and
-             current locale settings) in file names as \xxx, where xxx is the
-             numeric value of the character in octal.  This option is not defined in
-             IEEE Std 1003.1-2008 (“POSIX.1”).
-[...]
-```
-
-Note that once you run `man`, a new "window" in the terminal opens. You can navigate it with the enter key, up and down errors, or even scrolling (if enabled). Press `q` (quit) to exit. `q` to exit is common in other programs as well (`vi`) as we will find out.
 
 ### <big>**touch**</big>
 
