@@ -28,7 +28,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 ## Intro
 
 ### What is this post about?
-This post documents my experience moving my [Plex](https://www.plex.tv/) server from my Macbook to a [Synology NAS](https://www.synology.com/dsm/solution/what-is-nas/for-home) (network attached storage). The Plex server was installed using the [Mac Plex app](https://www.plex.tv/media-server-downloads/?cat=computer&plat=macos) (`.dmg`) and I will be transitioning to docker on the Synology NAS to make future moves (if necessary) much easier due to docker being operating system independent.
+This post documents my experience moving my [Plex](https://www.plex.tv/) server from my MacBook to a [Synology NAS](https://www.synology.com/dsm/solution/what-is-nas/for-home) (network attached storage). The Plex server was installed using the [Mac Plex app](https://www.plex.tv/media-server-downloads/?cat=computer&plat=macos) (`.dmg`) and I will be transitioning to docker on the Synology NAS to make future moves (if necessary) much easier due to docker being operating system independent.
 
 I use [Tautulli](https://tautulli.com/) for Plex statistics, so I will also be moving that from the Mac (running via Python) to a docker container on the Synology NAS as well.
 
@@ -38,11 +38,11 @@ Plex is an server/client utility that lets you host your own music, pictures, vi
     * Note that you can only stream and download your content when this computer is powered on and connected to your network/the internet.
 2. Copy all of the content that you want to stream/download onto your host computer
 3. Tell Plex which folder your content is in
-4. Download the Plex app or navigate to [plex.tv](https://todo.com) onto your client (phone, TV, tablet, etc.)
+4. Download the Plex app or navigate to [plex.tv](https://www.plex.tv) onto your client (phone, TV, tablet, etc.)
 5. Login on the client and stream/download your content!
 
 ### Why move to a NAS?
-I previously hosted my Plex server on a Macbook that was constantly powered on and plugged in. My Mac was old (2012) so it struggled to decode the newer video codecs (H.265/HEVC) + leaving it plugged in all the time isn't great on its battery. I also had all of my content on an external hard drive so in the event of a disk failure (can happen randomly as drives get older), I would have lost all my content. Sure, I could have made a backup but it can be annoying to constantly keep the backup up to date.
+I previously hosted my Plex server on a MacBook that was constantly powered on and plugged in. My Mac was old (2012) so it struggled to decode the newer video codecs (H.265/HEVC) + leaving it plugged in all the time isn't great on its battery. I also had all of my content on an external hard drive so in the event of a disk failure (can happen randomly as drives get older), I would have lost all my content. Sure, I could have made a backup but it can be annoying to constantly keep the backup up to date.
 
 My solution: buy a NAS (network attached storage). Why? A NAS is a:
 * Computer that is designed to be a server (always on)
@@ -142,7 +142,7 @@ services:
       - /volume1/docker/plex/data:/data:ro
 ```
 {: file='plex-docker-compose.yaml'}
-> Here, I am mounting the `data` directory as `ro` = *read only*. This is some additional security to ensure Plex doesn't go rogue and delete anything. *However*, if you're trying to record live TV or have Plex write anything to the data folder, you will want to remove the `:ro`, as Plex won't have permissions to save anything if the folder is *read only*.
+> Here, I am mounting the `data` directory as `ro` = *read only*. This is some additional security to ensure Plex doesn't go rogue and delete anything. *However*, if you're going to record live TV or have Plex write anything to the data folder, you will want to remove the `:ro`, as Plex won't have permissions to save anything if the folder is *read only*.
 {: .prompt-info }
 
 To run the docker container using docker compose:
@@ -259,7 +259,7 @@ If this doesn’t work, some starting points for debugging is to search the logs
 ### Updating Plex
 To update plex, there is no need to do it through the web GUI anymore. All you need to do is restart docker, and the plex image will automatically redownload the latest version of plex media server:
 Note that this is only applicable to the plexpass tag.
-```
+```console
 user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml down
 [+] Running 1/1
  ⠿ Container plex  Removed                                                                                                                                           17.6s
@@ -300,8 +300,8 @@ services:
       - /volume1/docker/tautulli/config:/config
     environment:
       # Matches Tautulli user created on Synology's DiskStation Manager
-      - PUID=1033   # Match id -u tautulli
-      - PGID=100    # Match id -g tautulli
+      - PUID=1033   # Match `id -u tautulli`
+      - PGID=100    # Match `id -g tautulli`
       - TZ=America/Denver
     ports:
       - 8181:8181
