@@ -21,12 +21,10 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #description:               # A short sentence to describe the article, used when sharing links on social media
 ---
 
-# Intro to the Terminal
-
 ## Disclaimer
 *Command line*, *command prompt*, *shell*, *terminal*, *console*, etc. can sometimes be used interchangeably. I will be using them interchangeably in this article. Normally, they are all referring to a window in which you input text commands and receive text output.
 
-There are **a lot** of intricacies in the terminal. You might call them ["quirks"](https://youtu.be/2aiopbNnyF8) or ["features"](https://youtu.be/BQ0mlXQezxE?si=ijwZunxB5kDFciGI). You will never learn them all and some of them still stump me to this day. However, most of the terminal follows the same general pattern:
+There are **a lot** of intricacies in the terminal. You might call them ["quirks"](https://youtu.be/2aiopbNnyF8) or ["features"](https://youtu.be/BQ0mlXQezxE?si=ijwZunxB5kDFciGI). You will never learn them all and some of them still stump me to this day. Half of the battle is just knowing which features exist. If you don't remember exactly how to use a feature, any search engine will get you there ("*How do I copy a file in the terminal*"). If you can think it, someone has probably done it in the terminal. Most of the terminal follows the same general pattern:
 
 ## How to Use
 The terminal is made up of three possible things:
@@ -39,10 +37,12 @@ A `$` or `#` are common hints that this line is meant to be ran in a terminal
 * `program` is a small executable that resides on your system
   * *Required*
   * Most common ones can be found in `/bin`
+  * Also referred to as: *executable*, *script*, *binary*, *command*, etc.
 * `flags` are normally either one letter or a full word that activate certain capabilities in a program
   * *Optional*
 * `arguments` are information given to a program for it to act upon (just like function arguments)
   * *Optional*
+  * Sometimes shortened to just *args*
 
 ## Example Use
 ### <big>**ls**</big>
@@ -182,37 +182,37 @@ drwx------@  32 mattpopovich  staff   1024 Jul 19  2023 Documents
 drwx------@ 430 mattpopovich  staff  13760 May 14 10:08 Downloads
 ```
 
-Here, we use a [glob](https://en.wikipedia.org/wiki/Glob_(programming)) wildcard `*` to list all directories that start with `D`.
+Here, we use the [glob](https://en.wikipedia.org/wiki/Glob_(programming)) wildcard `*` to list all directories that start with `D`.
 Very handy whenever you are in a folder with lots of files!
 
-Also worth noting that the terminal supports **tab completion**!! This is a lifesaver and can save tons of time (particuarly when typing in long filenames). Basically, whenever you are typing a command or a file path, just press `tab` in the middle of the word and if the terminal finds a match for it, it will auto-complete the rest of the word. If there are multiple words that would match the completion, pressing `tab` twice will show all possible matches.
+Also worth noting that the terminal supports **tab completion**!! This is a lifesaver and can save tons of time (particularly when typing in long filenames). Basically, whenever you are typing a command or a file path, just press `tab` in the middle of the word and if the terminal finds a match for it, it will auto-complete the rest of the word. If there are multiple words that would match the completion, pressing `tab` twice will show all possible matches.
 
 ```console
-$ ls D[tab]
+$ ls D<tab>
 Desktop/    Documents/  Downloads/
-$ ls Do[tab]
+$ ls Do<tab>
 Documents/  Downloads/
-$ ls Doc[tab]
+$ ls Doc<tab>
 $ ls Documents
 ```
-
-### Other programs
-Here, I will be using the term *program* but note that there are again many terms that are sometimes used interchangeably: *program*, *executable*, *script*, *binary*, *command*, etc.
 
 ### <big>**pwd**</big>
 `pwd` = ***p**resent **w**orking **d**irectory*
 
-This command tells you where you terminal session is currently located
+This command tells you where your terminal session is currently located:
 
 ```console
-/users/mattpopovich $ pwd
+$ pwd
+/users/mattpopovich
 ```
 
 ### <big>**cd**</big>
 
 `cd` = ***c**hange **d**irectory*
 
-Your terminal will normally show what directory you are currently in before each command. This helps keep you oriented to what folder you are currently operating in!
+Your terminal will normally show what directory you are currently in before each command. (I won't always show it in this post unless I think it is needed). This helps keep you oriented to what folder you are currently operating in!
+
+The `cd` command lets you **c**hange which **d**irectory you are currently located in:
 
 ```console
 /users/mattpopovich $ ls
@@ -257,7 +257,7 @@ Downloads
 01_Not_Like_Us-Kendrick_Lamar.mp3
 ```
 
-Notice that `/users/mattpopovich` is being displayed as `~`.
+Notice that `/users/mattpopovich` is being displayed as `~`. Also note that we went "up" to the parent folder via `cd ..` instead of `cd /users/mattpopovich`.
 
 ### <big>**touch**</big>
 
@@ -282,12 +282,16 @@ total 0
 
 `mkdir` = ***m**a**k**e **dir**ectories*
 
+This command will make an empty directory/folder with a name of the argument that you specify:
+
+Note that `#` denotes the beginning of a "comment". Anything after `#` is [ignored by the terminal](https://phoenixnap.com/kb/bash-comment). I'm using it below to help give additional context.
+
 ```console
 $ ls -l
 total 0
 -rw-r--r--  1 mattpopovich  staff  0 Feb 31 20:42 test_file.txt
 $ mkdir test_folder
-$ ls -l
+$ ls -l               # Confirming that a new folder was created!
 total 0
 -rw-r--r--  1 mattpopovich  staff   0 Feb 31 20:42 test_file.txt
 drwxr-xr-x  2 mattpopovich  staff  64 Feb 31 20:49 test_folder
@@ -298,23 +302,38 @@ drwxr-xr-x  2 mattpopovich  staff  64 Feb 31 20:49 test_folder
 
 Now that we know how to make files and folders, let's learn how to customize things a bit.
 
+This command will move the first argument to the second argument. `mv source destination`. It can be used to move files into a folder or even "rename" files by *moving* them to a new name.
+
+Let's move some files around:
+
 ```console
 $ ls
 test_file.txt test_file2.txt test_file3.txt test_folder
-$ ls test_folder
+$ ls test_folder              # Nothing printed below means the folder is empty
 $ mv test_file.txt test_folder
 $ ls
 test_file2.txt test_file3.txt test_folder
-$ ls test_folder
+$ ls test_folder              # test_file.txt was successfully moved into test_folder
 test_file.txt
-$ mv test_file* test_folder
+$ mv test_file* test_folder   # Move any file that starts with "test_file" into test_folder
 $ ls
 test_folder
-$ ls test_folder
+$ ls test_folder              # We have moved all of our files into test_folder
 test_file.txt test_file2.txt test_file3.txt
 ```
 
-The `mv` command can also be used to effectively rename files and folders (by moving them to a new name)
+You can also specify more than one source and they will all be moved to the destination `mv source1 source2 destination`:
+
+```console
+$ ls
+test_file.txt test_file2.txt test_file3.txt test_folder
+$ mv test_file.txt test_file2.txt test_file3.txt test_folder
+$ ls test_folder
+test_file.txt test_file2.txt test_file3.txt
+```
+Here, we accomplished the same effective thing but without the glob from above (although the glob was probably easier).
+
+Now, let's rename some files (by moving them to a new name):
 
 ```console
 $ ls
@@ -322,9 +341,9 @@ test_folder
 $ ls test_folder
 test_file.txt
 $ mv test_folder testing_folder
-$ ls
+$ ls                    # Confirming successful "rename"
 testing_folder
-$ ls testing_folder
+$ ls testing_folder     # Folder contents hasn't changed
 test_file.txt
 ```
 
@@ -333,19 +352,21 @@ test_file.txt
 
 This is used the same as the `mv` command above, but it copies the files instead of moving them.
 
+This command will copy the first argument to the second argument. `cp source destination`:
+
 ```console
 $ ls
 test_file.txt test_file2.txt test_file3.txt test_folder
 $ ls test_folder
-$ cp test_file.txt test_folder
+$ cp test_file.txt test_folder    # Copy test_file.txt into test_folder
 $ ls
 test_file.txt test_file2.txt test_file3.txt test_folder
-$ ls test_folder
+$ ls test_folder                  # Copy was successful, test_file.txt is in both locations
 test_file.txt
-$ cp test_file* test_folder
+$ cp test_file* test_folder       # Copy all files that begin with test_file to test_folder
 $ ls
 test_file.txt test_file2.txt test_file3.txt test_folder
-$ ls test_folder
+$ ls test_folder                  # Copy was successful
 test_file.txt test_file2.txt test_file3.txt
 ```
 
@@ -362,10 +383,13 @@ $ ls
 test_file.txt test_folder
 $ ls test_folder
 $ rm test_file.txt
+$ ls
 test_folder
 $ rm test_folder
 rm: test_folder: is a directory
-$ rm -d test_folder
+$ rm -d test_folder   # -d flag will remove an empty directory
+$ ls
+
 ```
 
 ```console
@@ -380,15 +404,19 @@ test_folder:
 file2
 $ rm -d test_folder
 rm: test_folder: Directory not empty
-$ rm -r test_folder
+$ rm -r test_folder   # -r flag will remove a non-empty directory
 $ ls
 file1
 ```
 
 ### Other helpful commands
 
-TODO
+For now, I think the above is a good set for beginners to get started in the terminal.
+As I have time, I will explain more of these commands, maybe in another post as to not make this post longer than it needs to be.
 
+This is the next set that I plan on explaining:
+
+* `cd -`
 * --help = help
 * grep
   * grep -rnw
@@ -411,15 +439,17 @@ TODO
 * chmod
 * chown
 * tar
-  * https://xkcd.com/1168/
-  * https://www.explainxkcd.com/wiki/index.php/1168:_tar
+  * <https://xkcd.com/1168/>
+  * <https://www.explainxkcd.com/wiki/index.php/1168:_tar>
 * zip
 * ifconfig
 * wc
 * where
 * curl
+* su = switch user
 * rsync
 * Multiple commands; on one line
+* whoami
 * bg, fg
 * ctrl+c, ctrl+\, ctrl+z
 
@@ -428,9 +458,10 @@ TODO
 There are multiple "editors" available to use in the command prompt. Engineers will have their own (sometimes strong) preference as to which one you should use. I just use `vi` and for no particular reason other than I know how to use it and I don't use it enough to warrant learning other editors.
 The other major editors are `emacs` and `nano`.
 
-### `vi` / `vim`
+### <big>**vi / vim**</big>
 
 `vi` = ***vi**sual*
+
 `vim` = ***vi** i**m**proved*
 
 ```console
@@ -448,14 +479,53 @@ From here, we are kicked into the editor. It can be a little daunting at first b
   * `/` = search for text
     * Ex. `/text` + `Enter` will bring you to the next occurrence of `text` in the file
     * Then press `n` to go to the next occurrence of `text` in the file
+    * Or press `N` to go to the previous occurrence of `text` in the file
   * `gg` = go to the first line in the file
   * `GG` = go to the last line in the file
   * `dd` = delete the current line that the cursor is on
   * `:q` = quit the file
   * `:q!` = quit the file and discard changes
-  * `:wq` = save the file (write to disk) and quit
+  * `:wq` = save the file (write to disk) and then quit
 
 Additional commands can be found [here](https://www.cs.colostate.edu/helpdocs/vi.html).
+
+If it is installed on your system, you should try to run the `vimtutor` command from your terminal, which will start a tutorial of the basic Vim commands. [Thanks, Stack Overflow](https://stackoverflow.com/a/6607635/4368898)!
+
+## Environment variables
+
+An environment variable is a variable that is used to hold some value specific to the operating system. Programs can refer to these environment variables and no matter who is logged in to the system or what operating system they are running, the program can be assured that the variable will reference the correct location.
+
+Some of the more common environment variables are `PATH`, `HOME`, `USER`, and `SHELL`. There are many more than this, but these are a few of the more popular environment variables.
+
+While I didn't touch on it above, the `echo` command is used to print out whatever argument you give it. One of its more common uses is to print out the value of an environment variable. To tell your terminal that you are referencing a variable (and not just some string of text), use the dollar sign, `$`.
+
+```console
+$ echo HOME     # Prints out just a string of text
+HOME
+$               # Your shell will replace `$HOME` with the environment variable
+$ echo $HOME    # for `HOME`, then echo will print it out
+/users/mattpopovich
+```
+
+As an example of how these values might be specific to the user or operating system, imagine a different user, [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), is logged in. Their `HOME` might change as such:
+
+```console
+$ echo $HOME
+/users/linustorvalds
+```
+
+Now, for example, a program that might want to store a file in a user's Downloads folder could reference it as `$HOME/Downloads`, which would be valid no matter which user was logged in!
+
+To see all of the environment variables that are currently defined, you can run the `env` command:
+```console
+$ env
+USER=mattpopovich
+PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:[...]
+HOME=/Users/mattpopovich
+SHELL=/bin/zsh
+TMPDIR=/var/folders/3g/5d7zlfqs26j779y3tf0l4llr0000gn/T/
+[...]
+```
 
 ## Return values
 Notice that with all the commands we've ran, when they are successful, they largely don't display anything (unless when that is their job, such as `ls`). This is by design. No output is typically indicative of success while output is typically signs that something went wrong.
@@ -486,9 +556,6 @@ $ ls
 test_folder
 ```
 
-
-## Environment variables
-TODO
 
 ### Programs are in your path
 TODO
