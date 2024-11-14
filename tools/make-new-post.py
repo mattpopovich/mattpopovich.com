@@ -2,6 +2,7 @@
 #   It will create a new post in _posts/, auto-populate it with some basic
 #   text, and create a folder in assets/img/posts/
 # TOOD: Clean up this mess
+#       Create a main function
 
 
 # Imports

@@ -3,8 +3,8 @@ title: "Introduction to the Terminal / Shell / Command Line, etc."
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2024-05-15 03:31:28 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
+tags: [bash, big sur, catalina, cli, how to, linux, mac, monterey, osx, programming, tech]  # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -18,13 +18,30 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
-#description:               # A short sentence to describe the article, used when sharing links on social media
+description: This post will take you from couch to the command line in 15mins!
 ---
 
 ## Disclaimer
 *Command line*, *command prompt*, *shell*, *terminal*, *console*, etc. can sometimes be used interchangeably. I will be using them interchangeably in this article. Normally, they are all referring to a window in which you input text commands and receive text output.
 
-There are **a lot** of intricacies in the terminal. You might call them ["quirks"](https://youtu.be/2aiopbNnyF8) or ["features"](https://youtu.be/BQ0mlXQezxE?si=ijwZunxB5kDFciGI). You will never learn them all and some of them still stump me to this day. Half of the battle is just knowing which features exist. If you don't remember exactly how to use a feature, any search engine will get you there ("*How do I copy a file in the terminal*"). If you can think it, someone has probably done it in the terminal. Most of the terminal follows the same general pattern:
+There are **a lot** of intricacies in the terminal. You might call them ["quirks"](https://youtu.be/2aiopbNnyF8) or ["features"](https://youtu.be/BQ0mlXQezxE?si=ijwZunxB5kDFciGI). You will never learn them all and some of them still stump me to this day. Half of the battle is just knowing which features exist. If you know it exists (even though you might not remember exactly how to use a feature), any search engine will get you there ("*How do I copy a file in the terminal*"). If you can think it, someone has probably done it in the terminal.
+
+Also, the terminal does not add a newline between commands. I have added that in hopes of making things easier to read.
+
+## Opening the Terminal
+The terminal is opened differently depending on your operating system:
+* Windows
+  * Search for the program "*Command Prompt*"
+* Mac
+  * Search for the program "*Terminal.app*"
+* Linux
+  * Search for the program "*Terminal*"
+  * Or via the keyboard shortcut `ctrl` + `alt` + `t`
+
+> Note that **most** of this post will not work in Windows' Command Prompt. The Command Prompt uses a different language compared to Mac and Linux's terminals. See [this answer](https://superuser.com/a/349514/552207) for additional information.
+{: .prompt-danger }
+
+More detailed information via [effective-shell.com](https://effective-shell.com/part-1-transitioning-to-the-shell/getting-started/#opening-the-shell) (with pictures!).
 
 ## How to Use
 The terminal is made up of three possible things:
@@ -44,9 +61,11 @@ A `$` or `#` are common hints that this line is meant to be ran in a terminal
   * *Optional*
   * Sometimes shortened to just *args*
 
+The terminal **is** case-sensitive.
+
 ## Example Use
 ### <big>**ls**</big>
-`ls` = *a program used to list files*
+`ls` = *a program used to **l**i**s**t files*
 ```console
 $ ls
 Applications   Movies
@@ -71,7 +90,8 @@ drwx------+   7 mattpopovich  staff          224 Apr 13 10:14 Pictures
 
 `ls` supports multiple flags. We can also include `-h` = *list files in a more **h**uman readable format*
 
-> Note that this gives you the size of the file. This does not give you the size of the files in the folder!! ([Use `du` for that](TODO))
+<!-- TODO: Link to intermediate guide for `du` usage -->
+> Note that this gives you the size of the file. This does not give you the size of the files in the folder!! (Use `du` for that)
 {: .prompt-warning }
 
 ```console
@@ -85,7 +105,7 @@ drwx------   22 mattpopovich  staff         704B Apr  9 01:32 Movies
 drwx------+   5 mattpopovich  staff         160B Oct 10  2022 Music
 drwx------+   7 mattpopovich  staff         224B Apr 13 10:14 Pictures
 ```
-Note how the size of the files changed from being displayed in bytes to being converted to B, KB, GB, etc.
+Note how the size of the files changed from being displayed in bytes to being converted to **B**, **K**B, **G**B, etc.
 
 If we were only interested in one specific file or folder, we can give `ls` an argument for which file or folder to list:
 
@@ -94,6 +114,7 @@ $ ls -lh Documents
 -rw-r--r--@  1 mattpopovich  staff   774K Oct  1  2022 img1.png
 -rw-r--r--@  1 mattpopovich  staff   399K Oct  1  2022 img2.png
 -rw-r--r--@  1 mattpopovich  staff   404K Oct  1  2022 img3.png
+
 $ ls -lh Documents/img1.png
 -rw-r--r--@  1 mattpopovich  staff   774K Oct  1  2022 img1.png
 ```
@@ -105,11 +126,12 @@ If we wanted to see more detailed information about a folder (without listing it
 ```console
 $ ls -lhd Documents
 drwx------@ 32 mattpopovich  staff   1.0K Jul 19  2023 Documents
+
 $ ls -l -h -d Documents
 drwx------@ 32 mattpopovich  staff   1.0K Jul 19  2023 Documents
 ```
 
-Here, we add the `-d` flag to tell `ls` to show us information about the ***d**irectory* (and not what is *inside the directory*) named `Documents`. Also note that the flags can be together (`-lhd`) or separate (`-l -h -d`).
+Here, we add the `-d` flag to tell `ls` to show us information about the ***d**irectory* (and not what is *inside the directory*) named `Documents`. Also note that single character flags can be together (`-lhd`) or separate (`-l -h -d`).
 
 
 ### <big>**man**</big>
@@ -123,50 +145,58 @@ This command displays documentation for the argument you pass to it. This is wha
 
 ```console
 $ man ls
-LS(1)                          General Commands Manual                         LS(1)
+LS(1)                     General Commands Manual                    LS(1)
 
 NAME
      ls – list directory contents
 
 SYNOPSIS
-     ls [-@ABCFGHILOPRSTUWabcdefghiklmnopqrstuvwxy1%,] [--color=when] [-D format]
-        [file ...]
+     ls [-@ABCFGHILOPRSTUWabcdefghiklmnopqrstuvwxy1%,] [--color=when]
+        [-D format] [file ...]
 
 DESCRIPTION
-     For each operand that names a file of a type other than directory, ls displays
-     its name as well as any requested, associated information.  For each operand
-     that names a file of type directory, ls displays the names of files contained
-     within that directory, as well as any requested, associated information.
+     For each operand that names a file of a type other than directory, ls
+     displays its name as well as any requested, associated information.
+     For each operand that names a file of type directory, ls displays the
+     names of files contained within that directory, as well as any
+     requested, associated information.
 
-     If no operands are given, the contents of the current directory are displayed.
-     If more than one operand is given, non-directory operands are displayed first;
-     directory and non-directory operands are sorted separately and in
-     lexicographical order.
+     If no operands are given, the contents of the current directory are
+     displayed.  If more than one operand is given, non-directory operands
+     are displayed first; directory and non-directory operands are sorted
+     separately and in lexicographical order.
 
      The following options are available:
 
-     -@      Display extended attribute keys and sizes in long (-l) output.
 
-     -A      Include directory entries whose names begin with a dot (‘.’) except for
-             . and ...  Automatically set for the super-user unless -I is specified.
+     -@      Display extended attribute keys and sizes in long (-l)
+             output.
 
-     -B      Force printing of non-printable characters (as defined by ctype(3) and
-             current locale settings) in file names as \xxx, where xxx is the
-             numeric value of the character in octal.  This option is not defined in
-             IEEE Std 1003.1-2008 (“POSIX.1”).
+     -A      Include directory entries whose names begin with a dot (‘.’)
+             except for . and ...  Automatically set for the super-user
+             unless -I is specified.
+
+     -B      Force printing of non-printable characters (as defined by
+             ctype(3) and current locale settings) in file names as \xxx,
+             where xxx is the numeric value of the character in octal.
+             This option is not defined in IEEE Std 1003.1-2008
+             (“POSIX.1”).
 [...]
 ```
 
-Note that once you run `man`, a new "window" in the terminal opens. You can advance to the next line with the enter key, up and down errors, or even scrolling (if enabled). Press `q` (quit) to exit. `q` to exit is [common in other programs (`vi`)](TODO) as as we will find out.
+Note that once you run `man`, a new "window" in the terminal opens. You can advance to the next line with the enter key, up and down errors, or even scrolling (if enabled). Press `q` (quit) to exit. `q` to exit is [common in other programs (`vi`)](#vi--vim) as as we will find out.
 
 If you scroll down in that `man` page, you will find information about the flags that I explained above:
 ```console
      -d      Directories are listed as plain files (not searched recursively).
     [...]
-     -h      When used with the -l option, use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte in order to reduce the number of
-             digits to four or fewer using base 2 for sizes.  This option is not defined in IEEE Std 1003.1-2008 (“POSIX.1”).
+     -h      When used with the -l option, use unit suffixes: Byte, Kilobyte,
+             Megabyte, Gigabyte, Terabyte and Petabyte in order to reduce the
+             number of digits to four or fewer using base 2 for sizes.  This
+             option is not defined in IEEE Std 1003.1-2008 (“POSIX.1”).
     [...]
-     -l      (The lowercase letter “ell”.) List files in the long format, as described in the The Long Format subsection below.
+     -l      (The lowercase letter “ell”.) List files in the long format,
+             as described in the The Long Format subsection below.
 ```
 
 I will leave the other flags as an [exercise for the reader](http://www.mathmatique.com/articles/left-exercise-reader) 😉
@@ -188,10 +218,12 @@ Very handy whenever you are in a folder with lots of files!
 Also worth noting that the terminal supports **tab completion**!! This is a lifesaver and can save tons of time (particularly when typing in long filenames). Basically, whenever you are typing a command or a file path, just press `tab` in the middle of the word and if the terminal finds a match for it, it will auto-complete the rest of the word. If there are multiple words that would match the completion, pressing `tab` twice will show all possible matches.
 
 ```console
-$ ls D<tab>
+$ ls D<tab><tab>
 Desktop/    Documents/  Downloads/
-$ ls Do<tab>
+
+$ ls Do<tab><tab>
 Documents/  Downloads/
+
 $ ls Doc<tab>
 $ ls Documents
 ```
@@ -220,15 +252,20 @@ Applications   Movies
 Desktop        Music
 Documents      Pictures
 Downloads
+
 /users/mattpopovich $ cd Music
+
 /users/mattpopovich/Music $ ls
 01_Not_Like_Us-Kendrick_Lamar.mp3
+
 /users/mattpopovich/Music $ cd /users/mattpopovich
+
 /users/mattpopovich $ ls
 Applications   Movies
 Desktop        Music
 Documents      Pictures
 Downloads
+
 /users/mattpopovich $ ls Music
 01_Not_Like_Us-Kendrick_Lamar.mp3
 ```
@@ -244,15 +281,20 @@ Applications   Movies
 Desktop        Music
 Documents      Pictures
 Downloads
+
 ~ $ cd Music
+
 ~/Music $ ls
 01_Not_Like_Us-Kendrick_Lamar.mp3
+
 ~/Music $ cd ..
+
 ~ $ ls
 Applications   Movies
 Desktop        Music
 Documents      Pictures
 Downloads
+
 ~ $ ls Music
 01_Not_Like_Us-Kendrick_Lamar.mp3
 ```
@@ -271,8 +313,11 @@ $ man touch
 The touch utility sets the modification and access times of files.  If any file
      does not exist, it is created with default permissions.
 [...]
+
 $ ls
+
 $ touch test_file.txt
+
 $ ls -l
 total 0
 -rw-r--r--  1 mattpopovich  staff  0 Feb 31 20:42 test_file.txt
@@ -284,13 +329,16 @@ total 0
 
 This command will make an empty directory/folder with a name of the argument that you specify:
 
-Note that `#` denotes the beginning of a "comment". Anything after `#` is [ignored by the terminal](https://phoenixnap.com/kb/bash-comment). I'm using it below to help give additional context.
+> Note that `#` denotes the beginning of a "comment". Anything after `#` is [ignored by the terminal](https://phoenixnap.com/kb/bash-comment). I'm using it below to help give additional context.
+{: .prompt-info }
 
 ```console
 $ ls -l
 total 0
 -rw-r--r--  1 mattpopovich  staff  0 Feb 31 20:42 test_file.txt
+
 $ mkdir test_folder
+
 $ ls -l               # Confirming that a new folder was created!
 total 0
 -rw-r--r--  1 mattpopovich  staff   0 Feb 31 20:42 test_file.txt
@@ -309,15 +357,22 @@ Let's move some files around:
 ```console
 $ ls
 test_file.txt test_file2.txt test_file3.txt test_folder
+
 $ ls test_folder              # Nothing printed below means the folder is empty
+
 $ mv test_file.txt test_folder
-$ ls
-test_file2.txt test_file3.txt test_folder
+
 $ ls test_folder              # test_file.txt was successfully moved into test_folder
 test_file.txt
+
+$ ls
+test_file2.txt test_file3.txt test_folder
+
 $ mv test_file* test_folder   # Move any file that starts with "test_file" into test_folder
+
 $ ls
 test_folder
+
 $ ls test_folder              # We have moved all of our files into test_folder
 test_file.txt test_file2.txt test_file3.txt
 ```
@@ -327,22 +382,28 @@ You can also specify more than one source and they will all be moved to the dest
 ```console
 $ ls
 test_file.txt test_file2.txt test_file3.txt test_folder
+
 $ mv test_file.txt test_file2.txt test_file3.txt test_folder
+
 $ ls test_folder
 test_file.txt test_file2.txt test_file3.txt
 ```
-Here, we accomplished the same effective thing but without the glob from above (although the glob was probably easier).
+Here, we accomplished the same effective thing but without the glob from above (`mv test_file* test_folder`). Although I would argue that the glob was probably easier.
 
 Now, let's rename some files (by moving them to a new name):
 
 ```console
 $ ls
 test_folder
+
 $ ls test_folder
 test_file.txt
+
 $ mv test_folder testing_folder
+
 $ ls                    # Confirming successful "rename"
 testing_folder
+
 $ ls testing_folder     # Folder contents hasn't changed
 test_file.txt
 ```
@@ -357,15 +418,22 @@ This command will copy the first argument to the second argument. `cp source des
 ```console
 $ ls
 test_file.txt test_file2.txt test_file3.txt test_folder
+
 $ ls test_folder
+
 $ cp test_file.txt test_folder    # Copy test_file.txt into test_folder
+
 $ ls
 test_file.txt test_file2.txt test_file3.txt test_folder
+
 $ ls test_folder                  # Copy was successful, test_file.txt is in both locations
 test_file.txt
+
 $ cp test_file* test_folder       # Copy all files that begin with test_file to test_folder
+
 $ ls
 test_file.txt test_file2.txt test_file3.txt test_folder
+
 $ ls test_folder                  # Copy was successful
 test_file.txt test_file2.txt test_file3.txt
 ```
@@ -381,13 +449,19 @@ This command will remove files and folders
 ```console
 $ ls
 test_file.txt test_folder
+
 $ ls test_folder
+
 $ rm test_file.txt
+
 $ ls
 test_folder
+
 $ rm test_folder
 rm: test_folder: is a directory
+
 $ rm -d test_folder   # -d flag will remove an empty directory
+
 $ ls
 
 ```
@@ -395,68 +469,43 @@ $ ls
 ```console
 $ ls
 file1 test_folder
+
 $ ls test_folder
 file2
+
 $ ls *
 file1
 
 test_folder:
 file2
+
 $ rm -d test_folder
 rm: test_folder: Directory not empty
+
 $ rm -r test_folder   # -r flag will remove a non-empty directory
+
 $ ls
 file1
 ```
 
-### Other helpful commands
+### <big>**cat**</big>
 
-For now, I think the above is a good set for beginners to get started in the terminal.
-As I have time, I will explain more of these commands, maybe in another post as to not make this post longer than it needs to be.
+`cat` = *con**cat**enate and print files*
 
-This is the next set that I plan on explaining:
+This command will print the contents of a file
 
-* `cd -`
-* --help = help
-* grep
-  * grep -rnw
-* cat
-* head
-* tail
-* | = pipe
-* find
-  * find . -name
-* exit
-* ssh
-* scp
-* tmux
-* history
-* cmd+R
-* echo
-* which
-* !!
-* source
-* chmod
-* chown
-* tar
-  * <https://xkcd.com/1168/>
-  * <https://www.explainxkcd.com/wiki/index.php/1168:_tar>
-* zip
-* ifconfig
-* wc
-* where
-* curl
-* su = switch user
-* rsync
-* Multiple commands; on one line
-* whoami
-* bg, fg
-* ctrl+c, ctrl+\, ctrl+z
+```console
+$ ls -lh
+-rw-r--r--  1 mattpopovich  staff    38B Nov 13 18:50 test_file.txt
+
+$ cat test_file.txt
+This is the contents of test_file.txt
+```
 
 ## Text Editors
 
 There are multiple "editors" available to use in the command prompt. Engineers will have their own (sometimes strong) preference as to which one you should use. I just use `vi` and for no particular reason other than I know how to use it and I don't use it enough to warrant learning other editors.
-The other major editors are `emacs` and `nano`.
+The other major editors are [`emacs`](https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux) and [`nano`](https://www.geeksforgeeks.org/nano-text-editor-in-linux/).
 
 ### <big>**vi / vim**</big>
 
@@ -466,10 +515,11 @@ The other major editors are `emacs` and `nano`.
 
 ```console
 $ ls
+
 $ vi text_file.txt
 ```
 
-From here, we are kicked into the editor. It can be a little daunting at first but here are some of its commands. These are entered in once `vi` is open. These are not command line arguments.
+After typing `vi text_file.txt` and hitting `enter`, we are kicked into the editor. It can be a little daunting at first but here are some of `vi`s commands. These are entered in once `vi` is open. These are not command line arguments.
 * `i` = go into "insert" mode
   * After pressing `i` on the keyboard, you can now type and modify text in the file
   * You can tell you are in insert mode by the `-- INSERT --` text at the bottom of your screen
@@ -491,142 +541,10 @@ Additional commands can be found [here](https://www.cs.colostate.edu/helpdocs/vi
 
 If it is installed on your system, you should try to run the `vimtutor` command from your terminal, which will start a tutorial of the basic Vim commands. [Thanks, Stack Overflow](https://stackoverflow.com/a/6607635/4368898)!
 
-## Environment variables
-
-An environment variable is a variable that is used to hold some value specific to the operating system. Programs can refer to these environment variables and no matter who is logged in to the system or what operating system they are running, the program can be assured that the variable will reference the correct location.
-
-Some of the more common environment variables are `PATH`, `HOME`, `USER`, and `SHELL`. There are many more than this, but these are a few of the more popular environment variables.
-
-While I didn't touch on it above, the `echo` command is used to print out whatever argument you give it. One of its more common uses is to print out the value of an environment variable. To tell your terminal that you are referencing a variable (and not just some string of text), use the dollar sign, `$`.
-
-```console
-$ echo HOME     # Prints out just a string of text
-HOME
-$               # Your shell will replace `$HOME` with the environment variable
-$ echo $HOME    # for `HOME`, then echo will print it out
-/users/mattpopovich
-```
-
-As an example of how these values might be specific to the user or operating system, imagine a different user, [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), is logged in. Their `HOME` might change as such:
-
-```console
-$ echo $HOME
-/users/linustorvalds
-```
-
-Now, for example, a program that might want to store a file in a user's Downloads folder could reference it as `$HOME/Downloads`, which would be valid no matter which user was logged in!
-
-To see all of the environment variables that are currently defined, you can run the `env` command:
-```console
-$ env
-USER=mattpopovich
-PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:[...]
-HOME=/Users/mattpopovich
-SHELL=/bin/zsh
-TMPDIR=/var/folders/3g/5d7zlfqs26j779y3tf0l4llr0000gn/T/
-[...]
-```
-
-## Return values
-Notice that with all the commands we've ran, when they are successful, they largely don't display anything (unless when that is their job, such as `ls`). This is by design. No output is typically indicative of success while output is typically signs that something went wrong.
-
-Each command ran in the terminal returns a value. This value is set in the variable `?` and can be displayed via `echo $?`. Successful terminal commands return `0`. Failed terminal commands return a non-zero value.
-
-```console
-$ ls
-test_file.txt test_folder
-$ echo $?
-0
-
-$ rm test_file.txt
-$ echo $?
-0
-
-$ rm test_file.txt
-rm: test_file.txt: No such file or directory
-$ echo $?
-1
-
-$ rm test_folder
-rm: test_folder: is a directory
-$ echo $?
-1
-
-$ ls
-test_folder
-```
-
-
-### Programs are in your path
-TODO
-
-## `.bashrc` file
-TODO
-
-## Hidden files
-Hidden files in Linux are any files that begin with a period.
-
-```console
-~ $ ls
-Applications   Movies
-Desktop        Music
-Documents      Pictures
-Downloads
-~ $ ls -a
-.aliases       .bash_history
-.bashrc        .bashrc_popovichm
-Applications   Movies
-Desktop        Music
-Documents      Pictures
-Downloads
-```
-
-## Different shells
-Your terminal loads a default shell upon opening. On Ubuntu/linux, it is normally `bash`. OSX has recently left `bash` and went to `zsh` as its default. `sh` is an extremely bare bones shell that is almost always available on any system. Some more fancy shells are `oh my zsh` and `fish`.
-
-### Shells are also programming languages
-
-
-```console
-$ cat hello_world.sh
-#!/bin/bash
-echo "Hello World"
-
-$ ./hello_world.sh
-Hello World
-```
-
-
-## Linux Directory Structure
-
-![Cheatsheet](https://linuxhandbook.com/content/images/size/w1000/2020/06/linux-system-directoies-poster.png)
-
-More detailed information on what is in these folders can be found on [linuxhandbook.com](https://linuxhandbook.com/linux-directory-structure/).
-
-## Navigating the command line
-Pressing and holding the arrow keys to move around the command line is slow and inefficient. Remember, we're programmers. If there is something that is slow and inefficient, chances are that someone has a fix.
-
-The main ones that I use are:
-* Ctrl + u = Delete everything before your cursor
-* Ctrl + left = Move cursor one word to the left
-* Ctrl + right = Move cursor one word to the right
-
-![A visual explanation of shortcuts to navigate the command line](https://effective-shell.com/assets/images/command-line-a47c08acd86b732173b3f6dfc1955bb1.png)
-
 ## Additional Resources
 * [effective-shell.com](https://effective-shell.com/)
-  * Very in depth. If it were a book, it'd be 100s of pages.
+  * Very in depth + includes pictures!
 
-## Bonus: The command line is sexy
-Just an example of some of the commands available:
-* date
-* unzip
-* touch
-* strip
-* mount
-* yes
-* uptime
-* umount
-* sleep
-
-![Image of the commands from above](https://pics.livejournal.com/jbauernberger/pic/00022sxk/s320x240)
+## Outro
+These are the *very basics* of the terminal. My next post will touch on more *intermediate* features for the terminal.
+Be sure to check back for that!

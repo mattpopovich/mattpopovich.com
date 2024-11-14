@@ -18,6 +18,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Adobe's DNG Converter has a command-line interface. Here's how to use it.
 ---
 
 <!-- TODO: Link to "my FCPX export settings blog post. Start this blog with "expanding on my previous project" -->
