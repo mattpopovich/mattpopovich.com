@@ -2,7 +2,7 @@
 title: "Introduction to the Terminal / Shell / Command Line, etc."
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2024-05-15 03:31:28 -0600
+date: 2024-11-13 03:31:28 -0600
 categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
 tags: [bash, big sur, catalina, cli, how to, linux, mac, monterey, osx, programming, tech]  # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
