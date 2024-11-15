@@ -50,22 +50,22 @@
         "yzhang.markdown-all-in-one",
         "eamodio.gitlens",
         "github.vscode-github-actions",
-        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker"
 
         // Chirpy extensions
         // Liquid tags auto-complete
-        "killalau.vscode-liquid-snippets",
+        // "killalau.vscode-liquid-snippets",
         // Liquid syntax highlighting and formatting
-        "Shopify.theme-check-vscode",
+        // "Shopify.theme-check-vscode",
         // Shell
-        "timonwong.shellcheck",
-        "mkhl.shfmt",
+        // "timonwong.shellcheck",
+        // "mkhl.shfmt",
         // Common formatter
-        "EditorConfig.EditorConfig",
-        "esbenp.prettier-vscode",
-        "stylelint.vscode-stylelint",
+        // "EditorConfig.EditorConfig",
+        // "esbenp.prettier-vscode",
+        // "stylelint.vscode-stylelint",
         // Git
-        "mhutchie.git-graph"
+        // "mhutchie.git-graph"
       ]
     }
   }

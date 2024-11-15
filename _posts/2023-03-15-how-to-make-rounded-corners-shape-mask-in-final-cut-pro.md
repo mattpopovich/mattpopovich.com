@@ -12,7 +12,7 @@ comments: true              # Enable/disable comments at the bottom of the post
 math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
-img_path: /assets/img/posts/2023-03-15-how-to-make-rounded-corners-shape-mask-in-final-cut-pro/
+media_subpath: /assets/img/posts/2023-03-15-how-to-make-rounded-corners-shape-mask-in-final-cut-pro/
 #image:
 #  path: /path/to/image.jpg
 #  width: 100   # in pixels
@@ -41,7 +41,8 @@ Ok, super quick post here. I'm working in [Final Cut Pro (FCP/FCPX)](https://www
 ## Applying a Shape Mask
 In FCPX, on the bottom right, click on *Show or hide the Effects Browser* (or press ⌘5)
 
-![How to bring up the "Effects Browser"](FCPX_showOrHideTheEffectsBrowser.png) *How to bring up the "Effects Browser"*
+![How to bring up the "Effects Browser"](FCPX_showOrHideTheEffectsBrowser.png)
+*How to bring up the "Effects Browser"*
 
 Then, search for a "mask" **Video** Effect. This will bring up a draw mask, graduated mask, image mask, shape mask, and vignette mask. The draw mask is more for custom shapes that you want to be able to *draw* yourself. The shape mask is specifically meant for what we're trying to do (those are the two that I'm familiar with). You'll drag the **shape mask** onto our clip and you'll see that it gets pretty close to what we were looking for.
 
@@ -57,7 +58,8 @@ And this makes sense, for example, if you had many different clips and effects r
 
 **However**, even if you select the Shape Mask in the Inspector, there is a chance that you still won't be able to click and drag the Shape Mask in the viewer to modify it. If you want to be able to modify the Shape Mask in the viewer, you need to make sure "Show Shape Mask onscreen controls" is selected in the Shape Mask section in the Inspector.
 
-![How to "Show Shape Mask onscreen controls"](FCPX_showShapeMaskOnscreenControls.jpg) *How to "Show Shape Mask onscreen controls"*
+![How to "Show Shape Mask onscreen controls"](FCPX_showShapeMaskOnscreenControls.jpg)
+*How to "Show Shape Mask onscreen controls"*
 
 ## Outro
 That's about all there is to the Shape Mask. Feel free to customize and mess around with it. I will leave the other parameters of the Shape Mask Inspector as an [exercise for the reader](http://www.mathmatique.com/articles/left-exercise-reader) 😉
