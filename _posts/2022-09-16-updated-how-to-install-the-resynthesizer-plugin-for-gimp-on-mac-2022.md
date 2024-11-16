@@ -111,6 +111,7 @@ If it outputs `libintl.9.dylib` and the Resynthesizer plugin doesn't work, then 
 
 ```console
 username@Mac:~$ cd /Applications/GIMP-2.10.app/Contents/Resources/lib
+
 username@Mac:/Applications/GIMP-2.10.app/Contents/Resources/lib$ ls -lah libintl*
 -rwxr-xr-x@ 1 username admin   81K Jan 28  2021 libintl.8.dylib
 ```
@@ -120,9 +121,12 @@ username@Mac:/Applications/GIMP-2.10.app/Contents/Resources/lib$ ls -lah libintl
 The Resynthesizer plugin is looking for `libintl.9.dylib`. We can "cheat" and tell it to use `libintl.8.dylib` via `ln -s libintl.8.dylib libintl.9.dylib`:
 ```console
 username@Mac:~$ cd /Applications/GIMP-2.10.app/Contents/Resources/lib
+
 username@Mac:[...]/GIMP-2.10.app/Contents/Resources/lib$ ls -lah libintl*
 -rwxr-xr-x@ 1 username admin   81K Jan 28  2021 libintl.8.dylib
+
 username@Mac:[...]/GIMP-2.10.app/Contents/Resources/lib$ ln -s libintl.8.dylib libintl.9.dylib
+
 username@Mac:[...]/GIMP-2.10.app/Contents/Resources/lib$ ls -lah libintl*
 -rwxr-xr-x@ 1 username admin   81K Jan 28  2021 libintl.8.dylib
 lrwxr-xr-x  1 username admin   15B Sep 16 22:34 libintl.9.dylib -> libintl.8.dylib
