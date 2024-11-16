@@ -3,6 +3,7 @@
 #   text, and create a folder in assets/img/posts/
 # TOOD: Clean up this mess
 #       Create a main function
+#       Must be run from the tools folder
 
 
 # Imports
