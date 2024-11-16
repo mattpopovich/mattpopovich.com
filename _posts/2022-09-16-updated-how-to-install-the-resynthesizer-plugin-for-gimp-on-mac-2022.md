@@ -99,6 +99,9 @@ error: procedure not found
 # Fixing the Resynthesizer Plugin via a Symbolic Link
 In computer terms, the plugin is looking to use a library that we do not have: `libintl.9.dylib`. I don't know how to get that *exact* version of the library, but, it turns out that `libintl.8.dylib` comes pre-installed with GIMP, so we can (luckily) tell the plugin to use that version and carry on our merry way.
 
+> The next part of this tutorial uses the terminal to create and modify some files. If you are unfamiliar with the terminal or would like to learn more, check out my post [here](/posts/introduction-to-the-command-line-shell-terminal-etc/) for an "Introduction to the Terminal / Shell / Command Line, etc.".
+{: .prompt-info }
+
 ## Checking for `libintl`
 To check if you already have `libintl.8.dylib` installed, open *Terminal*, go to the `/Applications/GIMP-2.10.app/Contents/Resources/lib` directory via `cd /Applications/GIMP-2.10.app/Contents/Resources/lib`, and try to list all files named "libintl" via `ls -lah libintl*`.
 
@@ -108,6 +111,7 @@ If it outputs `libintl.9.dylib` and the Resynthesizer plugin doesn't work, then 
 
 ```console
 username@Mac:~$ cd /Applications/GIMP-2.10.app/Contents/Resources/lib
+
 username@Mac:/Applications/GIMP-2.10.app/Contents/Resources/lib$ ls -lah libintl*
 -rwxr-xr-x@ 1 username admin   81K Jan 28  2021 libintl.8.dylib
 ```
@@ -117,9 +121,12 @@ username@Mac:/Applications/GIMP-2.10.app/Contents/Resources/lib$ ls -lah libintl
 The Resynthesizer plugin is looking for `libintl.9.dylib`. We can "cheat" and tell it to use `libintl.8.dylib` via `ln -s libintl.8.dylib libintl.9.dylib`:
 ```console
 username@Mac:~$ cd /Applications/GIMP-2.10.app/Contents/Resources/lib
+
 username@Mac:[...]/GIMP-2.10.app/Contents/Resources/lib$ ls -lah libintl*
 -rwxr-xr-x@ 1 username admin   81K Jan 28  2021 libintl.8.dylib
+
 username@Mac:[...]/GIMP-2.10.app/Contents/Resources/lib$ ln -s libintl.8.dylib libintl.9.dylib
+
 username@Mac:[...]/GIMP-2.10.app/Contents/Resources/lib$ ls -lah libintl*
 -rwxr-xr-x@ 1 username admin   81K Jan 28  2021 libintl.8.dylib
 lrwxr-xr-x  1 username admin   15B Sep 16 22:34 libintl.9.dylib -> libintl.8.dylib

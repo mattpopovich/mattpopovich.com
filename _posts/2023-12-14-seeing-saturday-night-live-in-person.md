@@ -3,7 +3,7 @@ title: "Seeing Saturday Night Live In Person"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2023-12-14 07:22:42 -0600
-categories: [Blog]    # <=2 values here: top category and sub category
+categories: [Blog, YouTube]    # <=2 values here: top category and sub category
 tags: [travel, new york, new york city, saturday night live, youtube] # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
