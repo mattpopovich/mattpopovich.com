@@ -2,7 +2,7 @@
 title: "Moving My Plex Library from a Mac to a Synology NAS"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2023-09-05 02:22:47 -0600
+date: 2024-11-17 20:22:47 -0600
 categories: [Blog, TODO]    # <=2 values here: top category and sub category
 tags: [todo]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
@@ -12,12 +12,13 @@ comments: true              # Enable/disable comments at the bottom of the post
 math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
-#img_path: /img/path/
+#media_subpath: /img/path/
 #image:
 #  path: /path/to/image.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
 <!-- TODO: Add YouTube video link here -->
@@ -33,8 +34,8 @@ This post documents my experience moving my [Plex](https://www.plex.tv/) server 
 I use [Tautulli](https://tautulli.com/) for Plex statistics, so I will also be moving that from the Mac (running via Python) to a docker container on the Synology NAS as well.
 
 ### What is Plex?
-Plex is an server/client utility that lets you host your own music, pictures, videos, live TV, etc. and view/download them on any device with a streaming service-esque app. You can think of it as your own custom Netflix! Here are the main steps to get it up and running:
-1. Dowload and install the Plex server onto a computer. This computer will be the host of your content.
+Plex is an server/client utility that lets you host your own music, pictures, videos, live TV, etc. and view/download them on any device with a streaming service-esque app. You can think of it as your own custom [Netflix](https://www.netflix.com/)! Here are the main steps to get it up and running:
+1. Download and install the Plex server onto a computer. This computer will be the host of your content.
     * Note that you can only stream and download your content when this computer is powered on and connected to your network/the internet.
 2. Copy all of the content that you want to stream/download onto your host computer
 3. Tell Plex which folder your content is in
@@ -88,11 +89,16 @@ My solution: buy a NAS (network attached storage). Why? A NAS is a:
 
 ## Moving my Plex library from a Mac to Synology NAS
 
-### "Installing" Plex via Docker Compose
+[This](https://support.plex.tv/articles/201370363-move-an-install-to-another-system/) is the official documentation from Plex for how to move a Plex install to a new system. I will largely be following its instructions in this guide.
+
+### Copying Plex Data from a Mac to Synology NAS
 
 [This](https://support.plex.tv/articles/201154537-move-media-content-to-a-new-location/) is the official documentation from Plex for how to move media content to a new location.
 
-In there, step 1 is to [back up your Plex media server data](https://support.plex.tv/articles/201539237-backing-up-plex-media-server-data/) before making major changes to your library. This holds all your TODO (plex data?). It probably is a good idea to quit your Plex Media Server before backing anything up just to make sure the files aren’t changing while you’re doing it. But before you do that, disable the `Empty trash automatically after every scan` option you can find by clicking the [settings/wrench](https://app.plex.tv/desktop/#!/settings/web/general) (top right in Plex on web) —> Under "Settings", click on Library. Once you disable the `Empty trash automatically after every scan` option, then you can shut down your Plex Media Server.
+In there, step 1 is to [back up your Plex media server data](https://support.plex.tv/articles/201539237-backing-up-plex-media-server-data/) before making major changes to your library. This holds all your viewstates, metadata, settings, etc.. It probably is a good idea to quit your Plex Media Server before backing anything up just to make sure the files aren’t changing while you’re doing it. But before you do that, disable the `Empty trash automatically after every scan` option you can find by clicking the [settings/wrench](https://app.plex.tv/desktop/#!/settings/web/general) (top right in Plex on web) —> Under "Settings", click on Library. Once you disable the `Empty trash automatically after every scan` option, then you can shut down your Plex Media Server.
+
+> "Backing up" can be as simple as copying a file or copying a folder and giving it a new name. I like to append a `_old` as the name for backups. For folders, it might be easier to right click on them and then "Compress `<folder name>`". This will make a copy of that folder but as a `.zip` file.
+{: .prompt-info }
 
 Your Plex Media Server (PMS) data location can be found [here](https://support.plex.tv/articles/202915258-where-is-the-plex-media-server-data-directory-located/). `~/Library/Application Support/Plex Media Server/` for macOS. Mine was decently large at ~60GB in size.
 
@@ -102,6 +108,7 @@ Additionally, I’d recommend upgrading your Synology box's operating system (th
 
 Also, in your down time, I’d start transferring over your Plex movies, tv shows, music, pictures, etc. as that could take some time.
 
+### "Installing" Plex via Docker Compose
 Next, I’m going to install *Container Manager* to my Synology NAS. [To do that](https://kb.synology.com/en-nz/DSM/tutorial/How_to_install_applications_with_Package_Center), simply go to the *Package Center* in your Synology NAS, then search for and install *Container Manager*.
 
 Next I went into the *File Station* and made a `plex` folder in the `docker folder`. In the `plex` folder I made 3 more folders: `config`, `data`, `transcode`.
@@ -112,6 +119,7 @@ Next I went into the *File Station* and made a `plex` folder in the `docker fold
 |   |   |-- data
 |   |   `-- transcode
 ```
+<my-caption>Plex folder structure</my-caption>
 
 Next, I made a file in the `plex` folder: `plex-pms-docker-compose.yaml` and pasted in the [docker compose template for host networking](https://github.com/plexinc/pms-docker/blob/master/docker-compose-host.yml.template).
 In that docker compose file I updated the `TZ` (time zone) environment variable to match my respective `TZ` identifier. For me it was `‘America/Denver’`. You can find a list of valid strings for the `TZ` environment variable [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
@@ -142,13 +150,16 @@ services:
       - /volume1/docker/plex/data:/data:ro
 ```
 {: file='plex-docker-compose.yaml'}
+
 > Here, I am mounting the `data` directory as `ro` = *read only*. This is some additional security to ensure Plex doesn't go rogue and delete anything. *However*, if you're going to record live TV or have Plex write anything to the data folder, you will want to remove the `:ro`, as Plex won't have permissions to save anything if the folder is *read only*.
 {: .prompt-info }
 
 To run the docker container using docker compose:
 ```console
 matt@mac # ssh nas
-user@nas $ cd /path/to/folder/with/plex-docker-compose-file   # /volume1/docker/plex
+
+user@nas $ # The path that I use for the below line is /volume1/docker/plex
+user@nas $ cd /path/to/folder/with/plex-docker-compose-file
 user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml up -d
 ```
 
@@ -157,7 +168,7 @@ user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml up -d
 > Note the space vs a hyphen.
 {: .prompt-info }
 
-### Copying my Plex data from an external hard drive to Synology NAS
+### Copying my Plex media from an external hard drive to Synology NAS
 
 My Plex library is terabytes in size so this was a decent chore. I’m moving all the plex content to `/volume1/docker/plex/data/`
 ```console
@@ -172,7 +183,7 @@ Another option is to mount your external hard drive and NAS on the same computer
 
 Using ~~[`scp`](https://www.geeksforgeeks.org/scp-command-in-linux-with-examples/)~~ [`rsync`](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories) to transfer the data to the NAS is probably the best option but can be a bit difficult/intimidating. I would highly recommend not using `scp` as if the transfer gets interrupted for any reason, it is very difficult to resume it. `rsync` can easily resume incomplete transfers and is a much better tool for this job.
 
-I elected to plug in the external hard drive to a computer and then open/mount both my external hard drive and my NAS on my computer. This allows me to then click and drag the files/folders from one to the other. I did this mainly because I have a few folders that have [Apple's tags feature](https://support.apple.com/guide/mac-help/tag-files-and-folders-mchlp15236/mac) on them. I could not get `rsync` to copy over the tags no matter what I did. In hindsight, the tags are kind of a dumb feature and I probably would have been better off just modifying the file/folder names. **However**, be aware that there are a few issues that can silently happen with this method. Read my blog post [here](TODO) for a writeup of my difficulties.
+I elected to plug in the external hard drive to a computer and then open/mount both my external hard drive and my NAS on my computer. This allows me to then click and drag the files/folders from one to the other. I did this mainly because I have a few folders that have [Apple's tags feature](https://support.apple.com/guide/mac-help/tag-files-and-folders-mchlp15236/mac) on them. I could not get `rsync` to copy over the tags no matter what I did. In hindsight, the tags are kind of a dumb feature and I probably would have been better off just modifying the file/folder names. **However**, be aware that there are a few issues that can silently happen with this method. I am working on a blog post with a writeup containing my difficulties. <!-- TODO: Add link -->
 
 No matter which route you choose, I'd **highly recommend hard wiring things together during the transfer**. Try your best to avoid connecting to the NAS over WiFi. Things will go much faster. Your computers will thank you.
 
@@ -189,7 +200,7 @@ $ rsync -avin --no-p /path/to/external/hard/drive/Movies/ --iconv=utf-8-mac,utf-
 
 If you also want to check the contents of the file to make sure they are the same, you can add the `-c` (checksum) flag. `rsync` will run a checksum on your local file + it will have `rsync` on the NAS run a checksum of its file and compare. This saves lots of data transfer time (only transmitting checksums back and forth, not the actual files) at the expense of CPU time (to calculate the checksums).
 
-> **MAKE SURE YOU ADD A TRAILING `/` TO YOUR FILE PATHS**. Otherwise, `rsync` does not do this comparison correctly (TODO explain why)
+> **MAKE SURE YOU ADD A TRAILING `/` TO YOUR FILE PATHS WHEN USING `RSYNC`**. Otherwise, `rsync` does not do this comparison correctly. Basically, having a trailing `/` tells `rsync` "compare the contents of this directory". See [this StackOverflow post](https://stackoverflow.com/a/56627246/4368898) and/or [this blog post](https://cheat.readthedocs.io/en/latest/rsync.html) for additional information.
 {: .prompt-warning}
 
 >If you are seeing **A TON** of files (like all of them) showing up, you probably have a path wrong. For some reason, my tab complete for “TV Shows” was completing to `TV\\\ Shows` when it should have been `TV\ Shows`. Seems to be a disagreement over escape characters...
@@ -197,12 +208,14 @@ If you also want to check the contents of the file to make sure they are the sam
 
 ### Configuring Plex on the NAS
 
-TODO: Where does this link belong
-https://support.plex.tv/articles/201370363-move-an-install-to-another-system/
-
-Now that we have our content moved over to the NAS, we need to tell Plex the new location of all its content (Plex support article [here](https://support.plex.tv/articles/200289266-editing-libraries/)).
-To properly do that, we need to edit our Plex library, add a source of where the new content is, Plex will rescan and associate the new content location with the old content, then you can delete the old content location.
-TODO: Image of this
+Now that we have our content moved over to the NAS, we need to tell Plex the new location of all its content (Plex support article [here](https://support.plex.tv/articles/200289266-editing-libraries/) with some great instructions for the following).
+To properly do that, we need to:
+1. Edit our Plex library so that we can add a source of where the new content is
+  * Go to the [Plex home screen](http://10.0.0.8:32400/web/index.html#!) --> Hover over a library on the left sidebar --> click the 3 dots --> Manage Library --> Edit... --> Add folders --> Browser for Media Folder
+2. Plex will rescan and associate the new content location with the old content
+  * If Plex does not do this automatically, you can go to the [Plex home screen](http://10.0.0.8:32400/web/index.html#!) --> Hover over a library on the left sidebar --> click the 3 dots --> Scan Library Files
+3. Delete the old content location
+  * Go to the [Plex home screen](http://10.0.0.8:32400/web/index.html#!) --> Hover over a library on the left sidebar --> click the 3 dots --> Manage Library --> Edit... --> Add folders --> click on the "X" next to the old content location
 
 Once this is done for all of your libraries (Ex. I have a library for Movies, TV Shows, etc.), you can then [empty the library trash](https://support.plex.tv/articles/200289326-emptying-library-trash/)
 - [Settings/wrench](https://app.plex.tv/desktop/#!/settings/web/general) (top right) —> Libraries (under Manage) —> 3 dots on the right once you hover over a library —> Empty Trash.
@@ -224,7 +237,7 @@ Lastly, I needed to give my other Plex accounts access to the new server.
 * For accounts internal to your home account: [Settings/wrench](https://app.plex.tv/desktop/#!/settings/web/general) (top right) —> Plex Home (top left, under your username), then modify accordingly
 I then went into each account and changed their pin sources on the left to remove the old server and add the new one.
 
-### Enabling HW Transcoding
+### Enabling Hardware (HW) Transcoding
 If you have [Plex pass](https://www.plex.tv/plex-pass/), you can enable hardware transcoding to speed up video conversions.
 
 Before wasting time doing this, make sure your [NAS supports it](https://docs.google.com/spreadsheets/d/1MfYoJkiwSqCXg8cm5-Ac4oOLPRtCkgUxU0jdj3tmMPc/edit#gid=1274624273).
@@ -233,13 +246,14 @@ Or, make sure your [CPU supports it](https://ark.intel.com/content/www/us/en/ark
 To take full advantage of this, you need to check BOTH “Use hardware acceleration when available” AND “Use hardware-accelerated video encoding”. This is in [Settings/wrench](https://app.plex.tv/desktop/#!/settings/web/general) (top right) —> Transcoder (under Settings).
 * “Use hardware acceleration when available” = encode and decode to hardware-accelerated video codecs
 * “Use hardware accelerated video encoding” = use hardware acceleration for the encoding / decoding
-* [Source](https://support.plex.tv/articles/200250347-transcoder/)
-* Additional article [here](https://medium.com/@MrNick4B/plex-on-docker-on-synology-enabling-hardware-transcoding-fa017190cad7)
-* Plex's instructions [here](https://github.com/plexinc/pms-docker#intel-quick-sync-hardware-transcoding-support)
+  * [Source](https://support.plex.tv/articles/200250347-transcoder/)
+  * Additional article [here](https://medium.com/@MrNick4B/plex-on-docker-on-synology-enabling-hardware-transcoding-fa017190cad7)
+  * Plex's instructions [here](https://github.com/plexinc/pms-docker#intel-quick-sync-hardware-transcoding-support)
 
-TODO: Show image
+![Plex settings window with the two checkboxes mentioned above](/assets/img/posts/2024-11-17-moving-my-plex-library-from-a-mac-to-a-synology-nas/plex-hw-transcoding-checkboxes.png)
+*Check both of these boxes to fully enable hardware transcoding*
 
-There is one addition you need to make to the docker-compose.yaml file: the `devices` keyword
+There is one addition you need to make to the `docker-compose.yaml` file: the `devices` keyword
 ```yaml
 services:
   plex:
@@ -250,15 +264,21 @@ services:
 
 I did also switch to the plexpass tag: `plexinc/pms-docker:plexpass`. Not sure if that is necessary or not.
 
-As [others have noted](https://medium.com/@MrNick4B/plex-on-docker-on-synology-enabling-hardware-transcoding-fa017190cad7), using CPU transcoding, my CPU usage is around 100%, but after HW decoding gets enabled, I see it drop to ~35%. This is a good indicator if things are working or not. TODO: Where to find these numbers?
+As [others have noted](https://medium.com/@MrNick4B/plex-on-docker-on-synology-enabling-hardware-transcoding-fa017190cad7), using CPU transcoding, my CPU usage is around 100%, but after HW decoding gets enabled, I see it drop to ~35%. This is a good indicator if things are working or not.
+* You can find these numbers by clicking the [settings/wrench](https://app.plex.tv/desktop/#!/settings/web/general) (top right in Plex on web) —> Dashboard (under *Status* on the left).
 
-Another indicator if things are working is to look at Plex's status when streaming or to look in Tautulli's logs. TODO: Expand on this
+Another indicator if things are working is to look at Plex's status when streaming. While a device is viewing a video, if hardware transcoding is setup properly and transcoding is required, you will see "Transcoding (hw)". If you see that the video is playing back via *direct play*, you can manually change the streaming quality on the device viewing the video to force transcoding to happen.
+* The screen below can be accessed via [Settings/wrench](https://app.plex.tv/desktop/#!/settings/web/general) (top right) —> Dashboard (under Status):
+![Plex will show you "Transcode (hw)" if hardware transcoding is setup properly](/assets/img/posts/2024-11-17-moving-my-plex-library-from-a-mac-to-a-synology-nas/plex-hw-transcoding-dashboard.png)
+*Plex will show you "Transcode (hw)" if hardware transcoding is setup properly*
 
-If this doesn’t work, some starting points for debugging is to search the logs for “transcoding”, “error”, or “ffmpeg”. You can find the logs by running `docker logs plex` in a terminal connected to the NAS, settings —> manage —> console, and settings —> manage —> Troubleshooting. TODO: Where are these last ones?
+If this doesn’t work, some starting points for debugging is to search the logs for “transcoding”, “error”, or “ffmpeg”:
+* You can find the logs via [Settings/wrench](https://app.plex.tv/desktop/#!/settings/web/general) (top right) —> Console (under Manage at the very bottom left). From there, you can search for the keywords mentioned above in the "Filter logs" text box.
+* If you're brave and the above doesn't work, you could try to "Download Logs" via [Settings/wrench](https://app.plex.tv/desktop/#!/settings/web/general) (top right) —> Troubleshooting (under Manage at the very bottom left).
+* Additionally, you could try to look through some other logs by running `sudo docker logs plex` in a terminal connected to the NAS. I didn't have much luck looking in these logs, but I'm just making you aware of their existence.
 
 ### Updating Plex
 To update plex, there is no need to do it through the web GUI anymore. All you need to do is restart docker, and the plex image will automatically redownload the latest version of plex media server:
-Note that this is only applicable to the plexpass tag.
 ```console
 user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml down
 [+] Running 1/1
@@ -268,11 +288,15 @@ user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml up -d
  ⠿ Container plex  Started
 ```
 
-If you don't have the plex pass, TODO
+Note that this is only applicable if you are using a "dynamic" tag for the `pms-docker` image.
+* In `plex-pms-docker-compose.yaml`, if you used `image: plexinc/pms-docker` (which points to `image: plexinc/pms-docker:latest`) or `image: plexinc/pms-docker:plexpass`, those are both dynamic tags.
+  * If you instead specified a specific tag, Ex. `image: plexinc/pms-docker:1.41.2.9200-c6bbc1b53`, then you will need to manually change the tag that is being pulled in, then restart docker.
+  * You can find valid `pms-docker` tags at the [`pms-docker` repo on Docker Hub](https://hub.docker.com/r/plexinc/pms-docker/tags).
 
 
 ## Moving Tautulli from a Mac to Synology NAS
-TODO: See my other blog post for information on this
+<!-- TODO -->
+My next blog post will document this, stay tuned!
 
 ### Other
 TODO:
