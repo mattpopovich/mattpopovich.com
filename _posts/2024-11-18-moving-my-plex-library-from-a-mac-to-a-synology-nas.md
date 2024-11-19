@@ -13,11 +13,11 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+ path: /assets/img/posts/2024-11-18-moving-my-plex-library-from-a-mac-to-a-synology-nas/thumbnail/plex-macbook-to-synology-nas.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
-#  alt: image alternative text
+ alt: Photo is AI-assisted, that Synology NAS does not exist lol
 description: A detailed walkthrough of the steps I took to move my Plex Media Server from a Mac to a Synology NAS
 ---
 
