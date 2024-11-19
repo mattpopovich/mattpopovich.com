@@ -31,7 +31,7 @@ description: A detailed walkthrough of the steps I took to move my Plex Media Se
 ### What is this post about?
 This post documents my experience moving my [Plex](https://www.plex.tv/) server from my MacBook to a [Synology NAS](https://www.synology.com/dsm/solution/what-is-nas/for-home) (network attached storage). The Plex server was installed using the [Mac Plex app](https://www.plex.tv/media-server-downloads/?cat=computer&plat=macos) (`.dmg`) and I will be transitioning to docker on the Synology NAS to make future moves (if necessary) much easier due to docker being operating system independent.
 
-I use [Tautulli](https://tautulli.com/) for Plex statistics, so I will also be moving that from the Mac (running via Python) to a docker container on the Synology NAS as well. <!-- TODO reference my post -->
+I use [Tautulli](https://tautulli.com/) for Plex statistics, so I will also be moving that from the Mac (running via Python) to a docker container on the Synology NAS as well. I've documented that in a separate blog post [here](/posts/moving-tautulli-from-a-mac-to-a-synology-nas/).
 
 > Note that this post is not meant to be an endorsement of Synology. While I do use one of their machines and like it, I can't say I agree in the direction the company is moving... Removing features ([video station](https://www.youtube.com/watch?v=D4YLeTQXICY)), [requiring Synology-branded hardware](https://www.reddit.com/r/synology/comments/1f310mx/end_of_video_station_no_more_synology/lkb066q/) (RAM, HDDs), etc.
 >
@@ -133,7 +133,7 @@ Also, in your down time, I’d start transferring over your Plex movies, tv show
 ### "Installing" Plex via Docker Compose
 Next, I’m going to install *Container Manager* to my Synology NAS. [To do that](https://kb.synology.com/en-nz/DSM/tutorial/How_to_install_applications_with_Package_Center), simply go to the *Package Center* in your Synology NAS, then search for and install *Container Manager*.
 
-Next I went into the *File Station* and made a `plex` folder in the `docker folder`. In the `plex` folder I made three more folders: `config`, `data`, `transcode`.
+Next I went into the *File Station* and made a `plex` folder in the `docker` folder. I believe the `docker` folder is created upon *Container Manager* install. In the `plex` folder I made three more folders: `config`, `data`, `transcode`.
 ```
 |-- docker
 |   |-- plex
@@ -334,5 +334,4 @@ Note that this is only applicable if you are using a "dynamic" tag for the `pms-
   * You can find valid `pms-docker` tags at the [`pms-docker` repo on Docker Hub](https://hub.docker.com/r/plexinc/pms-docker/tags).
 
 ## Moving Tautulli from a Mac to Synology NAS
-<!-- TODO -->
-My next blog post will document this, stay tuned!
+I've moved this section into its own blog post: [Moving Tautulli from a Mac (Python) to a Synology NAS (Docker)](/posts/moving-tautulli-from-a-mac-to-a-synology-nas/).
