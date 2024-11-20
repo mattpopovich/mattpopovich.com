@@ -3,8 +3,8 @@ title: "Moving Tautulli from a Mac (Python) to a Synology NAS (Docker)"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2024-11-19 16:00:09 -0700
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
+tags: [bash, docker, docker compose, how to, linux, mac, nas, not youtube, synology, tautulli, tech, tutorial]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -18,7 +18,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
-#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
+description: Detailed steps for moving a Tautulli installation from Python on a Mac to docker in a Synology NAS
 ---
 
 > This tutorial assumes you have some [basic knowledge of the command line/terminal](/posts/introduction-to-the-command-line-shell-terminal-etc/) and [`ssh`](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)ing into a machine to run commands. Docker familiarity is helpful as well, but I'll explain the `docker compose` commands we'll be running if you're unfamiliar.
@@ -33,15 +33,18 @@ In my previous post, I explained [how I moved my Plex Library from a Mac to a Sy
 > Tautulli is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. The only thing missing is "why they watched it", but who am I to question your 42 plays of *Frozen*. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.
 > [Source](https://tautulli.com)
 
-I use Tautulli to historically see who is playing content and how that content was watched (direct play vs transcoding). This way, if there are any comment or complaints on quality, I can look back and easily see what happened.
+I use Tautulli to historically see who is playing content and how that content was watched (direct play vs transcoding). This way, if there are any comments or questions on quality, I can look back and easily see what happened and debug.
 
 I also love statistics and Tautulli gives some great quantitative visuals on your server's usage.
+
+![Example graphs on Tautuli showing daily play duration, play duration by day of week, and play duration by hour of day](https://tautulli.com/images/screenshots/graphs.png)
+*Example Graphs in Tautulli*
 
 ## Moving Tautulli from a Mac to Synology NAS
 
 ### Backing up old Tautulli Data
-Let's get into it and start moving [Tautuilli](https://github.com/Tautulli/Tautulli). They have two good FAQ questions on their wiki:
-* [FAQ: I need to move/reinstall Tautulli, can I keep my history and statistics?](https://github.com/Tautulli/Tautulli/wiki/Frequently-Asked-Questions#q-i-need-to-movereinstall-tautulli-can-i-keep-my-history-and-statistics)
+Let's get into it and start moving Tautuilli. We'll start by following this question in their FAQ:
+* [I need to move/reinstall Tautulli, can I keep my history and statistics?](https://github.com/Tautulli/Tautulli/wiki/Frequently-Asked-Questions#q-i-need-to-movereinstall-tautulli-can-i-keep-my-history-and-statistics)
 
 To back up your Tautulli data, you need to go into Tautulli on web --> gear (top right) --> Settings --> Help & Info
   * Under "Tautulli Configuration", click on `/config/config.ini` to download your Tautulli configuration
@@ -61,6 +64,7 @@ Personally, I want to create a new user account for Tautulli. This is recommende
     * Click "Next"
     * For permissions, I gave Read/Write access to the `docker` folder, left it at "Default" for `homes`, and "No Access" for everything else
       * This way, the `tautulli` user will only be able to access the `docker` folder (and its home directory).
+    * Click "Next" through the rest of the prompts
 
 Then we will need to create a folder for Tautulli. I'll be making mine as `/volume1/docker/tautulli`, similar to [what I did for Plex](/posts/moving-my-plex-library-from-a-mac-to-a-synology-nas/#installing-plex-via-docker-compose), but you are welcome to place it wherever you'd like. The `tautulli` folder will also need a `config` folder inside of it:
 
@@ -76,6 +80,7 @@ In the `tautulli` folder, we'll create the `docker-compose` file. I named mine `
 We have a few configuration changes to make in Tautulli's `docker-compose` file:
 * We need to mount Tautulli's config in `/config`
 * Set the timezone to `America/Denver` [just as we did for Plex's `docker-compose`](/posts/moving-my-plex-library-from-a-mac-to-a-synology-nas/#installing-plex-via-docker-compose).
+  * Other time zones can be found [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 * If you created a `tautulli` user above, give the container its user ID (UID) and group ID (GID):
   * Here's how to get the `tautulli` user's *user id* and *group id*:
   * ```console
@@ -126,9 +131,9 @@ Afterwards, you should now be able to access Tautulli in a web browser at `<NAS_
 ### Connecting Tautulli to our Plex server
 Once you’re in Tautulli, go into Tautulli on web --> gear (top right) --> Settings --> Plex Media Server. We will need to connect a new server. To do this, click on “Fetch New Token”, and sign in. I can't remember exactly but the rest might auto populate? If not, put in the IP of your NAS, port (`32400` by default), and I checked “use secure connection” because why not?
 
-Then I streamed a few videos in Plex and saw it show up in Tautulli so I think we’re good to go!
+Then I streamed a few videos in Plex and saw it show up in Tautulli so I think the connection between Plex and Tautulli is good to go!
 
-If you are importing a database and config, you’re going to want to see the history tab populated just as it was. That will tell you if you exported and imported it correctly.
+To import your old database and config go into Tautulli on web --> gear (top right) --> Settings --> Import & Backups. From here, click on the respective buttons for importing a Tautulli database and a Tautulli configuration. Once you do that, verify that the history tab is populated just as it was. That will confirm a successful database import.
 
 If Tautulli is not "linking" old content with new content, look into the FAQ below for a solution. Luckily, I didn't have any issues.
 * [FAQ: I moved media in Plex, now Tautulli is linking to the wrong item/showing up twice!](https://github.com/Tautulli/Tautulli/wiki/Frequently-Asked-Questions#q-i-moved-media-in-plex-now-tautulli-is-linking-to-the-wrong-itemshowing-up-twice)

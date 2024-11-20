@@ -4,7 +4,7 @@ author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2024-11-18 14:22:47 -0600
 categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
-tags: [apple, bash, how to, mac, not youtube, osx, tech, tutorial, plex, synology, nas, tautulli, docker, docker compose, rsync]                # TAG names should always be lowercase
+tags: [apple, bash, how to, mac, not youtube, osx, tech, tutorial, plex, synology, nas, docker, docker compose, rsync]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -31,7 +31,7 @@ description: A detailed walkthrough of the steps I took to move my Plex Media Se
 ### What is this post about?
 This post documents my experience moving my [Plex](https://www.plex.tv/) server from my MacBook to a [Synology NAS](https://www.synology.com/dsm/solution/what-is-nas/for-home) (network attached storage). The Plex server was installed using the [Mac Plex app](https://www.plex.tv/media-server-downloads/?cat=computer&plat=macos) (`.dmg`) and I will be transitioning to docker on the Synology NAS to make future moves (if necessary) much easier due to docker being operating system independent.
 
-I use [Tautulli](https://tautulli.com/) for Plex statistics, so I will also be moving that from the Mac (running via Python) to a docker container on the Synology NAS as well. I've documented that in a separate blog post [here](/posts/moving-tautulli-from-a-mac-to-a-synology-nas/).
+I use [Tautulli](https://tautulli.com/) for Plex statistics, so I will also be moving that from the Mac (running via Python) to a docker container on the Synology NAS as well. I've documented that in a separate blog post [here](/posts/moving-tautulli-from-a-mac-python-to-a-synology-nas-docker/).
 
 > Note that this post is not meant to be an endorsement of Synology. While I do use one of their machines and like it, I can't say I agree in the direction the company is moving... Removing features ([video station](https://www.youtube.com/watch?v=D4YLeTQXICY)), [requiring Synology-branded hardware](https://www.reddit.com/r/synology/comments/1f310mx/end_of_video_station_no_more_synology/lkb066q/) (RAM, HDDs), etc.
 >
@@ -334,4 +334,4 @@ Note that this is only applicable if you are using a "dynamic" tag for the `pms-
   * You can find valid `pms-docker` tags at the [`pms-docker` repo on Docker Hub](https://hub.docker.com/r/plexinc/pms-docker/tags).
 
 ## Moving Tautulli from a Mac to Synology NAS
-I've moved this section into its own blog post: [Moving Tautulli from a Mac (Python) to a Synology NAS (Docker)](/posts/moving-tautulli-from-a-mac-to-a-synology-nas/).
+I've moved this section into its own blog post: [Moving Tautulli from a Mac (Python) to a Synology NAS (Docker)](/posts/moving-tautulli-from-a-mac-python-to-a-synology-nas-docker/).
