@@ -2,9 +2,9 @@
 title: "Moving Tautulli from a Mac (Python) to a Synology NAS (Docker)"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2024-11-19 16:00:09 -0700
+date: 2024-11-20 23:00:09 -0700
 categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
-tags: [bash, docker, docker compose, how to, linux, mac, nas, not youtube, synology, tautulli, tech, tutorial]                # TAG names should always be lowercase
+tags: [bash, docker, docker compose, how to, linux, mac, nas, not youtube, synology, tautulli, tech, tutorial]  # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -13,11 +13,11 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+ path: /assets/img/posts/2024-11-20-moving-tautulli-from-a-mac-python-to-a-synology-nas-docker/macbook-tautulli-to-synology-nas.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
-#  alt: image alternative text
+ alt: Image is AI-assisted. The Synology NAS is an AI creation and not a real model for sale.
 description: Detailed steps for moving a Tautulli installation from Python on a Mac to docker in a Synology NAS
 ---
 
