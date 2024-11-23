@@ -18,7 +18,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
-description: "A time-lapse of snow falling from winter storm Xylia taken in Denver, CO on the weekend of March 13, 2021"
+description: A time-lapse of snow falling from winter storm Xylia taken in Denver, CO on the weekend of March 13, 2021
 ---
 
 {% include embed/youtube.html id='n7fOENeADLg' %}
@@ -28,7 +28,7 @@ This post documents the snowfall at my house in Denver, CO during winter storm X
 
 It started with some brief rain on the 13th around 11AM, then snow, then it all melted by 3PM that same day. Snow dabbled on and off until 1AM on the 14th. The early hours of the 14th is when things started picking up. We went from 5" on the ground at 9AM to 15" by 1PM = over two inches an hour! My external battery bank died (I [went snowboarding hehe](https://www.strava.com/activities/4953024038) and neglected to swap in some new batteries beforehand) around this time. The next picture I took was at 10PM when the storm was over with 16" of total snowfall.
 
-## TLDR
+## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 Denver metro received ~16" of snow in ~12 hours from 1AM March 14th, 2021 to 1PM on the same day. While not a record, Weather Underground says "[Xylia was the fourth-heaviest snowstorm on record in Denver (27.1 inches)](https://www.wunderground.com/article/storms/winter/news/2021-03-11-winter-storm-xylia-snow-records-since-fall-2020)", Wikipedia says [it was Denver's second-largest March snowfall on record](https://en.wikipedia.org/wiki/March_2021_North_American_blizzard).
 
 ## Graph
@@ -51,7 +51,7 @@ Download links to my data:
 > Also note that when I say "some people", I only know of one person that does this 😉
 
 ![The camera setup for recording the time-lapse: iPhone 11 Pro + tripod + battery backup](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaTimelapseRig.jpg){: .shadow}
-*The camera setup for recording the time-lapse of Xylia: iPhone 11 Pro + tripod + battery backup*
+*The camera setup for recording the time-lapse of Xylia: [iPhone 11 Pro](https://amzn.to/3J4ITrx) + [tripod](https://amzn.to/3p82Vtk) + [battery backup](https://amzn.to/3sl5kCM)*
 
 &nbsp;
 

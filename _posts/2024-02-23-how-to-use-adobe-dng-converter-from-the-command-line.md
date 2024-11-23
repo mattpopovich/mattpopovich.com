@@ -3,8 +3,8 @@ title: "How to Use Adobe DNG Converter from the Command Line"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2024-02-24 03:17:06 -500
-categories: [Blog]    # <=2 values here: top category and sub category
-tags: [apple, how to, mac, video editing, tech, tutorial, adobe, dng, gpr, cli, gui, adobe dng converter, programming, bash]                # TAG names should always be lowercase
+categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
+tags: [apple, how to, mac, video editing, tech, tutorial, adobe, dng, gpr, cli, gui, adobe dng converter, programming, bash, not youtube]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -18,6 +18,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+description: Adobe's DNG Converter has a command-line interface. Here's how to use it.
 ---
 
 <!-- TODO: Link to "my FCPX export settings blog post. Start this blog with "expanding on my previous project" -->
@@ -25,7 +26,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 ## Intro
 Whenever I shoot a time lapse in raw on my [GoPro (affiliate link)](https://amzn.to/3ZUuXcD), it creates one folder that is full of `*.JPG` and `*.GPR` files. I then find myself moving all the `*.JPG` files into a `JPG` folder, and all the `*.GPR` files into a `GPR` folder. I then use [Adobe Digital Negative (DNG) Converter](https://helpx.adobe.com/camera-raw/using/adobe-dng-converter.html) to convert the `.GPR` files into `.DNG` so that I can import them to [Final Cut Pro (FCP/FCPX)](https://www.apple.com/final-cut-pro/). Adobe DNG Converter is a [graphical user interface (GUI)](https://www.computerhope.com/jargon/g/gui.htm) program which means I need to open the program, select input and output destinations, select my settings, all while using the mouse to make my selections. It's slow and repetitive (not to mention I make the same selections every time). I just want something that I can double click that will move the pictures to their respective folders and start the `GPR` to `DNG` conversion process. Turns out, as I suspected, the Adobe DNG Converter is running a command line program underneath the hood. Here's how we can use it without the GUI to "automate" away this repetitive task:
 
-> Note that this article assumes you have basic familiarity with the terminal and shell commands
+> Note that this article assumes you have basic familiarity with the terminal and shell commands. If you are not familiar or would like to learn more, check out my post [here](/posts/introduction-to-the-command-line-shell-terminal-etc/) for an "Introduction to the Terminal / Shell / Command Line, etc.".
 {: .prompt-warning }
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
@@ -176,7 +177,7 @@ This particular example was ran using the two `*.GPR` files I mentioned above (a
 
 <!-- Had to add <code> &nbsp; </code> here because spaces are not kept between `` unfortunately -->
 
-| [Flags](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) | Speedup (s) | Speedup (%) | Size (bytes) | Size (%) |
+| [Flags](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) | Runtime (s) | Runtime (%) | Size (bytes) | Size (%) |
 |-------|-------------|-------------|--------------|----------|
 | <code>-c -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0003828s | 0%   | +0B         | +0% |
 | <code>-u -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0146741s | -1%  | +0B         | +0% |
@@ -189,7 +190,7 @@ This particular example was ran using the two `*.GPR` files I mentioned above (a
 | <code>-c -p1 -mp &nbsp;&nbsp; -cr7.1 -dng1.7.1</code>                     | -.3165521s | -31% | +0B         | +0% |
 
 Where
-* Speedup = smaller (negative) is better
+* Runtime = smaller (negative) is better
 * Size = smaller (negative) is better
 
 ## Outro
