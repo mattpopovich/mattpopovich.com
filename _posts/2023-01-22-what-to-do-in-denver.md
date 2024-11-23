@@ -3,7 +3,7 @@ title: "What to do in Denver"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2023-01-22 19:42:13 -0700
-categories: [Blog]          # <=2 values here: top category and sub category
+categories: [Blog, Not YouTube]          # <=2 values here: top category and sub category
 tags: [denver, turo, not youtube, snowboard, ski] # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
@@ -254,7 +254,8 @@ It gets hot here in the summer!
   * 30 minutes south of Denver
   * Drop in / take out spots:
     * [E470 near Chatfield Reservoir](https://goo.gl/maps/iE9i3UhquXsTNTj97)
-      * Very limited parking here.
+      * **Reservations are required to park** as of 2024 ($13): <https://www.ssprd.org/riverparking>
+        * Very limited parking here.
       * If you can't find a spot to park, you can drop people off here, then go drive to the pull out spot and Uber / walk along the bike trail back.
     * [Breckenridge Brewery](https://goo.gl/maps/94HUCxPrjnu6qf1u6) / [Reynolds Landing](https://goo.gl/maps/Q3J54ewKhJasnPk78)
       * ~1.5hr, 3mi downstream.
@@ -263,8 +264,10 @@ It gets hot here in the summer!
       * An additional ~2.5hr, 3.5mi downstream from Breckenridge Brewery / Reynolds Landing
     * You can technically keep floating past here but I've yet to do that.
   * Ideal water flows for tubing: 100-350cfs
-    * Manageable: 65-500cfs
-    * Current flow [here](https://dwr.state.co.us/tools/stations/LNBC10CO?params=DISCHRG)
+    * Manageable: 45-600cfs
+    * Current [flow at Littleton boat chute #10](https://dwr.state.co.us/tools/stations/LNBC10CO?params=DISCHRG)
+      * [Location of Littleton Boat Chute #10](https://maps.app.goo.gl/qqdcT1bYGPaP2WBUA). [Boat Chute numbering source](https://www.facebook.com/groups/711281172772489/posts/1594140101153254/)
+      * In case that flow isn't being reported, view the [South Platte river below Chatfield Reservoir's flow](https://dwr.state.co.us/Tools/Stations/PLACHACO?params=DISCHRG).
   * Example full float [here](https://www.strava.com/activities/2608193842), [half float](https://www.strava.com/activities/7304584997)
 * [Float in Golden](https://www.cityofgolden.net/play/recreation-attractions/clear-creek-white-water-park/)
   * [30 minutes west of Denver](https://goo.gl/maps/iZKdcTbPjEmQ5TST7), a convenient parking lot [here](https://goo.gl/maps/tCsrALN5S4xcVJ3Y9)
