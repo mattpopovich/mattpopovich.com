@@ -18,7 +18,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
-description: "A time-lapse of snow falling from winter storm Xylia taken in Denver, CO on the weekend of March 13, 2021"
+description: A time-lapse of snow falling from winter storm Xylia taken in Denver, CO on the weekend of March 13, 2021
 ---
 
 {% include embed/youtube.html id='n7fOENeADLg' %}

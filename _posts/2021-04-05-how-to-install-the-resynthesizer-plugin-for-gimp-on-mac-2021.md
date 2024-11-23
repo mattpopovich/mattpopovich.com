@@ -87,6 +87,10 @@ In computer terms, the plugin is looking to use a library that we do not have: `
 
 ## Checking for `libintl`
 To check if you already have `libintl.8` installed, open *Terminal*, go to the `/usr/local/lib` directory via `cd /usr/local/lib`, and try to list all files named "libintl" via `ls libintl*`. If it outputs `libintl.8` or even `libintl.9`, then move onto the [symbolic link portion of this article](#creating-a-symbolic-link-to-fake-having-libintl9). If it outputs "No such file or directory", then we will need to install it.
+
+> If you have no idea what the instructions above mean, check out my post [here](/posts/introduction-to-the-command-line-shell-terminal-etc/) for an "Introduction to the Terminal / Shell / Command Line, etc.".
+{: .prompt-info }
+
 ```console
 username@Mac:~$ cd /usr/local/lib
 username@Mac:/usr/local/lib$ ls libintl*

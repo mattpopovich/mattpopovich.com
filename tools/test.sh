@@ -19,7 +19,7 @@ help() {
   echo
   echo "Usage:"
   echo
-  echo "   bash ./tools/test.sh [options]"
+  echo "   bash $0 [options]"
   echo
   echo "Options:"
   echo '     -c, --config   "<config_a[,config_b[...]]>"    Specify config file(s)'
@@ -63,8 +63,8 @@ main() {
   # test
   bundle exec htmlproofer "$SITE_DIR" \
     --disable-external \
-    --check-html \
-    --allow_hash_href
+    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+    # --allow_hash_href  # TODO: I used to have this but then cotes removed it.
 }
 
 while (($#)); do
