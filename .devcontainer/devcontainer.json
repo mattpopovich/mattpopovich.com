@@ -1,57 +1,75 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/docker-existing-dockerfile
 {
-	"name": "Existing Dockerfile",
+  "name": "Existing Dockerfile",
 
-	// Sets the run context to one level up instead of the .devcontainer folder.
-	"context": "..",
+  // Sets the run context to one level up instead of the .devcontainer folder.
+  "context": "..",
 
-	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-	"dockerFile": "../Dockerfile",
+  // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+  "dockerFile": "../Dockerfile",
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
 
-	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
-    "runArgs": [
-		"-p",
-			"4000:4000"
-		// "-e",
-		// 	"DISPLAY=${env:DISPLAY}",
-    ],
+  // Uncomment when using a ptrace-based debugger like C++, Go, and Rust
+  "runArgs": [
+    "-p",
+    "4000:4000"
+    // "-e",
+    // 	"DISPLAY=${env:DISPLAY}",
+  ],
 
-	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
-	// "mounts": [
-	// 	"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
-	// 	"source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
-	// ],
+  // Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
+  // "mounts": [
+  // 	"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+  // 	"source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+  // ],
 
-	// Uncomment the next line to run commands after the container is created - for example installing curl.
+  // Uncomment the next line to run commands after the container is created - for example installing curl.
 
-	// Tell git that our workspace folder is safe, otherwise because our docker
-	//	user is different than the mounted folder's owner, git won't run in that
-	//	folder (for security reasons)
-	// https://www.kenmuse.com/blog/avoiding-dubious-ownership-in-dev-containers/
-	"postStartCommand": "git config --system --add safe.directory ${containerWorkspaceFolder} && bundle",
+  // Tell git that our workspace folder is safe, otherwise because our docker
+  //	user is different than the mounted folder's owner, git won't run in that
+  //	folder (for security reasons)
+  // https://www.kenmuse.com/blog/avoiding-dubious-ownership-in-dev-containers/
+  "postStartCommand": "git config --system --add safe.directory ${containerWorkspaceFolder} && bundle",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
 
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      },
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "shardulm94.trailing-spaces",
+        "yzhang.markdown-all-in-one",
+        "eamodio.gitlens",
+        "github.vscode-github-actions",
+        "streetsidesoftware.code-spell-checker"
 
-    // Configure tool-specific properties.
-    "customizations": {
-        // Configure properties specific to VS Code.
-        "vscode": {
-			// Add the IDs of extensions you want installed when the container is created.
-			"extensions": [
-				"ms-python.python",
-				"ms-python.vscode-pylance",
-				"shardulm94.trailing-spaces",
-				"yzhang.markdown-all-in-one",
-				"eamodio.gitlens",
-				"github.vscode-github-actions",
-				"streetsidesoftware.code-spell-checker"
-			]
-		}
-	}
+        // Chirpy extensions
+        // Liquid tags auto-complete
+        // "killalau.vscode-liquid-snippets",
+        // Liquid syntax highlighting and formatting
+        // "Shopify.theme-check-vscode",
+        // Shell
+        // "timonwong.shellcheck",
+        // "mkhl.shfmt",
+        // Common formatter
+        // "EditorConfig.EditorConfig",
+        // "esbenp.prettier-vscode",
+        // "stylelint.vscode-stylelint",
+        // Git
+        // "mhutchie.git-graph"
+      ]
+    }
+  }
 
-	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "vscode"
+  // Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
+  // "remoteUser": "vscode"
 }
