@@ -6,7 +6,8 @@
 # FROM bretfisher/jekyll
 
 # Updated Jekyll image built on Debian
-FROM bretfisher/jekyll-serve:stable-20240215-2119a31
+FROM bretfisher/jekyll-serve:stable-20240915-2119a31
+# TODO: This uses ruby 3.1... Should update to 3.3 before April 2025
 
 # Install python3 and pip
 RUN apt-get update && apt-get upgrade -y
