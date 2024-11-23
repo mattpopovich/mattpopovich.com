@@ -2,7 +2,7 @@
 title: New Favicon
 author: matt_popovich       # Reference author_id in _data/authors.yml
 date: 2020-10-06 23:29:11 -0600
-categories: [Blog]          # <=2 values here: top category and sub category
+categories: [Blog, Not YouTube]          # <=2 values here: top category and sub category
 tags: [spam, not youtube]   # TAG names should always be lowercase
 layout: post
 pin: false
