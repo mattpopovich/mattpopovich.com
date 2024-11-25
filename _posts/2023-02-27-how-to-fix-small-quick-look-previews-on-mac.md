@@ -13,17 +13,16 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2023-02-27-how-to-fix-small-quick-look-previews-on-mac/fix-quick-look-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+  show_image_in_post: false
 description: Quick Look was not showing me full previews of images, here's how to fix that!
 ---
 
-
 {% include embed/youtube.html id='JMtz9G-F67U' %}
-
 
 ## Intro
 [Quick Look](https://support.apple.com/guide/mac-help/preview-a-file-mh14119/mac) is a simple feature on macOS that lets users view certain file types without opening any applications. In my opinion, it is one of Mac's best features. To use it, just [select one or more items](https://support.apple.com/guide/mac-help/aside/glos3b057c3a/13.0/mac/13.0) in Finder, then press the space bar. It is especially handy for viewing images and videos.
