@@ -41,7 +41,7 @@ However, occasionally, Quick Look doesn't show a full screen preview of the sele
 ## Fixing Quick Look
 All right everyone, a really quick post for you here today. I was out shooting some footy with the drone and wanted to come back and take a look at it. Upon pressing space bar to preview some of these images and videos (which brings up Quick Look), it wasn't showing a full screen image and the videos weren't loading either... I've had this problem recently on older versions of macOS and I was hoping they fixed it, but it looks like they have not. This is running OS Monterey 12.6.2:
 
-![Quick Look giving small windows / previews](/assets/img/posts/2023-02-27-how-to-fix-small-quick-look-previews-on-mac/QuickLook_not-fully-working.png){: width="480"} *Quick Look not properly working with a small window/preview*
+![Quick Look giving small windows / previews](/assets/img/posts/2023-02-27-how-to-fix-small-quick-look-previews-on-mac/QuickLook_not-fully-working.jpg){: width="480"} *Quick Look not properly working with a small window/preview*
 
 Fortunately, it's a really quick fix to get Quick Look fully working again. All you have to do is click on the Apple logo in the top left, and then go to "Force Quit" (or press Option+Command+Escape), select "Finder", then click "Relaunch".
 
@@ -49,7 +49,7 @@ Fortunately, it's a really quick fix to get Quick Look fully working again. All 
 
 When relaunching, it will take down all your Finder windows then bring them back up to where they were. Hopefully, if you press space bar, now you should get a full screen image!
 
-![Quick Look giving a full preview](/assets/img/posts/2023-02-27-how-to-fix-small-quick-look-previews-on-mac/QuickLook_fully-working.png) *A properly working Quick Look!*
+![Quick Look giving a full preview](/assets/img/posts/2023-02-27-how-to-fix-small-quick-look-previews-on-mac/QuickLook_fully-working.jpg) *A properly working Quick Look!*
 
 ## Outro
 Hopefully Apple can fix this in a future software release, but if not, that is the "quick fix" that we're going to have to deal with.

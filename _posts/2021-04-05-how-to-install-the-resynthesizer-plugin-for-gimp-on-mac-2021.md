@@ -184,7 +184,7 @@ As we can see, `libintl.9.dylib` now points to `libintl.8.dylib`, similar to a "
 # Using the Resynthesizer Plugin
 That's it! You should now be able to restart GIMP (quit and open it back up), and once you select an object, then go through the same steps to use the Resynthesizer plugin (Filters --> Enhance --> "Heal selection..." --> OK), it should now synthesize successfully! 🤞
 
-![Example of a successful use of the Resynthesizer plugin](/assets/img/posts/2021-04-05-how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/before-and-after-resynthesizer-plugin-GIMP.png){: width="480"} *Example of a successful use of the Resynthesizer plugin!*
+![Example of a successful use of the Resynthesizer plugin](/assets/img/posts/2021-04-05-how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/before-and-after-resynthesizer-plugin-GIMP.jpg){: width="480"} *Example of a successful use of the Resynthesizer plugin!*
 
 Pretty nice for an automatic tool!
 

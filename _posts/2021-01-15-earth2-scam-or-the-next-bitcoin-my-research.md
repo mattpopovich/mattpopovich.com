@@ -28,7 +28,7 @@ description: Is Earth2 something you should invest in? Read on for my analysis
 
 I was minding my own business this Sunday when [Quora](https://www.quora.com/) interrupted me with a notification (little bit of a sidebar, I was watching the [Netflix movie](https://www.netflix.com/title/81254224), [The Social Dilemma](https://www.thesocialdilemma.com/) this weekend... highly recommend), which I fell trap to, so I opened their app and began scrolling. After a quick peruse, I ran into this post, which looked... interesting. Note that it's a promoted post (🚩) and I try to avoid these at all costs, but, against my own judgment, I began to read about this thing called "[Earth2](https://earth2.io/)".
 
-![Earth2 promoted post on Quora](/assets/img/posts/2021-01-15-earth2-scam-or-the-next-bitcoin-my-research/quora-earth2-promoted-post.png){: width="480"}
+![Earth2 promoted post on Quora](/assets/img/posts/2021-01-15-earth2-scam-or-the-next-bitcoin-my-research/quora-earth2-promoted-post.jpg){: width="480"}
 
 ## What is Earth2?
 
