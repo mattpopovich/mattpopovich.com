@@ -12,11 +12,12 @@ math: false
 mermaid: false
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2022-09-16-updated-how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2022/resynthesizer-2022-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+  show_image_in_post: false
 description: There is an easier way to get the Resynthesizer plugin working. Here's how!
 ---
 
