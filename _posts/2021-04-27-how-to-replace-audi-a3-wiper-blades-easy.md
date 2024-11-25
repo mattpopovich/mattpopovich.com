@@ -12,11 +12,12 @@ math: false
 mermaid: false
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2021-04-27-how-to-replace-audi-a3-wiper-blades-easy/replace-audi-a3-wiper-blades-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+  show_image_in_post: false
 description: Wiper blade installation on an Audi A3 is very simple, here's how!
 ---
 
@@ -25,9 +26,9 @@ description: Wiper blade installation on an Audi A3 is very simple, here's how!
 ## Intro
 Quick post on how to replace the wipers in your Audi A3. The A3 owner's manual states that you should replace your windshield wiper blades [once or twice every year](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-52). It’s very easy to do and only takes a few minutes. I didn’t see a great tutorial on YouTube so I decided to make my own!
 
-While I wrote this specifically for a [2015 Audi A3 8V](https://en.wikipedia.org/wiki/Audi_A3#Third_generation_(Typ_8V;_2013)), [these wipers (affiliate link)](https://amzn.to/3PfCE6p) will also fit on:
+![Warning from the owner's manual to replace wiper blades once to twice a year](/assets/img/posts/2021-04-27-how-to-replace-audi-a3-wiper-blades-easy/wiper-blade-replacement-interval.png){: width="400" .right}
 
-[![Warning from the owner's manual to replace wiper blades once to twice a year](/assets/img/posts/2021-04-27-how-to-replace-audi-a3-wiper-blades-easy/wiper-blade-replacement-interval.png){: width="400" .right}](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-52)
+While I wrote this specifically for a [2015 Audi A3 8V](https://en.wikipedia.org/wiki/Audi_A3#Third_generation_(Typ_8V;_2013)), [these wipers (affiliate link)](https://amzn.to/3PfCE6p) will also fit on:
 
 * **Audi** A3 Limousine (8V) 2013+
   - RS3 Limousine (8V) 2017+
@@ -58,12 +59,12 @@ While I wrote this specifically for a [2015 Audi A3 8V](https://en.wikipedia.org
 ## Buy replacement wipers
 I used the Bosch Aerotwin A102S's. I got mine from FCP Euro for [$24 + shipping](https://www.fcpeuro.com/products/audi-vw-wiper-blade-set-bosch-8v1998002a). I ordered a few other things (cabin and engine air filters - additional post on those coming soon!) as they have free shipping for orders >$49. You can also find these wipers on Amazon for [$38 (affiliate link)](https://amzn.to/3PfCE6p). You might even be able to use something else that has the same size: 19"/475mm passenger wipers and 26"/650mm driver side wipers.
 
-[![Audi A3 manual instructions to put the wipers in service position](/assets/img/posts/2021-04-27-how-to-replace-audi-a3-wiper-blades-easy/windshield-wiper-service-position.jpg){: width="400" .right}](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-52)
+![Audi A3 manual instructions to put the wipers in service position](/assets/img/posts/2021-04-27-how-to-replace-audi-a3-wiper-blades-easy/windshield-wiper-service-position.jpg){: width="400" .right .shadow}
 
 ## Put the wipers into “service position”
 If you'll notice, you can't get to the wipers very easily. You can't lift them up without hitting the hood (or, bonnet, for those British folk) of the car. We can solve that by putting the wipers into "service position".
 
-To put the wipers into _service position_, you'll need to pull the wiper stalk (right of the steering wheel) down (to position 4) and hold it there for a few seconds. Your wipers will then move halfway up the windshield and stay there. If this does not work, you'll need to "wake up" the vehicle by turning the ignition on and then off, then pull the wiper stalk down to position 4 and hold it there for a few seconds.
+To put the wipers into _service position_, you'll need to pull the wiper stalk (right of the steering wheel) down (to position 4) and hold it there for a few seconds ([Pg. 49, Owner's Manual](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-51)). Your wipers will then move halfway up the windshield and stay there. If this does not work, you'll need to "wake up" the vehicle by turning the ignition on and then off, then pull the wiper stalk down to position 4 and hold it there for a few seconds.
 
 Once the wipers are up into service position, you can lift them up off of the windshield to get them into a position to work on. Just note that once you take the old wipers off, be careful to not let the wipers go back onto the windshield as they will scratch the windshield up if the wipers are not on.
 
