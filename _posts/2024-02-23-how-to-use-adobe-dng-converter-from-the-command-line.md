@@ -147,9 +147,17 @@ matt@mac $ ls -l *.dng
 I am using 3000x4000 `.GPR` (raw) files shot with my [GoPro](https://amzn.to/3ZUuXcD) Hero 8 Black:
 ```console
 matt@mac $ file *.GPR
-GOPR0000.GPR: TIFF image data, little-endian, direntries=58, height=3000, bps=16, compression=JBIG, ITU-T T.85, PhotometricIntepretation=(unknown=0xffff8023), description=C:\DCIM\100GOPRO\GOPR3115.GPR, manufacturer=GoPro, model=HERO8 Black, orientation=[*2*], width=4000
+GOPR0000.GPR: TIFF image data, little-endian, direntries=58, height=3000,
+  bps=16, compression=JBIG, ITU-T T.85,
+  PhotometricIntepretation=(unknown=0xffff8023),
+  description=C:\DCIM\100GOPRO\GOPR3115.GPR, manufacturer=GoPro,
+  model=HERO8 Black, orientation=[*2*], width=4000
 
-GOPR0001.GPR: TIFF image data, little-endian, direntries=58, height=3000, bps=16, compression=JBIG, ITU-T T.85, PhotometricIntepretation=(unknown=0xffff8023), description=C:\DCIM\100GOPRO\G0029214.GPR, manufacturer=GoPro, model=HERO8 Black, orientation=[*2*], width=4000
+GOPR0001.GPR: TIFF image data, little-endian, direntries=58, height=3000,
+  bps=16, compression=JBIG, ITU-T T.85,
+  PhotometricIntepretation=(unknown=0xffff8023),
+  description=C:\DCIM\100GOPRO\G0029214.GPR, manufacturer=GoPro,
+  model=HERO8 Black, orientation=[*2*], width=4000
 
 matt@mac $ ls -l *.GPR
 -rwx------  1 matt  staff  6186776 Feb 26 22:54 GOPR0000.GPR
@@ -179,7 +187,8 @@ This particular example was ran using the two `*.GPR` files I mentioned above (a
 
 | [Flags](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) | Runtime (s) | Runtime (%) | Size (bytes) | Size (%) |
 |-------|-------------|-------------|--------------|----------|
-| <code>-c -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0003828s | 0%   | +0B         | +0% |
+| <code>-c -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | .992175s   | ---  | 25,217,580B | --- |
+|                                                                           |            |      |             |     |
 | <code>-u -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0146741s | -1%  | +0B         | +0% |
 | <code>-l -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0108651s | -1%  | +0B         | +0% |
 | <code>-c -p1 -e &nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code>                | -.002032s  | 0%   | +0B         | +0% |
