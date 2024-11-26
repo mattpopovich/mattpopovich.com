@@ -13,14 +13,15 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2021-08-03-obxs-pine-island-audubon-center-nature-trail-ride-through/obxs-pine-island-audubon-trail-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+  show_image_in_post: false
 description: A bicycle ride I took on the Pine Island Audubon Center Nature Trail located in Corolla, North Carolina.
 ---
-
+[](/assets/img/posts/2021-08-03-obxs-pine-island-audubon-center-nature-trail-ride-through/obxs-pine-island-audubon-trail-thumbnail.jpg)
 {% include embed/youtube.html id='YlQLeMSQD0Y' %}
 
 ## Into

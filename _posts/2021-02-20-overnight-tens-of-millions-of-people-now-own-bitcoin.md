@@ -11,12 +11,13 @@ comments: true
 math: false
 mermaid: false
 #img_cdn: https://cdn.com
-#img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+# img_path: /img/path/
+image:
+  path: /assets/img/posts/2021-02-20-overnight-tens-of-millions-of-people-now-own-bitcoin/millions-now-own-bitcoin-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+  show_image_in_post: false
 description: A company in the S&P 500 holds bitcoin on their balance sheet, which means most investors now have exposure to it too!
 ---
 
