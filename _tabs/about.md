@@ -8,7 +8,15 @@ Just a young man out here trying to get his ~~blog~~ ~~code~~ ~~squid~~ ~~sports
 
 Aiming to give back to the internet after sucking up content for years.
 
-You can find professional things about me on my [LinkedIn](https://www.linkedin.com/in/popovichmatt/), non-professional things on my [Twitter](https://twitter.com/mattpopovich).
+You can find information on my professional background on my [LinkedIn](https://www.linkedin.com/in/popovichmatt/).
+
+Feel free to connect with me on your favorite social networks:
+* [Twitter / X](https://x.com/mattpopovich)
+* [YouTube](https://www.youtube.com/@mattpopovich)
+* [Threads](https://www.threads.net/@mattcracklepops)
+* [Bluesky](https://bsky.app/profile/mattpopovich.com)
+* [Instagram](https://www.instagram.com/mattcracklepops)
+* [My Discord Server](https://discord.gg/HsDW3X2Xba)
 
 Don't be afraid to [reach out](javascript:window.open('mailto:' + ['contact','mattpopovich.com'].join('@'))) or [slide in my DMs](https://twitter.com/messages/compose?recipient_id={323274028}).
 
