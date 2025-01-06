@@ -3,8 +3,8 @@ title: "How to Replace Audi A3 Front Dashboard Air Vent"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2024-12-03 05:50:50 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+categories: [Blog, YouTube]    # <=2 values here: top category and sub category
+tags: [audi, audi a3 8v, how to, tutorial]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -19,19 +19,20 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #   height: 40   # in pixels
 #   alt: image alternative text
 #   show_image_in_post: false
-#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
+description: A Turo renter broke one of my front dashboard air vents. Here's how to replace it!
 ---
 
-https://youtu.be/IsFcm_-H8X4
+{% include embed/youtube.html id='IsFcm_-H8X4' %}
+
 
 ## Intro
-Another post in my series of [Audi-related posts](TODO: link to audi tag). This time I'm going to be replacing the front dashboard air vent grille (for lack of a better word). This is the vent that will direct air towards the driver or passenger window to prevent it from fogging up due to condensation.
+Another post in my series of [Audi-related posts](/tags/audi). This time I'm going to be replacing the front dashboard air vent grille (for lack of a better word). This is the vent that will direct air towards the driver or passenger window to prevent it from fogging up due to condensation.
 
 It's very easy to replace. There's four "clips" on each grille which keep it in place with the dash. Two on the top of the grille and two on the bottom of the grille.
 
 ### Tools Required
 * Flathead screwdriver
-  * I purchased [this set from Amazon (affiliate link)](TODO) and have used it countless times for various repairs throughout the years. I highly recommend it.
+  * I purchased [this set from Amazon (affiliate link)](https://amzn.to/3ZXHTzT) and have used it countless times for various repairs throughout the years. I highly recommend it.
 
 ## Removing the Grille
 To remove the grille, grab a flathead screwdriver, slide it into the top of the grille, pull the grille towards you to slightly squeeze the grille and disengage the top two clips, then lift the grill upwards.
@@ -79,23 +80,21 @@ LHD / Pas.
 *Back of the front passenger dashboard air vent grille*
 
 ### Purchasing new Grilles
-I purchases from [audiusaparts.com](https://www.audiusaparts.com/), but I imagine you would have similar success purchasing from Audi directly or even eBay.
+I purchased from [audiusaparts.com](https://www.audiusaparts.com/), but I imagine you would have similar success purchasing from Audi directly or even eBay.
 * [Audi USA Parts.com: Driver Vent (~$20 + ~$30 shipping = ~$50)](https://www.audiusaparts.com/oem-parts/audi-air-vent-grille-8v18197936ps)
 * [Audi USA Parts.com: Passenger Vent (~$20 + ~$30 shipping = ~$50)](https://www.audiusaparts.com/oem-parts/audi-air-vent-grille-8v18197946ps)
 * [audi.oempartsonline.com](https://audi.oempartsonline.com/) (~$22 + ~$5 shipping = ~$30)
 
 
-
 &nbsp;
 
-TODO: Add spotify link here (if applicable)
+
 <div style="text-align:center">
 <iframe
-style="border-radius:12px"
-src="https://open.spotify.com/embed/track/5fEThMYHHyoohPxqsCvz1l?utm_source=generator"
-width="80%" height="352" frameBorder="0"
-allowfullscreen=""
-allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-loading="lazy">
+width="400" height="120"
+src="https://www.youtube.com/embed/hx4ixPCjLOU"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </div>
