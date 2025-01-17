@@ -1,5 +1,5 @@
 ---
-title: "How to Replace Audi A3 Front Dashboard Air Vent"
+title: "How to Replace Audi A3, S3 Front Dash Air Vent Grilles"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2024-12-03 05:50:50 -0600
@@ -13,12 +13,12 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
-#image:
-#   path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2024-12-03-how-to-replace-audi-a3-s3-front-dash-air-vent-grilles/replace_and_fix_audi_a3_s3_front_dash_air_vent_grilles.jpg
 #   width: 100   # in pixels
 #   height: 40   # in pixels
 #   alt: image alternative text
-#   show_image_in_post: false
+  show_image_in_post: false
 description: A Turo renter broke one of my front dashboard air vents. Here's how to replace it!
 ---
 
@@ -32,7 +32,7 @@ It's very easy to replace. There's four "clips" on each grille which keep it in 
 
 ### Tools Required
 * Flathead screwdriver
-  * I purchased [this set from Amazon (affiliate link)](https://amzn.to/3ZXHTzT) and have used it countless times for various repairs throughout the years. I highly recommend it.
+  * I purchased [this set from Amazon (affiliate link)](https://amzn.to/3ZXHTzT) and have used it countless times for various repairs throughout the years. It has had the bit that I needed nearly every time. I highly recommend it.
 
 ## Removing the Grille
 To remove the grille, grab a flathead screwdriver, slide it into the top of the grille, pull the grille towards you to slightly squeeze the grille and disengage the top two clips, then lift the grill upwards.
@@ -57,13 +57,16 @@ I wish there was a file to 3D print these, it would be like $1 of plastic, but I
 Be extra careful when purchasing, make sure you get the correct side vent. As previously mentioned, the driver (left) and passenger (right) vents are slightly different. Searching by the specific part number (`8V1-819-793` or `8V1-819-794`) is normally a safe bet. Note that sometimes the distributors are lazy and show a preview image for the incorrect side. Ensure the part number and side (driver = left, passenger = right) are as you expect.
 
 ### Text on the Driver (Left) Grille
+<!-- TODO: Add the missing line -->
 ```
 8V1.819.793
 PBT ASA GF10
+
 LHD / Drv.
 ```
 
-![Image of the back of the driver grille](TODO)
+<!-- TODO: Get a better picture of this -->
+![Image of the back of the driver grille](/assets/img/posts/2024-12-03-how-to-replace-audi-a3-s3-front-dash-air-vent-grilles/LHDdrv.png){: width="300" .shadow }
 *Back of the front driver dashboard air vent grille*
 
 ### Text on the Passenger (Right) Grille
@@ -76,7 +79,8 @@ Nozzel Bezel Pas. LHD
 LHD / Pas.
 ```
 
-![Image of the back of the passenger grille](TODO)
+<!-- TODO: Get a better picture of this -->
+![Image of the back of the passenger grille](/assets/img/posts/2024-12-03-how-to-replace-audi-a3-s3-front-dash-air-vent-grilles/LHDpas.png){: width="300" .shadow }
 *Back of the front passenger dashboard air vent grille*
 
 ### Purchasing new Grilles
