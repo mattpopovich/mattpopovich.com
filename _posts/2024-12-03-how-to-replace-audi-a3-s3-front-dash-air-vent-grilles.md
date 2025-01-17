@@ -83,9 +83,8 @@ LHD / Pas.
 
 ### Purchasing new Grilles
 I purchased from [audiusaparts.com](https://www.audiusaparts.com/), but I imagine you would have similar success purchasing from Audi directly or even eBay.
-* [Audi USA Parts.com: Driver Vent (~$20 + ~$30 shipping = ~$50)](https://www.audiusaparts.com/oem-parts/audi-air-vent-grille-8v18197936ps)
-* [Audi USA Parts.com: Passenger Vent (~$20 + ~$30 shipping = ~$50)](https://www.audiusaparts.com/oem-parts/audi-air-vent-grille-8v18197946ps)
-* [audi.oempartsonline.com](https://audi.oempartsonline.com/) (~$22 + ~$5 shipping = ~$30)
+* [Audi USA Parts.com](https://www.audiusaparts.com/): [driver vent](https://www.audiusaparts.com/oem-parts/audi-air-vent-grille-8v18197936ps), [passenger vent](https://www.audiusaparts.com/oem-parts/audi-air-vent-grille-8v18197946ps) (~$20 + ~$30 shipping = ~$50)
+* [Audi OEM Parts Online.com](https://audi.oempartsonline.com/): [driver vent](https://audi.oempartsonline.com/oem-parts/audi-air-vent-grille-8v18197936ps), [passenger vent](https://audi.oempartsonline.com/oem-parts/audi-air-vent-grille-8v18197946ps) (~$22 + ~$5 shipping = ~$30)
 
 
 &nbsp;
