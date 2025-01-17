@@ -29,6 +29,7 @@ description: A Turo renter broke one of my front dashboard air vents. Here's how
 Another post in my series of [Audi-related posts](/tags/audi). This time I'm going to be replacing the front dashboard air vent grille (for lack of a better word). This is the vent that will direct air towards the driver or passenger window to prevent it from fogging up due to condensation.
 
 It's very easy to replace. There's four "clips" on each grille which keep it in place with the dash. Two on the top of the grille and two on the bottom of the grille.
+<!-- TODO: Add an image of the clips -->
 
 ### Tools Required
 * Flathead screwdriver
@@ -37,16 +38,14 @@ It's very easy to replace. There's four "clips" on each grille which keep it in 
 ## Removing the Grille
 To remove the grille, grab a flathead screwdriver, slide it into the top of the grille, pull the grille towards you to slightly squeeze the grille and disengage the top two clips, then lift the grill upwards.
 
-![GIF of removing the grille](TDOO)
-*Removing the front driver dashboard air vent grille*
-
-TODO: Add screwdriver set to video description!
+![GIF of removing the grille](/assets/img/posts/2024-12-03-how-to-replace-audi-a3-s3-front-dash-air-vent-grilles/AudiA3-RemoveFrontDashVent.gif){: .shadow }
+*Removing the front driver dashboard air vent grille. Higher quality [here](https://youtu.be/IsFcm_-H8X4?t=14)*
 
 ## Inserting the Grille
 To insert the grille, rotate it such that the vents will direct air onto the window (and not towards the windshield). Then insert it at an angle such that the bottom two clips are nearly in place, then push the top of the grille into place. When done successfully, you should hear a "click" letting you know that the clips have engaged into the proper location.
 
-![GIF of inserting the grille](TDOO)
-*Inserting the front driver dashboard air vent grille*
+![GIF of inserting the grille](/assets/img/posts/2024-12-03-how-to-replace-audi-a3-s3-front-dash-air-vent-grilles/AudiA3-InsertFrontDashVent.gif)
+*Inserting the front driver dashboard air vent grille. Higher quality [here](https://youtu.be/IsFcm_-H8X4?t=48)*
 
 ## Are the Grilles Interchangeable?
 I tried to insert the passenger (right) front dash air vent grille into the driver (left) but no luck. Unfortunately, the two grilles are not symmetric and are not interchangeable.
@@ -66,11 +65,10 @@ LHD / Drv.
 ```
 
 <!-- TODO: Get a better picture of this -->
-![Image of the back of the driver grille](/assets/img/posts/2024-12-03-how-to-replace-audi-a3-s3-front-dash-air-vent-grilles/LHDdrv.png){: width="300" .shadow }
+![Image of the back of the driver grille](/assets/img/posts/2024-12-03-how-to-replace-audi-a3-s3-front-dash-air-vent-grilles/AudiA3-8V1819793-LHD-Drv-air-vent-grille.jpg){: width="300" .shadow }
 *Back of the front driver dashboard air vent grille*
 
 ### Text on the Passenger (Right) Grille
-Front Passenger (Right) Vent Inscription
 ```
 8V1.819.794
 PBT ASA GF10
@@ -80,7 +78,7 @@ LHD / Pas.
 ```
 
 <!-- TODO: Get a better picture of this -->
-![Image of the back of the passenger grille](/assets/img/posts/2024-12-03-how-to-replace-audi-a3-s3-front-dash-air-vent-grilles/LHDpas.png){: width="300" .shadow }
+![Image of the back of the passenger grille](/assets/img/posts/2024-12-03-how-to-replace-audi-a3-s3-front-dash-air-vent-grilles/AudiA3-8V1819794-LHD-Pas-air-vent-grille.jpg){: width="300" .shadow }
 *Back of the front passenger dashboard air vent grille*
 
 ### Purchasing new Grilles
