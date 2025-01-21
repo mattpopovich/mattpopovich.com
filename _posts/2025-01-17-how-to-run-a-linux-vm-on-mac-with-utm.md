@@ -173,7 +173,9 @@ Now, anything you put into FUT will appear in decryptedFUT + is decrypted!
 
 
 
+## Increasing UTM disk storage space
 
+Follow [this](https://linux.afnom.net/install_apple/apple_silicon.html#expanding-your-utm-vms-storage-a-nameutm-storage-expanda). I [found this](https://github.com/utmapp/UTM/issues/2636#issuecomment-1290021310) in 2022.
 
 
 
