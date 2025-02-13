@@ -34,32 +34,37 @@ All the above points to a dead car battery, but if you really want to be sure, y
 ### Testing a Car Battery's Health
 If you're testing your car battery's voltage to see how healthy it is, let it sit overnight then test it. This way it isn't freshly charged from the alternator during a drive. Additionally, cold weather is tougher on batteries and will cause a lower voltage reading.
 
-| Voltage (V) | Remaining life (approx.) |
-|-------------|--------------------------------|
+| Voltage (V) | Remaining life (approximate) |
+|-------------|------------------------------|
 | 12.6+ | 100% |
-| 12.5 | 90% |
-| 12.42 | 80% |
-| 12.32 | 70% |
-| 12.2 | 60% |
-| 12.06 | 50% |
-| 11.9 | 40% |
-| 11.75 | 30% |
-| 11.58 | 20% |
-| 11.31 | 10% |
-| 10.5 | 0% |
+| 12.5  | 90%  |
+| 12.42 | 80%  |
+| 12.32 | 70%  |
+| 12.2  | 60%  |
+| 12.06 | 50%  |
+| 11.9  | 40%  |
+| 11.75 | 30%  |
+| 11.58 | 20%  |
+| 11.31 | 10%  |
+| 10.5  | 0%   |
 
 <my-caption><a href="https://www.autozone.com/diy/battery/what-you-need-to-know-about-car-battery-voltage">Source</a></my-caption>
 
 > Testing the voltage of a battery is a good *approximation* to its remaining life. A [load test](https://www.youtube.com/watch?v=tsJUuLu1cw0) would be the proper test for your battery's health.
 {: .prompt-warning }
 
+Audi states ([owner's manual, pg. 208](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-210)) "it is a good idea to replace the battery if it is more than 5 years old". Usually, you should be able to look at the battery underneath your hood and find a sticker or marking on the battery stating the date of installation.
+
+TODO: Pictures of battery and dates of installation
 
 ## Purchasing a New Battery
 For an Audi A3, you'll need a battery with a group size of H6.
 
+AGM (Absorbed Glass Mat) batteries are typically better performing and longer lasting than lead acid batteries, but also cost more. If your car has an AGM (Absorbed Glass Mat) battery in it, I'd replace it with an AGM battery as the manufacturer thought it was necessary. If your car has a lead acid battery, you can stick with a lead acid or upgrade to an AGM. If you upgrade to an AGM, you should probably "recode" the battery due to the different battery chemistry. More on this [later](#battery-reprogramming)... Also note that batteries should be kept upright at all times, especially if it is lead acid. AGM batteries are more forgiving than lead acid but should still be kept upright to be safe.
+
 [This video tested](https://youtu.be/h7rTcBanpMk?t=568) multiple different battery brands and their performance. TLDW: The [Everstart from Walmart](https://www.walmart.com/ip/EverStart-Maxx-Lead-Acid-Automotive-Battery-Group-Size-H6-LN3-48-12-Volt-750-CCA-115-RC/144301475) was the cheapest battery the video tested and it actually performed the best as well. Sold! A complete chart of their testing is below:
 
-![Colored chart image of the table from above](/assets/img/posts/2025-02-12-how-to-replace-audi-a3--vw-car-battery/battery_comparison_chart.png)
+![Colored chart image of the table from above](/assets/img/posts/2025-02-12-how-to-replace-audi-a3--vw-car-battery/battery_comparison_chart.png){: .shadow }
 *[Source](https://youtu.be/h7rTcBanpMk?t=568), sorted by CCA at 0°F (higher is better)*
 
 <details markdown="1">
@@ -81,8 +86,49 @@ For an Audi A3, you'll need a battery with a group size of H6.
 
 I [purchased the Everstart](https://www.walmart.com/ip/EverStart-Maxx-Lead-Acid-Automotive-Battery-Group-Size-H6-LN3-48-12-Volt-750-CCA-115-RC/144301475) as it was the best performing (and cheapest) that was tested. They did not test an [Interstate battery from Costco](https://costco.interstatebatteries.com/results?key=auto&Program=100500&ZipCode=75254&l=75254&Country=United%20States&year=2469235&make=2469279&model=2469293&engine=2469294&option=2469296), but as it is made from the same manufacturer and has the same CCA (cold cranking amps) rating as the Everstart that was tested, I'd wager it would perform very similarly to the Everstart. And given that it was 22.5% cheaper, if I had a Costco membership, I would have bought that one.
 
-> Note that prices are as of 2020 and the CCA listed won't match our Audi's battery. The batteries they tested had a group size of 27 vs. Audi A3's group size of H6.
+> Note that prices for the batteries listed above are as of 2020 and the CCA listed won't exactly match our Audi's battery. The batteries they tested had a group size of 27 vs. Audi A3's group size of H6.
 {: .prompt-info }
+
+
+## Jump starting the car
+
+
+
+## Disconnecting the Battery
+Turn off the car, pop the hood.
+"First disconnect the negative cable [black] and then the positive cable [red]" ([owner's manual, pg. 210](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-212)).
+
+You might also have a "blanket" around your battery. The cheap shop I went to a few years ago did not put my blanket back on and it is now gone. ☹️
+
+
+## Reconnecting the battery
+When reconnecting, attach the positive cable first, then the negative.
+
+
+## "Reprogramming" the Vehicle After Disconnecting the Battery
+### Electronic Reprogramming
+Audi states ([owner's manual, pg. 208](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-210)) that "some vehicle functions" must be reprogrammed after the battery is disconnected:
+* Power window one-touch up/down function
+* Remote control key or Convenience key
+* Digital clock
+* ESC indicator light
+
+To remove the flashing lights on your dash, you can turn the wheel all the way left, all the way right, and they should turn off. Allegedly you can also drive your car about 10ft to turn them off.
+
+### Battery Reprogramming
+Audi also states ([owner's manual, pg. 211](https://ownersmanuals2.com/audi/a3-sedan-s3-sedan-2015-owners-manual-71870/page-213)) "your authorized dealer must code the battery in the energy management system to enable you to use the energy management functions correctly after replacing the battery". From what I understand, this is to tell the alternator that a new battery is connected and you do not need to send the same large amounts of electricity to the battery as you did with the old one. Coding the battery should help prolong the life of the battery. This can be done with a [VCDS/VAG-COM](https://store.ross-tech.com/shop/cat/VCDS/) or [OBDeleven](https://obdeleven.com/) (good video [here](https://youtu.be/48w9Cg4ObEk?t=295) and one from Ross-Tech (VCDS) [here](https://vimeo.com/145532461)) or by taking your car to a local Euro car shop (or the Audi dealer if you'd like to overpay).
+
+> I've read countless mixed reviews online of whether you need to code your battery. I did not recode my battery, and my battery was **very dead**, and I've had no issues (it's been 2 years so far). However, my car is a 2015 and [I've read that](https://www.youtube.com/watch?v=48w9Cg4ObEk&lc=UgwryekvuxaDPtQr5jZ4AaABAg) if your car is 2018 or newer (or has a sensor type of plug attached to the negative terminal), you will "need" to code your battery. [YMMV](https://en.wiktionary.org/wiki/your_mileage_may_vary).
+{: .prompt-warning }
+
+
+
+
+
+
+
+
+
 
 
 &nbsp;
