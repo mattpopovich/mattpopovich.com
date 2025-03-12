@@ -21,7 +21,9 @@ image:
 description: There is an easier way to get the resynthesizer plugin working. Here's how!
 ---
 
-> After this article was published, [GIMP released (Dec. 2, 2022) separate builds for ARM Macs and Intel Macs](https://www.gimp.org/news/2022/12/02/gimp-2.10.32-apple-silicon/). Neither of these builds work with the instructions in this article. Please download and install [GIMP 2.10.32 revision 0 (released on June 12, 2022)](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg) in order for this article to successfully enable the resynthesizer plugin.
+> After this article was published, [GIMP released (Dec. 2, 2022) separate builds for ARM Macs and Intel Macs](https://www.gimp.org/news/2022/12/02/gimp-2.10.32-apple-silicon/). This article *may* still work with the Intel build of GIMP, but it **will not work with ARM Macs**. For ARM Macs, please see my updated article: [*How to Install the Resynthesizer Plugin for GIMP on Macs with Apple Silicon (2024)*](/posts/how-to-install-the-resynthesizer-plugin-for-gimp-on-macs-with-apple-silicon-2024).
+>
+> Not sure which processor you have? Follow [this](https://support.apple.com/en-us/116943) support page.
 {: .prompt-danger }
 
 {% include embed/youtube.html id='iU4HRAkZ1-U' %}
