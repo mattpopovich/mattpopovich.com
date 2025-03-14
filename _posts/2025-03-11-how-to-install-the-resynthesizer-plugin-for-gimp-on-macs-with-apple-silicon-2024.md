@@ -33,6 +33,12 @@ Additionally, I have this post titled 2024 (even though I'm publishing it in 202
 ### Backstory
 A little bit of backstory, I originally had trouble installing the resynthesizer plugin back in 2021. Once I managed to install it, I made a post and video about how I did it. There was a good bit of interest from the community! I then had someone reach out to me and point out an easier way to complete the installation, so I made an update video in 2022. Again, with a decent amount of interest. However, a few months later, GIMP [released an updated build for Apple Silicon (ARM) processors](https://www.gimp.org/news/2022/12/02/gimp-2.10.32-apple-silicon/), which broke my installation steps. My installation still worked as long as you used an older version of GIMP, but now I've found a way to make things work with the newest version of GIMP. Let's jump into it.
 
+## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
+1. Download and install GIMP 2.x from [here](https://www.gimp.org/downloads/).
+1. Download and unzip [`resynthesizer-mac-arm-v2.10.38-revision1.zip`](https://github.com/mattpopovich/GIMP-Resynthesizer-for-Mac-on-ARM/releases/download/v2.10.38-revision1/resynthesizer-mac-arm-v2.10.38-revision1.zip)
+1. Copy all the files to `/Applications/GIMP.app/Contents/Resources/lib/gimp/2.0/plug-ins`.
+1. Restart GIMP and use the plugin (*Filters* --> *Enhance* --> *Heal selection...*)!
+
 ## Removing Old Versions of GIMP
 Uninstalling GIMP is as easy as dragging the GIMP application from the `/Applications` folder to the trash.
 
