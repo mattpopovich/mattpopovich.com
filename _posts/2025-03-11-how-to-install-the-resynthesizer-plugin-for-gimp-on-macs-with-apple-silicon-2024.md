@@ -25,16 +25,20 @@ description: Make the resynthesizer plugin work with the latest GIMP!  # A short
 > This post is only for Macs with Apple Silicon (M1, M2, etc.) processors. If you're unsure which processor you have, follow [this](https://support.apple.com/en-us/116943) support page.
 {: .prompt-warning }
 
+> This post is currently only valid for GIMP 2.x. The instructions on this page will not work with GIMP 3.x. I'm looking into a solution for GIMP 3.x.
+{: .prompt-danger }
+
 ## Intro
 Welp, back at it again with *another* GIMP and resynthesizer update. Per usual, this update is long overdue. But, I think this is the easiest installation yet and I did a good bit of tweaking to make this install as easy as possible. All you need to do is copy a few files over, and you should be good to go.
 
-Additionally, I have this post titled 2024 (even though I'm publishing it in 2025) because the most recent version of GIMP for Mac (2.10.38 revision 1) [was published on May 22, 2024](https://download.gimp.org/gimp/v2.10/osx/?C=M&O=D). GIMP is currently working on releasing GIMP 3.0, and it [seems like they're very close to releasing it](https://www.gimp.org/news/2025/02/10/gimp-3-0-RC3-released/). The resynthesizer files that I created only work with GIMP 2.x so I will definitely need to modify the resynthesizer files for GIMP 3.x. If necessary, I'm saving the 2025 post for GIMP 3.x.
+Additionally, I have this post titled 2024 (even though I'm publishing it in 2025) because the most recent version of GIMP for Mac (2.10.38 revision 1) [was published on May 22, 2024](https://download.gimp.org/gimp/v2.10/osx/?C=M&O=D). GIMP is currently working on releasing GIMP 3.0, and it [seems like they're very close to releasing it](https://www.gimp.org/news/2025/02/10/gimp-3-0-RC3-released/). The resynthesizer files that I created only work with GIMP 2.x so I will definitely need to modify the resynthesizer files for GIMP 3.x. I'm saving the 2025 post for GIMP 3.x.
 
 ### Backstory
 A little bit of backstory, I originally had trouble installing the resynthesizer plugin back in 2021. Once I managed to install it, I made a post and video about how I did it. There was a good bit of interest from the community! I then had someone reach out to me and point out an easier way to complete the installation, so I made an update video in 2022. Again, with a decent amount of interest. However, a few months later, GIMP [released an updated build for Apple Silicon (ARM) processors](https://www.gimp.org/news/2022/12/02/gimp-2.10.32-apple-silicon/), which broke my installation steps. My installation still worked as long as you used an older version of GIMP, but now I've found a way to make things work with the newest version of GIMP. Let's jump into it.
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. Download and install GIMP 2.x from [here](https://www.gimp.org/downloads/).
+  * Recommended to use the latest 2.x version: [gimp-2.10.38-arm64-1.dmg](https://download.gimp.org/gimp/v2.10/osx/gimp-2.10.38-arm64-1.dmg)
 1. Download and unzip [`resynthesizer-mac-arm-v2.10.38-revision1.zip`](https://github.com/mattpopovich/GIMP-Resynthesizer-for-Mac-on-ARM/releases/download/v2.10.38-revision1/resynthesizer-mac-arm-v2.10.38-revision1.zip)
 1. Copy all the files to `/Applications/GIMP.app/Contents/Resources/lib/gimp/2.0/plug-ins`.
 1. Restart GIMP and use the plugin (*Filters* --> *Enhance* --> *Heal selection...*)!
@@ -45,9 +49,9 @@ Uninstalling GIMP is as easy as dragging the GIMP application from the `/Applica
 If you'd like to remove all GIMP user settings and other preferences (not necessary), look into [AppCleaner](https://freemacsoft.net/appcleaner/) to help you find these files.
 
 ## Installing Newest Version of GIMP
-Download the latest version of GIMP from [here](https://www.gimp.org/downloads/). Double click the `.dmg` installer, then click and drag GIMP to the `/Applications` folder to complete the installation.
+Download the latest version of GIMP 2.x: [gimp-2.10.38-arm64-1.dmg](https://download.gimp.org/gimp/v2.10/osx/gimp-2.10.38-arm64-1.dmg). Other GIMP 2.x versions can be found [here](https://www.gimp.org/downloads/). Double click the `.dmg` installer, then click and drag GIMP to the `/Applications` folder to complete the installation.
 
-I have tested the below resynthesizer installation with GIMP 2.10.38 (revision 1), so if you are having issues on a different GIMP version, try downloading 2.10.38 (revision 1) from [here](https://download.gimp.org/gimp/v2.10/osx/gimp-2.10.38-arm64-1.dmg).
+I have tested the below resynthesizer installation with GIMP 2.10.38 (revision 1), so if you are having issues on a different GIMP version, try  2.10.38 (revision 1), linked in the paragraph above.
 
 ## Installing the Resynthesizer Plugin
 ### Installing Resynthesizer with Pre-Built Libraries (easiest)
