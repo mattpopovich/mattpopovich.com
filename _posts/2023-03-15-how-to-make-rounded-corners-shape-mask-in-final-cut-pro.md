@@ -13,11 +13,12 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath:
-#image:
-#  path: /assets/img/posts/2023-03-15-how-to-make-rounded-corners-shape-mask-in-final-cut-pro/rounded-corners-shape-mask-fcpx-thumbnail.jpg
+image:
+  path: /assets/img/posts/2023-03-15-how-to-make-rounded-corners-shape-mask-in-final-cut-pro/rounded-corners-shape-mask-fcpx-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+  show_image_in_post: false
 description: Making rounded corners in FCPX is very simple to do but I couldn't find any simple tutorials, so I made one!
 ---
 

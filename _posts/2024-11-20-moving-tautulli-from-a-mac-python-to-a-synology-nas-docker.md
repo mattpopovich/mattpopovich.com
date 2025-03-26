@@ -128,6 +128,11 @@ user@nas $ sudo docker-compose -f tautulli-docker-compose.yaml up
 
 Afterwards, you should now be able to access Tautulli in a web browser at `<NAS_IP>:8181`.
 
+> Note that this must be `http://NAS_IP:8181`. `https` does not work as Tautulli does not have a certificate with its default settings.
+>
+> Ex. if your NAS's IP is `192.168.0.10`, you would navigate to `http://192.168.0.10:8181` in your browser.
+{: .prompt-warning }
+
 ### Connecting Tautulli to our Plex server
 Once you’re in Tautulli, go into Tautulli on web --> gear (top right) --> Settings --> Plex Media Server. We will need to connect a new server. To do this, click on “Fetch New Token”, and sign in. I can't remember exactly but the rest might auto populate? If not, put in the IP of your NAS, port (`32400` by default), and I checked “use secure connection” because why not?
 
