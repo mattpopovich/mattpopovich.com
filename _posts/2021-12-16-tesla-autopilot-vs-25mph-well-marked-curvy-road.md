@@ -2,9 +2,9 @@
 title: "Tesla Autopilot vs 25MPH, Well Marked, Curvy Road"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2024-02-25 20:42:51 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+date: 2021-12-16 21:57:17 -0600
+categories: [Blog, YouTube] # <=2 values here: top category and sub category
+tags: [youtube, todo]       # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -12,17 +12,15 @@ comments: true              # Enable/disable comments at the bottom of the post
 math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
-#img_path: /img/path/
+#media_subpath: /img/path/
 #image:
-#  path: /path/to/image.jpg
-#  width: 100   # in pixels
-#  height: 40   # in pixels
-#  alt: image alternative text
-#description:               # A short sentence to describe the article, used when sharing links on social media
+#   path: /path/to/image.jpg
+#   width: 100   # in pixels
+#   height: 40   # in pixels
+#   alt: image alternative text
+#   show_image_in_post: false
+#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
-
-TODO: Recreate this post using a youtube link
-
 
 
 ## Into
@@ -37,7 +35,9 @@ This is not a complaint or anything against autopilot. Autopilot is a great piec
 
 ## Video
 
-{% include embed/youtube.html id='TODO' %}
+
+{% include embed/youtube.html id='JuFTTGWe_HQ' %}
+
 
 
 ## Outro
@@ -47,17 +47,16 @@ Lastly, there's about 10 days left until the big jolly man comes (🎅), hope yo
 
 Merry early Christmas to all, and to all, goodnight.
 
+&nbsp;
 
-
-
-
-
-TODO:
+TODO: Add spotify link here (if applicable)
 <div style="text-align:center">
 <iframe
-src="https://open.spotify.com/embed/track/29gVTYMqXVV47mrY4qkm4b"
-width="300" height="380" frameborder="0"
-allowtransparency="true"
-allow="encrypted-media">
+style="border-radius:12px"
+src="https://open.spotify.com/embed/track/5fEThMYHHyoohPxqsCvz1l?utm_source=generator"
+width="80%" height="352" frameBorder="0"
+allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy">
 </iframe>
 </div>
