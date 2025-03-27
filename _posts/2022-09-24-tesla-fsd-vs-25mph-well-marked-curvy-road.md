@@ -4,7 +4,7 @@ author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2022-09-24 00:48:10 -0600
 categories: [Blog, YouTube] # <=2 values here: top category and sub category
-tags: [youtube, colorado, denver, electric vehicles, tesla, tesla model 3, tesla autopiliot, tesla fsd]       # TAG names should always be lowercase
+tags: [youtube, colorado, denver, electric vehicles, tesla, tesla model 3, tesla autopilot, tesla fsd]       # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -65,7 +65,7 @@ I *think* it's going to do a little bit better because I don't think they're doi
 We shall see. Buckle up!
 
 Coming up to the S-curve, FSD initially put the turn signal on! It thought the turn was so sharp that it was basically a different road!
-When making the S-curve, it didn't pre-emptively slow down, but it did slow down during the turn to 18mph, which was a welcome change! That was much better! Very encouraging!
+When making the S-curve, it didn't preemptively slow down, but it did slow down during the turn to 18mph, which was a welcome change! That was much better! Very encouraging!
 
 Verdict: Not great but definitely acceptable.
 

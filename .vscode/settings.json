@@ -28,7 +28,16 @@
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
   },
   "cSpell.words": [
+    "autoplay",
+    "FCPX",
+    "mattpopovich",
+    "Pentofrost",
+    "Pentosin",
     "popovich",
-    "resynthesizer"
+    "resynthesizer",
+    "Strava",
+    "Tautulli",
+    "Turo",
+    "Xylia"
   ]
 }
