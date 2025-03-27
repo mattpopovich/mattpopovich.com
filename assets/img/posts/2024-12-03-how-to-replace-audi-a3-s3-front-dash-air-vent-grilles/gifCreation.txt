@@ -1,0 +1,4 @@
+ffmpeg -i AudiA3-FrontDashVents-v1.1-4k60_removeGrilleCrop.mov -vf "fps=4,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=32[p];[s1][p]paletteuse" \
+    -loop 0 outputCrop3-2.gif
+
+

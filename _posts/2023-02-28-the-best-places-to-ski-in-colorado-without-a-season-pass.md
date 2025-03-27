@@ -13,11 +13,12 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2023-02-28-the-best-places-to-ski-in-colorado-without-a-season-pass/best-colorado-skiing-without-season-pass-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+  show_image_in_post: false
 description: Large ski resorts have outrageous single day pass prices. If you only need to ski for a day or two, try this!
 ---
 
