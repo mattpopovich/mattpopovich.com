@@ -11,9 +11,13 @@
 #   icon: 'fab fa-instagram'
 #   url: https://www.instagram.com/mattcracklepops/
 
-- type: linkedin
-  icon: 'fab fa-linkedin'
-  url:  'https://www.linkedin.com/in/popovichmatt/'
+# - type: linkedin
+#   icon: 'fab fa-linkedin'
+#   url:  'https://www.linkedin.com/in/popovichmatt/'
+
+- type: discord
+  icon: 'fab fa-discord'
+  url: 'https://discord.gg/HsDW3X2Xba'
 
 # - type: github
 #   icon: 'fab fa-github'
