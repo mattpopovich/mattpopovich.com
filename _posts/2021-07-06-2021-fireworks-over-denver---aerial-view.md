@@ -71,8 +71,8 @@ seamless>
 <a href="https://soundkeeper.bandcamp.com/album/the-laws-of-gravity">The Laws Of Gravity by The Soundkeeper</a>
 </iframe>
 </div>{: .light}
-<div style="text-align:center">
 
+<div style="text-align:center">
 <iframe
 style="border: 0; width: 81%; height: 120px;"
 src="https://bandcamp.com/EmbeddedPlayer/album=1403600629/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/track=2002198240/transparent=true/"
