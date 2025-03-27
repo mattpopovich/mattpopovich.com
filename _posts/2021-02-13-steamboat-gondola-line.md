@@ -12,11 +12,12 @@ math: false
 mermaid: false
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2021-02-13-steamboat-gondola-line/steamboat-gondola-line-2021Feb13-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+  show_image_in_post: false
 description: COVID + powder day = long line at the base of Steamboat
 ---
 

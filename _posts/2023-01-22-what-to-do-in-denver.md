@@ -13,11 +13,12 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2023-01-22-what-to-do-in-denver/what-to-do-in-denver-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
-#  alt: image alternative text
+  alt: Snow-covered Longs Peak stands tall behind the Denver skyline. Sourced from Getty Images via Fox31 KDVR
+#   alt: Snow-covered Longs Peak stands tall behind the Denver skyline (<a href="https://kdvr.com/wp-content/uploads/sites/11/2024/02/GettyImages-537215344-creative.jpg?w=2560&amp;h=1440&amp;crop=1">GettyImages</a> via <a href="https://kdvr.com/denver-guide/how-did-denver-get-its-name/">Fox31KDVR</a>)
 description: I've lived in Denver since 2018, here are my favorite things to do here!
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the Terminal / Shell / Command Line, etc."
+title: "Introduction to the Terminal "
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2024-11-13 03:31:28 -0600
@@ -13,11 +13,11 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+ path: /assets/img/posts/2024-11-13-introduction-to-the-command-line--shell--terminal-etc/introduction-to-terminal-thumbnail.png
 #  width: 100   # in pixels
 #  height: 40   # in pixels
-#  alt: image alternative text
+ alt: By the end of this post, you will understand this screenshot!
 description: This post will take you from couch to the command line in 15mins!
 ---
 
