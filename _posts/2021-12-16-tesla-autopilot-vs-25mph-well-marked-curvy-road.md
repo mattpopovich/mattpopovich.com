@@ -13,13 +13,13 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
-#image:
-#   path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2021-12-16-tesla-autopilot-vs-25mph-well-marked-curvy-road/tesla-autopilot-vs-25mph-well-marked-curvy-road-thumbnail.jpg
 #   width: 100   # in pixels
 #   height: 40   # in pixels
 #   alt: image alternative text
-#   show_image_in_post: false
-#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
+  show_image_in_post: false
+description: Testing Tesla's autopilot on a difficult road
 ---
 
 {% include embed/youtube.html id='JuFTTGWe_HQ' %}
@@ -46,7 +46,8 @@ Attempts:
   - Oncoming vehicle forced me to take over in the beginning part of the test as a precaution
   - Goes over the line during sharp turn, but not fully into the other lane (likely because autopilot was only activated halfway into the test)
   - Happily drives while over the double yellow line, eventually getting fully back into its own lane.
-4. Westbound: Same as #2
+4. Westbound:
+  - Same as #2, not shown in video
 
 ## Outro
 All right boys and girls, I think that’s a wrap, thanks for watching/reading. Moral of the story, don’t fall asleep while your Tesla is driving... yet. In the future, I plan on making many more Tesla related posts, you can find them [here](/tags/tesla).
