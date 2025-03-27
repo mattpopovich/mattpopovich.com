@@ -20,7 +20,7 @@ image:
   show_image_in_post: false
 description: The EPA's kWh/mi numbers do not seem to add up. Here's how to fix that!
 ---
-[](/assets/img/posts/2022-11-06-why-the-epas-ev-efficiency-numbers-dont-add-up/efficiency-down_range-up_thumbnail.jpg)
+
 {% include embed/youtube.html id='PyvtK7amSAg' %}
 
 ## Intro
