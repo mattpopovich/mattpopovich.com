@@ -20,7 +20,7 @@ image:
   show_image_in_post: false
 description: Here's what to do if you get a warning to "switch off engine and check coolant level!"
 ---
-[](/assets/img/posts/2022-03-20-how-to-diagnose-and-fix-low-coolant-warning-for-audi-a3-8v--vw/diagnose-fix-low-coolant-audi-thumbnail.jpg)
+
 {% include embed/youtube.html id='rRbSVmFteuY' %}
 
 ## Intro
