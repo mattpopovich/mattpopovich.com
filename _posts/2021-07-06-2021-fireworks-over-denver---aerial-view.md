@@ -12,11 +12,12 @@ math: false
 mermaid: false
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+ path: /assets/img/posts/2021-07-06-2021-fireworks-over-denver---aerial-view/fireworks-over-denver-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+ show_image_in_post: false
 description: I found a huge American flag on July 4th and shot some drone footy!
 ---
 
@@ -70,8 +71,8 @@ seamless>
 <a href="https://soundkeeper.bandcamp.com/album/the-laws-of-gravity">The Laws Of Gravity by The Soundkeeper</a>
 </iframe>
 </div>{: .light}
-<div style="text-align:center">
 
+<div style="text-align:center">
 <iframe
 style="border: 0; width: 81%; height: 120px;"
 src="https://bandcamp.com/EmbeddedPlayer/album=1403600629/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/track=2002198240/transparent=true/"

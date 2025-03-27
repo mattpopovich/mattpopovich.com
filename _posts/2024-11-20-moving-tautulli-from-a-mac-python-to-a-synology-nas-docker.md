@@ -37,13 +37,13 @@ I use Tautulli to historically see who is playing content and how that content w
 
 I also love statistics and Tautulli gives some great quantitative visuals on your server's usage.
 
-![Example graphs on Tautuli showing daily play duration, play duration by day of week, and play duration by hour of day](https://tautulli.com/images/screenshots/graphs.png)
+![Example graphs on Tautulli showing daily play duration, play duration by day of week, and play duration by hour of day](https://tautulli.com/images/screenshots/graphs.png)
 *Example Graphs in Tautulli*
 
 ## Moving Tautulli from a Mac to Synology NAS
 
 ### Backing up old Tautulli Data
-Let's get into it and start moving Tautuilli. We'll start by following this question in their FAQ:
+Let's get into it and start moving Tautulli. We'll start by following this question in their FAQ:
 * [I need to move/reinstall Tautulli, can I keep my history and statistics?](https://github.com/Tautulli/Tautulli/wiki/Frequently-Asked-Questions#q-i-need-to-movereinstall-tautulli-can-i-keep-my-history-and-statistics)
 
 To back up your Tautulli data, you need to go into Tautulli on web --> gear (top right) --> Settings --> Help & Info
@@ -128,6 +128,11 @@ user@nas $ sudo docker-compose -f tautulli-docker-compose.yaml up
 
 Afterwards, you should now be able to access Tautulli in a web browser at `<NAS_IP>:8181`.
 
+> Note that this must be `http://NAS_IP:8181`. `https` does not work as Tautulli does not have a certificate with its default settings.
+>
+> Ex. if your NAS's IP is `192.168.0.10`, you would navigate to `http://192.168.0.10:8181` in your browser.
+{: .prompt-warning }
+
 ### Connecting Tautulli to our Plex server
 Once you’re in Tautulli, go into Tautulli on web --> gear (top right) --> Settings --> Plex Media Server. We will need to connect a new server. To do this, click on “Fetch New Token”, and sign in. I can't remember exactly but the rest might auto populate? If not, put in the IP of your NAS, port (`32400` by default), and I checked “use secure connection” because why not?
 
@@ -139,7 +144,7 @@ If Tautulli is not "linking" old content with new content, look into the FAQ bel
 * [FAQ: I moved media in Plex, now Tautulli is linking to the wrong item/showing up twice!](https://github.com/Tautulli/Tautulli/wiki/Frequently-Asked-Questions#q-i-moved-media-in-plex-now-tautulli-is-linking-to-the-wrong-itemshowing-up-twice)
 
 ### Updating Tautulli
-If you gave a specific Tautulli image version in the `tatutulli-docker-compose.yaml` (Ex. `image: ghcr.io/tautulli/tautulli:v2.14.6`), you will need to manually update that version number, then bring Tautulli down then back up:
+If you gave a specific Tautulli image version in the `tautulli-docker-compose.yaml` (Ex. `image: ghcr.io/tautulli/tautulli:v2.14.6`), you will need to manually update that version number, then bring Tautulli down then back up:
 ```console
 user@nas $ sudo docker-compose -f tautulli-docker-compose.yaml down
 user@nas $ sudo docker-compose -f tautulli-docker-compose.yaml up -d

@@ -9,10 +9,11 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
 #image:
-#  path: /path/to/image.jpg
-#  width: 100   # in pixels
-#  height: 40   # in pixels
-#  alt: image alternative text
+#   path: /path/to/image.jpg
+#   width: 100   # in pixels
+#   height: 40   # in pixels
+#   alt: image alternative text
+#   show_image_in_post: false
 #description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
