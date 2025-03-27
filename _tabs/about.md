@@ -17,8 +17,10 @@ Feel free to connect with me on your favorite social networks:
 * [Bluesky](https://bsky.app/profile/mattpopovich.com)
 * [Instagram](https://www.instagram.com/mattcracklepops)
 * [My Discord Server](https://discord.gg/HsDW3X2Xba)
+* [TikTok](https://www.tiktok.com/@popovichmatt)
+* [GitHub](https://github.com/mattpopovich)
 
-Don't be afraid to [reach out](javascript:window.open('mailto:' + ['contact','mattpopovich.com'].join('@'))) or [slide in my DMs](https://twitter.com/messages/compose?recipient_id={323274028}).
+You can also reach out with a good, old-fashioned, [email](javascript:window.open('mailto:' + ['contact','mattpopovich.com'].join('@')))!
 
 Take your coat off, stay a while.
 

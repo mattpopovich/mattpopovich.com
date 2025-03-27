@@ -21,7 +21,7 @@ image:
   show_image_in_post: false
 description: A bicycle ride I took on the Pine Island Audubon Center Nature Trail located in Corolla, North Carolina.
 ---
-[](/assets/img/posts/2021-08-03-obxs-pine-island-audubon-center-nature-trail-ride-through/obxs-pine-island-audubon-trail-thumbnail.jpg)
+
 {% include embed/youtube.html id='YlQLeMSQD0Y' %}
 
 ## Into
