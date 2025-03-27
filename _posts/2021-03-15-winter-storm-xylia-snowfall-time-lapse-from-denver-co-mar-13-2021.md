@@ -13,11 +13,12 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/xylia-snowfall-time-lapse-denver-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+  show_image_in_post: false
 description: A time-lapse of snow falling from winter storm Xylia taken in Denver, CO on the weekend of March 13, 2021
 ---
 
@@ -39,8 +40,8 @@ Download links to my data:
 * [.csv with AM/PM time values](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_12hr.csv)
 * [.csv with 24hr (military time) values](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_24hr.csv)
 
-![Winter storm Xylia graph of snowfall from Denver, Colorado](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_dark.png){: .dark}
-![Winter storm Xylia graph of snowfall from Denver, Colorado](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_light.png){: .light .shadow}
+![Winter storm Xylia graph of snowfall from Denver, Colorado](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_dark.jpg){: .dark}
+![Winter storm Xylia graph of snowfall from Denver, Colorado](/assets/img/posts/2021-03-15-winter-storm-xylia-snowfall-time-lapse-from-denver-co-mar-13-2021/XyliaSnowfallDenver_light.jpg){: .light .shadow}
 
 
 ## Outro

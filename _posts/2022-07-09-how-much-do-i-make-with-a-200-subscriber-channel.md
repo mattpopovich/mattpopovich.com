@@ -12,11 +12,12 @@ math: false
 mermaid: false
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2022-07-09-how-much-do-i-make-with-a-200-subscriber-channel/how-much-do-i-make-with-200-subscriber-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
+  show_image_in_post: false
 description: My earnings haul now that I'm a big wig on YouTube with 200 subscribers
 ---
 
