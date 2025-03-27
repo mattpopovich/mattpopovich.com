@@ -13,12 +13,12 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2022-09-24-tesla-fsd-vs-25mph-well-marked-curvy-road/tesla-fsd-vs-25mph-well-marked-curvy-road_thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
-#   show_image_in_post: false
+  show_image_in_post: false
 description: Tesla autopilot and FSD beta take on a slow and curvy, but well marked road to see how they perform
 ---
 
