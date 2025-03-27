@@ -1,5 +1,5 @@
 ---
-title: "UPDATED: How to Install the Resynthesizer Plugin for GIMP on Mac (2022)"
+title: "Updated: How to Install the Resynthesizer Plugin for GIMP on Mac (2022)"
 author: matt_popovich         # Reference author_id in _data/authors.yml
 date: 2022-09-16 22:27:19 -0700
 categories: [Blog, YouTube]   # <=2 values here: top category and sub category
@@ -12,21 +12,24 @@ math: false
 mermaid: false
 #img_cdn: https://cdn.com
 #img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2022-09-16-updated-how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2022/resynthesizer-2022-thumbnail.jpg
 #  width: 100   # in pixels
 #  height: 40   # in pixels
 #  alt: image alternative text
-description: There is an easier way to get the Resynthesizer plugin working. Here's how!
+  show_image_in_post: false
+description: There is an easier way to get the resynthesizer plugin working. Here's how!
 ---
 
-> After this article was published, [GIMP released (Dec. 2, 2022) separate builds for ARM Macs and Intel Macs](https://www.gimp.org/news/2022/12/02/gimp-2.10.32-apple-silicon/). Neither of these builds work with the instructions in this article. Please download and install [GIMP 2.10.32 revision 0 (released on June 12, 2022)](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg) in order for this article to successfully enable the resynthesizer plugin.
+> After this article was published, [GIMP released (Dec. 2, 2022) separate builds for ARM Macs and Intel Macs](https://www.gimp.org/news/2022/12/02/gimp-2.10.32-apple-silicon/). This article *may* still work with the Intel build of GIMP, but it **will not work with ARM Macs**. For ARM Macs, please see my updated article: [*How to Install the Resynthesizer Plugin for GIMP on Macs with Apple Silicon (2024)*](/posts/how-to-install-the-resynthesizer-plugin-for-gimp-on-macs-with-apple-silicon-2024).
+>
+> Not sure which processor you have? Follow [this](https://support.apple.com/en-us/116943) support page.
 {: .prompt-danger }
 
 {% include embed/youtube.html id='iU4HRAkZ1-U' %}
 
-# Intro
-Ok folks, welcome back! This is a long overdue update to the [Resynthesizer Plugin installation tutorial for Mac](/posts/how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/) that I posted about a year and a half ago. I apologize for everyone that jumped through all those hoops to install the plugin. At the time, that was the only way I knew how to make it work. It did work for many, but for some, they got lost along the way and didn’t have the same success.
+## Intro
+Ok folks, welcome back! This is a long overdue update to the [*Resynthesizer Plugin installation tutorial for Mac*](/posts/how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/) that I posted about a year and a half ago. I apologize for everyone that jumped through all those hoops to install the plugin. At the time, that was the only way I knew how to make it work. It did work for many, but for some, they got lost along the way and didn’t have the same success.
 
 This updated method is **much, much easier to complete** and only requires two commands on the terminal to complete. It should take only a few minutes if you already have GIMP installed. No additional installations of brew or any other software is necessary. 😅
 
@@ -36,28 +39,28 @@ I have verified that this updated fix works with:
 * Intel Mac Big Sur (11.7)
 * M1 Mac Monterey (12.6)
 
-Before we get started, I want to give a shoutout to Philip Brown. He sent me an email after he read my [previous blog post on how to install the Resynthesizer Plugin](/posts/how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/). He’s the one that introduced me to this easier method and I’d like to thank him for that. It’s great to see the community help each other out like this and it’s just something you love to see.
+Before we get started, I want to give a shoutout to Philip Brown. He sent me an email after he read my [previous blog post on how to install the resynthesizer plugin](/posts/how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/). He’s the one that introduced me to this easier method and I’d like to thank him for that. It’s great to see the community help each other out like this and it’s just something you love to see.
 
-# [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
+## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. Download and install [GIMP `2.10.32 revision 0`](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg)
   * ⚠️ Note that the latest version of GIMP: `2.10.32 revision 1`, which creates separate builds for ARM Macs and Intel Macs, **will not** work with the following instructions ⚠️
   * You can check what version of GIMP you have by opening GIMP, going to GIMP in the menu bar --> About GIMP. If it says `2.10.32`, then the rest of this article will work. If it says `2.10.32 (revision 1)`, the rest of this article **will not** work.
-1. Download the Resynthesizer plugin for Mac: [ResynthesizerPlugin-Gimp-2.10-osx.tgz
+1. Download the resynthesizer plugin for Mac: [ResynthesizerPlugin-Gimp-2.10-osx.tgz
 ](https://github.com/aferrero2707/gimp-plugins-collection/releases/download/continuous/ResynthesizerPlugin-Gimp-2.10-osx.tgz)
 1. Extract the `.tgz` plugin and copy the contents in the `ResynthesizerPlugin-Gimp-2.10-osx` folder to `/Applications/GIMP-2.10.app/Contents/Resources/lib/gimp/2.0/plug-ins`
-1. Try to run the Resynthesizer plugin on an image (Filters --> Enhance --> "Heal selection...") in GIMP.
+1. Try to run the resynthesizer plugin on an image (Filters --> Enhance --> "Heal selection...") in GIMP.
   * If it works, you're good to go! If not, continue
 1. Change directories to GIMP's library folder
   * `cd /Applications/GIMP-2.10.app/Contents/Resources/lib`
 1. Check if you have `libintl` installed: `ls -lah libintl*`
   * If you have `libintl.8.dylib` installed, continue
-  * If you have `libintl.9.dylib` installed and Resynthesizer is not working... comment below and I'll try to help you!
+  * If you have `libintl.9.dylib` installed and resynthesizer is not working... comment below and I'll try to help you!
   * If you have neither or something entirely different, comment below and I'll try to help you!
 1. Create a symbolic link to "fake" that you have `libintl.9.dylib` installed:
    * `ln -s libintl.8.dylib libintl.9.dylib`
 1. Restart GIMP, *Heal selection...* should now work! 🤞
 
-# Download and Install GIMP
+## Download and Install GIMP
 For starters, we need to download and install GIMP. You need to download GIMP `2.10.32 revision 0` from [here](https://download.gimp.org/gimp/v2.10/macos/gimp-2.10.32-x86_64.dmg).
 
 > Note that if you download the latest version of GIMP (`2.10.32 revision 1`) from [here](https://www.gimp.org/downloads/), this tutorial **will not work** to enable the resynthesizer plugin. In order for this article to work, you will need to remove GIMP `2.10.32 revision 1` (and/or other GIMP versions) by dragging the GIMP app from `/Applications` to the trash, and install GIMP `2.10.32 revision 0` from the link above.
@@ -65,17 +68,17 @@ For starters, we need to download and install GIMP. You need to download GIMP `2
 
 The version that I used for this tutorial is `2.10.32 (revision 0)`. If you're on Mac, you can open (mount) that downloaded file then click and drag GIMP to the Applications folder. If you're on another OS, follow the instructions GIMP gives you :)
 
-# Download and Install the Resynthesizer Plugin
-We can download the Resynthesizer plugin from aferrero2707's repo on GitHub: [gimp-plugin-collections](https://github.com/aferrero2707/gimp-plugins-collection). If you navigate to the releases and then to continuous build, you can scroll down and see all the plugins available. We want to download [ResynthesizerPlugin-Gimp-2.10-osx.tgz
+## Download and Install the Resynthesizer Plugin
+We can download the resynthesizer plugin from aferrero2707's repo on GitHub: [gimp-plugin-collections](https://github.com/aferrero2707/gimp-plugins-collection). If you navigate to the releases and then to continuous build, you can scroll down and see all the plugins available. We want to download [ResynthesizerPlugin-Gimp-2.10-osx.tgz
 ](https://github.com/aferrero2707/gimp-plugins-collection/releases/download/continuous/ResynthesizerPlugin-Gimp-2.10-osx.tgz). Once downloaded, you can extract it and open up the resulting folder to see a bunch of Python files. We need to copy them to GIMP's plugin folder. To find GIMP's plugin folder, you can open GIMP, then go to GIMP-2.10 (in the menu bar) --> Preferences --> scroll down on the left column to Folders, click on Folders to expand it --> Plug-ins. You will likely see two different options for placing these plugin files:
 ```
-/Users/<username>/Libary/Application Support/GIMP/2.10/plug-ins
+/Users/<username>/Library/Application Support/GIMP/2.10/plug-ins
 /Applications/GIMP-2.10.app/Contents/Resources/lib/gimp/2.0/plug-ins
 ```
-You can copy to either one, but `/Applications` is easier (you need to create the folder for `/Users`). You can click on the `/Applications/...` path in the window to select it, then you can open that path by clicking on the office cabinet-looking icon on the top right which will show the tooltip "Show file location in the file manager". Once that is open, we can select and drag all of the python files over to that window, quit GIMP (Command (⌘) + Q or GIMP-2.10 --> Quit GIMP-2.10), re-open GIMP, and the Resynthesizer plugin should appear as an option under Filters --> Enhance --> "Heal selection..."!
+You can copy to either one, but `/Applications` is easier (you need to create the folder for `/Users`). You can click on the `/Applications/...` path in the window to select it, then you can open that path by clicking on the office cabinet-looking icon on the top right which will show the tooltip "Show file location in the file manager". Once that is open, we can select and drag all of the python files over to that window, quit GIMP (Command (⌘) + Q or GIMP-2.10 --> Quit GIMP-2.10), re-open GIMP, and the resynthesizer plugin should appear as an option under Filters --> Enhance --> "Heal selection..."!
 
-# Testing the Resynthesizer Plugin (Heal selection)
-Now that we have installed the Resynthesizer plugin, we can give it a quick test to see if it will work (likely not). Let's start by importing an image into GIMP (click and drag an image into GIMP, then [if necessary] click convert to change the color profile to what GIMP prefers). Next, we can select an area that contains an object we want to remove (by selecting the "Free Select" tool [press "f"] and clicking around the outside of our object or by selecting the "Rectangle Select" tool [press "r"] and making a rectangle around our object (less precise)). Finally, we can try to run the Resynthesizer plugin: Filters --> Enhance --> "Heal selection..." --> OK. If it works, you're good to go! Unfortunately for me, I was presented with [the following errors](https://github.com/aferrero2707/gimp-plugins-collection/issues/10):
+## Testing the Resynthesizer Plugin (Heal selection)
+Now that we have installed the resynthesizer plugin, we can give it a quick test to see if it will work (likely not). Let's start by importing an image into GIMP (click and drag an image into GIMP, then [if necessary] click convert to change the color profile to what GIMP prefers). Next, we can select an area that contains an object we want to remove (by selecting the "Free Select" tool [press "f"] and clicking around the outside of our object or by selecting the "Rectangle Select" tool [press "r"] and making a rectangle around our object (less precise)). Finally, we can try to run the resynthesizer plugin: Filters --> Enhance --> "Heal selection..." --> OK. If it works, you're good to go! Unfortunately for me, I was presented with [the following errors](https://github.com/aferrero2707/gimp-plugins-collection/issues/10):
 
 ```console
 Calling error for procedure 'gimp-procedural-db-proc-info':
@@ -96,18 +99,18 @@ Traceback (most recent call last):
 error: procedure not found
 ```
 
-# Fixing the Resynthesizer Plugin via a Symbolic Link
+## Fixing the Resynthesizer Plugin via a Symbolic Link
 In computer terms, the plugin is looking to use a library that we do not have: `libintl.9.dylib`. I don't know how to get that *exact* version of the library, but, it turns out that `libintl.8.dylib` comes pre-installed with GIMP, so we can (luckily) tell the plugin to use that version and carry on our merry way.
 
 > The next part of this tutorial uses the terminal to create and modify some files. If you are unfamiliar with the terminal or would like to learn more, check out my post [here](/posts/introduction-to-the-command-line-shell-terminal-etc/) for an "Introduction to the Terminal / Shell / Command Line, etc.".
 {: .prompt-info }
 
-## Checking for `libintl`
+### Checking for `libintl`
 To check if you already have `libintl.8.dylib` installed, open *Terminal*, go to the `/Applications/GIMP-2.10.app/Contents/Resources/lib` directory via `cd /Applications/GIMP-2.10.app/Contents/Resources/lib`, and try to list all files named "libintl" via `ls -lah libintl*`.
 
 If it outputs `libintl.8.dylib`, then continue on to the [next step](#creating-a-symbolic-link-to-fake-having-libintl9dylib).
 
-If it outputs `libintl.9.dylib` and the Resynthesizer plugin doesn't work, then I'm not really sure how to help you. Leave a comment below to explain what's happening and I'll try to help!
+If it outputs `libintl.9.dylib` and the resynthesizer plugin doesn't work, then I'm not really sure how to help you. Leave a comment below to explain what's happening and I'll try to help!
 
 ```console
 username@Mac:~$ cd /Applications/GIMP-2.10.app/Contents/Resources/lib
@@ -117,8 +120,8 @@ username@Mac:/Applications/GIMP-2.10.app/Contents/Resources/lib$ ls -lah libintl
 ```
 <my-caption>Example of the preinstalled `libintl.8.dylib`</my-caption>
 
-## Creating a symbolic link to "fake" having `libintl.9.dylib`
-The Resynthesizer plugin is looking for `libintl.9.dylib`. We can "cheat" and tell it to use `libintl.8.dylib` via `ln -s libintl.8.dylib libintl.9.dylib`:
+### Creating a symbolic link to "fake" having `libintl.9.dylib`
+The resynthesizer plugin is looking for `libintl.9.dylib`. We can "cheat" and tell it to use `libintl.8.dylib` via `ln -s libintl.8.dylib libintl.9.dylib`:
 ```console
 username@Mac:~$ cd /Applications/GIMP-2.10.app/Contents/Resources/lib
 
@@ -133,17 +136,17 @@ lrwxr-xr-x  1 username admin   15B Sep 16 22:34 libintl.9.dylib -> libintl.8.dyl
 ```
 <my-caption>Creating a symbolic link from `libintl.8.dylib` to `libintl.9.dylib`</my-caption>
 
-# Using the Resynthesizer Plugin
-That's it! You should now be able to restart GIMP (quit and open it back up), and once you select an object (details [here](#testing-the-resynthesizer-plugin-heal-selection)), then go through the same steps to use the Resynthesizer plugin (Filters --> Enhance --> "Heal selection..." --> OK), it should now synthesize successfully! 🤞
+## Using the Resynthesizer Plugin
+That's it! You should now be able to restart GIMP (quit and open it back up), and once you select an object (details [here](#testing-the-resynthesizer-plugin-heal-selection)), then go through the same steps to use the resynthesizer plugin (Filters --> Enhance --> "Heal selection..." --> OK), it should now synthesize successfully! 🤞
 
-![Example of a successful use of the Resynthesizer plugin](/assets/img/posts/2021-04-05-how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/before-and-after-resynthesizer-plugin-GIMP.png){: width="480"} *Example of a successful use of the Resynthesizer plugin!*
+![Example of a successful use of the resynthesizer plugin](/assets/img/posts/2021-04-05-how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2021/before-and-after-resynthesizer-plugin-GIMP.jpg){: width="480"} *Example of a successful use of the resynthesizer plugin!*
 
 Pretty nice for an automatic tool!
 
-# Bonus: Alternative to the Resynthesizer Plugin
-If the above seemed like too much, we can get similar results to the Resynthesizer tool manually by using the *heal* and *clone* tools that GIMP provides. I'm not going to do a full writeup about it here, but I did go into a quick example in my past [YouTube video](https://youtu.be/MHwtKg0tws8?t=802). I'm sure you could find some similar or even better tutorials on those tools online.
+## Bonus: Alternative to the Resynthesizer Plugin
+If the above seemed like too much, we can get similar results to the resynthesizer tool manually by using the *heal* and *clone* tools that GIMP provides. I'm not going to do a full writeup about it here, but I did go into a quick example in my past [YouTube video](https://youtu.be/MHwtKg0tws8?t=802). I'm sure you could find some similar or even better tutorials on those tools online.
 
-# Outro
+## Outro
 
 That's it! Thanks again to Philip Brown for the tip.
 

@@ -31,7 +31,7 @@ That iconic phrase is the last line from Saturday Night Live's (SNL) [cold open]
 
 In this post, I'm going to walk you through what it was like to see SNL in person as well as giving you some tips and tricks to help you get selected and to help you make the most of it if selected!
 
-![Matt Popovich's appearance on SNL!](/assets/img/posts/2023-12-14-seeing-saturday-night-live-in-person/SNL-MattPopovich.png){: width="540"}
+![Matt Popovich's appearance on SNL!](/assets/img/posts/2023-12-14-seeing-saturday-night-live-in-person/SNL-MattPopovich.jpg){: width="540"}
 *My television debut!*
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
