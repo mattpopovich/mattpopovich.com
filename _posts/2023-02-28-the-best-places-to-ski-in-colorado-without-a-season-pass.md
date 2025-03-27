@@ -22,6 +22,9 @@ image:
 description: Large ski resorts have outrageous single day pass prices. If you only need to ski for a day or two, try this!
 ---
 
+> This blog post was written for the 2022 - 2023 ski season. It has not been checked for accuracy since then.
+{: .prompt-warning }
+
 ## Intro
 Colorado is home to some of the [best skiing in all of North America](https://www.snowpak.com/usa/best-ski-resorts-north-america). However, [more and more resorts are being bought up](https://www.bloomberg.com/news/features/2019-03-01/epic-vs-ikon-battle-for-the-best-ski-pass) by [Vail Resorts Inc. (Epic Pass)](https://www.epicpass.com/) and [Alterra Mountain Company (Ikon Pass)](https://www.ikonpass.com/). Their business model seems to be very expensive day passes which ultimately pushes the consumer to buy season passes to "save money": "If I go more than 4 times this year, this season pass will pay for itself!" This ultimately pushes consumers to the slopes more than they otherwise would visit in order to "get their moneys worth". Combine this with season passes only being available until November (regardless if it snows at all this year, your purchase will already be finalized!), the winter sports fan has found themselves with not much of a choice: buy the season pass.
 
