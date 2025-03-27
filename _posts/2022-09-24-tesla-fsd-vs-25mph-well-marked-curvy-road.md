@@ -65,7 +65,7 @@ I *think* it's going to do a little bit better because I don't think they're doi
 We shall see. Buckle up!
 
 Coming up to the S-curve, FSD initially put the turn signal on! It thought the turn was so sharp that it was basically a different road!
-When making the S-curve, it didn't pre-emptively slow down, but it did slow down during the turn to 18mph, which was a welcome change! That was much better! Very encouraging!
+When making the S-curve, it didn't preemptively slow down, but it did slow down during the turn to 18mph, which was a welcome change! That was much better! Very encouraging!
 
 Verdict: Not great but definitely acceptable.
 
