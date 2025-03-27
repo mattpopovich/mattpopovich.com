@@ -12,12 +12,14 @@ comments: true              # Enable/disable comments at the bottom of the post
 math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
-#img_path: /img/path/
-#image:
-#  path: /path/to/image.jpg
-#  width: 100   # in pixels
-#  height: 40   # in pixels
-#  alt: image alternative text
+#media_subpath: /img/path/
+image:
+  path: /assets/img/posts/2021-02-24-bitcoin-just-crashed-25-what-should-you-do/bitcoin-just-crashed-25-what-should-you-do_thumbnail.png
+#   width: 100   # in pixels
+#   height: 40   # in pixels
+#   alt: image alternative text
+  show_image_in_post: false
+#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
 {% include embed/youtube.html id='XGjModt6o4I' %}
@@ -83,7 +85,7 @@ https://www.tradingview.com/ for the interactive charts
 
 
 
-
+&nbsp;
 
 
 TODO: Add spotify link here ("Twerkin (Instrumental)" by Liam Back)
