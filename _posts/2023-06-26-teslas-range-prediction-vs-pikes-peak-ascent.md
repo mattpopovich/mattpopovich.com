@@ -12,12 +12,13 @@ comments: true              # Enable/disable comments at the bottom of the post
 math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
-#img_path: /img/path/
+#media_subpath: /img/path/
 #image:
-#  path: /path/to/image.jpg
-#  width: 100   # in pixels
-#  height: 40   # in pixels
-#  alt: image alternative text
+#   path: /path/to/image.jpg
+#   width: 100   # in pixels
+#   height: 40   # in pixels
+#   alt: image alternative text
+#   show_image_in_post: false
 description: I drive my 2020 Tesla Model 3 LR AWD up Pikes Peak to see how accurate Tesla's range prediction software is!
 ---
 
@@ -53,14 +54,20 @@ I’ll even include an overlay of some details of the trip and how Tesla’s Nav
 I initially held the camera a bit low, but I adjust it after a few minutes. Sorry about that and enjoy the ride!
 
 
+<!--
+&nbsp;
 
 TODO: Add spotify link here (if applicable)
 <div style="text-align:center">
 <iframe
-src="https://open.spotify.com/embed/track/29gVTYMqXVV47mrY4qkm4b"
-width="300" height="380" frameborder="0"
-allowtransparency="true"
-allow="encrypted-media">
+style="border-radius:12px"
+src="https://open.spotify.com/embed/track/1agRQW1xM5KQe3QEyM8juD?utm_source=generator"
+width="80%"
+height="152"
+frameBorder="0"
+allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy">
 </iframe>
 </div>
-
+-->
