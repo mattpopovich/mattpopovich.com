@@ -14,7 +14,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
 image:
-  path: /assets/img/posts/2023-06-26-teslas-range-prediction-vs-pikes-peak-ascent/TODO.jpg
+  path: /assets/img/posts/2023-06-26-teslas-range-prediction-vs-pikes-peak-ascent/teslas-range-prediction-vs-pikes-peak-ascent_thumbnail.jpg
 #   width: 100   # in pixels
 #   height: 40   # in pixels
 #   alt: image alternative text
@@ -34,10 +34,10 @@ description: I drive my 2020 Tesla Model 3 LR AWD up Pikes Peak to see how accur
 ## Intro
 Range anxiety is a real thing for some electric vehicle owners, it’s even a concern for some electric vehicle passengers, such as my father.
 
-![TODO](screenshotOfImessage.jpg)
+![Image of my dad texting me to charge the EV before driving to the mountains](/assets/img/posts/2023-06-26-teslas-range-prediction-vs-pikes-peak-ascent/ev-passenger-range-anxiety.jpg){: .shadow }
 *Example of passenger range anxiety*
 
-So, with Pikes Peak International Hill Climb happening this weekend, I thought it would be a good idea to post a drive I did in my 2020 long range all-wheel drive Tesla Model 3 up Pikes Peak to see how well Tesla navigation’s battery prediction performed.
+So, with [Pikes Peak International Hill Climb](https://ppihc.org) happening this weekend, I thought it would be a good idea to post a drive I did in my 2020 long range all-wheel drive Tesla Model 3 up Pikes Peak to see how well Tesla navigation’s battery prediction performed.
 
 <!-- TODO: Reference next post here when they are complete. Physics of how much energy physics says is minimally required -->
 <!-- TODO: Fix YouTube video card, this video has not been made yet. It is not the EPA video -->
@@ -47,14 +47,14 @@ In my following video after that, we’ll do the trip down Pikes Peak and see if
 
 This video will show a beautiful time-lapse of the drive up to the top of Pikes Peak including everything from sunshine to rainbows.
 
-![TODO](rainbows.jpg)
+![Rainbow seen during the drive up Pikes Peak](/assets/img/posts/2023-06-26-teslas-range-prediction-vs-pikes-peak-ascent/pikes-peak-rainbow.jpg){: .shadow }
 *Rainbow seen 2mi from the top of Pikes Peak*
 
 I’ll even include an overlay of some details of the trip:
 * How Tesla’s navigation battery prediction changes
 * The vehicle’s current state of charge
 * Map of the car's current location along the path of the trip
-* Current grade / slope / incline <!--TODO what do these mean, which is right-->of the road
+* Current grade of the road
 
 I initially held the camera a bit low, but I adjust it after a few minutes. Sorry about that and enjoy the ride!
 
@@ -64,20 +64,16 @@ I initially held the camera a bit low, but I adjust it after a few minutes. Sorr
 
 ### Background Audio
 
-<!--
-&nbsp;
-
-TODO: Add spotify link here x2 (if it can be found)
+<!-- The only missing track is https://www.youtube.com/watch?v=3e1QC4sB8k4 -->
 <div style="text-align:center">
 <iframe
 style="border-radius:12px"
-src="https://open.spotify.com/embed/track/1agRQW1xM5KQe3QEyM8juD?utm_source=generator"
+src="https://open.spotify.com/embed/playlist/5ClSnEGMNeta3IY8r9ms7U?utm_source=generator"
 width="80%"
-height="152"
+height="352"
 frameBorder="0"
 allowfullscreen=""
 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 loading="lazy">
 </iframe>
 </div>
--->
