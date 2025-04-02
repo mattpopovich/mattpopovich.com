@@ -189,7 +189,7 @@ width="100%" height="500">
 
 <!-- TODO: Add Aurora lunch spots: LL, Sabor, Taco Selene, etc. -->
 * <details markdown="1">
-    <summary>Click to show some of my lunch recommendations ❗️</summary>
+    <summary>Click to show some of my lunch/dinner recommendations ❗️</summary>
 
     * [The first Chipotle ever](https://goo.gl/maps/37f6fgkqPny91xxL9)
       * Will taste like all the other Chipotles but is something to say you've been there
@@ -216,6 +216,8 @@ width="100%" height="500">
     * [Blue Moon Brewery](https://goo.gl/maps/izdTUrHRoVHv7iP3A)
       * Higher quality food than a typical "brewery"
         * I recommend the Bison Burger
+    * [Irish Rover](https://maps.app.goo.gl/1XEJwP1dfkndzUTL9)
+      * Irish pub with surprisingly good deals on weeknights. [Menu](https://www.theirishroverpub.com/menus-and-specials)
     <!-- TODO: Add tacos: Agave, Adelitas (will be packed on tuesdays), tacos tequila whiskey, torchys -->
     <!-- TODO: Add food specials for days of week -->
     <!-- TODO: Pizza: Homegrown tap and dough, fat sully's -->
@@ -230,21 +232,23 @@ width="100%" height="500">
 
 ## Nightlife
 <!-- TODO: Add a pic of denver with all the surrounding areas highlighted -->
-<!-- TODO: Add links to google maps -->
+<!-- TODO: Make a google maps for this? -->
 Note that there are many, many more than this. These are just some of my favorites.
 * Downtown
-  * Larimer street and Market street
-    * Dierks Bentley's Whiskey Row, Larimer Beer Hall, ViewHouse (Ballpark location), Retro Room, Gin Mill, Star Bar (karaoke), Herb's (live music)
+  * Larimer street
+    * [Larimer Beer Hall](https://maps.app.goo.gl/y9t1QZRiffWSriP16), [Herb's](https://maps.app.goo.gl/vmm53DocVGjFykKj6) (live music), [The Mill](https://maps.app.goo.gl/7TM4ggqRhcgNrwTFA) (previously Gin Mill), [Star Bar](https://maps.app.goo.gl/ua8WiMB7DWWRi6Ud7) (karaoke)
+  * Market street
+    * [Hayter's](https://maps.app.goo.gl/P1kJDGgffmqoy34j6), [Dierks Bentley's Whiskey Row](https://maps.app.goo.gl/fFWxF6JeZyfT1Uxf7), ViewHouse ([Ballpark location](https://maps.app.goo.gl/kuXAjL1Rq7spKZ9a7)), [Tap Fourteen](https://maps.app.goo.gl/GiK3ZApPQwbU36yw5) (rooftop)
 * River North (RiNo)
-  * Blue Moon Brewery, Number 38, Improper City, Finn's Manor, Federales, Lustre Pearl, Matchbox
+  * [Blue Moon Brewery](https://maps.app.goo.gl/XMGitk1hVYhZs4ZdA), [Number 38](https://maps.app.goo.gl/CYTFb5SP2FF1WaCn6), [Improper City](https://maps.app.goo.gl/sX1Sg3xkztXwM9p69), [Finn's Manor](https://maps.app.goo.gl/42WFcmZ4UpcqvFUM9), [Federales](https://maps.app.goo.gl/aFAYyqh342B248bv9), [Lustre Pearl](https://maps.app.goo.gl/qkfxP7L3yXJRfX869), [Matchbox](https://maps.app.goo.gl/R5rEXG9jP4xakEjK7)
 * South Broadway
-  * Adrift, Irish Rover, Canopy, Historians, Punch Bowl Social, etc.
-  * Stranahan's Distillery (whiskey)
-  * Honorable mention to the Dive Inn. A dive bar with cheap drinks, pool, and ping pong.
+  * [Irish Rover](https://maps.app.goo.gl/1XEJwP1dfkndzUTL9) (rooftop), [Canopy](https://maps.app.goo.gl/kRpKBw5kpyocLsRc6), [Historians](https://maps.app.goo.gl/cGPVRm1rmQ1TtTZp7), [Punch Bowl Social](https://maps.app.goo.gl/iSobdrNWutJ83Smy6) (bowling + other bar games), [Adrift](https://maps.app.goo.gl/8rooDAWFAiHCT4C19) (tropical/tiki bar), [BurnDown](https://maps.app.goo.gl/tEAzTZHFeSrze3hb9) (rooftop + live music on weekends), etc.
+  * [Stranahan's Distillery](https://maps.app.goo.gl/6EEZenrfbdgPnDRSA) (whiskey)
+  * [Dive Inn](https://maps.app.goo.gl/ndZrxQDCChkEvfwA8). A dive bar with cheap drinks, pool, and ping pong.
     * 5 min drive away from other bars
 * LoHi
-  * I don't go out in LoHi very often but Avanti is very popular
-* The Grizzly Rose
+  * I don't go out in LoHi very often but [Avanti](https://maps.app.goo.gl/tfuyPML5fHYnoMbu6) is very popular
+* [The Grizzly Rose](https://maps.app.goo.gl/MrqRbGHKUPmDbGqs9)
   * A massive bar located 10mins north of Denver
   * The premier spot for country dancing, mechanical bull riding, etc. Yee to the haw! 🤠
 
