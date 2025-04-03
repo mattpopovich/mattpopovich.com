@@ -1,10 +1,10 @@
 ---
-title: "Floating the Upper Colorado River"
+title: "Floating the Upper Colorado River in Colorado"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2025-04-03 04:06:24 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
+tags: [colorado, how to, travel, summer, float, outdoor recreation, water recreation]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -28,9 +28,19 @@ I love floating rivers. I want to someday float the Colorado River. This is wher
 ## Floating the Upper Colorado River
 > "[Gently flowing through non-intimidating whitewater](https://www.coloradodirectory.com/rafting/colorado.html)"
 
-This is near [Kremmling, CO](https://maps.app.goo.gl/3pkzXU7WKAzZiZPK6). 1hr north of Vail, 2hr west of Denver.
+The "Upper Colorado River Basin" is defined by the river network above [Lee's Ferry](https://maps.app.goo.gl/UFUSjERq4BFQDa9Q9) in northern Arizona (Grand Canyon) ([Source](https://www.americanrivers.org/river/upper-basin-of-the-colorado-river/)). This post will cover floating from [Kremmling, CO](https://maps.app.goo.gl/3pkzXU7WKAzZiZPK6) to [Dotsero, CO](https://maps.app.goo.gl/ApJ972qULBDT9XY99). This area is about 1hr northwest of Vail, 2.5hr west of Denver.
 
 Note that RM is an abbreviation for "river mile". RM 0.0 is at the Highway 9 bridge near Kremmling. [Source, pg. 7](https://org.coloradomesa.edu/~jerry/guide/uppercoloradoriverbrochure_032305.pdf)
+
+### Map
+
+<iframe
+src="https://www.google.com/maps/d/embed?mid=1G5J7a4laSuUKcXJ4dJAXG5BMuq3gDp0&hl=en&ehbc=2E312F"
+width="100%"
+height="480px">
+</iframe>
+
+[Google Maps Link](https://www.google.com/maps/d/edit?mid=1G5J7a4laSuUKcXJ4dJAXG5BMuq3gDp0&usp=sharing)
 
 ### Table
 
@@ -52,7 +62,6 @@ src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRcZlB1nvgGCBiREaMwnEWtgLLc
 * [Pumphouse (BLM)](https://goo.gl/maps/NLFAk8tt1n1CJKvx9) to [Radium Campground (BLM)](https://goo.gl/maps/vC11eaRzrzqjyz3F7) 2-3hr, 4mi, [class 1-3 rapids](https://www.coloradorivercenter.com/river-info.html)
   * Heavily used
   * Pumphouse parking is $5 (2015) which includes parking for the day, camping, and launch fees. Covers take out at everything except Rancho del Rio. [Source](https://www.coloradorivercenter.com/river-info.html)
-    * 5 on-river campsites
   * This will take you through Little Gore Canyon
   * Class 3 "Needle Eye Rapid at RM 13.1". [Source, pg. 11](https://org.coloradomesa.edu/~jerry/guide/uppercoloradoriverbrochure_032305.pdf)
     * Small warm spring further below the rapid on the left bank at the foot of the cliffs. Watch out for poison ivy on the banks and around the rocks.
@@ -92,8 +101,6 @@ src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRcZlB1nvgGCBiREaMwnEWtgLLc
   * Blair Ranch is the furthest downstream take out before entering the Glenwood Canyon runs. If you continue further down, you'll hit Hanging Lake dam.
   * "[You can find several undeveloped hot springs near RM 71](https://org.coloradomesa.edu/~jerry/guide/uppercoloradoriverbrochure_032305.pdf)"
 
-Spreadsheet available [here](https://docs.google.com/spreadsheets/d/1breLH4anZOsrIj5YBXxqyoB1pDCnEnTTUZ6ONpZYMtU/edit?usp=sharing).
-
 ## Sources
 * [eagleoutside.com](https://eagleoutside.com/explore/river/paddle/colorado-river-rafting/)
 * [uncovercolorado.com](https://www.uncovercolorado.com/river-tubing-kayaking/colorado-river/)
@@ -107,7 +114,7 @@ Spreadsheet available [here](https://docs.google.com/spreadsheets/d/1breLH4anZOs
 * [Upper Colorado River brochure](https://org.coloradomesa.edu/~jerry/guide/uppercoloradoriverbrochure_032305.pdf) with a paragraph on each floating section
 
 ## Flow Rates
-* Flow rate recommendations [source](https://skiboulder.com/pages/where-to-go-tubing-upper-colorado-river):
+* Flow rate recommendations ([source](https://skiboulder.com/pages/where-to-go-tubing-upper-colorado-river)):
   * The Upper Colorado is almost never too low to float
     * May and June could be too high
     * May - September is best

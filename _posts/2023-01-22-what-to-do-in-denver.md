@@ -306,7 +306,7 @@ It gets hot here in the summer!
   * Ideal water flows for tubing: <700cfs?
     * Current flow [here](https://waterdata.usgs.gov/monitoring-location/09239500/#parameterCode=00060&period=P7D)
 * Float the Upper Colorado River (near Kremmling, 1hr north of Vail, 2hr west of Denver)
-  * See my separate blog post: "[Floating the Upper Colorado River](/posts/2025-04-03-floating-the-upper-colorado-river)"
+  * See my separate blog post: "[Floating the Upper Colorado River](/posts/floating-the-upper-colorado-river-in-colorado)"
 * [Cherry Creek Reservoir](htts://cpw.state.co.us/placestogo/parks/CherryCreek)
   * [25 minutes SE of Denver](https://goo.gl/maps/6qeJJ2JRJKxP1u3J7)
   * [$11 per vehicle](https://cpw.state.co.us/placestogo/parks/CherryCreek/Pages/Fees.aspx), bicyclists get in for free
