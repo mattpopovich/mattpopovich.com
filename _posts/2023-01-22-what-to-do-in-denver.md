@@ -299,7 +299,10 @@ It gets hot here in the summer!
 * Float in Fort Collins (Poudre River)
   * [1hr 15min north of Denver](https://goo.gl/maps/rZ9tiZdcAoyaN6Ms6)
   * [Map of put in and takeout](https://www.poudre-fire.org/Home/ShowPublishedImage/3256)
-  * Ideal water flows for tubing: TODO
+  * [Another map](https://poudreheritage.org/wp-content/uploads/Play-it-Safe-brochure-3.pdf)
+  * Ideal water flows for tubing: 200-500cfs ([source](https://www.reddit.com/r/FortCollins/comments/1deeqn8/tubing_poudre/l8bfoes/))
+    * Fast but manageable: 500-800cfs ([source](https://www.reddit.com/r/FortCollins/comments/149ethz/floating_on_the_poudre/jo4uvx3/))
+    * Avoid tubing above 800cfs
     * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06752260/#parameterCode=00060&period=P7D)
 * [Float in Steamboat Springs (Yampa River)](https://www.steamboatchamber.com/activities/water-activities/tubing/)
   * [3hr NW of Denver](https://goo.gl/maps/TkBkYyiHJT8NoCkf8)
