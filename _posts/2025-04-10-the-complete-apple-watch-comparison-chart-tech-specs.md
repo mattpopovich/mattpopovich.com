@@ -1,8 +1,8 @@
 ---
-title: "Apple Watch Tech Specs Comparison"
+title: "The Complete Apple Watch Comparison Chart (Tech Specs)"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2023-11-13 06:53:13 -0600
+date: 2025-04-09 18:59:57 -0600
 categories: [Blog, TODO]    # <=2 values here: top category and sub category
 tags: [todo]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
@@ -12,12 +12,14 @@ comments: true              # Enable/disable comments at the bottom of the post
 math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
-#img_path: /img/path/
+#media_subpath: /img/path/
 #image:
-#  path: /path/to/image.jpg
-#  width: 100   # in pixels
-#  height: 40   # in pixels
-#  alt: image alternative text
+#   path: /path/to/image.jpg
+#   width: 100   # in pixels
+#   height: 40   # in pixels
+#   alt: image alternative text
+#   show_image_in_post: false
+#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
 > This article is valid as of April, 2025. It does not take into account watches that were released afterwards.
@@ -53,7 +55,7 @@ This is probably what you came here for. The technical specification (tech specs
 <iframe
 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmwLfkBE_YfgQ97XL8FMw8loxC0H6in7IR4afRTdIgDUHx6-bPiXcsyNZUkRaAghxiqYAXui2RaXsR/pubhtml?widget=true&amp;headers=false"
 width="100%"
-height="480px">
+height="680px">
 </iframe>
 
 [Google Sheets Link](https://docs.google.com/spreadsheets/d/1eqiCBch0L0zLJlOY20XQpa4qG1mGTX5eFqrFYFPZaSE/edit?usp=sharing)
