@@ -40,7 +40,8 @@
     // Configure properties specific to VS Code.
     "vscode": {
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "files.trimTrailingWhitespace": true
       },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
