@@ -2,9 +2,9 @@
 title: "The Complete Apple Watch Comparison Chart (Tech Specs)"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2025-04-09 18:59:57 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+date: 2025-04-10 18:59:57 -0600
+categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
+tags: [apple, data, tech, apple watch]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -13,13 +13,13 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
-#image:
-#   path: /path/to/image.jpg
+image:
+  path: assets/img/posts/2025-04-10-the-complete-apple-watch-comparison-chart-tech-specs/the-complete-apple-watch-comparison-chart-tech-specs_thumbnail.jpg # chirpy wants 1:91:1
 #   width: 100   # in pixels
 #   height: 40   # in pixels
-#   alt: image alternative text
+  alt: Image is AI-assisted. The Apple Watches shown are an AI creation and not a real model for sale.
 #   show_image_in_post: false
-#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
+description: A detailed chart of all the differences between Apple Watches
 ---
 
 > This article is valid as of April, 2025. It does not take into account watches that were released afterwards.
@@ -50,12 +50,12 @@ Very few people will actually take advantage of the Ultra, but the extra battery
 
 ## Comparison Table
 
-This is probably what you came here for. The technical specification (tech specs) comparison table. The table is pretty big (75 rows, 15 columns) and is best viewed on desktop. I know there's a lot of data there (even more data at the "Full Detail" sheet). If this is too much for you, that's totally understandable. Stick to the *[TLDR / Main Differences](#tldr--main-differences)* and *[Choosing a Watch](#choosing-a-watch) sections for a simplified explanation.
+This is probably what you came here for. The technical specification (tech specs) comparison table. The table is pretty big (75 rows, 15 columns) and is best viewed on desktop. I know there's a lot of data there (even more data at the "Full Detail" sheet). If this gives you data overload, that's totally understandable. Stick to the *[TLDR / Main Differences](#tldr--main-differences)* and *[Choosing a Watch](#choosing-a-watch)* sections for my conclusions.
 
 <iframe
 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmwLfkBE_YfgQ97XL8FMw8loxC0H6in7IR4afRTdIgDUHx6-bPiXcsyNZUkRaAghxiqYAXui2RaXsR/pubhtml?widget=true&amp;headers=false"
 width="100%"
-height="680px">
+height="720px">
 </iframe>
 
 [Google Sheets Link](https://docs.google.com/spreadsheets/d/1eqiCBch0L0zLJlOY20XQpa4qG1mGTX5eFqrFYFPZaSE/edit?usp=sharing)
@@ -78,7 +78,7 @@ Now that you know which "processor camp" you're aiming for, the next step would 
 If you live close to one, I'd recommend going into an Apple store (or any place that sells Apple watches) and trying them on to get a feel for things!
 
 ### Cellular Connectivity
-At this point, you should be down to a smaller number of potential watches. The main feature to decide on is do you want cellular connectivity or not. Cellular connectivity is only needed if
+At this point, you should be down to a smaller number of potential watches. The main feature to decide on is do you want cellular connectivity or not. Cellular connectivity is only needed if:
 * You want to get notifications on your watch whenever your phone is not nearby (Ex. going for a run without your phone or while surfing)
   * And you don't mind paying a monthly fee for this capability
 * You want the ability to make emergency 911 calls
