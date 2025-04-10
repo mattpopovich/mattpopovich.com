@@ -1,5 +1,5 @@
 ---
-title: "Full Apple Watch Comparison"
+title: "Apple Watch Tech Specs Comparison"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2023-11-13 06:53:13 -0600
@@ -24,7 +24,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 {: .prompt-info }
 
 ## Intro
-Every year, Apple comes out with a new Apple Watch, and they update their [comparison page](https://www.apple.com/watch/compare/). They allow a maximum of 3 watches to be compared and it isn't obvious what the actual differences are between the watches. I manually went through comparisons of each watch and I attempted to make a table that makes things visually obvious what has or hasn't changed between each watch.
+Every year, Apple comes out with a new Apple Watch, and they update their [comparison page](https://www.apple.com/watch/compare/). They allow a maximum of 3 watches to be compared and it isn't obvious what the actual differences are between the watches. I manually went through comparisons of each watch and I attempted to make a detailed table that makes things visually obvious what has or hasn't changed between each watch.
 
 Ken Rockwell has a [detailed comparison page](https://www.kenrockwell.com/apple/watch/compared.htm) which was very close to what I aimed to do. Mine adds color 🌈 and tries to only focus on differentiating features.
 
@@ -38,17 +38,17 @@ Here's what each watch adds over the SE2:
 * Series 7 adds fast charging and 1mm screen size (neither are worth upgrading)
 * Series 8 adds crash detection (hopefully you never need to use it)
 * **Series 9** adds a new processor, brighter screen, sleep apnea notifications. Newer series 9 [removed blood oxygen capability](https://www.reddit.com/r/AppleWatch/comments/199g8ag/finally_the_answer_to_if_your_apple_watch_will).
-  * This is the first "real" upgrade
+  * This is the first major upgrade over the 6
   * They also advertise a feature called ["double tap"](https://www.youtube.com/watch?v=pm-ZXg3uA0Y), but that is actually available in older watches as an [accessibility feature](https://www.youtube.com/watch?v=oDpIhooDyaY).
 * Series 10 adds a 2mm bigger and slightly better screen, water depth, water temperature.
-* Ultra adds scuba diving capability, twice as long battery, better microphones and speakers, better GPS, older processor
+* Ultra adds scuba diving capability, twice as long battery, better microphones and speakers, better GPS. But it has an older processor (series 6-8).
 * Ultra 2 adds a brighter screen, same processor as 9+
 
 Very few people will actually take advantage of the Ultra, but the extra battery life is pretty nice.
 
 ## Comparison Table
 
-The table is pretty big (75 rows, 15 columns) and is best viewed on desktop. I know there's a lot of data there (even more data at the "Full Detail" sheet). If this is too much for you, that's totally understandable. Stick to the *[TLDR / Main Differences](#tldr--main-differences)* and *[Choosing a Watch](#choosing-a-watch) sections.
+This is probably what you came here for. The technical specification (tech specs) comparison table. The table is pretty big (75 rows, 15 columns) and is best viewed on desktop. I know there's a lot of data there (even more data at the "Full Detail" sheet). If this is too much for you, that's totally understandable. Stick to the *[TLDR / Main Differences](#tldr--main-differences)* and *[Choosing a Watch](#choosing-a-watch) sections for a simplified explanation.
 
 <iframe
 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmwLfkBE_YfgQ97XL8FMw8loxC0H6in7IR4afRTdIgDUHx6-bPiXcsyNZUkRaAghxiqYAXui2RaXsR/pubhtml?widget=true&amp;headers=false"
@@ -77,11 +77,11 @@ If you live close to one, I'd recommend going into an Apple store (or any place 
 
 ### Cellular Connectivity
 At this point, you should be down to a smaller number of potential watches. The main feature to decide on is do you want cellular connectivity or not. Cellular connectivity is only needed if
-* You want to get notifications on your watch whenever your phone is not nearby
+* You want to get notifications on your watch whenever your phone is not nearby (Ex. going for a run without your phone or while surfing)
   * And you don't mind paying a monthly fee for this capability
 * You want the ability to make emergency 911 calls
 
-A cellular data plan for your watch will typically cost ~$10/mo. Worth noting that even **without** a cellular data plan, the cellular watches will be able to make emergency calls as wireless carriers are required to route emergency calls. **GPS only watches cannot make emergency 911 calls if you are not nearby your phone**. This is why I got my parents cellular-capable watches, even though the watches are not connected to a cell plan.
+A cellular data plan for your watch will typically cost ~$10/mo. Worth noting that even **without** a cellular data plan, the cellular watches will still be able to make emergency calls, [even without active service](https://nct911.org/old-phones-can-call-911/). **GPS only watches cannot make emergency 911 calls if you are not nearby your phone** as they do not have the required hardware (cell modem) to place a call on their own. This is why I got my parents cellular-capable watches, even though the watches are not connected to a cell plan.
 
 ### Features
 * If you want the best battery life (36hr), you'll need to get an Ultra. Otherwise, you'll have ~18hr of battery.
@@ -91,4 +91,6 @@ A cellular data plan for your watch will typically cost ~$10/mo. Worth noting th
 * Sleep apnea detection, crash detection, water temperature, water depth are only available on newer models
 
 ## Outro
-TODO
+Thanks for reading, I hope this helped. Please let me know of any suggestions or corrections in the comments below.
+
+The best ways to thank me are by simply following my social media accounts [here](/about) or by purchasing your watch (with no extra cost to you) through one of my [referral links](TODO).
