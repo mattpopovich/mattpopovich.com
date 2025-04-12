@@ -43,10 +43,10 @@ Here's what each watch adds over the SE2:
   * This is the first major upgrade over the 6
   * They also advertise a feature called ["double tap"](https://www.youtube.com/watch?v=pm-ZXg3uA0Y), but that is actually available in older watches as an [accessibility feature](https://www.youtube.com/watch?v=oDpIhooDyaY).
 * Series 10 adds a 2mm bigger and slightly better screen, water depth, water temperature.
-* Ultra adds scuba diving capability, twice as long battery, better microphones and speakers, better GPS. But it has an older processor (series 6-8).
+* Ultra adds scuba diving capability, twice as long battery, better microphones and speakers, better GPS. But it has an older processor (same as series 6-8).
 * Ultra 2 adds a brighter screen, same processor as 9+
 
-Very few people will actually take advantage of the Ultra, but the extra battery life is pretty nice.
+Very few people actually need the Ultra, but the extra battery life is pretty nice.
 
 ## Comparison Table
 
@@ -68,7 +68,7 @@ Apple watch's main upgrade happens every ~3 years whenever the processor (SiP = 
 * S6 SiP = Series 6, 7, 8, SE2, Ultra
 * S9 SiP = Series 9, 10, Ultra 2
 
-The takeaway from this is if you're going to get Ex. a series 5, you're better off getting a series 6. If you're going to get a 8, you're better off getting a 9. It's only a one year jump in watch but a ~3 year jump in processor. The processor will be faster and the watch will be supported with software updates for a few years longer.
+The takeaway from this is if you're going to get, for example, a series 5, you're better off getting a series 6. If you're going to get an 8, you're better off getting a 9. It's only a one year jump in watch but a ~3 year jump in processor. The processor will be faster and the watch will be supported with software updates for a few years longer.
 
 Your budget may also force you into one of the camps. Newer processor camp will be more expensive than the older processor camps. For reference, as of 2025, you can get series 6 apple watches on eBay for ~$100, series 9 for ~$200. Typically used watches fall off in price pretty good after a year or two. Unless a watch with a new processor was just released, buying a used watch can be a great way to get a similar-to-new performing watch at a decent discount.
 
@@ -95,4 +95,4 @@ A cellular data plan for your watch will typically cost ~$10/mo. Worth noting th
 ## Outro
 Thanks for reading, I hope this helped. Please let me know of any suggestions or corrections in the comments below.
 
-The best ways to thank me are by simply following my social media accounts [here](/about) or by purchasing your watch (with no extra cost to you) through one of my [referral links](TODO).
+The best ways to thank me are by simply following my social media accounts [here](/about) or by purchasing your watch (with no extra cost to you) through one of my [referral links](https://amzn.to/3G0nBOW) in the top column of the [comparison table](#comparison-table).
