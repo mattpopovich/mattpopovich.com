@@ -93,6 +93,6 @@ A cellular data plan for your watch will typically cost ~$10/mo. Worth noting th
 * Sleep apnea detection, crash detection, water temperature, water depth are only available on newer models
 
 ## Outro
-Thanks for reading, I hope this helped. Please let me know of any suggestions or corrections in the comments below.
+Thanks for reading, I hope this helped. Please let me know of any suggestions or corrections in the [comments below](#disqus_thread).
 
 The best ways to thank me are by simply following my social media accounts [here](/about) or by purchasing your watch (with no extra cost to you) through one of my [referral links](https://amzn.to/3G0nBOW) in the top column of the [comparison table](#comparison-table).
