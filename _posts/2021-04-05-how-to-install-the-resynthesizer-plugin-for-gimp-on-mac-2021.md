@@ -3,7 +3,7 @@ title: "How to Install the Resynthesizer Plugin for GIMP on Mac (2021)"
 author: matt_popovich         # Reference author_id in _data/authors.yml
 date: 2021-04-10 12:23:02 -0600
 categories: [Blog, YouTube]   # <=2 values here: top category and sub category
-tags: [youtube, linux, ubuntu, GIMP, tech, tutorial, how to, apple, catalina, big sur, monterey, osx, mac]       # TAG names should always be lowercase
+tags: [youtube, linux, ubuntu, GIMP, resynthesizer, tech, tutorial, how to, apple, catalina, big sur, monterey, osx, mac]       # TAG names should always be lowercase
 layout: post
 pin: false
 toc: true
@@ -21,7 +21,7 @@ image:
 description: My trials and tribulations getting the resynthesizer plugin installed...
 ---
 
-> There is an easier way to do this! Please see my updated blog post [here](/posts/updated-how-to-install-the-resynthesizer-plugin-for-gimp-on-mac-2022/) for the details!
+> There is an easier way to do this! Please see my updated blog post [here](/posts/how-to-install-the-resynthesizer-plugin-for-gimp-on-macs-with-apple-silicon-2024) for the details!
 > Below is the old method...
 {: .prompt-danger }
 
