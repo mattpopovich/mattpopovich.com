@@ -1,5 +1,5 @@
 ---
-title: "Is Powerline Over Ethernet Any Good?"
+title: "Is Ethernet Over Powerline Any Good?"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2025-06-04 00:09:49 -0600
@@ -26,7 +26,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 Subtitle: Ethernet through your walls?
 
 https://capitalizemytitle.com/youtube-title-checker/
-Is Powerline Over Ethernet Any Good? = 57 + 60 + 80 = 197
+Is Ethernet Over Powerline Any Good? = 57 + 60 + 80 = 197
 are Powerline to ethernet adapters any good? = 54 + 60 + 80 = 194
 what to know about ethernet over Powerline = 57 + 69 + 50 = 176
 what you need to know about Powerline to ethernet adapters = 64 + 59 + 50 = 173
@@ -89,9 +89,11 @@ TODO: Takeaways
 
 ## Tips for getting the most out of powerline
 
-##
+TODO: Takeaways, might already explain some of this above
 
+## Summary
 
+TODO: Takeaways
 
 
 &nbsp;
