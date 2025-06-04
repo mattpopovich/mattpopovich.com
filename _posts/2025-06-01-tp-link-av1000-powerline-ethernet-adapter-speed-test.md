@@ -1,5 +1,5 @@
 ---
-title: "TP-Link AV1000 Powerline Ethernet Adapter Review"
+title: "TP-Link AV1000 Powerline Ethernet Adapter Speed Test"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2025-06-01 07:28:31 -0600
