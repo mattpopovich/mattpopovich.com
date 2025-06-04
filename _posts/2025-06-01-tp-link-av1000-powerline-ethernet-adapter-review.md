@@ -22,8 +22,8 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
-## TODO: Add Heading Here
-TODO: Add text here
+
+
 
 Testing the [TP-Link AV1000 Powerline Ethernet Adapter (TL-PA7017P)](https://amzn.to/3T0oMAT).
 
@@ -137,7 +137,7 @@ Ok, so our AV1000 is advertised as gigabit and they are not capabable of providi
 
 --------
 
-On second thought, there may be filtering on the output of the powerline adapter, thus reducing the connectivity between the two whenever they were directly connected. I should have connected them both to the same outlet, but used an extension cord as they physically block each other from both being connected...
+On second thought, there may be filtering on the output of the powerline adapter, thus reducing the connectivity between the two whenever they were directly connected. I should have connected them both to the same outlet, but used an extension cord as they physically block each other from both being connected... Something [like this](https://amzn.to/4dEk7y8) would be perfect for this test.
 
 ### AV2000
 
@@ -146,6 +146,37 @@ The [AV2000 specification page](https://www.tp-link.com/us/home-networking/power
 They also say it has beamforming??? This is a wired device. I do not know how it can perform any beamforming.
 
 [This guy](https://old.reddit.com/r/HomeNetworking/comments/h8m6nz/real_world_speeds_with_powerline_networking/furyf9j/) says he's getting 500Mbps out of his AV2000s.
+
+### TP-Link Support Article
+[TP-Link says](https://www.tp-link.com/us/support/faq/2928/) that the powerline speed is 1000Mbps in an ideal environment. However, they caution that the "conversion rate" (the ratio of transmission rate and powerline rate) is about 30-35%, which depends on the electric wiring system. So, with the AV1000, we should expect to see 300-350Mbps at best. Which matches my tests.
+
+Ethernet PHYs are advertised as theoretical maximum of 1000Mbps, which they do achieve. But that is total bits being sent over the wire. Not all bits are *data* bits. Some are overhead. A rule of thumb for ethernet is 920Mbps of throughput over a theoretical 1000Mbps link, or 92%.
+
+### Powerline "false advertising"
+From what I can understand, powerline devices advertise their "[maximum half-duplex PHY rate](https://www.reddit.com/r/HomeNetworking/comments/11okbba/what_is_the_speed_being_reported_via_powerline/jbszkz0/)". This is the maximum rate of raw bits being transferred between the two devices in ideal conditions. However, not every raw bit is user data.
+
+headers, error correction, timing pauses, handshakes, sync frames, etc.
+
+Brief tangent: As data is sent from one computer to another, it first makes its way through different layers of networking. Each layer might add some encapsulating information which results in additional data bits needing to be transferred. See the [TCP/IP Model](https://www.geeksforgeeks.org/tcp-ip-model/) or [OSI Model](https://www.geeksforgeeks.org/open-systems-interconnection-model-osi/) for additional information.
+
+As an example, HTTPS at layer (4 TCP/IP) [adds ~800bytes of header information](https://stackoverflow.com/a/5358276).
+
+As a simplified example TCP at layer (4 OSI, 3 TCP/IP) adds between 20-60 bytes of header information to make sure each packet gets received and if not, resent. IP at layer (2 TCP/IP) adds 20-60bytes to make sure the packet is able to be routed across the world. Ethernet frames at layer (2 OSI, 1 TCP/IP) typically have a maximum data size of 1500 bytes (jumbo frames change this) but they also add 18-bytes of header information and they make sure the packet arrives at the correct computer and network interface (WiFi/ethernet).
+
+So, in total we have 40 bytes + 40 bytes + 18 bytes of headers = 98bytes of headers. Given we are sending 1500bytes of data, that gives us an efficiency of ~94%. So, if we are operating over a 100Mbps link, we should expect to see data throughput of ~94Mbps.
+
+
+WiFi typically gets throughput of 80% of link speeds: https://community.tp-link.com/en/home/forum/topic/581704
+
+Wikipedia says standard frame size efficiency of TCP/IP is 95%: https://en.wikipedia.org/wiki/Jumbo_frame#Bandwidth_efficiency
+
+
+In a [typical TCP packet](https://www.geeksforgeeks.org/tcp-ip-packet-format/), you have bits that specify where this packet goes and who it is from, a checksum to help notice if any of the data bits are incorrect, etc. TCP/IP headers are between 20-60bytes.
+
+### Additional Reading
+A good, longish, and somewhat technical article [here](https://micoolpaul.com/2023/07/10/how-to-actually-increase-powerline-adapter-throughput/) for how to improve powerline thoughput.
+
+
 
 &nbsp;
 
