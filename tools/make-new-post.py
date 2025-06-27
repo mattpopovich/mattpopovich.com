@@ -4,6 +4,7 @@
 # TOOD: Clean up this mess
 #       Create a main function
 #       Must be run from the tools folder
+#       Show --help even if there is no api_key.txt file
 
 
 # Imports
