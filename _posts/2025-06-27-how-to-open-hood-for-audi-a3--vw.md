@@ -4,7 +4,7 @@ author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2025-06-27 18:16:29 -0600
 categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
-tags: [audi, audi a3 8v, how to, tutorial]                # TAG names should always be lowercase
+tags: [audi, audi a3, audi a3 8v, volkswagen, vw, how to, tutorial, not youtube]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -19,16 +19,13 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #   height: 630   # in pixels, 1.90:1 desired by chirpy
 #   alt: image alternative text
 #   show_image_in_post: false
-#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
+description: Opening the hood on an Audi A3 is very simple - here's how!
 ---
 
-## TODO: Add Heading Here
-TODO: Add text here
+## Intro
+Hey guys! Matt Popovich here. Today in my [series of Audi posts](/tags/audi/), I'm going to show you how to open the hood. This is very simple and while I will be demonstrating it on a 2015 Audi A3, the procedure will likely be the same for any Audi or Volkswagen models, and will be similar for most other cars. Check your vehicle's owners manual for the specific procedure for your car.
 
-
-Hey guys! Matt Popovich here. Today in my series of Audi videos, I'm going to show you how to open the hood. This is very simple and while I will be demonstrating it on a 2015 Audi A3, the procedure will likely be the same for any Audi or Volkswagen models, and will be similar for most other cars. Check your vehicle's owners manual for the specific procedure for your car.
-
-TODO: Add an image here
+![](/assets/img/posts/2025-06-27-how-to-open-hood-for-audi-a3--vw/owners-manual_audi-a3_open-hood.jpg){: .shadow .w-75}
 *[Audi A3 Owner's Manual](https://ownersmanuals2.com/d/71870/audi-a3-sedan-s3-sedan-2015-owners-manual), pg. 199*
 
 ## Opening the Hood
@@ -55,3 +52,8 @@ allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-pictur
 loading="lazy">
 </iframe>
 </div>
+
+<small><small>
+Disclaimer:
+Matt Popovich is not a mechanic. Please do your own research and consult with a professional before attempting any DIY repairs. Matt Popovich assumes no liability for property damage or injury incurred as a result of any of the information contained in this video. Matt Popovich does not provide a warranty for any of the listed information and does not guarantee any expressed or implied result. Use this information at your own risk. Matt Popovich recommends safe practices when working on vehicles and or with tools seen or implied in this video. Any injury, damage, or loss that may result from improper use of these tools, equipment, or from the information contained in this video is the sole responsibility of the user and not Matt Popovich.
+</small></small>
