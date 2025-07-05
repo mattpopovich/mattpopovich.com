@@ -3,8 +3,8 @@ title: "How to Open the Hood for an Audi (A3) / VW"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2025-07-04 18:16:29 -0600
-categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
-tags: [audi, audi a3, audi a3 8v, volkswagen, vw, how to, tutorial, not youtube]                # TAG names should always be lowercase
+categories: [Blog, YouTube]    # <=2 values here: top category and sub category
+tags: [audi, audi a3, audi a3 8v, volkswagen, vw, how to, tutorial, youtube]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -13,14 +13,16 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
-#image:
-#   path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2025-06-27-how-to-open-the-hood-for-an-audi-a3--vw/how-to-open-the-hood-for-an-audi-a3-vw_thumbnail.jpg
 #   width: 1200   # in pixels
 #   height: 630   # in pixels, 1.90:1 desired by chirpy
-#   alt: image alternative text
-#   show_image_in_post: false
+  alt: An Audi A3 with its hood raised. Captioned "easy!"
+  show_image_in_post: false
 description: Opening the hood on an Audi A3 is very simple - here's how!
 ---
+
+{% include embed/youtube.html id='Qd6AQFJZVHA' %}
 
 ## Intro
 Hey guys! Matt Popovich here. Today in my [series of Audi posts](/tags/audi/), I'm going to show you how to open the hood. This is very simple and while I will be demonstrating it on a 2015 Audi A3, the procedure will likely be the same for any Audi or Volkswagen models, and will be similar for most other cars. If in doubt, check your vehicle's owners manual for the specific procedure for your car.
