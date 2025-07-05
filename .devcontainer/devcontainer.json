@@ -42,7 +42,7 @@
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
         "files.trimTrailingWhitespace": true,
-				"files.autoSave": "onFocusChange"
+        "files.autoSave": "onFocusChange"
       },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
