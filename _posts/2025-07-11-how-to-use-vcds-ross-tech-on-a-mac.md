@@ -35,7 +35,8 @@ TODO
 ## Some VCDS Background
 VCDS is a "[Windows-based diagnostic software for Volkswagen / Audi / Seat / Skoda](https://www.ross-tech.com/vag-com/VCDS.php)". VCDS is a software program which talks to a HEX-interface (hardware) which is plugged into and communicates with your vehicle. VCDS needs a [hardware interface](https://www.ross-tech.com/vcds/interfaces.php) in order to communicate with a vehicle.
 
-TODO: Image schematic here
+![Diagram showing VCDS software --> HEX-interface (hardware) --> Vehicle](/assets/img/posts/2025-07-11-how-to-use-vcds-ross-tech-on-a-mac/VCDS-architecture.jpg)
+*Architecture of VCDS*
 
 Currently [Ross-Tech](https://www.ross-tech.com/index.php) offers two hardware interfaces: [HEX-V2](https://www.ross-tech.com/vcds/hex-v2.php) and [HEX-NET](https://www.ross-tech.com/vcds/hex-net.php). HEX-V2 will communicate with VCDS via USB. HEX-NET will communicate with VCDS via USB or Wi-Fi.
 
@@ -43,12 +44,11 @@ Currently [Ross-Tech](https://www.ross-tech.com/index.php) offers two hardware i
 
 They also offer [VCDS-Mobile](https://www.ross-tech.com/vcds-mobile/vcds-mobile.php) to communicate to a hardware interface via Wi-Fi and a web browser. Because you only need a web browser and Wi-Fi, you can use VCDS-Mobile with any Android, iOS, Mac, Linux, Windows, etc. VCDS-Mobile is simply a local webpage hosted by a hardware interface and currently HEX-NET is the only hardware interface that supports this. Also worth noting is VCDS-Mobile is currently in beta and [does not have full feature parity](https://wiki.ross-tech.com/wiki/index.php/Functions) with VCDS.
 
-### Legacy Hardware Interfaces
-There are many [legacy interfaces](https://www.ross-tech.com/vag-com/old-interfaces/discontinued_interfaces.php) such as HEX+CAN, HEX+COM, etc. These interfaces require installing "legacy drivers" which are only available in x86-64 VCDS. This requires installing a x86-64 version of Windows. This is possible on an Apple Silicon Mac with UTM (I can confirm), but requires emulation of an Intel CPU. Expect much, much more CPU usage and much, much slower operation.
+### Legacy HEX Hardware Interfaces
+There are many [legacy HEX hardware interfaces](https://www.ross-tech.com/vag-com/old-interfaces/discontinued_interfaces.php) such as HEX+CAN, HEX+COM, etc. These interfaces requires installing "USB Drivers for Legacy Interfaces" which are only available in x86-64 VCDS. This requires installing a x86-64 version of Windows. This is possible on an Apple Silicon Mac with UTM (I can confirm), but requires emulation of an Intel CPU. Expect much, much more CPU usage and much, much slower operation.
 
-TODO: Ensure correct quote of legacy drivers
-
-TODO: Image here
+!["USB Drivers for Legacy Interfaces" checkbox during VCDS installation](/assets/img/posts/2025-07-11-how-to-use-vcds-ross-tech-on-a-mac/VCDS-LegacyDrivers.png){: .shadow .w-50}
+*Checkbox needed during installation to support legacy HEX hardware interfaces*
 
 ## Basic Hardware Check
 If our hardware interface doesn't work, then there's no need to go any further as VCDS won't have anything to communicate with. I have a HEX-NET so connecting to VCDS is accomplished via a USB-B cable (sometimes referred to as a printer cable). The first thing we need to do is verify that our computer sees the HEX-NET interface. This can be confirmed by seeing both lights on the interface blinking blue. On a Mac, you can also go to the System Report (Settings --> General --> Scroll to the bottom --> System Report) --> USB and you should see a "TODO: Ross Tech" device confirming the connection.
