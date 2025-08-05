@@ -51,19 +51,38 @@ There are many [legacy HEX hardware interfaces](https://www.ross-tech.com/vag-co
 *Checkbox needed during installation to support legacy HEX hardware interfaces*
 
 ## Basic Hardware Check
-If our hardware interface doesn't work, then there's no need to go any further as VCDS won't have anything to communicate with. I have a HEX-NET so connecting to VCDS is accomplished via a USB-B cable (sometimes referred to as a printer cable). The first thing we need to do is verify that our computer sees the HEX-NET interface. This can be confirmed by seeing both lights on the interface blinking blue. On a Mac, you can also go to the System Report (Settings --> General --> Scroll to the bottom --> System Report) --> USB and you should see a "TODO: Ross Tech" device confirming the connection.
+If our hardware interface doesn't work, then there's no need to go any further as VCDS won't have anything to communicate with. I have a HEX-V2 so connecting to VCDS is accomplished via a [USB-B cable](https://cdn.sparkfun.com/assets/f/7/4/a/7/51154e0ece395fee3f000002.jpg) (sometimes referred to as a printer cable). The first thing we need to do is verify that our computer sees the HEX-V2 interface. This can be confirmed by seeing **both** lights on the interface blinking blue. On a Mac, you can also go to the System Report (Settings --> General --> Scroll to the bottom --> System Report) --> USB and you should see a "Ross-Tech HEX-V2" device confirming the connection.
+
+![Image with both VCDS lights blinking blue + Ross-Tech HEX-V2 connected via USB in the Mac's System Report](/assets/img/posts/2025-07-11-how-to-use-vcds-ross-tech-on-a-mac/successful_HEX-V2_connection_annotated.jpeg){: .shadow .w-75}
+*Successful HEX-V2 connection to a 2014 MacBook Pro*
 
 If you only see one blinking light, that means the interface has power, but no data. In my experience, this was due to a faulty cable. Try bending either end of the cable in all directions to see if you can "bend some wires back together". For me, this was bending the USB-A side of the cable 90 degrees in the direction of TODO.
 
-TODO: Image of USB bent + good connection next to image of USB not bent and bad connection.
+![Video demonstration that bending the cable at 90 degrees allows the HEX interface to be connected and restoring the cable to be straight loses USB connection](/assets/img/posts/2025-07-11-how-to-use-vcds-ross-tech-on-a-mac/HEX-V2_hardware-bad_cable.gif){: .shadow}
+*A bad VCDS cable. Notice the lights on the HEX hardware interface. Higher quality [here](TODO)*
 
 I don't believe this is a rare issue. I've seen a few posts in their forums that are resolved with a [new USB-A to USB-B cable](https://store.ross-tech.com/shop/rtcusb-a2b02/).
 TODO: link to posts
 
-They also [sell a USB-C to USB-B cable](https://store.ross-tech.com/shop/usb-c/) so that newer laptops won't need to use a dongle. But, given their USB-A cable's reliability, I might recommend purchasing a [cheaper one](TODO).
+They also [sell a USB-C to USB-B cable](https://store.ross-tech.com/shop/usb-c/) so that newer laptops won't need to use a dongle. I purchased a slightly [cheaper one](https://amzn.to/40Pggt4).
 
 Other blinking lights and their meanings are below ([source](https://forums.ross-tech.com/index.php?threads/8778/page-3#post-89230)):
-* TODO
+Initially when plugging the HEX hardware interface in, you should see one LED blink green for about 2 seconds. Then, you will see the following:
+
+<div align="center" markdown="1">
+
+| LED blinking color           | Power | Computer Connection | Vehicle Connection |
+| ---------------------------- | ----- | ------------------- | ------------------ |
+| Both off                     |       |                     |                    |
+| Single Blue (older firmware) | ✅     |                     |                    |
+| Both red (newer firmware)    | ✅     |                     |                    |
+| Both blue                    | ✅     | ✅                   |                    |
+| Both yellow                  | ✅     |                     | ✅                  |
+| Both green                   | ✅     | ✅                   | ✅                  |
+
+</div>
+<my-caption>The meaning of the HEX hardware interface's blinking lights</my-caption>
+
 
 ## Install VCDS
 
