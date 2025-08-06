@@ -51,18 +51,19 @@ There are many [legacy HEX hardware interfaces](https://www.ross-tech.com/vag-co
 *Checkbox needed during installation to support legacy HEX hardware interfaces*
 
 ## Basic Hardware Check
+### Confirming USB Connection
 If our hardware interface doesn't work, then there's no need to go any further as VCDS won't have anything to communicate with. I have a HEX-V2 so connecting to VCDS is accomplished via a [USB-B cable](https://cdn.sparkfun.com/assets/f/7/4/a/7/51154e0ece395fee3f000002.jpg) (sometimes referred to as a printer cable). The first thing we need to do is verify that our computer sees the HEX-V2 interface. This can be confirmed by seeing **both** lights on the interface blinking blue. On a Mac, you can also go to the System Report (Settings --> General --> Scroll to the bottom --> System Report) --> USB and you should see a "Ross-Tech HEX-V2" device confirming the connection.
 
 ![Image with both VCDS lights blinking blue + Ross-Tech HEX-V2 connected via USB in the Mac's System Report](/assets/img/posts/2025-07-11-how-to-use-vcds-ross-tech-on-a-mac/successful_HEX-V2_connection_annotated.jpeg){: .shadow .w-75}
 *Successful HEX-V2 connection to a 2014 MacBook Pro*
 
-If you only see one blinking light, that means the interface has power, but no data. In my experience, this was due to a faulty cable. Try bending either end of the cable in all directions to see if you can "bend some wires back together". For me, this was bending the USB-A side of the cable 90 degrees in the direction of TODO.
+### Troubleshooting Bad USB Connection
+If you only see one blue blinking LED (or both LEDs blinking red), that means the interface has power, but no data. In my experience, this was due to a faulty cable. Try bending either end of the cable in all directions or pushing the cable together to "shorten the cable" next to the ends. The goal here is to try to touch some internally frayed wires back together. For me, this was bending the USB-A side of the cable greater than 45° + pushing the cable together a bit.
 
 ![Video demonstration that bending the cable at 90 degrees allows the HEX interface to be connected and restoring the cable to be straight loses USB connection](/assets/img/posts/2025-07-11-how-to-use-vcds-ross-tech-on-a-mac/HEX-V2_hardware-bad_cable.gif){: .shadow}
-*A bad VCDS cable. Notice the lights on the HEX hardware interface. Higher quality [here](TODO)*
+*A bad VCDS cable. Notice the lights on the HEX hardware interface going from blue to red. Higher quality [here](TODO)*
 
-I don't believe this is a rare issue. I've seen a few posts in their forums that are resolved with a [new USB-A to USB-B cable](https://store.ross-tech.com/shop/rtcusb-a2b02/).
-TODO: link to posts
+I don't believe this is a rare issue. I've [seen](https://forums.ross-tech.com/index.php?threads/9704/) a [few](https://forums.ross-tech.com/index.php?threads/46210/post-378200) [posts](https://forums.ross-tech.com/index.php?threads/12161/post-110517) in their forums that are resolved with a [new USB-A to USB-B cable](https://store.ross-tech.com/shop/rtcusb-a2b02/).
 
 They also [sell a USB-C to USB-B cable](https://store.ross-tech.com/shop/usb-c/) so that newer laptops won't need to use a dongle. I purchased a slightly [cheaper one](https://amzn.to/40Pggt4).
 
@@ -85,6 +86,18 @@ Initially when plugging the HEX hardware interface in, you should see one LED bl
 
 
 ## Install VCDS
+
+As I mentioned [above](#some-vcds-background), VCDS is "[**Windows-based** diagnostic software](https://www.ross-tech.com/vag-com/VCDS.php)". Since we are using a Mac, we will need some way to install and run Windows. Common options are:
+* Dual-booting (Intel Macs only: [Boot Camp](https://support.apple.com/en-us/102622))
+  * Shut down macOS, install Windows onto the hard drive, and fully boot into Windows.
+* [Wine](https://www.winehq.org)/[CrossOver](https://www.codeweavers.com/crossover/) (limited USB support)
+  * Allows you to run Windows applications on macOS / Linux. Installs the application only. Does not emulate a whole operating system, so should have better performance.
+* Virtual machine ([UTM](https://mac.getutm.app), [Parallels](https://www.parallels.com), [VMWare Fusion Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion), [VirtualBox](https://www.virtualbox.org))
+  * While running macOS, run an application that runs a fully-fledged Windows operating system.
+
+Since all recent macs are on Apple Silicon, that rules out dual-booting. Since my hardware interface is a HEX-V2, I will need USB support which rules out Wine and CrossOver (you might be able to use those via HEX-NET with its Wi-Fi interface). This leaves us to using a virtual machine. I think any of them would work just fine. Parallels is paid, the others are free (VMWare is free for personal use). I'm going to use UTM for no reason other than that's what I'm familiar with (a few years ago, it was the only free option available), and it worked!
+
+The typical consensus is Parallels ($) > VMWare Fusion Pro (used to be $, now free for personal use) > UTM ([FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software)) > VirtualBox ([FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software)).
 
 ### Install UTM
 
