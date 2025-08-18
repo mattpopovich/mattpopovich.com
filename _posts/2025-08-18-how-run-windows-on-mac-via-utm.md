@@ -2,7 +2,7 @@
 title: "How to Run Windows on Mac (via UTM)"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2025-08-12 13:58:55 -0600
+date: 2025-08-18 12:34:55 -0600
 categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
 tags: [apple, apple silicon, arm, big sur, catalina, mac, monterey, not youtube, osx, programming, sequoia, tech, tutorial]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
@@ -19,7 +19,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #   height: 630   # in pixels, 1.90:1 desired by chirpy
 #   alt: image alternative text
 #   show_image_in_post: false
-#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
+description: A quick tutorial on how to run a Windows virtual machine on your Mac using UTM
 ---
 
 > This post is only for Macs with Apple Silicon (M1, M2, etc.) processors. If you're unsure which processor you have, follow [this](https://support.apple.com/en-us/116943) support page.
@@ -28,12 +28,12 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 
 ## Intro
 MacOS is great but sometimes you can't get around a need for Windows.
-- Windows-only applications
 - Legacy application
+- Windows-only applications
 - Developer that needs to test on multiple operating systems
 - etc.
 
-For me, [I use some vehicle diagnostic software](/posts/how-to-use-vcds-ross-tech-on-a-mac) that only runs on Windows ([VCDS](https://www.ross-tech.com/vag-com/VCDS.php)). I also am a software developer that has needed to access some hardware USB devices via docker, which is not supported on Mac ([GitHub issue created in 2016](https://github.com/docker/for-mac/issues/900) 🤕).
+For me, [I use some vehicle diagnostic software](/posts/how-to-use-vcds-ross-tech-on-a-mac) that only runs on Windows ([VCDS](https://www.ross-tech.com/vag-com/VCDS.php)). I have also needed to access some hardware USB devices via docker, which is not supported on Mac ([GitHub issue created in 2016](https://github.com/docker/for-mac/issues/900) 🤕).
 
 Whatever your reason, here's how:
 
@@ -88,7 +88,7 @@ This will download a `Win11_*Arm64.iso` which will be ~5.5GB.
 4. Windows
 5. Make sure “Install Windows 10 or higher” and “Install drivers and SPICE tools” is *checked*. Also make sure “Import VHDX Image” is *unchecked*. Press “Browse” and select the ISO you downloaded previously. Click "Continue"
 6. Select the amount of RAM and CPU Cores you'd like to give the VM.
-  - Remember, these will be fully reserved by the VM whenever it is running, so don't give it too much resources and thereby starving your host operating system.
+  - These will be fully reserved by the VM whenever it is running, so don't give it too much resources and thereby starving your host operating system.
   - For the initial install, it's not a bad idea to give it extra resources to speed up the install. You can always change the resource allocation later.
   - I'd recommend at least 2048MiB of RAM + 2 CPU cores. Press “Next” to continue.
     - Microsoft [says Windows 11 requires](https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3) at least 2 cores, 4GB RAM, and 64GB hard drive... but I haven't seen that enforced in the installer.
@@ -147,6 +147,7 @@ Hope this was helpful! Please let me know of any issues or suggestions you have 
 
 &nbsp;
 
+<!--
 TODO: Add spotify link here (if applicable)
 <div style="text-align:center">
 <iframe
@@ -158,3 +159,4 @@ allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-pictur
 loading="lazy">
 </iframe>
 </div>
+-->
