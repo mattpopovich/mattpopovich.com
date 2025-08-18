@@ -2,9 +2,9 @@
 title: "How to Run Windows on Mac (via UTM)"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2025-08-18 12:34:55 -0600
+date: 2025-08-18 16:34:55 -0600
 categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
-tags: [apple, apple silicon, arm, big sur, catalina, mac, monterey, not youtube, osx, programming, sequoia, tech, tutorial]                # TAG names should always be lowercase
+tags: [apple, apple silicon, arm, big sur, catalina, mac, monterey, not youtube, osx, programming, sequoia, tech, tutorial, windows, utm]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -13,11 +13,11 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
-#image:
-#   path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2025-08-18-how-run-windows-on-mac-via-utm/windows-on-mac-thumbnail.jpg
 #   width: 1200   # in pixels
 #   height: 630   # in pixels, 1.90:1 desired by chirpy
-#   alt: image alternative text
+  alt: A macOS screenshot with an UTM window open that is running Windows
 #   show_image_in_post: false
 description: A quick tutorial on how to run a Windows virtual machine on your Mac using UTM
 ---
@@ -143,11 +143,9 @@ If you want to attach a USB device to the VM, plug it into your machine, boot up
 ## Outro
 Hope this was helpful! Please let me know of any issues or suggestions you have in the comments 😊
 
-&nbsp;
-
-&nbsp;
-
 <!--
+&nbsp;
+
 TODO: Add spotify link here (if applicable)
 <div style="text-align:center">
 <iframe
