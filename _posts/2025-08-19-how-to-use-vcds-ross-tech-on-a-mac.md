@@ -94,9 +94,9 @@ Initially when plugging the HEX hardware interface in, you should see one LED bl
 As I mentioned [above](#some-vcds-background), VCDS is "[**Windows-based** diagnostic software](https://www.ross-tech.com/vag-com/VCDS.php)". Since we are using a Mac, we will need some way to install and run Windows. Because my hardware interface is a HEX-V2, I will need USB support, which is best accomplished with a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine) (VM). You may be able to use [Wine](https://www.winehq.org) or [CrossOver](https://www.codeweavers.com/crossover/) with a HEX-NET, but I won't be covering that in this post.
 
 ### Create a Windows VM
-There are a few different options for creating a virtual machine. This post will be using [UTM](https://mac.getutm.app) as it is free and I have confirmed it works. For other VM options, see my post [here](/posts/how-run-windows-on-mac-via-utm/#options-for-running-windows-on-a-mac).
+There are a few different options for creating a virtual machine. This post will be using [UTM](https://mac.getutm.app) as it is free and I have confirmed it works. For other VM options, see my post [here](/posts/how-to-run-windows-on-mac-via-utm/#options-for-running-windows-on-a-mac).
 
-To keep this post short, I've separated the Windows virtual machine section into its own post: [*How to Run Windows on Mac via UTM*](/posts/how-run-windows-on-mac-via-utm). Follow that guide, then come back here to install VCDS in your new Windows VM!
+To keep this post short, I've separated the Windows virtual machine section into its own post: [*How to Run Windows on Mac via UTM*](/posts/how-to-run-windows-on-mac-via-utm). Follow that guide, then come back here to install VCDS in your new Windows VM!
 
 ### Install VCDS in Windows VM
 1. In our Windows VM, open Microsoft Edge

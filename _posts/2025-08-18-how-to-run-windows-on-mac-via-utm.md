@@ -14,7 +14,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
 image:
-  path: /assets/img/posts/2025-08-18-how-run-windows-on-mac-via-utm/windows-on-mac-thumbnail.jpg
+  path: /assets/img/posts/2025-08-18-how-to-run-windows-on-mac-via-utm/windows-on-mac-thumbnail.jpg
 #   width: 1200   # in pixels
 #   height: 630   # in pixels, 1.90:1 desired by chirpy
   alt: A macOS screenshot with an UTM window open that is running Windows
