@@ -110,27 +110,27 @@ In UTM, select the VM that we just created on the left side, then press the play
 
 <details markdown="1">
   <summary> Follow the Windows 11 installation prompts (click here to show them all ℹ️) </summary>
-1. Select your language + time and currency format. Click "Next"
-2. Select keyboard or input method. Click "Next"
+1. Select your language + time and currency format. Click `Next`
+2. Select keyboard or input method. Click `Next`
 3. Enter your product key
-  - You can also click "I don't have a product key" but using Windows without a product key is against the EULA (end user license agreement). See [*Section 5*](https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/11/oem-(pre-installed)/UseTerms_OEM_Windows_11_English.pdf).
-4. Select "Windows 11 Home". Click "Next"
+  - You can also click `I don't have a product key` but using Windows without a product key is against the EULA (end user license agreement). See [*Section 5*](https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/11/oem-(pre-installed)/UseTerms_OEM_Windows_11_English.pdf).
+4. Select `Windows 11 Home`. Click `Next`
 5. Accept license terms
-6. Select "Disk 0 Unallocated Space". Click "Next"
-7. Confirm your country or region. Click "Yes"
-8. Confirm your keyboard layout or input method. Click "Yes"
+6. Select `Disk 0 Unallocated Space`. Click `Next`
+7. Confirm your country or region. Click `Yes`
+8. Confirm your keyboard layout or input method. Click `Yes`
 9.  Select if you'd like to add a second keyboard layout
-10. Enter your name. Click "Next"
-11. Enter a password. Click "Next"
-12. Confirm your password. Click "Next"
-13. Create 3 security questions, clicking "Next" each time
+10. Enter your name. Click `Next`
+11. Enter a password. Click `Next`
+12. Confirm your password. Click `Next`
+13. Create 3 security questions, clicking `Next` each time
   - If you don't want to create security questions, use a blank password in the step above.
 14. Wait for the installation to complete + reboot
 15. Sign into Windows 11 + wait for more installation steps to complete
-16. Once you're signed in, you should be prompted with the "UTM Guest Tools Installer".
-17. Click on "Next >"
-18. Click on "I Agree"
-19. Click on "Finish"
+16. Once you're signed in, you should be prompted with the *UTM Guest Tools Installer*.
+17. Click on `Next >`
+18. Click on `I Agree`
+19. Click on `Finish`
 </details>
 
 ## Using the Windows VM
