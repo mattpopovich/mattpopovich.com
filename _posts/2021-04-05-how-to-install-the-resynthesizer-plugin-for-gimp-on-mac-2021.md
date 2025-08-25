@@ -3,7 +3,7 @@ title: "How to Install the Resynthesizer Plugin for GIMP on Mac (2021)"
 author: matt_popovich         # Reference author_id in _data/authors.yml
 date: 2021-04-10 12:23:02 -0600
 categories: [Blog, YouTube]   # <=2 values here: top category and sub category
-tags: [youtube, linux, ubuntu, GIMP, resynthesizer, tech, tutorial, how to, apple, catalina, big sur, monterey, osx, mac]       # TAG names should always be lowercase
+tags: [youtube, linux, ubuntu, GIMP, resynthesizer, tech, tutorial, how to, apple, mac os]       # TAG names should always be lowercase
 layout: post
 pin: false
 toc: true
