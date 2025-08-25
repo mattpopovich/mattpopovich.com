@@ -319,19 +319,20 @@ If this doesn’t work, some starting points for debugging is to search the logs
 ### Updating Plex
 To update plex, there is no need to do it through the web GUI anymore. All you need to do is restart docker, and the plex image will automatically redownload the latest version of plex media server:
 ```console
-user@nas $ sudo docker-compose pull   # Necessary if using `plexinc/pms-docker` image
-user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml down
+user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml pull
+[+] Pulling 1/1
+ ✔ plex Pulled                                                                   2.9s
+user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml up -d --force-recreate
 [+] Running 1/1
- ⠿ Container plex  Removed                                                      17.6s
-user@nas $ sudo docker-compose -f plex-pms-docker-compose.yaml up -d
-[+] Running 1/1
- ⠿ Container plex  Started
+ ✔ Container plex  Started                                                      37.8s
 ```
 
-Note that this is only applicable if you are using a "dynamic" tag for the `pms-docker` image.
+Note that the `docker-compose pull` is only applicable if you are using a "dynamic" tag for the `pms-docker` image.
 * In `plex-pms-docker-compose.yaml`, if you used `image: plexinc/pms-docker` (which points to `image: plexinc/pms-docker:latest`) or `image: plexinc/pms-docker:plexpass`, those are both dynamic tags.
-  * If you instead specified a specific tag, Ex. `image: plexinc/pms-docker:1.41.2.9200-c6bbc1b53`, then you will need to manually change the tag that is being pulled in, then restart docker.
+  * If you instead specified a specific tag, Ex. `image: plexinc/pms-docker:1.41.2.9200-c6bbc1b53`, then you will need to manually change the tag that is listed in `plex-pms-docker-compose.yaml`, then restart docker.
   * You can find valid `pms-docker` tags at the [`pms-docker` repo on Docker Hub](https://hub.docker.com/r/plexinc/pms-docker/tags).
+
+The `--force-recreate` tells `docker-compose` to recreate the container even though we have not modified `plex-pms-docker-compose.yaml`. We have pulled in a new `:latest` image, which is why we want the container recreated.
 
 ## Moving Tautulli from a Mac to Synology NAS
 I've moved this section into its own blog post: [Moving Tautulli from a Mac (Python) to a Synology NAS (Docker)](/posts/moving-tautulli-from-a-mac-python-to-a-synology-nas-docker/).
