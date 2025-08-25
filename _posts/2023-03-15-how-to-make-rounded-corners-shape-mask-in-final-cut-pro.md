@@ -27,9 +27,9 @@ description: Making rounded corners in FCPX is very simple to do but I couldn't 
 ## Intro
 Ok, super quick post here. I'm working in [Final Cut Pro (FCP/FCPX)](https://www.apple.com/final-cut-pro/) and I want to be able to put a screenshot or another clip in my video and I don't like the super sharp corners of the video that happens with the default overlay. I'd like them to be a little more soft and rounded. I did some Googling to try to figure out how to do this and the first couple of links weren't terribly obvious with their solutions... but there is an easy solution (apply a shape mask) and I'm going to show you how to do it!
 
-|                                                                      Original                                                                      |                                                                            Rounded Corners                                                                             |
-| :------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![Example of video overlay](/assets/img/posts/2023-03-15-how-to-make-rounded-corners-shape-mask-in-final-cut-pro/FCPX_videoOverlayWithoutMask.jpg) | ![Video overlay with rounded corners (shape mask)](/assets/img/posts/2023-03-15-how-to-make-rounded-corners-shape-mask-in-final-cut-pro/FCPX_videoOverlayWithMask.jpg) |
+| Original | Rounded Corners |
+|:---------------:|:---------------:|
+|![Example of video overlay](/assets/img/posts/2023-03-15-how-to-make-rounded-corners-shape-mask-in-final-cut-pro/FCPX_videoOverlayWithoutMask.jpg)  |  ![Video overlay with rounded corners (shape mask)](/assets/img/posts/2023-03-15-how-to-make-rounded-corners-shape-mask-in-final-cut-pro/FCPX_videoOverlayWithMask.jpg)|
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. Click and drag a Shape Mask from the Effects Browser to your desired clip
