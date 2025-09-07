@@ -204,6 +204,171 @@ Efficiency is defined as % of 1kW irradiated at 1m^2 that is turned into electri
 
 
 
+## Restarting
+
+### Intro
+How big of a solar panel do we need to power the world? And what about the United States?
+
+For starters, I want to touch on the difference between electricity and energy. Energy can come in many forms: electricity, coal, oil, natural gas, wood in your fireplace, etc. Electricity is a form of energy that powers our lights, TVs, microwaves, and more.
+
+Currently, there are some things that we power with an energy other than electricity: planes (jet fuel via oil), construction vehicles and freight trains (diesel fuel via oil), and container ships (heavy fuel oil via oil) to name a few. These use energy but are going to be difficult to electrify due to our current electricity storage methods being too heavy and not enough energy density.
+
+In this article I'm going to talk about two different things:
+1. Making all of our *electricity* generation via solar panels
+2. Making all of our *energy* generation via solar panels
+
+The former is possible today. This would be replacing our coal and natural gas electricity generation plants with solar (will also need some energy storage for the nights, but I will ignore that for simplicity). The latter is not currently feasible as we do not have electric replacements for airplanes, construction vehicles, container ships, etc. But, I am going to convert the energy of the fuel used by those machines into an electrical representation (ex. one gallon of gasoline contains ~34kWh). From there, I can see (hypothetically) how much solar would be needed to create all the energy we use in the chance that we electrify our economy in the future.
+
+Let's dive in.
+
+### Math Behind Solar Panel Size
+Solar panel efficiency is defined as
+
+$$
+\begin{equation}
+    \text{Solar panel efficiency} = {\text{Panel's output in watts} \over \text{Panel's area in m}^2 \times \text{irradiance in W/m}^2}
+\end{equation}
+$$
+
+$\eta$ is commonly used to represent solar panel efficiency:
+
+$$
+\begin{equation}
+    \eta = \text{Solar panel efficiency}
+\end{equation}
+$$
+
+[Standard test conditions (STC)](https://sinovoltaics.com/learning-center/quality/standard-test-conditions-stc-definition-and-problems/) for a solar panel defines irradiance as:
+
+$$
+\begin{equation}
+    G_{STC} = 1000W/m^2
+\end{equation}
+$$
+
+To make our numbers simple, we can have the panel area be:
+
+$$
+\begin{equation}
+    A_{panel} = 1m^2
+\end{equation}
+$$
+
+This gives us:
+
+$$
+\begin{equation}
+    \eta = {\text{Panel's output in watts} \over A_{panel} \times G_{STC}} = {\text{Panel's output in watts} \over 1m^2 \times 1000W/m^2}
+\end{equation}
+$$
+
+[Average solar panel efficiency today is 21%](https://css.umich.edu/publications/factsheets/energy/solar-pv-energy-factsheet). Let's use 20%:
+
+$$
+\begin{equation}
+    \eta = 20\%
+\end{equation}
+$$
+
+Now we can calculate the average solar panel output per $m^2$:
+
+$$
+\begin{equation}
+    20\% = {\text{Panel's output in watts} \over 1m^2 \times 1000W/m^2}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+    20\% = {\text{Panel's output in watts} \over 1000W}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+    200W = {\text{Panel's output in watts}}
+\end{equation}
+$$
+
+So **for the average solar panel, we can expect $200W$ over $1m^2$**. [Manufacturers will use this value as the panel's "peak power under optimal conditions"](https://www.energuide.be/en/questions-answers/what-is-the-kilowatt-peak/1409/#:~:text=Understanding%20what%20a%20kilowatt%2Dpeak,talk%20about%20'nominal%20power'.) $(kWp\text{ or }kW_{peak})$.
+
+Thus, for the average solar panel, we will see:
+
+$$
+\begin{equation}
+    kW_{peak} = 200W/m^2 = 0.2kW/m^2
+\end{equation}
+$$
+
+This value is the cornerstone of the rest of our calculations.
+
+### Solar Panel Energy Generation
+We just calculated how much *power* our solar panels will generate per square meter. But that is during ✨ideal conditions✨. The sun isn't on or off; in the mornings and evenings it's still shining but at a lower strength. What if we place these panels in an area that is commonly cloudy? How can we calculate the energy generation of these panels? Luckily, someone has already ran these numbers for us: [globalsolaratlas.info](https://globalsolaratlas.info) has created `PVOUT`.
+
+> ["[`PVOUT` represents] the power output achievable by a typical configuration of the utility scale PV system, taking into account the theoretical potential, the air temperature affecting the system performance, the system configuration, shading and soiling, and topographic and land-use constraints"](https://globalsolaratlas.info/global-pv-potential-study)
+
+`PVOUT` is given in units $kWh/kWp$. This is saying "given the wattage of your solar panel, this is how much energy (watt-hours) your panel will generate. Previously, we calculated the average $kWp$, so we are ready to use this value.
+
+[For Denver, CO, we get](https://globalsolaratlas.info/map?c=38.664067,-105.270996,7&s=39.749434,-104.974365&m=site) $PVOUT \approx 4.7 kWh/kWp$ per day. Thus:
+
+$$
+\begin{equation}
+    PVOUT_{Denver_{avg\ panel}} \approx {4.7kWh \over kWp} \times {0.2kWp \over m^2} \approx 0.94kWh/m^2 \text{ per day}
+\end{equation}
+$$
+
+Now, all we need to figure out is how much energy do we need to generate and that will tell us how big of a solar panel we need!
+
+### How Big of a Solar Panel for All of USA Electricity
+ [USA electricity generation](https://ourworldindata.org/electricity-mix) = 4,387 TWh per year = 12.02 TWh per day = $12.02*10^9$ kWh per day (2024).
+$$
+\begin{equation}
+    A_{USA\ electricity} = {12.02*10^{9}kWh \over 0.94kWh/m^2} = 12,787,234,042m^2
+\end{equation}
+$$
+
+$$
+\begin{equation}
+    A_{USA\ electricity} = 12,000km^2 = 4,633mi^2
+\end{equation}
+$$
+
+4,633 square miles can be accomplished via a square that has sides 68 miles long. Or, in visual form:
+
+TODO
+
+
+### How Big of a Solar Panel for All of USA Energy
+[USA energy consumption](https://ourworldindata.org/energy-production-consumption) = 26,500 TWh (2024).
+
+### How Big of a Solar Panel for All of World Electricity
+[World electricity generation](https://ourworldindata.org/electricity-mix) = 30,850 TWh (2024).
+
+### How Big of a Solar Panel for All of World Energy
+[World energy consumption](https://ourworldindata.org/energy-production-consumption) = 186,383 TWh (2024).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 &nbsp;
 
 TODO: Add spotify link here (if applicable)
