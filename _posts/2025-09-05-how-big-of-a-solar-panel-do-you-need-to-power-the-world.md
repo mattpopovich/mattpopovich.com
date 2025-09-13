@@ -242,7 +242,7 @@ $$
 
 $$
 \begin{equation}
-    G_{STC} = 1000W/m^2
+    G_{STC} = 1000 \ \mathrm{W/m^2}
 \end{equation}
 $$
 
@@ -250,7 +250,7 @@ To make our numbers simple, we can have the panel area be:
 
 $$
 \begin{equation}
-    A_{panel} = 1m^2
+    A_{panel} = 1 \ \mathrm{m^2}
 \end{equation}
 $$
 
@@ -258,7 +258,7 @@ This gives us:
 
 $$
 \begin{equation}
-    \eta = {\text{Panel's output in watts} \over A_{panel} \times G_{STC}} = {\text{Panel's output in watts} \over 1m^2 \times 1000W/m^2}
+    \eta = {\text{Panel's output in watts} \over A_{panel} \times G_{STC}} = {\text{Panel's output in watts} \over 1 \ \mathrm{m^2} \times 1000 \ \mathrm{W/m^2}}
 \end{equation}
 $$
 
@@ -274,29 +274,29 @@ Now we can calculate the average solar panel output per $m^2$:
 
 $$
 \begin{equation}
-    20\% = {\text{Panel's output in watts} \over 1m^2 \times 1000W/m^2}
+    20\% = {\text{Panel's output in watts} \over 1 \ \mathrm{m^2} \times 1000 \ \mathrm{W/m^2}}
 \end{equation}
 $$
 
 $$
 \begin{equation}
-    20\% = {\text{Panel's output in watts} \over 1000W}
+    20\% = {\text{Panel's output in watts} \over 1000 \ \mathrm{W}}
 \end{equation}
 $$
 
 $$
 \begin{equation}
-    200W = {\text{Panel's output in watts}}
+    200 \ \mathrm{W} = {\text{Panel's output in watts}}
 \end{equation}
 $$
 
-So **for the average solar panel, we can expect $200W$ over $1m^2$**. [Manufacturers will use this value as the panel's "peak power under optimal conditions"](https://www.energuide.be/en/questions-answers/what-is-the-kilowatt-peak/1409/#:~:text=Understanding%20what%20a%20kilowatt%2Dpeak,talk%20about%20'nominal%20power'.) $(kWp\text{ or }kW_{peak})$.
+So **for the average solar panel, we can expect $200 \ \mathrm{W}$ over $1 \ \mathrm{m^2}$**. [Manufacturers will use this value as the panel's "peak power under optimal conditions"](https://www.energuide.be/en/questions-answers/what-is-the-kilowatt-peak/1409/#:~:text=Understanding%20what%20a%20kilowatt%2Dpeak,talk%20about%20'nominal%20power'.) $(\mathrm{kWp\ or\ kW}_{peak})$.
 
 Thus, for the average solar panel, we will see:
 
 $$
 \begin{equation}
-    kW_{peak} = 200W/m^2 = 0.2kW/m^2
+    \mathrm{kW}_{peak} = 200 \ \mathrm{W/m^2} = 0.2 \ \mathrm{kW/m^2}
 \end{equation}
 $$
 
@@ -305,17 +305,17 @@ This value is the cornerstone of the rest of our calculations.
 ### Solar Panel Energy Generation
 We just calculated how much *power* our solar panels will generate per square meter, but how much *energy* will they generate for us over a day? Or over a year?
 
-The power that we calculated is during ✨ideal conditions✨. The sun's strength is not a consistent $1000W/m^2$. The sun's irradiance is strongest during midday, but it still shines in the mornings and evenings. And even if it is cloudy, our solar panels will still be generating some power. So how can we calculate the energy generated while taking these factors (and more) into account? Thankfully, someone has already ran these numbers for us: [globalsolaratlas.info](https://globalsolaratlas.info) has created `PVOUT`.
+The power that we calculated is during ✨ideal conditions✨. The sun's strength is not a consistent $1000 \ \mathrm{W/m^2}$. The sun's irradiance is strongest during midday, but it still shines in the mornings and evenings. And even if it is cloudy, our solar panels will still be generating some power. So how can we calculate the energy generated while taking these factors (and more) into account? Thankfully, someone has already ran these numbers for us: [globalsolaratlas.info](https://globalsolaratlas.info) has created `PVOUT`.
 
 > ["[`PVOUT` represents] the power output achievable by a typical configuration of the utility scale PV system, taking into account the theoretical potential, the air temperature affecting the system performance, the system configuration, shading and soiling, and topographic and land-use constraints"](https://globalsolaratlas.info/global-pv-potential-study)
 
-`PVOUT` is given in units $kWh/kWp$. This is saying "given the wattage of your solar panel, this is how much energy (watt-hours) your panel will generate. Previously, we calculated the average $kWp$, so we are ready to use this value.
+`PVOUT` is given in units $\mathrm{kWh/kWp}$. This is saying "given the wattage of your solar panel, this is how much energy (Wh = watt-hours) your panel will generate. Previously, we calculated the average $\mathrm{kWp}$, so we are ready to use this value.
 
-[For Denver, CO, we get](https://globalsolaratlas.info/map?c=38.664067,-105.270996,7&s=39.749434,-104.974365&m=site) $PVOUT \approx 4.7 kWh/kWp$ per day. Thus:
+[For Denver, CO, we get](https://globalsolaratlas.info/map?c=38.664067,-105.270996,7&s=39.749434,-104.974365&m=site) $PVOUT \approx 4.7 \ \mathrm{kWh/kWp}$ per day. Thus:
 
 $$
 \begin{equation}
-    PVOUT_{Denver_{avg\ panel}} \approx {4.7kWh \over kWp} \times {0.2kWp \over m^2} \approx 0.94kWh/m^2 \text{ per day}
+    PVOUT_{Denver_{avg\ panel}} \approx {4.7 \ \mathrm{kWh} \over \mathrm{kWp}} \times {0.2 \ \mathrm{kWp} \over \mathrm{m^2}} \approx 0.94 \ \mathrm{kWh/m^2} \text{ per day}
 \end{equation}
 $$
 
@@ -325,17 +325,17 @@ Now, all we need to figure out is how much energy do we need to generate and tha
  [USA electricity generation](https://ourworldindata.org/electricity-mix) = 4,387 TWh per year = 12.02 TWh per day = $12.02 \times 10^9$ kWh per day (2024).
 $$
 \begin{equation}
-    A_{USA\ electricity} = {12.02 \times 10^{9}kWh \over 0.94kWh/m^2} = 12,787,234,042m^2
+    A_{USA\ electricity} = {12.02 \times 10^{9} \ \mathrm{kWh} \over 0.94 \ \mathrm{kWh/m^2}} = 12,787,234,042 \ \mathrm{m^2}
 \end{equation}
 $$
 
 $$
 \begin{equation}
-    A_{USA\ electricity} \approx 12,787km^2 \approx 4,937mi^2
+    A_{USA\ electricity} \approx 12,787 \ \mathrm{km^2} \approx 4,937 \ \mathrm{mi^2}
 \end{equation}
 $$
 
-4,937 square miles can be accomplished via a square that has sides 70.26 miles (113km) long.
+4,937 square miles can be accomplished via a square that has sides 70.26 miles (113km) long. This is slightly smaller than the size of Puerto Rico or the size of Connecticut.
 
 In visual form:
 
@@ -344,20 +344,24 @@ In visual form:
 </div>
 
 ### How Big of a Solar Panel for All of USA Energy
-[USA energy consumption](https://ourworldindata.org/energy-production-consumption) = 26,500 TWh per year = 72.6 TWh per day = $72.6 \times 10^9$ kWh per day (2024).
+[USA energy consumption](https://ourworldindata.org/energy-production-consumption) (2024) = 26,500 TWh per year = 72.6 TWh per day = $72.6 \times 10^9 \ \mathrm{kWh}$ per day.
+
+> The astute reader would notice that electricity accounts for only $ 4,387 \ \mathrm{TWh} / 26,500 \ \mathrm{TWh} \approx 16.6\% $ of the USA's energy use.
+{: .prompt-info }
+
 $$
 \begin{equation}
-    A_{USA\ energy} = {72.6 \times 10^{9}kWh \over 0.94kWh/m^2} = 77,234,042,553m^2
+    A_{USA\ energy} = {72.6 \times 10^{9} \ \mathrm{kWh} \over 0.94 \ \mathrm{kWh/m^2}} = 77,234,042,553 \ \mathrm{m}^2
 \end{equation}
 $$
 
 $$
 \begin{equation}
-    A_{USA\ energy} \approx 77,234km^2 \approx 29,820mi^2
+    A_{USA\ energy} \approx 77,234 \ \mathrm{km}^2 \approx 29,820 \ \mathrm{mi}^2
 \end{equation}
 $$
 
-29,820 square miles can be accomplished via a square that has sides ~172.7 miles (278km) long.
+29,820 square miles can be accomplished via a square that has sides ~172.7 miles (278km) long. This is about 1/4 the size of Colorado.
 
 In visual form:
 
