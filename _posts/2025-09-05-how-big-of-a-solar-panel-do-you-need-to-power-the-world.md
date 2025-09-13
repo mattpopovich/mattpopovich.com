@@ -211,13 +211,13 @@ How big of a solar panel do we need to power the world? And what about the Unite
 
 For starters, I want to touch on the difference between electricity and energy. Energy can come in many forms: electricity, coal, oil, natural gas, wood in your fireplace, etc. Electricity is a form of energy that powers our lights, TVs, microwaves, and more.
 
-Currently, there are some things that we power with an energy other than electricity: planes (jet fuel via oil), construction vehicles and freight trains (diesel fuel via oil), and container ships (heavy fuel oil via oil) to name a few. These use energy but are going to be difficult to electrify due to our current electricity storage methods being too heavy and not enough energy density.
+Currently, there are some things that we power with an energy other than electricity: planes (jet fuel via oil), construction vehicles and freight trains (diesel fuel via oil), and container ships (heavy fuel oil via oil) to name a few. These use energy but are going to be difficult to electrify due to our current electricity storage methods being too heavy and not having enough energy density.
 
 In this article I'm going to talk about two different things:
 1. Making all of our *electricity* generation via solar panels
 2. Making all of our *energy* generation via solar panels
 
-The former is possible today. This would be replacing our coal and natural gas electricity generation plants with solar (will also need some energy storage for the nights, but I will ignore that for simplicity). The latter is not currently feasible as we do not have electric replacements for airplanes, construction vehicles, container ships, etc. But, I am going to convert the energy of the fuel used by those machines into an electrical representation (ex. one gallon of gasoline contains ~34kWh). From there, I can see (hypothetically) how much solar would be needed to create all the energy we use in the chance that we electrify our economy in the future.
+The former is possible today. This would be replacing our coal, natural gas, wind, hydropower, etc. electricity generation plants with solar (will also need energy storage for the nights when the sun isn't shining, but I will ignore that for simplicity). The latter is not currently feasible as we do not have electric replacements for airplanes, construction vehicles, container ships, etc. But, we can calculate the energy of the fuel used by those machines (ex. one gallon of gasoline contains ~34kWh). From there, I can see (hypothetically) how much solar would be needed to create all the energy we use in the chance that we electrify our economy in the future.
 
 Let's dive in.
 
@@ -262,7 +262,7 @@ $$
 \end{equation}
 $$
 
-[Average solar panel efficiency today is 21%](https://css.umich.edu/publications/factsheets/energy/solar-pv-energy-factsheet). Let's use 20%:
+[Average solar panel efficiency today is 21%](https://css.umich.edu/publications/factsheets/energy/solar-pv-energy-factsheet). Let's err on the side of caution and use a round number, 20%:
 
 $$
 \begin{equation}
@@ -303,7 +303,9 @@ $$
 This value is the cornerstone of the rest of our calculations.
 
 ### Solar Panel Energy Generation
-We just calculated how much *power* our solar panels will generate per square meter. But that is during ✨ideal conditions✨. The sun isn't on or off; in the mornings and evenings it's still shining but at a lower strength. What if we place these panels in an area that is commonly cloudy? How can we calculate the energy generation of these panels? Luckily, someone has already ran these numbers for us: [globalsolaratlas.info](https://globalsolaratlas.info) has created `PVOUT`.
+We just calculated how much *power* our solar panels will generate per square meter, but how much *energy* will they generate for us over a day? Or over a year?
+
+The power that we calculated is during ✨ideal conditions✨. The sun's strength is not a consistent $1000W/m^2$. The sun's irradiance is strongest during midday, but it still shines in the mornings and evenings. And even if it is cloudy, our solar panels will still be generating some power. So how can we calculate the energy generated while taking these factors (and more) into account? Thankfully, someone has already ran these numbers for us: [globalsolaratlas.info](https://globalsolaratlas.info) has created `PVOUT`.
 
 > ["[`PVOUT` represents] the power output achievable by a typical configuration of the utility scale PV system, taking into account the theoretical potential, the air temperature affecting the system performance, the system configuration, shading and soiling, and topographic and land-use constraints"](https://globalsolaratlas.info/global-pv-potential-study)
 
@@ -320,26 +322,48 @@ $$
 Now, all we need to figure out is how much energy do we need to generate and that will tell us how big of a solar panel we need!
 
 ### How Big of a Solar Panel for All of USA Electricity
- [USA electricity generation](https://ourworldindata.org/electricity-mix) = 4,387 TWh per year = 12.02 TWh per day = $12.02*10^9$ kWh per day (2024).
+ [USA electricity generation](https://ourworldindata.org/electricity-mix) = 4,387 TWh per year = 12.02 TWh per day = $12.02 \times 10^9$ kWh per day (2024).
 $$
 \begin{equation}
-    A_{USA\ electricity} = {12.02*10^{9}kWh \over 0.94kWh/m^2} = 12,787,234,042m^2
+    A_{USA\ electricity} = {12.02 \times 10^{9}kWh \over 0.94kWh/m^2} = 12,787,234,042m^2
 \end{equation}
 $$
 
 $$
 \begin{equation}
-    A_{USA\ electricity} = 12,000km^2 = 4,633mi^2
+    A_{USA\ electricity} \approx 12,787km^2 \approx 4,937mi^2
 \end{equation}
 $$
 
-4,633 square miles can be accomplished via a square that has sides 68 miles long. Or, in visual form:
+4,937 square miles can be accomplished via a square that has sides 70.26 miles (113km) long.
 
-TODO
+In visual form:
 
+<div style="text-align:center">
+<iframe src="https://app.atlas.co/embeds/9fpMr5eeYAzqjxaE1dps" frameborder="0" width="80%" height="400" style="max-width: 100%; border: 1px solid #EAEAEA; border-radius: 4px;"></iframe>
+</div>
 
 ### How Big of a Solar Panel for All of USA Energy
-[USA energy consumption](https://ourworldindata.org/energy-production-consumption) = 26,500 TWh (2024).
+[USA energy consumption](https://ourworldindata.org/energy-production-consumption) = 26,500 TWh per year = 72.6 TWh per day = $72.6 \times 10^9$ kWh per day (2024).
+$$
+\begin{equation}
+    A_{USA\ energy} = {72.6 \times 10^{9}kWh \over 0.94kWh/m^2} = 77,234,042,553m^2
+\end{equation}
+$$
+
+$$
+\begin{equation}
+    A_{USA\ energy} \approx 77,234km^2 \approx 29,820mi^2
+\end{equation}
+$$
+
+29,820 square miles can be accomplished via a square that has sides ~172.7 miles (278km) long.
+
+In visual form:
+
+<div style="text-align:center">
+<iframe src="https://app.atlas.co/embeds/B5sB9ic9gdEFOmmqTq2J" frameborder="0" width="80%" height="400" style="max-width: 100%; border: 1px solid #EAEAEA; border-radius: 4px;"></iframe>
+</div>
 
 ### How Big of a Solar Panel for All of World Electricity
 [World electricity generation](https://ourworldindata.org/electricity-mix) = 30,850 TWh (2024).
