@@ -322,7 +322,7 @@ $$
 Now, all we need to figure out is how much energy do we need to generate and that will tell us how big of a solar panel we need!
 
 ### How Big of a Solar Panel for All of USA Electricity
- [USA electricity generation](https://ourworldindata.org/electricity-mix) = 4,387 TWh per year = 12.02 TWh per day = $12.02 \times 10^9$ kWh per day (2024).
+ [USA electricity generation](https://ourworldindata.org/electricity-mix) (2024) = 4,387 TWh per year = 12.02 TWh per day = $12.02 \times 10^9$ kWh per day.
 $$
 \begin{equation}
     A_{USA\ electricity} = {12.02 \times 10^{9} \ \mathrm{kWh} \over 0.94 \ \mathrm{kWh/m^2}} = 12,787,234,042 \ \mathrm{m^2}
@@ -370,10 +370,32 @@ In visual form:
 </div>
 
 ### How Big of a Solar Panel for All of World Electricity
-[World electricity generation](https://ourworldindata.org/electricity-mix) = 30,850 TWh (2024).
+[World electricity generation](https://ourworldindata.org/electricity-mix) (2024) = 30,850 TWh per year = 84.5 TWh per day = $84.5 \times 10^9 \ \mathrm{kWh}$ per day.
+
+World electricity generation is actually pretty close to USA total energy usage (which was shown [above](#how-big-of-a-solar-panel-for-all-of-usa-energy)).
+
+$$
+\begin{equation}
+    A_{World\ electricity} = {84.5 \times 10^{9} \ \mathrm{kWh} \over 0.94 \ \mathrm{kWh/m^2}} = 89,893,617,021 \ \mathrm{m}^2
+\end{equation}
+$$
+
+$$
+\begin{equation}
+    A_{World\ electricity} \approx 89,894 \ \mathrm{km}^2 \approx 34,708 \ \mathrm{mi}^2
+\end{equation}
+$$
+
+34,708 square miles can be accomplished via a square that has sides ~186.3 miles (300km) long. This is slightly smaller than the size of Maine.
+
+In visual form:
+
+<div style="text-align:center">
+<iframe src="https://app.atlas.co/embeds/WgO8JzRn4sX8pVwRMrf6" frameborder="0" width="80%" height="400" style="max-width: 100%; border: 1px solid #EAEAEA; border-radius: 4px;"></iframe>
+</div>
 
 ### How Big of a Solar Panel for All of World Energy
-[World energy consumption](https://ourworldindata.org/energy-production-consumption) = 186,383 TWh (2024).
+[World energy consumption](https://ourworldindata.org/energy-production-consumption) (2024) = 186,383 TWh per year = 510.6 TWh per day = $510.6 \times 10^9 \ \mathrm{kWh}$ per day.
 
 
 
