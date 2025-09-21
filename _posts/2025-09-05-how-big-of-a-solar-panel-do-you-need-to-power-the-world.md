@@ -22,192 +22,11 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
-## TODO: Add Heading Here
-TODO: Add text here
-
-
-Via [ourworldindata.org](https://ourworldindata.org/energy-production-consumption), we currently (2024) consume 186,383TWh of energy per year. This includes energy from coal, oil, natural gas, renewables, everything. The big assumption for this post is assuming everything is powered by *electricity*. So instead of using oil for jet fuel, let's use its equivalent energy content in electricity. Granted, currently, if we did this, we don't have the technology to store that much electricity at a weight that will allow a plane to fly... but let's *assume* we did...
-We also need to assume we can store / transmit this energy to whoever wants to use it, wherever they are. If we have one big solar panel, it's only going to get sun for half the day. The other half of the day, we won't be generating any electricity. We will also need to run transmission lines around the world and (not currently possible) assume they have very minimal losses.
-
 But this is just meant to be a number crunching calculation.
 
-186,383TWh of energy per year is 510.64TWh per day. That's what we need our solar panels to generate.
-
-How much electricity does a panel generate? Well, it depends where you live. [globalsolaratlas.info](https://globalsolaratlas.info/map?c=43.55651,-100.437012,6&s=40.722283,-79.266357&m=site) has a fantastic site that will give you an approximate answer. Their `PVOUT` map will tell you how much energy (kWh) a 1kWp (killowatt-peak) panel that has optimized tilt, orientation, and is 100% efficient will generate to the end user. For example, in Denver, CO that number is ~4.7kWh/kWp per day. `PVOUT` takes the `GTI_opta` (global optimally tiltled irradiance) but also adds on some solar-specific losses, such as temperature (solar panels are less efficient at higher temperatures), inverter efficiency (solar panels generate direct current [AC], our power grid is alternating current [AC]), wiring losses, etc.
-
-["Besides for solar radiation, air temperature and consequently the temperature of PV modules, have the most relevance for the solar electricity simulation. In addition, wind speed, wind direction, relative humidity, and other parameters are also important"](https://globalsolaratlas.info/support/methodology)
-
-Defining some terms:
-* `DNI` $kWh/m^2$ (direct normal irradiance) = the amount of solar radiation coming directly from the sun measured on a surface that is **always** perpendicular to the sun's rays. Clear day --> high value. Cloudy day --> low value.
-* `DIF`  $kWh/m^2$(Diffuse Horizontal Irradiance) = the amount of solar radiation received on a horizontal surface excluding the direct beam from the sun. In other words, it's scattered sunlight only.
-* `GHI`  $kWh/m^2$(global horizontal irradiation) = the solar energy falling on a horizontal surface at ground level.
-* `GTI` $kWh/m^2$ (global tilted irradiance) = the total solar irradiance (direct + diffuse + ground-reflected) falling on a tilted surface.
-* `PVOUT` $kWh/kW_{peak}$ (solar panel output) = how much energy a 1kWp (killowatt-peak) panel that has optimized tolt, orientation, and is 100% efficient will generate for the end user. Includes efficiency losses from temperature, inverter, wiring, etc.
-
-Notice that `PVOUT` does not define any area. We can note that `efficiency = kWp / m^2`. Therefore, a 100% efficient panel will generate `1kWp/m^2` and `kWp = efficiency * m^2`. Thus, `PVOUT = kWh/kWp` and `PVOUT * efficiency = (kWh/kWp) * (kWp / m^2) = kWh/m^2`.
-
-
-$$
-\begin{equation}
-    \text{Solar panel efficiency} = {\text{Panel's output in watts} \over \text{Panel's area in m}^2 \times \text{irradiance in W/m}^2}
-\end{equation}
-$$
-
-Let $\eta\ =$ solar panel efficiency, $P =$ panels output in watts, $A=$ panel's area in $m^2$, $G_{STC}=$ irradiance in $W/m^2$ at **s**tandard **t**est **c**onditions:
-
-<!--
-> Normally, power (panel's output) is represented by $P$, but we are representing it as $W$ to simplify the resulting equation.
-{ : .prompt-info }
--->
-
-$$
-\begin{equation}
-    \eta = {P \over A \times G_{STC}}
-\end{equation}
-$$
-
-Rearranging:
-$$
-\begin{equation}
-    {P \over A} = {\eta \times {G_{STC}}}
-\end{equation}
-$$
-
-Standard test conditions are $1000W/m^2$:
-
-$$
-\begin{equation}
-    {P \over A} = {\eta \times {1000W/m^2}}
-\end{equation}
-$$
-
-Let's substitute the units in for these variables. $P$ is measured in watts, $A$ is measured in $m^2$:
-$$
-\begin{equation}
-    {W \over m^2} = {\eta \times {1000W/m^2}}
-\end{equation}
-$$
-
-$1000W = 1kW$. Let's convert from $W$ to $kW_{peak}$ by multiplying both sides by $kW_{peak}/1000W$
-$$
-\begin{equation}
-    {kW_{peak} \over 1000W} \times {W \over m^2} = {\eta \times {1000W/m^2}} \times {kW_{peak} \over 1000W}
-\end{equation}
-$$
-
-$$
-\begin{equation}
-    {kW_{peak} \over 1000W} \times {W \over m^2} = {\eta \times {1/m^2}} \times {kW_{peak}}
-\end{equation}
-$$
-
-$$
-\begin{equation}
-    {kW_{peak} \over 1000W} \times {W \over m^2} = {\eta \times kW_{peak} / m^2}
-\end{equation}
-$$
-
-
-
-
-
-
-
-
-
-For standard test conditions, let's assume the irradiance $= G_{STC} = 1000W/m^2 = 1kW/m^2$.
-
-$$
-\begin{equation}
-    \eta = {\text{Panel's output in watts} \over \text{Panel's area in m}^2 \times 1kW/m^2}
-\end{equation}
-$$
-
-Let's assume we have a 100% efficient panel. If that is true, then we will have `Panel's output in watts = irradiance in W`, and they will cancel each other out. For simplicity, we can substitute in $1kW$:
-
-$$
-\begin{equation}
-    1 = {1kW \over \text{Panel's area in m}^2 \times 1kW/m^2 }
-\end{equation}
-$$
-
-Solving for the panel's area:
-
-$$
-\begin{equation}
-    \text{Panel's area in m}^2 = {1kW \over 1kW/m^2} = 1m^2
-\end{equation}
-$$
-
-
-
-How big of a panel do we need for 1kWp? 1kWp requires area 1/Mu (m^2) where Mu = your panel efficiency.
-(citation needed, got from chatGPT)
-
-Thus, we can expect ~4.7kWh/kWp = ~4.7kWh/(1/Mu) (m^2) = ~4.7kWh * Mu energy generated by 1 square meter of solar panel.
-
-Unfortunately, our solar panels are currently ~20% efficient. This means, we can expect ~4.7kWh * .2 = 0.94kWh/m^2 of solar panel in Denver.
-
-We now know how much energy we need and how much land we need to create electricity. Let's combine them!
-
-510.64TWh / (0.94kWh/m^2) = 510.64*10^9kWh / (0.94kWh/m^2) = 543,000,000km^2 = 209,000mi^2
-
-Unfortunately, this is much bigger than the size of Denver.
-
-This is more along the size of North Dakota (70,698 mi^2), South Dakota (77,116 mi^2), and Nebraska (77,348 mi^2) combined (225,162 mi^2)
-
-But if we want to put the solar panel there, we will need to adjust our kWh/kWp figure as those states might have more clouds which means less solar radiation, etc. Southwestern Nebraska looks to be about ~4.6kWh/kWp with northeast North Dakota around ~4.0kWh/kWp. Let's take a SWAG and say that area averages to ~4.3kWh/kWp. Running our equation again:
-
-510.64Twh / (4.3kWh/kWp * 20% efficiency) = 593,000km^2 = 229,000mi^2
-
-This number is very close (98.3%) to the area provided by North Dakota + South Dakota + Nebraska.
-
-So there's your answer! If the whole world ran off of electricity, you could power the whole world with a solar panel as big as 3 US states.
-The US is ~3.8million mi^2. So this would be 6% of the US's land area... to power the whole world.
-
-Crazy! Lots of solar power out there for the taking. Hopefully we start to [grab more of it](https://ourworldindata.org/grapher/installed-solar-pv-capacity?country=CHN~IND~ESP~BRA~MEX~CHL~USA~OWID_EU27~OWID_ASI).
-
-
-
-
-
-https://www.youtube.com/watch?v=v2IVTM0N2SE
-US needs 4M GWh/yr = 0.010958M GWh/day = 10.958k GWh/day = 10958GWh/day = 11TWh/day
-2.8Acres = 0.0113km^2 = 11331m^2 gives 1GWh/yr = 1000MWh/yr = 2.74 MWh/day
-2.74MWh/day / 11331m^2 = 248Wh/day/m^2
-Thus, US needs 11.2M Acres for 4M GWh/yr
-
-
-
-https://poweroutage.us/solar/co/denver#:~:text=Installing%20a%205%20kW%20solar,%243.59%20per%20watt%20for%20installation
-6.69m^2 = 1kW system = 1683kWh/yr = 4.611kWh/day
-1kW/6.69m^2 = 150W/m^2 = 689Wh/day
-
-
-https://a1solarstore.com/gstar-400w-solar-panel-108-cell-black-bifacial-gsp7g54m-h-wholesale-36-panels-per-pallet.html?srsltid=AfmBOoq87WE15TojscjkH0jQ4UX5OsMCuaYh8DGfvnPNscY7Uoqn76Vd7l0
-400W panel = 67.8" * 44.6" = 1.951m^2
-20.5% efficient
-205W/m^2
-205W/m^2 * 4.7kWh/kWp = 963.5Wh/m^2
-
-
-
-Explaining STC: https://www.solarpaneltalk.com/forum/solar-panels-for-home/solar-panel-installation/17719-solar-irradiance-unit-defintion?p=207179#post207179
-
-
-
-Efficiency is defined as % of 1kW irradiated at 1m^2 that is turned into electricity. 20% panel will have 200W/m^2.
-
-
-20% efficient = 200W/m^2
-4.7kWh/kWp --> 940Wh/m^2 in Denver
-
-
-
-## Restarting
 
 ### Intro
-How big of a solar panel do we need to power the world? And what about the United States?
+How big of a solar panel do we need to power the world? And what about the United States? This investigation was started largely due to a [stupid tweet](https://x.com/ENERGY/status/1964010741247168958) by the US Department of Energy, but also my interest in cleaner energy.
 
 For starters, I want to touch on the difference between electricity and energy. Energy can come in many forms: electricity, coal, oil, natural gas, wood in your fireplace, etc. Electricity is a form of energy that powers our lights, TVs, microwaves, and more.
 
@@ -217,7 +36,7 @@ In this article I'm going to talk about two different things:
 1. Making all of our *electricity* generation via solar panels
 2. Making all of our *energy* generation via solar panels
 
-The former is possible today. This would be replacing our coal, natural gas, wind, hydropower, etc. electricity generation plants with solar (will also need energy storage for the nights when the sun isn't shining, but I will ignore that for simplicity). The latter is not currently feasible as we do not have electric replacements for airplanes, construction vehicles, container ships, etc. But, we can calculate the energy of the fuel used by those machines (ex. one gallon of gasoline contains ~34kWh). From there, I can see (hypothetically) how much solar would be needed to create all the energy we use in the chance that we electrify our economy in the future.
+Making all of our electricity generation via solar is possible today. This would be replacing our coal, natural gas, wind, hydropower, etc. electricity generation plants with solar (we will also need energy storage for the nights when the sun isn't shining, but I will ignore that for simplicity). Making all of our energy generation via solar is not currently feasible as we do not have electric replacements for airplanes, construction vehicles, container ships, etc. But, we can calculate the energy of the fuel used by those machines (ex. one gallon of gasoline contains ~34kWh). From there, I can see (hypothetically) how much solar would be needed to create all the energy we use in the chance that we electrify our economy in the future.
 
 Let's dive in.
 
@@ -238,7 +57,7 @@ $$
 \end{equation}
 $$
 
-[Standard test conditions (STC)](https://sinovoltaics.com/learning-center/quality/standard-test-conditions-stc-definition-and-problems/) for a solar panel defines irradiance as:
+[Standard test conditions (STC)](https://sinovoltaics.com/learning-center/quality/standard-test-conditions-stc-definition-and-problems/) for a solar panel defines solar irradiance (how strong is the sunlight) as:
 
 $$
 \begin{equation}
@@ -315,7 +134,7 @@ The power that we calculated is during ✨ideal conditions✨. The sun's strengt
 
 $$
 \begin{equation}
-    PVOUT_{Denver_{avg\ panel}} \approx {4.7 \ \mathrm{kWh} \over \mathrm{kWp}} \times {0.2 \ \mathrm{kWp} \over \mathrm{m^2}} \approx 0.94 \ \mathrm{kWh/m^2} \text{ per day}
+    PVOUT_{Denver_{\text{avg\ panel}}} \approx {4.7 \ \mathrm{kWh} \over \mathrm{kWp}} \times {0.2 \ \mathrm{kWp} \over \mathrm{m^2}} \approx 0.94 \ \mathrm{kWh/m^2} \text{ per day}
 \end{equation}
 $$
 
@@ -397,15 +216,61 @@ In visual form:
 ### How Big of a Solar Panel for All of World Energy
 [World energy consumption](https://ourworldindata.org/energy-production-consumption) (2024) = 186,383 TWh per year = 510.6 TWh per day = $510.6 \times 10^9 \ \mathrm{kWh}$ per day.
 
+> The astute reader would again notice that electricity accounts for only $ 30,850 \ \mathrm{TWh} / 186,383 \ \mathrm{TWh} \approx 16.6\% $ of the world's energy use. This is the exact same percentage as the US's energy use. The [richest country in the world](https://www.forbes.com/sites/lewisnunn/2025/08/14/the-worlds-50-richest-countries-2025-according-to-financial-experts/) is no better than average at electrifying its economy.
+{: .prompt-info }
 
+For this solar panel, it's going to be bigger than Colorado. Let's try to put it in one contiguous location in the US that gets decent sun with minimal population disruption. I'm going to choose North Dakota, South Dakota, Nebraska, and a little sliver of Kansas.
 
+These locations have a different `PVOUT` value than Denver. Denver has a pretty strong `PVOUT = 4.7kWh/kWp`. The lowest `PVOUT` in this location is the north-eastern part of North Dakota with `PVOUT = 3.7kWh/kWp`. The highest `PVOUT` in this location is the south-eastern part of Nebraska with `PVOUT = 4.5kWh/kWp`.
 
+Let's take a [SWAG](https://en.wikipedia.org/wiki/Scientific_wild-ass_guess) and *assume* this 3-state area has the average of those two, which would give us a `PVOUT = (3.7+4.5)/2 = 4.2kWh/kWp`. Let's recalculate how much energy we will get per $\mathrm{m}^2$ with this reduced `PVOUT`:
 
+$$
+\begin{equation}
+    PVOUT_{ND-SD-KS_{\text{avg\ panel}}} \approx {4.2 \ \mathrm{kWh} \over \mathrm{kWp}} \times {0.2 \ \mathrm{kWp} \over \mathrm{m^2}} \approx 0.84 \ \mathrm{kWh/m^2} \text{ per day}
+\end{equation}
+$$
 
+Next, let's calculate how big of a solar panel that we will need:
 
+$$
+\begin{equation}
+    A_{World\ energy} = {510.6 \times 10^{9} \ \mathrm{kWh} \over 0.84 \ \mathrm{kWh/m^2}} = 607.86 \times 10^9 \ \mathrm{m}^2
+\end{equation}
+$$
 
+$$
+\begin{equation}
+    A_{World\ energy} \approx 607,860 \ \mathrm{km}^2 \approx 234,696 \ \mathrm{mi}^2
+\end{equation}
+$$
 
+234,696 square miles can be accomplished via a square that has sides ~484.5 miles (780km) long. This is slightly smaller than the size of Texas.
 
+In visual form:
+
+<div style="text-align:center">
+<iframe src="https://app.atlas.co/embeds/293U9kf6eN4aJWCvjYSB" frameborder="0" width="80%" height="400" style="max-width: 100%; border: 1px solid #EAEAEA; border-radius: 4px;"></iframe>
+</div>
+
+The US is ~3.8 million square miles. So this would be 6% of the US's land area... to power the whole world.
+
+### Conclusion
+You do not need many solar panels to currently power the Earth. [The average home in the US](https://www.eia.gov/tools/faqs/faq.php?id=97&t=3) uses 900kWh/month = 30kWh/day. In Denver, this would amount to:
+
+$$
+\begin{equation}
+    A_{Average\ home} \approx {30\ \mathrm{kWh} \over 0.94\ \mathrm{kWh/m^2}} \approx 31.9\ \mathrm{m}^2 \approx 343\ \mathrm{ft^2}
+\end{equation}
+$$
+
+This could be accomplished by a square solar panel with sides 18.5ft (5.6m) long.
+
+[The average US home has a roof size of 1700ft$^2$](https://www.thisoldhouse.com/roofing/new-roof-cost). Thus, you would only need to cover 343ft$^2$/1700ft$^2$ = 20% of your roof. Granted, very few roofs are pointing directly at the sun so coverage would need to be a higher percentage than this, but I feel like that is very obtainable.
+
+We are [using more and more energy as time goes on](https://ourworldindata.org/energy-production-consumption). Making sure we can meet those energy demands is important, and solar is one piece of the puzzle that will make that possible.
+
+There is lots of solar power out there for the taking. Hopefully we start to [grab more of it](https://ourworldindata.org/grapher/installed-solar-pv-capacity?country=CHN~IND~ESP~BRA~MEX~CHL~USA~OWID_EU27).
 
 
 
