@@ -18,11 +18,13 @@ image:
 #   width: 1200   # in pixels
 #   height: 630   # in pixels, 1.90:1 desired by chirpy
   alt: A macOS screenshot with an UTM window open that is running Windows
-#   show_image_in_post: false
+  show_image_in_post: false
 description: A quick tutorial on how to run a Windows virtual machine on your Mac using UTM
 ---
 
-> This post is valid for Macs with Apple Silicon (M1, M2, etc.) or Intel processors. If you're unsure which processor you have, follow [this](https://support.apple.com/en-us/116943) support page.
+{% include embed/youtube.html id='EG3cKQ0GEo0' %}
+
+> This post is valid for both Macs with Apple Silicon (M1, M2, etc.) and Intel processors. If you're unsure which processor you have, follow [this](https://support.apple.com/en-us/116943) support page.
 {: .prompt-info }
 
 ## Intro
