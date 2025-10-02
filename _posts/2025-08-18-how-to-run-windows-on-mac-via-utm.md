@@ -3,8 +3,8 @@ title: "How to Run Windows on Mac (via UTM)"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2025-08-18 16:34:55 -0600
-categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
-tags: [apple, apple silicon, arm, intel, mac os, not youtube, programming, tech, tutorial, windows, utm]                # TAG names should always be lowercase
+categories: [Blog, YouTube]    # <=2 values here: top category and sub category
+tags: [apple, apple silicon, arm, intel, mac os, youtube, programming, tech, tutorial, windows, utm] # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -113,6 +113,10 @@ This will download a `Win11_*.iso` which will be ~5.5GB.
 
 ### Install Windows 11
 In UTM, select the VM that we just created on the left side, then press the play button to boot up the VM and begin the installation.
+
+> To speed up installation and reduce further bandwidth, at this point you could turn off WiFi / networking. If WiFi / networking is on, Windows may try to perform *Windows Updates* during the installation.
+{: .prompt-info }
+
 - Make sure you press a key when `Press any key to boot from CD or DVD...` is shown. Otherwise, you will end up at a black screen with `Shell> _`.
   - If you end up at `Shell> _`, type `exit` + press Enter. This will kick you back out to the BIOS. Use the down arrow key to go to "Continue". Press Enter.
   - You will then see `Press any key to boot from CD or DVD...`. Press a key, otherwise you will end up back at `Shell> _`.
@@ -129,7 +133,7 @@ In UTM, select the VM that we just created on the left side, then press the play
 5. Select `Disk 0 Unallocated Space`. Click `Next`
   - If you see multiple disks/partitions here (after a failed install), delete the disks/partitions until there is only one disk of unallocated space.
 
-**Windows will install and reboot multiple times from here**. Expect the following durations:
+**Windows will install and reboot multiple times from here**. Expect the following durations (with WiFi / networking off):
 - ~60min 2014 MacBook Pro Retina, 4GiB RAM, 2 CPU Cores
 - ~10min M1 Mac, 2GiB RAM, 2 CPU Cores
 - ~5min M4 Mac, 2GiB RAM, 2 CPU Cores
@@ -145,7 +149,7 @@ In UTM, select the VM that we just created on the left side, then press the play
 12. Create 3 security questions, clicking `Next` each time
   - If you don't want to create security questions, use a blank password in the step above.
 
-**Windows will complete the installation from here**. Expect the following durations:
+**Windows will complete the installation from here**. Expect the following durations with WiFi / networking off (10x these numbers if *Windows Updates* are performed):
 - ~20min 2014 MacBook Pro Retina, 4GiB RAM, 2 CPU Cores
 - ~5min M1 Mac, 2GiB RAM, 2 CPU Cores
 - ~2min M4 Mac, 2GiB RAM, 2 CPU Cores
@@ -157,13 +161,17 @@ In UTM, select the VM that we just created on the left side, then press the play
 17. Click on `Finish`
 </details>
 
-#### Estimated Installation times (with WiFi off to avoid automatic Windows updates):
+#### Estimated Installation times (with WiFi off to avoid automatic Windows Updates):
 - ~90min 2014 MacBook Pro Retina, 4GiB RAM, 2 CPU Cores
 - ~15-20min M1 Mac, 2GiB RAM, 2 CPU Cores
 - ~10min M4 Mac, 2GiB RAM, 2 CPU Cores
 
 ## Using the Windows VM
 That's it! You now have a fully functioning Windows virtual machine running on macOS.
+
+Immediately upon booting, you should see an installer for the *UTM Guest Tools Setup*. If you don't, no problem. It is mounted as a CD Drive. To launch it, go to the *Windows File Explorer*, click on *CD Drive* on the left column, then double click on `utm-guest-tools-*`. I recommend installing this as this will install drivers and utilities to help the VM function on your system such as: proper display resolutions, shared directories, etc.
+
+Accessing a shared folder is done by opening *Windows File Explorer*, click on *This PC* on the left column, then double click on the `DavWWWRoot (\\localhost@####)` drive. This should be a "portal" to the shared folder that you specified that lives in macOS. This is very handy for moving files between your host and VM. It is also handy to give your VM "extra storage".
 
 If you'd like to change the resources for this VM, shut down the VM. Then, at the main UTM screen, select the VM from the sidebar on the left, then click the "Edit selected VM" button on the top right. From here you can go to "System" to change the RAM, CPU cores, etc.
 
@@ -172,18 +180,15 @@ If you want to attach a USB device to the VM, plug it into your machine, boot up
 ## Outro
 Hope this was helpful! Please let me know of any issues or suggestions you have in the comments 😊
 
-<!--
 &nbsp;
 
-TODO: Add spotify link here (if applicable)
 <div style="text-align:center">
 <iframe
 style="border-radius:12px"
-src="https://open.spotify.com/embed/track/5fEThMYHHyoohPxqsCvz1l?utm_source=generator"
+src="https://open.spotify.com/embed/track/33Wb8gfHmdtU314mB7NTCc?si=ead7121c49e345c4?utm_source=generator"
 width="80%" height="352" frameBorder="0"
 allowfullscreen=""
 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 loading="lazy">
 </iframe>
 </div>
--->
