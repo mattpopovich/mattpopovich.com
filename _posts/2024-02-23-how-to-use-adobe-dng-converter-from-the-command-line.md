@@ -185,18 +185,19 @@ This particular example was ran using the two `*.GPR` files I mentioned above (a
 
 <!-- Had to add <code> &nbsp; </code> here because spaces are not kept between `` unfortunately -->
 
-| [Flags](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) | Runtime (s) | Runtime (%) | Size (bytes) | Size (%) |
-|-------|-------------|-------------|--------------|----------|
-| <code>-c -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | .992175s   | ---  | 25,217,580B | --- |
-|                                                                           |            |      |             |     |
-| <code>-u -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0146741s | -1%  | +0B         | +0% |
-| <code>-l -p1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.0108651s | -1%  | +0B         | +0% |
-| <code>-c -p1 -e &nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code>                | -.002032s  | 0%   | +0B         | +0% |
-| <code>-c -p0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | -.066626s  | -6%  | -140,136B   | 0% |
-| <code>-c -p2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -cr7.1 -dng1.7.1</code> | +.7514072s | +75% | +3,101,062B | +14% |
-| <code>-c -p1 -fl &nbsp;&nbsp; -cr7.1 -dng1.7.1</code>                     | +.043321s  | +4%  | +2,295,970B | +4% |
-| <code>-c -p1 -lossy -cr7.1 -dng1.7.1</code>                               | +.2135278s | +21% | -8,252,052B | -63% |
-| <code>-c -p1 -mp &nbsp;&nbsp; -cr7.1 -dng1.7.1</code>                     | -.3165521s | -31% | +0B         | +0% |
+| [Flags](https://helpx.adobe.com/content/dam/help/en/camera-raw/digital-negative/jcr_content/root/content/flex/items/position/position-par/download_section/download-1/dng_converter_commandline.pdf) | Runtime (s) | Runtime (%) | Size (bytes) | Size (%) | Meaning |
+|-------|-------------|-------------|--------------|----------|--|
+| <code>-c -p1</code>                                | .992175s   | ---- | 25,217,580B | ---- | Default values for AdobeDNGConverter 16.2.0 (lossless + compressed DNG files + medium JPEG preview) |
+|                                                    |            |      |             |      | Row intentionally left blank |
+| <code>-u -p1</code>                                | -.0146741s | -1%  | 0B          |   0% | Output uncompressed DNG files |
+| <code>-l -p1</code>                                | -.0108651s | -1%  | 0B          |   0% | Output linear DNG files |
+| <code>-c -p1 -e</code>                             | -.002032s  | 0%   | 0B          |   0% | Embed original raw file inside DNG files |
+| <code>-c -p0</code>                                | -.066626s  | -6%  | -140,136B   |   0% | Set JPEG preview size to none |
+| <code>-c -p2</code>                                | +.7514072s | +75% | +3,101,062B | +14% | Set JPEG preview size to full size |
+| <code>-c -p1 -fl</code>                            | +.043321s  | +4%  | +2,295,970B |  +4% | Embed fast load data inside DNG files |
+| <code>-c -p1 &nbsp;&nbsp;&nbsp;&nbsp;-lossy</code> | +.2135278s | +21% | -8,252,052B | -63% | Use lossy compression |
+| <code>-c -p1 -mp </code>                           | -.3165521s | -31% | 0B          |   0% | Process multiple files in parallel |
+| <code>-c -p1 -mp -lossy</code>                     | -.1389045s | -14% | -8,252,052B | -63% | Use lossy compression while processing in parallel |
 
 Where
 * Runtime = smaller (negative) is better
