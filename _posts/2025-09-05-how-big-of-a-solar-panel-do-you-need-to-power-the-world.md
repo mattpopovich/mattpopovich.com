@@ -1,26 +1,28 @@
 ---
-title: "How Big of a Solar Panel Do You Need to Power the World"
+title: "How Big of a Solar Panel Do You Need to Power the World?"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2025-09-05 07:15:35 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
+tags: [tech, solar, math, engineering]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
 comments: true              # Enable/disable comments at the bottom of the post
-math: true                 # Disabled by default for performance reasons
+math: true                  # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
-#image:
-#   path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2025-09-05-how-big-of-a-solar-panel-do-you-need-to-power-the-world/solar-panel-size-to-power-world-electricity.png
 #   width: 1200   # in pixels
 #   height: 630   # in pixels, 1.90:1 desired by chirpy
-#   alt: image alternative text
+  alt: The size of a solar panel needed to power the world's electricity consumption
 #   show_image_in_post: false
-#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
+description: The math behind how big of a solar panel we need to power the United States and the world  # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
+
+<!-- TODO: Add YouTube link -->
 
 ## Intro
 How big of a solar panel do we need to power the world? And what about the United States? This investigation was started largely due to a [stupid tweet](https://x.com/ENERGY/status/1964010741247168958) by the US Department of Energy, but also my interest in cleaner energy.
@@ -262,7 +264,7 @@ This would be 234,696mi² / 3,800,000mi² = 6.2% of the US's land area or 234,69
 
 ## Costs
 
-How much would some of these projects cost? [Here](https://a1solarstore.com/sunspark-550w-solar-panel-144-cell-bifacial-sg7g72m-h-550-assembled-in-the-usa-wholesale-36-panels-per-pallet-min-6-pallets.html) is a wholesale solar panel with 21.3% efficiency for $0.20/watt. I understand that buying these in major, major bulk would provide some cost savings, but let's ignore that.
+How much would some of these projects cost? [Here](https://a1solarstore.com/sunspark-550w-solar-panel-144-cell-bifacial-sg7g72m-h-550-assembled-in-the-usa-wholesale-36-panels-per-pallet-min-6-pallets.html) is a wholesale solar panel with 21.3% efficiency for \\$0.20/watt. I imagine that buying these in major, major bulk would provide some cost savings, but let's ignore that.
 
 $$
 \begin{equation}
@@ -270,7 +272,7 @@ $$
 \end{equation}
 $$
 
-That is the price for the panels and does not include necessary components such as inverters, electrical and structural components, land cost, labor, etc. To get a real-world number, we can look at [installation costs for utility-scale solar in 2023](https://emp.lbl.gov/utility-scale-solar): $1.43/W.
+That is the price for the panels and does not include necessary components such as inverters, electrical and structural components, land cost, labor, etc. To get a real-world number, we can look at [installation costs for utility-scale solar in 2023](https://emp.lbl.gov/utility-scale-solar): \\$1.43/W.
 
 $$
 \begin{equation}
@@ -299,11 +301,16 @@ $$
 ## Conclusion
 What do you think? Is that more or less solar panel area than you expected? I feel like the land area is quite small in the grand scheme of things. Covering 0.13% of the US’s land area to power the whole country's electricity seems like a great deal to me.
 
-And yes, I know we would also need some way to store the energy for the nights + lots of transmission lines, both of which add losses and increase costs, but this was mostly a curious exercise in crunching numbers.
+And yes, I know we would also need some way to store the energy for the nights + lots of transmission lines, both of which add losses and increase costs. Additionally, my land use numbers assume that there is 0 space between the panels + no access roads for maintenance, etc. but this was mostly a curious exercise in crunching numbers.
 
-I know the costs sound pretty insane at first glance: $3.7 trillion for US electricity. But to increase the country's debt by 10% to get "free" electricity for the country indefinitely? Sounds like a good trade to me. We added this much to the country's debt [in the last 16 months](https://tradingeconomics.com/united-states/government-debt). $3.7 trillion is 12.7% of the country's [$29.2 trillion GDP](https://fred.stlouisfed.org/series/GDP).
+I know the costs sound pretty insane at first glance: \\$3.7 trillion for US electricity. But to increase the country's debt by 10% to get "free" electricity for the country indefinitely? Sounds like a good trade to me. We added this much to the country's debt [in the last 16 months](https://tradingeconomics.com/united-states/government-debt). \\$3.7 trillion is 12.7% of the country's [\\$29.2 trillion GDP](https://fred.stlouisfed.org/series/GDP).
 
 Want to make the country a manufacturing or AI / datacenter powerhouse? Cheap electricity is a great first step.
+
+\\$174T for world energy sounds like a lot... 2024 world GDP was \\$111T, so this would be 157% of world GDP. But the costs of refusing to decarbonize will be even higher. If we continue with business-as-usual (BAU), the estimated economic impacts of increased weather-related and other uninsurable damages, increased production costs, productivity losses, and health costs will be \\$2,328T by 2100. If we can keep the global temperature increases at or below 1.5°C ([currently 1.28°C](https://science.nasa.gov/earth/explore/earth-indicators/global-temperature/)), that drops to \\$1,062T. [Source: Figure ES4](https://www.climatepolicyinitiative.org/wp-content/uploads/2023/11/Global-Landscape-of-Climate-Finance-2023.pdf).
+
+Solar is the [safest source of energy](https://ourworldindata.org/safest-sources-of-energy) when accounting for accidents and air pollution with 0.02 deaths per 1,000,000,000 kWh (1 TWh) produced. Coal is 1230x solar, oil is 613x, natural gas is 140x.
+Solar also has [much less greenhouse gas emissions](https://ourworldindata.org/safest-sources-of-energy): 160x less than coal, 65x less than oil, and 8x less than natural gas.
 
 We are [using more and more energy as time goes on](https://ourworldindata.org/energy-production-consumption). Making sure we can meet those energy demands is important, and solar is one piece of the puzzle that will make that possible.
 
