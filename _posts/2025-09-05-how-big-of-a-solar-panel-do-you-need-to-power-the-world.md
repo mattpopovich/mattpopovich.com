@@ -2,7 +2,7 @@
 title: "How Big of a Solar Panel Do You Need to Power the World?"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2025-09-05 07:15:35 -0600
+date: 2025-10-03 22:57:35 -0600
 categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
 tags: [tech, solar, math, engineering]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
@@ -14,7 +14,7 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
 image:
-  path: /assets/img/posts/2025-09-05-how-big-of-a-solar-panel-do-you-need-to-power-the-world/solar-panel-size-to-power-world-electricity.png
+  path: /assets/img/posts/2025-09-05-how-big-of-a-solar-panel-do-you-need-to-power-the-world/solar-panel-size-to-power-world-electricity-thumbnail.png
 #   width: 1200   # in pixels
 #   height: 630   # in pixels, 1.90:1 desired by chirpy
   alt: The size of a solar panel needed to power the world's electricity consumption
@@ -157,7 +157,7 @@ $$
 
 4,937 square miles can be accomplished via a square that has sides 70.26 miles (113km) long. This is slightly smaller than the size of Puerto Rico or the size of Connecticut.
 
-In visual form:
+In visual form ([image](/assets/img/posts/2025-09-05-how-big-of-a-solar-panel-do-you-need-to-power-the-world/solar-panel-size-to-power-us-electricity.png), [interactive](https://app.atlas.co/embeds/9fpMr5eeYAzqjxaE1dps)):
 
 <div style="text-align:center">
 <iframe src="https://app.atlas.co/embeds/9fpMr5eeYAzqjxaE1dps" frameborder="0" width="80%" height="400" style="max-width: 100%; border: 1px solid #EAEAEA; border-radius: 4px;"></iframe>
@@ -185,7 +185,7 @@ $$
 
 29,820 square miles can be accomplished via a square that has sides ~172.7 miles (278km) long. This is about 1/4 the size of Colorado.
 
-In visual form:
+In visual form ([image](/assets/img/posts/2025-09-05-how-big-of-a-solar-panel-do-you-need-to-power-the-world/solar-panel-size-to-power-us-energy.png), [interactive](https://app.atlas.co/embeds/B5sB9ic9gdEFOmmqTq2J)):
 
 <div style="text-align:center">
 <iframe src="https://app.atlas.co/embeds/B5sB9ic9gdEFOmmqTq2J" frameborder="0" width="80%" height="400" style="max-width: 100%; border: 1px solid #EAEAEA; border-radius: 4px;"></iframe>
@@ -212,7 +212,7 @@ $$
 
 34,708 square miles can be accomplished via a square that has sides ~186.3 miles (300km) long. This is slightly smaller than the size of Maine.
 
-In visual form:
+In visual form ([image](/assets/img/posts/2025-09-05-how-big-of-a-solar-panel-do-you-need-to-power-the-world/solar-panel-size-to-power-world-electricity.png), [interactive](https://app.atlas.co/embeds/WgO8JzRn4sX8pVwRMrf6)):
 
 <div style="text-align:center">
 <iframe src="https://app.atlas.co/embeds/WgO8JzRn4sX8pVwRMrf6" frameborder="0" width="80%" height="400" style="max-width: 100%; border: 1px solid #EAEAEA; border-radius: 4px;"></iframe>
@@ -254,7 +254,7 @@ $$
 
 234,696 square miles can be accomplished via a square that has sides ~484.5 miles (780km) long. This is slightly smaller than the size of Texas.
 
-In visual form:
+In visual form ([image](/assets/img/posts/2025-09-05-how-big-of-a-solar-panel-do-you-need-to-power-the-world/solar-panel-size-to-power-world-energy.png), [interactive](https://app.atlas.co/embeds/293U9kf6eN4aJWCvjYSB)):
 
 <div style="text-align:center">
 <iframe src="https://app.atlas.co/embeds/293U9kf6eN4aJWCvjYSB" frameborder="0" width="80%" height="400" style="max-width: 100%; border: 1px solid #EAEAEA; border-radius: 4px;"></iframe>
