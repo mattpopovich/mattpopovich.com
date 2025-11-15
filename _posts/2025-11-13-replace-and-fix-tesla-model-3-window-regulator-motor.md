@@ -22,15 +22,33 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
+<!-- TODO: Add YT link here -->
+
 ## Intro
-So, here’s the problem, my window does not want to go down or up and sounds like this:
+The rear driver window in my 2020 Tesla Model 3 does not want to go down or up and sounds pretty close to a Family Feud [error message](https://youtu.be/NtKEMWX8OqU).
 
-Now, previously, this window would occasionally not roll up underneath the trim because this rubber seal would not be flush when the door closed, forcing the window to be somewhat misaligned.
+Previously, this window would occasionally not roll up underneath the top trim because the B pillar's rubber seal would not be flush when the door closed, forcing the window to be outside of the frame. I have a suspicion that this caused some added stress onto the window regulator motor.
 
-I then manually pushed the window down by reaching around the B pillar and having one hand inside and one outside. You might need to do this to open the door so that the window isn’t stuck under the frame. Now my window can at least move but it sounds like … that. Aaand that’s as low as we can go. So that’s the current state of my rear driver window in my 2020 Tesla model 3. But in this video, I’m going to show you how I fixed it! With both disassembly and assembly.
+I then manually pushed the window down by reaching around the B pillar and having one hand inside and one outside. You might need to do this to open the door so that the window isn’t stuck under the frame. After this, my window can at least move up and down a bit.
 
-For starters, you should be aware that Tesla publishes a free service manual that is actually really good.
-https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-1F4A72C4-BFEB-410B-BB8C-CDEAA02CC36A.html This video will mainly just be following that with some additional commentary on things that were helpful to me as a DIYer.
+So that’s the current state of my rear driver window in my 2020 Tesla model 3. In this post, I’m going to show you how I fixed it.
+
+## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
+1. [Remove window regulator motor](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-1F4A72C4-BFEB-410B-BB8C-CDEAA02CC36A.html)
+  - [Remove the puddle light](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-2D49E56C-937E-4756-A7E2-D3D27A69ABB5.html#GUID-2D49E56C-937E-4756-A7E2-D3D27A69ABB5)
+  - [Remove the door trim](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-571074E0-AF50-488B-B65D-5EB50EFB9FCF.html#GUID-571074E0-AF50-488B-B65D-5EB50EFB9FCF)
+  - [Remove the inner belt seal](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-C30832F9-4546-4EF9-BF17-2DB0DBEC7174.html#GUID-C30832F9-4546-4EF9-BF17-2DB0DBEC7174)
+  - [Remove the glass/window](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-8F95D69B-D3D8-4B1E-B2DD-5703835D450F.html#GUID-8F95D69B-D3D8-4B1E-B2DD-5703835D450F)
+  - [Remove the window regulator assembly](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-1F4A72C4-BFEB-410B-BB8C-CDEAA02CC36A.html)
+2. Purchase new regulator motor
+3. Install new regulator motor
+4. Calibrate windows (optional but recommended)
+
+## Removing Window Regulator Motor
+
+### Tesla's Free Service Manual
+For starters, you should be aware that Tesla publishes a [free service manual](https://service.tesla.com/docs/Model3/ServiceManual/en-us/index.html) that is actually really good.
+ This post will mainly just be following that with some additional commentary on things that were helpful to me as a DIYer.
 
 In this video, I’m going to go through three main things:
 1. Disassembly so that you can look at your window regulator to inspect it to determine if you want to repair or replace
