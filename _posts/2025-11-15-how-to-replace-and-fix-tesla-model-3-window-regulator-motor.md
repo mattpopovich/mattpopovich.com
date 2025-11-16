@@ -1,10 +1,10 @@
 ---
-title: "Replace and Fix Tesla Model 3 Window Regulator Motor"
+title: "How to Replace and Fix a Tesla Model 3 Window Regulator Motor"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2025-11-15 12:46:09 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+categories: [Blog, YouTube]    # <=2 values here: top category and sub category
+tags: [how to, tesla, tesla model 3, tutorial]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -26,11 +26,11 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. [Remove window regulator motor](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-1F4A72C4-BFEB-410B-BB8C-CDEAA02CC36A.html)
-  - [Remove the puddle light](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-2D49E56C-937E-4756-A7E2-D3D27A69ABB5.html#GUID-2D49E56C-937E-4756-A7E2-D3D27A69ABB5)
-  - [Remove the door trim](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-571074E0-AF50-488B-B65D-5EB50EFB9FCF.html#GUID-571074E0-AF50-488B-B65D-5EB50EFB9FCF)
-  - [Remove the inner belt seal](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-C30832F9-4546-4EF9-BF17-2DB0DBEC7174.html#GUID-C30832F9-4546-4EF9-BF17-2DB0DBEC7174)
-  - [Remove the glass/window](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-8F95D69B-D3D8-4B1E-B2DD-5703835D450F.html#GUID-8F95D69B-D3D8-4B1E-B2DD-5703835D450F)
-  - [Remove the window regulator assembly](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-1F4A72C4-BFEB-410B-BB8C-CDEAA02CC36A.html)
+    1. [Remove the puddle light](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-2D49E56C-937E-4756-A7E2-D3D27A69ABB5.html#GUID-2D49E56C-937E-4756-A7E2-D3D27A69ABB5)
+    1. [Remove the door trim](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-571074E0-AF50-488B-B65D-5EB50EFB9FCF.html#GUID-571074E0-AF50-488B-B65D-5EB50EFB9FCF)
+    1. [Remove the inner belt seal](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-C30832F9-4546-4EF9-BF17-2DB0DBEC7174.html#GUID-C30832F9-4546-4EF9-BF17-2DB0DBEC7174)
+    1. [Remove the glass/window](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-8F95D69B-D3D8-4B1E-B2DD-5703835D450F.html#GUID-8F95D69B-D3D8-4B1E-B2DD-5703835D450F)
+    1. [Remove the window regulator assembly](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-1F4A72C4-BFEB-410B-BB8C-CDEAA02CC36A.html)
 2. [Purchase new regulator motor](https://parts.tesla.com/en-US/catalogs/9678bc03-3011-4c95-9620-bb32d391cac0/systemGroups/89377fb9-d068-4510-8ef4-2223c56a3b08?partNumber=1096622-98-L)
 3. Install new regulator motor
 4. [Calibrate windows](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-48DBD307-B68C-46F2-8D24-6DFACC26BB16.html) (optional but recommended)
@@ -46,7 +46,7 @@ So that’s the current state of my rear driver window in my 2020 Tesla model 3.
 
 ### Outline
 In this post, I’m going to go through three main things:
-1. [Disassembly](#removing-window-regulator-motor) so that you can look at your window regulator to inspect it to determine if you want to repair or replace
+1. [Disassembly](#removing-window-regulator) so that you can look at your window regulator to inspect it to determine if you want to repair or replace
   - You will likely end up choosing to replace because it’s really just sold as one large assembly. For example, you can’t buy just the regulator motor. So I’ll walk you through that process.
 1. [Assembly](#installing-window-regulator), which will be glossed over as it’s just disassembly in reverse.
 1. [Recalibrating the window motors](#recalibrating-the-window-motors) so that they know when to stop lowering the window and when to stop raising the window.
@@ -58,7 +58,7 @@ In this post, I’m going to go through three main things:
 For starters, you should be aware that Tesla publishes a [free service manual](https://service.tesla.com/docs/Model3/ServiceManual/en-us/index.html) that is actually really good. This post will mainly just be following that with some additional commentary on things that were helpful to me as a DIYer.
 
 ### Tesla Service's Labor Pricing
-The first thing I want to point out is that this is a fairly easy job. I have included enough detail, maybe too much so, that if you can operate a screwdriver, you can probably do this job. However, the juice might not be worth the squeeze. What I mean by that is Tesla has this replacement as a flat rate time (FRT) of [0.54 hours](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-1F4A72C4-BFEB-410B-BB8C-CDEAA02CC36A.html) ≈ 32 minutes. At their [2025 hourly rate of $210/hr](https://www.reddit.com/r/TeslaLounge/comments/1kzers1/high_service_center_hourly_rate/), that is $115 of labor. I think that is a very fair price as it took me about an hour to disassemble and an hour to reassemble. The window assembly is the same price whether you install it yourself or have them install it ([~$165](https://parts.tesla.com/en-US/catalogs/9678bc03-3011-4c95-9620-bb32d391cac0/systemGroups/89377fb9-d068-4510-8ef4-2223c56a3b08?partNumber=1096622-98-L)). However, the one downside of having them install it is you need to schedule an appointment and their availability may be sparse, I’d imagine a week out but it’s not unheard of for it to be multiple weeks. As I rent this car on Turo, I had a trip coming up and needed this fixed ASAP, so I had to take maters into my own hands.
+The first thing I want to point out is that this is a fairly easy job. I have included enough detail, maybe too much so, that if you can operate a screwdriver, you can probably do this job. However, the juice might not be worth the squeeze. What I mean by that is Tesla has this replacement as a flat rate time (FRT) of [0.54 hours](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-1F4A72C4-BFEB-410B-BB8C-CDEAA02CC36A.html) ≈ 32 minutes. At their [2025 hourly rate of $210/hr](https://www.reddit.com/r/TeslaLounge/comments/1kzers1/high_service_center_hourly_rate/), that is $115 of labor. I think that is a very fair price as it took me about an hour to disassemble and an hour to reassemble. The window assembly is the same price whether you install it yourself or have them install it ([~$165](https://parts.tesla.com/en-US/catalogs/9678bc03-3011-4c95-9620-bb32d391cac0/systemGroups/89377fb9-d068-4510-8ef4-2223c56a3b08?partNumber=1096622-98-L)). However, the one downside of having them install it is you need to schedule an appointment and their availability may be sparse, I’d imagine a week out but it’s not unheard of for it to be multiple weeks. As [I rent this car on Turo](https://turo.com/us/en/car-rental/united-states/denver-co/tesla/model-3/1015634), I had a trip coming up and needed this fixed ASAP, so I had to take maters into my own hands.
 
 ### Tools Needed
 [Screwdriver set that has everything you need ~$35 (affiliate link)](https://amzn.to/3ZXHTzT).
@@ -111,9 +111,12 @@ I do not know what the issue was with mine and I did not investigate. Like I sai
 ## Installing Window Regulator
 
 ### Ordering New Parts
-You have two options: you can call a [service center](https://www.tesla.com/findus?bounds=40.23146027568818%2C-103.95234797816154%2C39.2611153779068%2C-106.05073665003654&filters=tesla_service_centers) to see if they have stock for pickup immediately, or you can [order to be shipped to your house](https://parts.tesla.com/en-US/catalogs/9678bc03-3011-4c95-9620-bb32d391cac0/systemGroups/89377fb9-d068-4510-8ef4-2223c56a3b08). If you call the service center, press 1 for vehicles,  then press 1 for service, then say the reason for your call “window regulator”, then you can finally press 5 to get to your local service center
+You have two options: you can call a [service center](https://www.tesla.com/findus?bounds=48.82661170567718%2C-88.868822275%2C26.94880752955255%2C-119.03727930625&filters=tesla_service_centers) to see if they have stock for pickup immediately, or you can [order to be shipped to your house](https://parts.tesla.com/en-US/catalogs/9678bc03-3011-4c95-9620-bb32d391cac0/systemGroups/89377fb9-d068-4510-8ef4-2223c56a3b08). If you call the service center, press 1 for vehicles,  then press 1 for service, then say the reason for your call “window regulator”, then you can finally press 5 to get to your local service center
 
 I was quoted 6 days (4 business days) for shipping online. I picked up from a service center within the hour. Prices are the same regardless of how you order: $165.
+
+![A brand new `1096622-98-L` Rear Driver Window Regulator Motor](/assets/img/posts/2025-11-15-how-to-replace-and-fix-a-tesla-model-3-window-regulator-motor/1096622-98-L_RearDriverWindowRegulatorNew.jpg){: .shadow .w-75}
+*A brand new `1096622-98-L` Rear Driver Window Regulator Motor*
 
 ### Installation
 Just follow disassembly instructions in reverse.
@@ -128,7 +131,10 @@ Some torque specs:
 If you’re looking for a quick fix, you might as well try to calibrate the window motors before tearing the door apart. I don’t think I needed to do this after installing the new window motor assembly, seemed like it was calibrated just fine, but it doesn’t hurt and in the spirit of completeness, here’s how.
 
 First, you need to put the car into service mode. To do that, tap on the car in the bottom left, then software, then you need to press and hold on the Model 3 for about five seconds. Then the access code is “service”. Pressing enter will bring us into service mode. There’s a bunch of cool diagnostics in here but... explore it responsibly.
-If you tap on service alerts, you can see what your car is unhappy about. My car is unhappy about the rear left window encoder, which makes sense. And apparently it’s been unhappy about that for the last month, but the warnings I guess were never strong enough to be viewable outside of service mode. But, if you see these Window Encoder Stall warnings, you’re probably going to have to replace the assembly.
+If you tap on service alerts, you can see what your car is unhappy about. My car is unhappy about the rear left window encoder, which makes sense. And apparently it’s been unhappy about that for the last month, but the warnings I guess were never strong enough to be viewable outside of service mode. But, if you see these `VCLEFT_a163_windowEncoderStallR` warnings, you’re probably going to have to replace the assembly.
+
+![Numerous VCLEFT_a163_windowEncoderStallR warnings are shown in service mode on my Tesla Model 3 with a bad rear driver window regulator motor](/assets/img/posts/2025-11-15-how-to-replace-and-fix-a-tesla-model-3-window-regulator-motor/VCLEFT_a163_windowEncoderStallR-Tesla-ServiceMode.jpg){: .shadow .w-75}
+*Numerous `VCLEFT_a163_windowEncoderStallR` warnings*
 
 Going back into service mode, we want to go to closures, then windows. Click on the window that you want to calibrate. For me, the car was waiting on an “unknown” task to complete. I waited a while... it never completed. So I exited service mode then went back in which seemed to fix that. Then, make sure the door is closed. Pinch detection is disabled so keep your grubby little fingers away from the window. And then click run.
 
