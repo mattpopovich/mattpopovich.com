@@ -13,13 +13,13 @@ math: false                 # Disabled by default for performance reasons
 mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
-#image:
-#   path: /path/to/image.jpg
+image:
+  path: /assets/img/posts/2025-11-15-how-to-replace-and-fix-a-tesla-model-3-window-regulator-motor/2025-11-15-how-to-replace-and-fix-tesla-model-3-window-regulator-motor_thumbnail.jpg
 #   width: 1200   # in pixels
-#   height: 630   # in pixels, 1.90:1 desired by chirpy
-#   alt: image alternative text
-#   show_image_in_post: false
-#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
+#   height: 630   # in pixels, 1.90:1 desired by chirpy. 1.778:1 desired by YT
+  alt: A Tesla Model 3 that is in mid-repair with its window regulator motor currently removed
+  # show_image_in_post: false
+description: A detailed guide of how I replaced the window regulator motor in my 2020 Tesla Model 3              # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
 <!-- TODO: Add YT link here -->
