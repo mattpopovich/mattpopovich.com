@@ -3,7 +3,7 @@ title: "Why the EPA’s EV Efficiency Numbers Don’t Add Up"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 date: 2022-11-06 00:27:19 -0700
 categories: [Blog, YouTube]     # <=2 values here: top category and sub category
-tags: [youtube, tesla, electric vehicles, epa, math, engineering, tech]       # TAG names should always be lowercase
+tags: [youtube, tesla, tesla model 3, electric vehicles, epa, math, engineering, tech]       # TAG names should always be lowercase
 layout: post
 pin: false
 toc: true

@@ -2,7 +2,7 @@
 title: "Replace and Fix Tesla Model 3 Window Regulator Motor"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2025-11-13 22:46:09 -0600
+date: 2025-11-15 12:46:09 -0600
 categories: [Blog, TODO]    # <=2 values here: top category and sub category
 tags: [todo]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
@@ -48,13 +48,16 @@ So that’s the current state of my rear driver window in my 2020 Tesla model 3.
 In this post, I’m going to go through three main things:
 1. [Disassembly](#removing-window-regulator-motor) so that you can look at your window regulator to inspect it to determine if you want to repair or replace
   - You will likely end up choosing to replace because it’s really just sold as one large assembly. For example, you can’t buy just the regulator motor. So I’ll walk you through that process.
-1. And assembly, which will be glossed over as it’s just disassembly in reverse.
-1. Lastly, how to recalibrate the window motors so that they know when to stop lowering the window and when to stop raising the window. This actually might not be a bad place to start if your window motor sounds fine or if it seems to be moving the window fine but not all the way. This is just a few taps on the touchscreen and is very easy to do.
+1. [Assembly](#installing-window-regulator), which will be glossed over as it’s just disassembly in reverse.
+1. [Recalibrating the window motors](#recalibrating-the-window-motors) so that they know when to stop lowering the window and when to stop raising the window.
+
+> [Recalibrating the window motors](#recalibrating-the-window-motors) might not be a bad place to start if your window motor sounds fine or if it seems to be moving the window fine but not all the way. This is just a few taps on the touchscreen and is very easy to do.
+{: .prompt-info }
 
 ### Tesla's Free Service Manual
 For starters, you should be aware that Tesla publishes a [free service manual](https://service.tesla.com/docs/Model3/ServiceManual/en-us/index.html) that is actually really good. This post will mainly just be following that with some additional commentary on things that were helpful to me as a DIYer.
 
-### DIY Alternative
+### Tesla Service's Labor Pricing
 The first thing I want to point out is that this is a fairly easy job. I have included enough detail, maybe too much so, that if you can operate a screwdriver, you can probably do this job. However, the juice might not be worth the squeeze. What I mean by that is Tesla has this replacement as a flat rate time (FRT) of [0.54 hours](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-1F4A72C4-BFEB-410B-BB8C-CDEAA02CC36A.html) ≈ 32 minutes. At their [2025 hourly rate of $210/hr](https://www.reddit.com/r/TeslaLounge/comments/1kzers1/high_service_center_hourly_rate/), that is $115 of labor. I think that is a very fair price as it took me about an hour to disassemble and an hour to reassemble. The window assembly is the same price whether you install it yourself or have them install it ([~$165](https://parts.tesla.com/en-US/catalogs/9678bc03-3011-4c95-9620-bb32d391cac0/systemGroups/89377fb9-d068-4510-8ef4-2223c56a3b08?partNumber=1096622-98-L)). However, the one downside of having them install it is you need to schedule an appointment and their availability may be sparse, I’d imagine a week out but it’s not unheard of for it to be multiple weeks. As I rent this car on Turo, I had a trip coming up and needed this fixed ASAP, so I had to take maters into my own hands.
 
 ### Tools Needed
@@ -64,7 +67,7 @@ The first thing I want to point out is that this is a fairly easy job. I have in
 * 13mm socket
 * 8mm socket
 
-## Removing Window Regulator Motor
+## Removing Window Regulator
 Okay, enough chit chat, let’s get our hands dirty.
 
 * [Remove puddle light](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-2D49E56C-937E-4756-A7E2-D3D27A69ABB5.html#GUID-2D49E56C-937E-4756-A7E2-D3D27A69ABB5)
@@ -103,47 +106,49 @@ Okay, enough chit chat, let’s get our hands dirty.
 
 Boom! The assembly is out and ready to be replaced or repaired.
 
-I do not know what the issue was with mine and I did not investigate. Like I said earlier, you can’t buy any pieces of this, just the whole assembly, so that’s what I ended up doing. If you want mine, shoot me a message! I still have it haha.
+I do not know what the issue was with mine and I did not investigate. Like I said earlier, you can’t buy any pieces of this, just the [whole assembly](https://parts.tesla.com/en-US/catalogs/9678bc03-3011-4c95-9620-bb32d391cac0/systemGroups/89377fb9-d068-4510-8ef4-2223c56a3b08?partNumber=1096622-98-L), so that’s what I ended up doing. If you want mine, shoot me a message! I still have it haha.
 
-## Ordering New Parts
-You have two options: you can call a service center (https://www.tesla.com/findus?bounds=40.23146027568818%2C-103.95234797816154%2C39.2611153779068%2C-106.05073665003654&filters=tesla_service_centers) to see if they have stock for pickup immediately, or you can order to be shipped to your house. If you call the service center, press 1 for vehicles,  then press 1 for service, then say the reason for your call “window regulator”, then you can finally press 5 to get to your local service center
+## Installing Window Regulator
+
+### Ordering New Parts
+You have two options: you can call a [service center](https://www.tesla.com/findus?bounds=40.23146027568818%2C-103.95234797816154%2C39.2611153779068%2C-106.05073665003654&filters=tesla_service_centers) to see if they have stock for pickup immediately, or you can [order to be shipped to your house](https://parts.tesla.com/en-US/catalogs/9678bc03-3011-4c95-9620-bb32d391cac0/systemGroups/89377fb9-d068-4510-8ef4-2223c56a3b08). If you call the service center, press 1 for vehicles,  then press 1 for service, then say the reason for your call “window regulator”, then you can finally press 5 to get to your local service center
 
 I was quoted 6 days (4 business days) for shipping online. I picked up from a service center within the hour. Prices are the same regardless of how you order: $165.
 
-Recalibrating the window motor
+### Installation
+Just follow disassembly instructions in reverse.
 
-Ok, if you’re looking for a quick fix, you might as well try to calibrate the window motors before tearing the door apart. I don’t think I needed to do this after installing the new window motor assembly, seemed like it was calibrated just fine, but it doesn’t hurt and in the spirit of completeness, here’s how.
-First, you need to put the car into service mode. To do that, tap on the car in the bottom left, then software, then you need to press and hold on the Model 3 for about five seconds. Then the access code is “service”. Pressing enter will bring us into service mode. There’s a bunch of cool diagnostics in here but… explore it responsibly.
+Some torque specs:
+* Screws into the window = 9.5 Nm = 7.0 lbs-ft
+* 13x 8mm screws around the outside of the black plastic panel = 4 Nm = 2.9 lbs-ft
+* 2x T30 screws underneath the arm rest = 6 Nm = 4.4 lbs-ft
+
+## Recalibrating the Window Motors
+
+If you’re looking for a quick fix, you might as well try to calibrate the window motors before tearing the door apart. I don’t think I needed to do this after installing the new window motor assembly, seemed like it was calibrated just fine, but it doesn’t hurt and in the spirit of completeness, here’s how.
+
+First, you need to put the car into service mode. To do that, tap on the car in the bottom left, then software, then you need to press and hold on the Model 3 for about five seconds. Then the access code is “service”. Pressing enter will bring us into service mode. There’s a bunch of cool diagnostics in here but... explore it responsibly.
 If you tap on service alerts, you can see what your car is unhappy about. My car is unhappy about the rear left window encoder, which makes sense. And apparently it’s been unhappy about that for the last month, but the warnings I guess were never strong enough to be viewable outside of service mode. But, if you see these Window Encoder Stall warnings, you’re probably going to have to replace the assembly.
-Going back into service mode, we want to go to closures, then windows. Click on the window that you want to calibrate. For me, the car was waiting on an “unknown” task to complete. I waited a while… it never completed. So I exited service mode then went back in which seemed to fix that. Ok, we need to make sure the door is closed. Pinch detection is disabled so keep your grubby little fingers away from the window. And let’s click run.
-Ok we need to “unlock the gateway”. I think you need to do this whenever you want to modify any values in service mode. So this is kind of a “are you really sure you want to do this”? We need to have the key in the vehicle then press and hold the brake and right turn signal for 8 seconds. And the gateway is now unlocked for the next hour and a half. Let’s calibrate.
-Test passed. Sweet.
 
-And while I’m here, I’ve actually been having some wind noise whenever the windows are closed. I find that if I lower the windows just a smidge, things will actually get quieter in the car. So let’s recalibrate all the windows.
-buhhokay
-Not sure if that changed anything and… I don’t see anything here that would tell me if it did.
-Onwards !
-3 in the wagon… one draggin
-Hmm I guess the rear windows have a different procedure than the front. They’re faster.
+Going back into service mode, we want to go to closures, then windows. Click on the window that you want to calibrate. For me, the car was waiting on an “unknown” task to complete. I waited a while... it never completed. So I exited service mode then went back in which seemed to fix that. Then, make sure the door is closed. Pinch detection is disabled so keep your grubby little fingers away from the window. And then click run.
 
+For this to run, we need to “unlock the gateway”. I think you need to do this whenever you want to modify any values in service mode. So this is kind of a “are you really sure you want to do this”? We need to have the key in the vehicle then press and hold the brake and right turn signal for 8 seconds. Finally, we can click "Calibrate".
 
+While I’m here, I’ve actually been having some wind noise whenever the windows are closed. I find that if I lower the windows just a smidge, things will actually get quieter in the car. So I am going to recalibrate all the windows... Looking back on it, I think it did help with wind noise a little bit.
 
+## Outro
+All right, folks! I think that’s a job well done. Let me know in the comments if this was helpful to you, what you managed to do to fix your window, and if there was anything I missed.
 
-All right folks! I think that’s a job well done. Let me know in the comments if this was helpful to you, what you managed to do to fix your window, and if there was anything I missed.
-I have a playlist of model 3 videos, and while there might not be much there now, there is more on the way.
+I have a few other [Model 3-related posts](/tags/tesla-model-3) that I'd recommend checking out. While there might not be much there now, there is more on the way.
 
-Thank you very much for watching, I’ll see you soon.
-
-
-
+Thank you very much for reading, I’ll talk to you all soon.
 
 &nbsp;
 
-TODO: Add spotify link here (if applicable)
 <div style="text-align:center">
 <iframe
 style="border-radius:12px"
-src="https://open.spotify.com/embed/track/5fEThMYHHyoohPxqsCvz1l?utm_source=generator"
+src="https://open.spotify.com/embed/track/3vmHR2KEJk1h30cYnWZe4v"
 width="80%" height="352" frameBorder="0"
 allowfullscreen=""
 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
