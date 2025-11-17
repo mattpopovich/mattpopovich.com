@@ -18,11 +18,11 @@ image:
 #   width: 1200   # in pixels
 #   height: 630   # in pixels, 1.90:1 desired by chirpy. 1.778:1 desired by YT
   alt: A Tesla Model 3 that is in mid-repair with its window regulator motor currently removed
-  # show_image_in_post: false
+  show_image_in_post: false
 description: A detailed guide of how I replaced the window regulator motor in my 2020 Tesla Model 3              # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
-<!-- TODO: Add YT link here -->
+{% include embed/youtube.html id='IvClgcD-U5Y' %}
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. [Remove window regulator motor](https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-1F4A72C4-BFEB-410B-BB8C-CDEAA02CC36A.html)
@@ -101,8 +101,9 @@ Okay, enough chit chat, let’s get our hands dirty.
     * Remove 13x 8mm screws around the outside of the black plastic panel to remove the assembly.
       * Do not remove the four screws on the inside.
         * They are a different size so hopefully they aren’t tempting.
-    * Once the screws are out, there are two metal clips holding the assembly to the door. The repair manual only mentions one and it is wrong. There’s a clip on the bottom left and the bottom right.
-      * To lift the assembly out, pull it away from the bottom, then slide the assembly down.
+    * Once the screws are out, there are two metal clips holding the assembly to the door. The repair manual only mentions one so maybe newer models only have one but for me, there’s a clip on the bottom left and the bottom right.
+      * These clips take a good bit of force to disconnect.
+    * To lift the assembly out, pull it away from the bottom, then slide the assembly down.
 
 Boom! The assembly is out and ready to be replaced or repaired.
 
@@ -161,3 +162,10 @@ allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-pictur
 loading="lazy">
 </iframe>
 </div>
+
+&nbsp;
+
+<small><small>
+Disclaimer:
+Matt Popovich is not a mechanic. Please do your own research and consult with a professional before attempting any DIY repairs. Matt Popovich assumes no liability for property damage or injury incurred as a result of any of the information contained in this post. Matt Popovich does not provide a warranty for any of the listed information and does not guarantee any expressed or implied result. Use this information at your own risk. Matt Popovich recommends safe practices when working on vehicles and or with tools seen or implied in this post. Any injury, damage, or loss that may result from improper use of these tools, equipment, or from the information contained in this post is the sole responsibility of the user and not Matt Popovich.
+</small></small>
