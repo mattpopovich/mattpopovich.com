@@ -3,7 +3,7 @@ title: "Why the EPA’s EV Efficiency Numbers Don’t Add Up"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 date: 2022-11-06 00:27:19 -0700
 categories: [Blog, YouTube]     # <=2 values here: top category and sub category
-tags: [youtube, tesla, electric vehicles, epa]       # TAG names should always be lowercase
+tags: [youtube, tesla, tesla model 3, electric vehicles, epa, math, engineering, tech]       # TAG names should always be lowercase
 layout: post
 pin: false
 toc: true
@@ -69,7 +69,7 @@ The conversion from AC to DC is about 88.5% efficient using a 240V level 2 charg
 
 ![My 2020 Tesla Model 3 LR AWD's Lifetime Efficiency](/assets/img/posts/2022-11-06-why-the-epas-ev-efficiency-numbers-dont-add-up/MattPopovich_2020TeslaModel3-LR-AWD_LifetimeEfficiency.jpg) *My 2020 Tesla Model 3 LR AWD's Lifetime Efficiency*
 
-Lastly, given the car’s usable battery of 75kWh, the car should have a range of 75kWh / 0.2478kWh/mi = 302.7mi (487.1km). However, Tesla doesn’t tell you about a 4.5% buffer that *may be available* after the car hits 0% battery. This takes the gross battery size up to 75 * 1.045 = ~78.4kWh, giving us a total range (in emergencies) to ~316mi (~509km)... close enough to the 322mi (518.2km) number advertised.
+Lastly, given the car’s usable battery of 75kWh, the car should have a range of 75kWh / 0.2478kWh/mi = 302.7mi (487.1km). However, Tesla doesn’t tell you about a 4.5% buffer that *may be available* after the car hits 0% battery. This takes the gross battery size up to 75 * 1.045 = ~78.4kWh, giving us a total range (in emergencies) to ~316mi (~509km)... close enough to the 322mi (518.2km) number advertised. 🤷‍♂️
 
 ## Next Research Steps for the Reader
 So that is where the numbers on the EPA’s fuel economy come from. There’s a whole other discussion to be had on how the EPA obtains that 280Wh/mi (174Wh/km) number. Yes, it includes charging losses, but it also includes a [city test, a highway test, a high speed test, an air conditioning test, and a cold weather test](https://www.fueleconomy.gov/feg/fe_test_schedules.shtml). Here's [a video](https://www.youtube.com/watch?v=b6Oel4klhjI) that goes over this in a bit more detail. Not all of the tests that I just mentioned are mandatory and manufacturers are allowed to decrease the total range number given by the EPA for whatever reason they want. [Porsche does this](https://electrek.co/2020/04/24/porsche-voluntarily-lowered-taycans-official-range-numbers-from-200-to-192-miles/) I speculate to give what they think is a better real world number. [Tesla used to do it](https://electrek.co/2018/07/24/tesla-model3-epa-ratings-advertise/) because their AWD variants were less efficient than their RWD models. So to not make them not look like a worse car in comparison, they handicapped the RWD models so that the range differences weren’t as drastic, especially for the AWD Performance model which was the least efficient. This was back when the Model 3 Dual Motor was first coming out. They have since stopped that practice and now let the EPA's numbers more closely reflect the differences. If you think this would be an interesting topic for me to go into further detail, let me know in the comments below and I'll consider it for my next post!
