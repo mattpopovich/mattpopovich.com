@@ -3,7 +3,7 @@ title: "How to Install the Safari LastPass Extension for Mac"
 author: matt_popovich         # Reference author_id in _data/authors.yml
 date: 2021-08-16 22:30:33 -0600
 categories: [Blog, Not YouTube]            # <=2 values here: top category and sub category
-tags: [apple, big sur, osx, mac, how to, tech, tutorial, not youtube]       # TAG names should always be lowercase
+tags: [apple, mac os, how to, tech, tutorial, not youtube]       # TAG names should always be lowercase
 layout: post
 pin: false
 toc: true
@@ -30,7 +30,7 @@ I highly recommend looking into a password manager!
 ## Intro
 Not to spoil the beans or anything... but I just bought a [2020 M1 Mac Mini](https://support.apple.com/kb/SP823?locale=en_US)! It should greatly enhance my video production capabilities (coming from a [2014 MacBook Pro](https://support.apple.com/kb/SP704?locale=en_US) which did not have H.265 encoding/decoding via hardware acceleration). Excited to see what this M1 chip is capable of and to help give me a better idea if I should get a 2021 16" MacBook Pro with a possible M2 chip in it... possibly being released in September 2021 🤞 ([spoiler alert](https://www.apple.com/newsroom/2021/10/apple-unveils-game-changing-macbook-pro/)!!)
 
-I'm running a fresh install of Big Sur and am trying to install various things. One that got me hung up for a bit is the Lastpass extension for Safari. Here's how you should install it:
+I'm running a fresh install of Big Sur (macOS 11) and am trying to install various things. One that got me hung up for a bit is the Lastpass extension for Safari. Here's how you should install it:
 
 ## Installation
 You can basically follow [these instructions](https://support.logmeininc.com/lastpass/help/how-do-i-install-the-safari-app-extension-on-my-mac-lp010097). Or, in my own words:
