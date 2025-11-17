@@ -18,7 +18,7 @@ image:
 #   width: 1200   # in pixels
 #   height: 630   # in pixels, 1.90:1 desired by chirpy. 1.778:1 desired by YT
   alt: A Tesla Model 3 that is in mid-repair with its window regulator motor currently removed
-  # show_image_in_post: false
+  show_image_in_post: false
 description: A detailed guide of how I replaced the window regulator motor in my 2020 Tesla Model 3              # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
@@ -162,3 +162,10 @@ allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-pictur
 loading="lazy">
 </iframe>
 </div>
+
+&nbsp;
+
+<small><small>
+Disclaimer:
+Matt Popovich is not a mechanic. Please do your own research and consult with a professional before attempting any DIY repairs. Matt Popovich assumes no liability for property damage or injury incurred as a result of any of the information contained in this post. Matt Popovich does not provide a warranty for any of the listed information and does not guarantee any expressed or implied result. Use this information at your own risk. Matt Popovich recommends safe practices when working on vehicles and or with tools seen or implied in this post. Any injury, damage, or loss that may result from improper use of these tools, equipment, or from the information contained in this post is the sole responsibility of the user and not Matt Popovich.
+</small></small>
