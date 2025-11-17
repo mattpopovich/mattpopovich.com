@@ -4,7 +4,7 @@ author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2023-02-27 01:12:28 -0700
 categories: [Blog, YouTube]    # <=2 values here: top category and sub category
-tags: [apple, big sur, mac, monterey, osx, preview, quick look, tech, tutorial, drone]     # TAG names should always be lowercase
+tags: [apple, mac os, preview, quick look, tech, tutorial, drone]     # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
