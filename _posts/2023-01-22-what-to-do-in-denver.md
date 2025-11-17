@@ -4,7 +4,7 @@ author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2023-01-22 19:42:13 -0700
 categories: [Blog, Not YouTube]          # <=2 values here: top category and sub category
-tags: [denver, turo, not youtube, snowboard, ski] # TAG names should always be lowercase
+tags: [denver, colorado, travel, turo, not youtube, snowboard, ski] # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -189,7 +189,7 @@ width="100%" height="500">
 
 <!-- TODO: Add Aurora lunch spots: LL, Sabor, Taco Selene, etc. -->
 * <details markdown="1">
-    <summary>Click to show some of my lunch recommendations ❗️</summary>
+    <summary>Click to show some of my lunch/dinner recommendations ❗️</summary>
 
     * [The first Chipotle ever](https://goo.gl/maps/37f6fgkqPny91xxL9)
       * Will taste like all the other Chipotles but is something to say you've been there
@@ -216,6 +216,8 @@ width="100%" height="500">
     * [Blue Moon Brewery](https://goo.gl/maps/izdTUrHRoVHv7iP3A)
       * Higher quality food than a typical "brewery"
         * I recommend the Bison Burger
+    * [Irish Rover](https://maps.app.goo.gl/1XEJwP1dfkndzUTL9)
+      * Irish pub with surprisingly good deals on weeknights. [Menu](https://www.theirishroverpub.com/menus-and-specials)
     <!-- TODO: Add tacos: Agave, Adelitas (will be packed on tuesdays), tacos tequila whiskey, torchys -->
     <!-- TODO: Add food specials for days of week -->
     <!-- TODO: Pizza: Homegrown tap and dough, fat sully's -->
@@ -230,21 +232,23 @@ width="100%" height="500">
 
 ## Nightlife
 <!-- TODO: Add a pic of denver with all the surrounding areas highlighted -->
-<!-- TODO: Add links to google maps -->
+<!-- TODO: Make a google maps for this? -->
 Note that there are many, many more than this. These are just some of my favorites.
 * Downtown
-  * Larimer street and Market street
-    * Dierks Bentley's Whiskey Row, Larimer Beer Hall, ViewHouse (Ballpark location), Retro Room, Gin Mill, Star Bar (karaoke), Herb's (live music)
+  * Larimer street
+    * [Larimer Beer Hall](https://maps.app.goo.gl/y9t1QZRiffWSriP16), [Herb's](https://maps.app.goo.gl/vmm53DocVGjFykKj6) (live music), [The Mill](https://maps.app.goo.gl/7TM4ggqRhcgNrwTFA) (previously Gin Mill), [Star Bar](https://maps.app.goo.gl/ua8WiMB7DWWRi6Ud7) (karaoke)
+  * Market street
+    * [Hayter's](https://maps.app.goo.gl/P1kJDGgffmqoy34j6), [Dierks Bentley's Whiskey Row](https://maps.app.goo.gl/fFWxF6JeZyfT1Uxf7), ViewHouse ([Ballpark location](https://maps.app.goo.gl/kuXAjL1Rq7spKZ9a7)), [Tap Fourteen](https://maps.app.goo.gl/GiK3ZApPQwbU36yw5) (rooftop)
 * River North (RiNo)
-  * Blue Moon Brewery, Number 38, Improper City, Finn's Manor, Federales, Lustre Pearl, Matchbox
+  * [Blue Moon Brewery](https://maps.app.goo.gl/XMGitk1hVYhZs4ZdA), [Number 38](https://maps.app.goo.gl/CYTFb5SP2FF1WaCn6), [Improper City](https://maps.app.goo.gl/sX1Sg3xkztXwM9p69), [Finn's Manor](https://maps.app.goo.gl/42WFcmZ4UpcqvFUM9), [Federales](https://maps.app.goo.gl/aFAYyqh342B248bv9), [Lustre Pearl](https://maps.app.goo.gl/qkfxP7L3yXJRfX869), [Matchbox](https://maps.app.goo.gl/R5rEXG9jP4xakEjK7)
 * South Broadway
-  * Adrift, Irish Rover, Canopy, Historians, Punch Bowl Social, etc.
-  * Stranahan's Distillery (whiskey)
-  * Honorable mention to the Dive Inn. A dive bar with cheap drinks, pool, and ping pong.
+  * [Irish Rover](https://maps.app.goo.gl/1XEJwP1dfkndzUTL9) (rooftop), [Canopy](https://maps.app.goo.gl/kRpKBw5kpyocLsRc6), [Historians](https://maps.app.goo.gl/cGPVRm1rmQ1TtTZp7), [Punch Bowl Social](https://maps.app.goo.gl/iSobdrNWutJ83Smy6) (bowling + other bar games), [Adrift](https://maps.app.goo.gl/8rooDAWFAiHCT4C19) (tropical/tiki bar), [BurnDown](https://maps.app.goo.gl/tEAzTZHFeSrze3hb9) (rooftop + live music on weekends), etc.
+  * [Stranahan's Distillery](https://maps.app.goo.gl/6EEZenrfbdgPnDRSA) (whiskey)
+  * [Dive Inn](https://maps.app.goo.gl/ndZrxQDCChkEvfwA8). A dive bar with cheap drinks, pool, and ping pong.
     * 5 min drive away from other bars
 * LoHi
-  * I don't go out in LoHi very often but Avanti is very popular
-* The Grizzly Rose
+  * I don't go out in LoHi very often but [Avanti](https://maps.app.goo.gl/tfuyPML5fHYnoMbu6) is very popular
+* [The Grizzly Rose](https://maps.app.goo.gl/MrqRbGHKUPmDbGqs9)
   * A massive bar located 10mins north of Denver
   * The premier spot for country dancing, mechanical bull riding, etc. Yee to the haw! 🤠
 
@@ -270,7 +274,7 @@ It gets hot here in the summer!
       * [Location of Littleton Boat Chute #10](https://maps.app.goo.gl/qqdcT1bYGPaP2WBUA). [Boat Chute numbering source](https://www.facebook.com/groups/711281172772489/posts/1594140101153254/)
       * In case that flow isn't being reported, view the [South Platte river below Chatfield Reservoir's flow](https://dwr.state.co.us/Tools/Stations/PLACHACO?params=DISCHRG).
   * Example full float [here](https://www.strava.com/activities/2608193842), [half float](https://www.strava.com/activities/7304584997)
-* [Float in Golden](https://www.cityofgolden.net/play/recreation-attractions/clear-creek-white-water-park/)
+* [Float in Golden (Clear Creek)](https://www.cityofgolden.net/play/recreation-attractions/clear-creek-white-water-park/)
   * [30 minutes west of Denver](https://goo.gl/maps/iZKdcTbPjEmQ5TST7), a convenient parking lot [here](https://goo.gl/maps/tCsrALN5S4xcVJ3Y9)
   * Shorter and more exciting route (more rapids) through the city of Golden
   * Lots of people floating + watching
@@ -280,7 +284,10 @@ It gets hot here in the summer!
   * Ideal water flows for tubing: 100-300cfs
     * Manageable: 40-500cfs
     * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06719505/#parameterCode=00060&period=P7D)
-* [Float in Deckers](https://discoverdeckers.com/tubing-paddle-boarding-kayaking/)
+* [Float in Boulder (Boulder Creek)](https://www.allthingsboulder.com/a-beginners-guide-to-tubing-boulder-creek/)
+  * Ideal water flows for tubing: 100-300cfs
+    * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06730200/#parameterCode=00060&period=P7D)
+* [Float in Deckers (South Platte River)](https://discoverdeckers.com/tubing-paddle-boarding-kayaking/)
   * [1.5hr south of Denver](https://goo.gl/maps/YKegkP6ZgM7gjP1o6)
   * Example float route [here](https://www.strava.com/activities/5756015816)
   * Cold water but gives an extremely scenic and mountain experience
@@ -289,7 +296,21 @@ It gets hot here in the summer!
   * Ideal water flows for tubing: 250-400cfs
     * Manageable: 175-600cfs
     * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06701900/#parameterCode=00060&period=P7D)
-* [Cherry Creek Reservoir](https://cpw.state.co.us/placestogo/parks/CherryCreek)
+* Float in Fort Collins (Poudre River)
+  * [1hr 15min north of Denver](https://goo.gl/maps/rZ9tiZdcAoyaN6Ms6)
+  * [Map of put in and takeout](https://www.poudre-fire.org/Home/ShowPublishedImage/3256)
+  * [Another map](https://poudreheritage.org/wp-content/uploads/Play-it-Safe-brochure-3.pdf)
+  * Ideal water flows for tubing: 200-500cfs ([source](https://www.reddit.com/r/FortCollins/comments/1deeqn8/tubing_poudre/l8bfoes/))
+    * Fast but manageable: 500-800cfs ([source](https://www.reddit.com/r/FortCollins/comments/149ethz/floating_on_the_poudre/jo4uvx3/))
+    * Avoid tubing above 800cfs
+    * Current flow [here](https://waterdata.usgs.gov/monitoring-location/06752260/#parameterCode=00060&period=P7D)
+* [Float in Steamboat Springs (Yampa River)](https://www.steamboatchamber.com/activities/water-activities/tubing/)
+  * [3hr NW of Denver](https://goo.gl/maps/TkBkYyiHJT8NoCkf8)
+  * Ideal water flows for tubing: <700cfs?
+    * Current flow [here](https://waterdata.usgs.gov/monitoring-location/09239500/#parameterCode=00060&period=P7D)
+* Float the Upper Colorado River (near Kremmling, 1hr north of Vail, 2hr west of Denver)
+  * See my separate blog post: "[Floating the Upper Colorado River](/posts/floating-the-upper-colorado-river-in-colorado)"
+* [Cherry Creek Reservoir](htts://cpw.state.co.us/placestogo/parks/CherryCreek)
   * [25 minutes SE of Denver](https://goo.gl/maps/6qeJJ2JRJKxP1u3J7)
   * [$11 per vehicle](https://cpw.state.co.us/placestogo/parks/CherryCreek/Pages/Fees.aspx), bicyclists get in for free
 * [Chatfield Reservoir](https://cpw.state.co.us/placestogo/parks/Chatfield)
