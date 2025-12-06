@@ -22,7 +22,7 @@ image:
 description: A detailed chart of all the differences between Apple Watches
 ---
 
-> This article is valid as of April, 2025. It does not take into account watches that were released afterwards.
+> This article is valid as of December, 2025 (with latest watches being: Apple Watch 11, SE 3, and Ultra 3). It does not take into account watches that are released afterwards.
 {: .prompt-info }
 
 ## Intro
@@ -31,18 +31,24 @@ Every year, Apple comes out with a new Apple Watch, and they update their [compa
 Ken Rockwell has a [detailed comparison page](https://www.kenrockwell.com/apple/watch/compared.htm) which was very close to what I aimed to do. Mine adds color 🌈 and tries to only focus on differentiating features.
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR) / Main Differences
-Ultra 2 > 10 > Ultra > 9 **\>\>** 8 > 7 > 6 **\>\>** SE2 **\>\>** 5 > 4 > SE **\>\>** 3 **\>\>** 2 **\>\>** 1
+Ultra 3 > Ultra 2 > 11 > 10 > Ultra 1 > 9 > SE 3**\>\>** 8 > 7 > 6 **\>\>** SE 2 **\>\>** 5 > 4 > SE 1 **\>\>** 3 **\>\>** 2 **\>\>** 1
 
 I wouldn't get anything below an SE2. Series 5 and below are no longer getting software updates.
+
+If possible, I would try to avoid an Ultra 1 + Series 8 or lower. I don't know how much longer Apple will be supporting them (2026 or 2027?) but do know that they will be the first ones to lose support once Apple makes that decision.
 
 Here's what each watch adds over the SE2:
 * **Series 6** adds an always on screen, ECG, upgraded heart-rate sensor, blood oxygen sensor (not very useful in my opinion). Loses crash detection over the SE2
 * Series 7 adds fast charging and 1mm screen size (neither are worth upgrading)
 * Series 8 adds crash detection (hopefully you never need to use it)
-* **Series 9** adds a new processor, brighter screen, sleep apnea notifications. Newer series 9 [removed blood oxygen capability](https://www.reddit.com/r/AppleWatch/comments/199g8ag/finally_the_answer_to_if_your_apple_watch_will).
+* **SE 3** adds a new processor, sleep apnea notifications, on-device Siri, storage increased to 64GB. Does not have ECG or ultra wideband chip.
   * This is the first major upgrade over the 6
   * They also advertise a feature called ["double tap"](https://www.youtube.com/watch?v=pm-ZXg3uA0Y), but that is actually available in older watches as an [accessibility feature](https://www.youtube.com/watch?v=oDpIhooDyaY).
+* Series 9 adds a brighter screen.
+  * Newer series 9 [removed blood oxygen capability](https://www.reddit.com/r/AppleWatch/comments/199g8ag/finally_the_answer_to_if_your_apple_watch_will), but was "[added back](https://9to5mac.com/2025/08/14/apple-watch-blood-oxygen-feature-returning-in-the-u-s-today/)" in August of 2025 by moving processing to a paired iPhone.
 * Series 10 adds a 2mm bigger and slightly better screen, water depth, water temperature.
+  * Did not come with a blood oxygen feature but has been [added in August of 2025](https://9to5mac.com/2025/08/14/apple-watch-blood-oxygen-feature-returning-in-the-u-s-today/) by moving processing to a paired iPhone.
+* Series 11
 * Ultra adds scuba diving capability, twice as long battery, better microphones and speakers, better GPS. But it has an older processor (same as series 6-8).
 * Ultra 2 adds a brighter screen, same processor as 9+
 
