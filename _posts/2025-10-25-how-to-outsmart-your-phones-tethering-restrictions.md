@@ -23,16 +23,17 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 ---
 
 ## Intro
-ISPs (internet service providers) will commonly disable / throttle / or limit tethering from one device to another. Ex. You want to use your phone's hotspot on your laptop while traveling. Most of this comes down to limiting the amount of bandwidth and congestion on their networks. But also if you could just share a cellular plan from your phone, why would you pay an extra fee to connect an LTE iPad to their network? (You normally wouldn't)
+ISPs (internet service providers) / wireless providers / carriers will commonly disable, throttle, or limit tethering from one device to another. Ex. You want to use your phone's hotspot on your laptop while traveling. Most of this comes down to limiting the amount of bandwidth and congestion on their networks. But also if you could just share a cellular plan from your phone, why would you pay an extra fee to connect an LTE iPad to their network? (You probably wouldn't)
 
 ISPs do (at least) two things to determine if traffic is coming from a phone or a hotspot device. This article will tell you what those two things are and how we can go into "incognito mode" to make it more difficult for them to identify 🕵
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
 1. Change TTL (time to live) on tethered device to cell phone's TTL+1
 2. Use a VPN / something to encrypt your traffic to prevent the provider from inspecting your packets
+3. Profit
 
 ## Step One: TTL
-The first thing that ISPs will look at whenever you are trying to send data is a packet's [TTL](https://www.cloudflare.com/learning/cdn/glossary/time-to-live-ttl/) (time to live). Basically, each packet you send has a TTL value which represents "how many network devices can this packet go through to get to its destination before you give up". This is to ensure packets can't get stuck in a "network loop" forever. A common TTL value is 64 which means this packet can pass through 64 "hops" to get to its destination. If it takes longer than that, stop forwarding it. Every time a network device receives and fowards a packet, it will decrease the packet's TTL by one.
+The first thing that ISPs will look at whenever you are trying to send data is a packet's [TTL](https://www.cloudflare.com/learning/cdn/glossary/time-to-live-ttl/) (time to live). Basically, each packet you send has a TTL value which represents "how many network devices can this packet go through to get to its destination before you give up". This is to ensure packets can't get stuck in a "network loop" forever. A common TTL value is 64 which means this packet can pass through 64 "hops" to get to its destination. If it takes longer than that, stop forwarding it. Every time a network device receives and forwards a packet, it will decrease the packet's TTL by one.
 
 ISPs know the default TTL values for different devices: iOS=64, Android=64, Windows=128, Linux=64, macOS=64, etc. Imagine a Mac is tethered to an iPhone. The Mac sends a packet with a TTL of 64 to the iPhone, which decreases the packet's TTL by one to 63, which it then forwards to the ISP. The ISP receives the packet, sees an odd and non-standard TTL value, and immediately assumes the packet is coming from a tethered device which it can then reject, slow down, etc.
 
@@ -110,14 +111,38 @@ Note that this is only for IPv4. To change things for IPv6, see [this StackExcha
 ## Step Two: Encrypt Packets
 If the TTL solution above doesn't get things working or speed things up, your ISP is probably doing some sort of [DPI](https://en.wikipedia.org/wiki/Deep_packet_inspection) (deep packet inspection). What exactly they are doing is beyond the scope of this post (but researching [TLS fingerprints](https://fingerprint.com/blog/what-is-tls-fingerprinting-transport-layer-security/) can point you in the right direction). We should be able to defeat it by using an encrypted tunnel such as a VPN. HTTPS will encrypt the application payload, but not much of the metadata. ISPs can infer a good bit from the metadata, such as “You are connected to this website with this operating system and browser to download a webpage / stream music / stream video". An encrypted tunnel obscures more data than HTTPS: it will hide pretty much everything except the IP address that you are communicating with from your ISP. Thus, your ISP will know which VPN you are communicating with, but that's about it.
 
-> Note that while your ISP now can't see much, your VPN now has that data.
+> Note that while your ISP now can't see much, your VPN now has that data. You've simply shifted your privacy concerns from the ISP company to your VPN company.
 > {: .prompt-warning }
 
-There are plenty of VPNs out there. Mullvad is a common recommendation for being the best in privacy. But if you're just trying to get around ISP limitations, any VPN will work.
+There are plenty of VPNs out there. [Mullvad](https://mullvad.net/en) is a common recommendation for being the best in privacy. But if you're just trying to get around ISP limitations, any VPN will work. [1.1.1.1](https://one.one.one.one) is free, from a reputable company ([Cloudflare](https://www.cloudflare.com)), and will work for us.
 
-[1.1.1.1](https://one.one.one.one) might work for this (TODO).
+Additionally, you can make your own VPN (for free) very easily by using [Tailscale](https://tailscale.com)! All you need is your own device that is powered on and connected to the internet (such as an Apple TV or a desktop) which will be used to route traffic to. They have a great ["getting started" video](https://www.youtube.com/watch?v=sPdvyR7bLqI) that will guide you through the setup process.
 
-Additionally, you can make your own VPN (for free) very easily by using [Tailscale](https://tailscale.com)! All you need is your own device that is powered on and connected to the internet (such as an Apple TV or a desktop) which will be used to route traffic to. They have a great ["getting started" video](https://www.youtube.com/watch?v=sPdvyR7bLqI).
+## Results
+
+Actions speak louder than words! I connected my Mac to my iPhone's hotspot and ran some speed tests.
+
+I ran this test with a cellular provider that limits tethering to 15 Mbps download and upload on my plan. Speed test is via [speedtest.net](https://www.speedtest.net). My Tailscale host is hardwired to a 500 Mbps download and upload network.
+
+|                                            | TTL | Download Speed | Upload Speed | Ping  |
+| ------------------------------------------ | --- | -------------- | ------------ | ----- |
+| Tailscale host                             |     | 536 Mbps       | 520 Mbps     | 11 ms |
+| iPhone 5G (~ max tethering speeds)         |     | 801 Mbps       | 37 Mbps      | 19 ms |
+| iPhone 5G Encrypted Tunnel via Tailscale   |     | 279 Mbps       | 40 Mbps      | 25 ms |
+| Mac Default                                | 64  | 16 Mbps        | 15 Mbps      | 24 ms |
+| Mac Encrypted Tunnel via Tailscale         | 64  | 267 Mbps       | 30 Mbps      | 30 ms |
+| Mac Encrypted Tunnel via Tailscale         | 65  | 278 Mbps       | 32 Mbps      | 33 ms |
+| Mac Encrypted Tunnel via Tailscale         | 128 | 240 Mbps       | 32 Mbps      | 31 ms |
+| Mac Encrypted Tunnel via 1.1.1.1           | 64  | 17 Mbps        | 15 Mbps      | 24 ms |
+| Mac Encrypted Tunnel via 1.1.1.1 with WARP | 64  | 16 Mbps        | 15 Mbps      | 27 ms |
+| Mac Encrypted Tunnel via 1.1.1.1           | 65  | 495 Mbps       | 36 Mbps      | 25 ms |
+| Mac Encrypted Tunnel via 1.1.1.1 with WARP | 65  | 456 Mbps       | 34 Mbps      | 35 ms |
+
+Note that for whatever reason, the tests with Tailscale were not super repeatable. One exit node would be fast, another slow. Also sometimes TTL of 65 worked without an encrypted tunnel, sometimes it didn't. Changing the TTL value in the middle of a test did not change speeds. I do not know why. Maybe some settings were persisting accidentally? Maybe my carrier is doing something unexpected?
+
+[YMMV](https://www.urbandictionary.com/define.php?term=ymmv).
+
+**[1.1.1.1](https://one.one.one.one) with a TTL of 65 was reliable**.
 
 ## Outro
 You may have to use step one, step two, or a combination of both to get around ISP limitations.
