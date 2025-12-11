@@ -58,16 +58,17 @@ Please let me know if this was helpful or if you had any questions or issues in 
 
 &nbsp;
 
-<div style="text-align:center">
-<iframe
-style="border-radius:12px"
-src="https://open.spotify.com/embed/track/6rDUuoY74LZ8c8T8hcybIQ?utm_source=generator"
-width="80%" height="352" frameBorder="0"
-allowfullscreen=""
-allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-loading="lazy">
-</iframe>
-</div>
+<!-- TODO: Make this a .html page so that I can include it like {% include kit.html %} -->
+
+<div style="width:80%; margin:0 auto;">
+  <script async data-uid="4b1670c299"
+          src="https://mattpopovich.kit.com/4b1670c299/index.js"></script>
+</div>{: .light}
+
+<div style="width:80%; margin:0 auto;">
+  <script async data-uid="188eef3012"
+          src="https://mattpopovich.kit.com/188eef3012/index.js"></script>
+</div>{: .dark}
 
 &nbsp;
 
@@ -75,3 +76,4 @@ loading="lazy">
 Disclaimer:
 Matt Popovich is not a mechanic. Please do your own research and consult with a professional before attempting any DIY repairs. Matt Popovich assumes no liability for property damage or injury incurred as a result of any of the information contained in this post. Matt Popovich does not provide a warranty for any of the listed information and does not guarantee any expressed or implied result. Use this information at your own risk. Matt Popovich recommends safe practices when working on vehicles and or with tools seen or implied in this post. Any injury, damage, or loss that may result from improper use of these tools, equipment, or from the information contained in this post is the sole responsibility of the user and not Matt Popovich.
 </small></small>
+
