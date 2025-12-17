@@ -91,6 +91,9 @@ Now that you know which "processor group" you're aiming for, the next step would
 
 If you live close to one, I'd recommend going into an Apple store (or any place that sells Apple watches) and trying them on to get a feel for things!
 
+![An Apple Watch Ultra 2 and a Series 3 38mm both on my wrist at the same time](/assets/img/posts/2025-04-10-the-complete-apple-watch-comparison-chart-tech-specs/apple-watch-size-comparison.jpg){: .shadow .w-75}
+*Apple Watch Ultra 2 vs Series 3 38mm, Model: Matt Popovich*
+
 ### Cellular Connectivity
 At this point, you should be down to a smaller number of potential watches. The main feature to decide on is do you want cellular connectivity or not. Cellular connectivity is only needed if:
 * You want to get notifications on your watch whenever your phone is not nearby (Ex. going for a run without your phone or while surfing)
