@@ -3,8 +3,8 @@ title: "The Complete Apple Watch Comparison Chart (Tech Specs)"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2025-04-10 18:59:57 -0600
-categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
-tags: [apple, data, tech, apple watch]                # TAG names should always be lowercase
+categories: [Blog, YouTube]    # <=2 values here: top category and sub category
+tags: [apple, data, tech, apple watch, youtube]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -18,9 +18,11 @@ image:
 #   width: 100   # in pixels
 #   height: 40   # in pixels
   alt: Image is AI-assisted. The Apple Watches shown are an AI creation and not a real model for sale.
-#   show_image_in_post: false
+  show_image_in_post: false
 description: A detailed chart of all the differences between Apple Watches
 ---
+
+{% include embed/youtube.html id='tp1taXwCnvk' %}
 
 > This article is valid as of December, 2025 (with latest watches being: Apple Watch 11, SE 3, and Ultra 3). It does not take into account watches that are released afterwards.
 {: .prompt-info }
@@ -95,7 +97,7 @@ At this point, you should be down to a smaller number of potential watches. The 
   * And you don't mind paying a monthly fee for this capability
 * You want the ability to make emergency 911 calls
 
-A cellular data plan for your watch will typically cost ~$10/mo. Worth noting that even **without** a cellular data plan, the cellular watches will still be able to make emergency calls, [even without active service](https://nct911.org/old-phones-can-call-911/). **GPS only watches cannot make emergency 911 calls if you are not nearby your phone** as they do not have the required hardware (cell modem) to place a call on their own. This is why I got my parents cellular-capable watches, even though the watches are not connected to a cell plan.
+A cellular data plan for your watch will typically cost ~$10/mo. Worth noting that even **without** a cellular data plan, the cellular watches will [still be able to make emergency calls](https://www.ecfr.gov/current/title-47/section-9.4), [even without active service](https://nct911.org/old-phones-can-call-911/). **GPS only watches cannot make emergency 911 calls if you are not nearby your phone** as they do not have the required hardware (cell modem) to place a call on their own. This is why I got my parents cellular-capable watches, even though the watches are not connected to a cell plan.
 
 ### Features of Interest
 * If you want the best battery life (36-42hr), you'll need to get an Ultra. Otherwise, you'll have ~24-18hr of battery.
@@ -108,3 +110,10 @@ A cellular data plan for your watch will typically cost ~$10/mo. Worth noting th
 Thanks for reading, I hope this helped. Please let me know of any suggestions or corrections in the [comments below](#disqus_thread).
 
 The best ways to say thanks for my research are by simply following my social media accounts [here](/about) or by purchasing your watch (with no extra cost to you) through one of my [referral links](https://amzn.to/44AeduT) in the top column of the [comparison table](#comparison-table).
+
+&nbsp;
+
+<small><small>
+Disclaimer:
+This video is not sponsored by, endorsed by, or affiliated with Apple Inc. Please do your own research before making any purchases. Matt Popovich does not provide a warranty for any of the listed information and does not guarantee any expressed or implied result. The specifications, features, and data shown in this video are accurate to the best of my knowledge based on publicly available information at the time of publication. As the technology sector is constantly evolving and changing, use the information provided at your own risk as some of the information provided may be outdated, no longer applicable, or even, unfortunately, incorrect.
+</small></small>
