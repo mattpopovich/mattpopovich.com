@@ -103,7 +103,7 @@ At this point, you should be down to a smaller number of potential watches. The 
 A cellular data plan for your watch will typically cost ~$10/mo. Worth noting that even **without** a cellular data plan, the cellular watches will [still be able to make emergency calls](https://www.ecfr.gov/current/title-47/section-9.4), [even without active service](https://nct911.org/old-phones-can-call-911/). **GPS only watches cannot make emergency 911 calls if you are not nearby your phone** as they do not have the required hardware (cell modem) to place a call on their own. This is why I got my parents cellular-capable watches, even though the watches are not connected to a cell plan.
 
 ### Features of Interest
-* If you want the best battery life (36-42hr), you'll need to get an Ultra. Otherwise, you'll have ~24-18hr of battery.
+* If you want the best battery life, you'll need to get an Ultra (36-42hr) or 11 (24hr). Otherwise, you'll have 18hr of battery.
   * This can be extended by turning off the "always on display".
 * ECG and blood oxygen are available on all newer watches except the SEs.
 * Sleep apnea detection, crash detection, water temperature, water depth are only available on newer models.
