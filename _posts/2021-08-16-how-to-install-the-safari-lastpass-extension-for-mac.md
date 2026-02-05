@@ -3,7 +3,7 @@ title: "How to Install the Safari LastPass Extension for Mac"
 author: matt_popovich         # Reference author_id in _data/authors.yml
 date: 2021-08-16 22:30:33 -0600
 categories: [Blog, Not YouTube]            # <=2 values here: top category and sub category
-tags: [apple, mac os, how to, tech, tutorial, not youtube]       # TAG names should always be lowercase
+tags: [apple, mac os, how to, tech, not youtube]       # TAG names should always be lowercase
 layout: post
 pin: false
 toc: true
