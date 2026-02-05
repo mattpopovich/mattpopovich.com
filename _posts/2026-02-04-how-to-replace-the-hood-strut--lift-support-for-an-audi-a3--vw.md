@@ -3,7 +3,7 @@ title: "How to Replace the Hood Strut / Lift Support for an Audi (A3) / VW"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2026-02-04 13:59:34 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
+categories: [Blog, Not YouTube]    # <=2 values here: top category and sub category
 tags: [audi, audi a3, how to, not youtube, volkswagen, vw]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
@@ -19,10 +19,12 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #   height: 630   # in pixels, 1.90:1 desired by chirpy
 #   alt: image alternative text
 #   show_image_in_post: false
-#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
+description: A quick guide in how to replace, purchase, and install a new hood strut    # A short sentence to describe the article, used when sharing links on social media and on homepage
 ---
 
+<!-- TODO
 {% include embed/youtube.html id='TODO' %}
+-->
 
 ## Intro
 Hey guys! Matt Popovich here. Today in my [series of Audi posts](/tags/audi/), I'm going to show you how to replace the hood strut ([AKA](https://www.dictionary.com/browse/aka) lift support) in a 2015 Audi A3. This is a very easy and ~5 minute job. This procedure will likely be the same for other Audi or Volkswagen models, and will be similar for most other cars.
@@ -42,6 +44,8 @@ Hey guys! Matt Popovich here. Today in my [series of Audi posts](/tags/audi/), I
 ## Buying a New Hood Strut / Lift Support
 First, let's [open the hood](/posts/how-to-open-the-hood-for-an-audi-a3-vw/) and identify the strut installed. If your strut is failing, you will notice that it cannot support the weight of the hood to keep it open. You might even notice some residue (likely nitrogen gas) that will appear to have leaked out. Mine failed after 10 years.
 
+TODO: Image of strut with part number here
+
 To identify the strut, you can try to find a part number. My 2015 Audi A3 was `8v0 823 359 03s`. If you can't find a part number, you can use the "check vehicle fitment" at a parts store or online. Worst case, you can note the strut length when closed and open (ensure your new strut matches this).
 * [~$111 OEM on FCP Euro](https://www.fcpeuro.com/products/audi-hood-lift-support-genuine-audi-vw-8v0823359#description) (please don't buy this - it's extremely overpriced)
 * [~$32 aftermarket on Amazon](https://amzn.to/4aC2HRV)
@@ -51,10 +55,16 @@ To identify the strut, you can try to find a part number. My 2015 Audi A3 was `8
 ## Removing Old Strut
 To remove the old strut, start by propping up the hood with something: broomstick, wood, have a friend hold it, etc. We need the hood to stay open with the strut removed.
 
+TODO: Image of hood propped open with ladder
+
 Then, use a [flathead screwdriver](https://amzn.to/3ZeOKE7) or a [pick tool](https://amzn.to/4rC2jd0) to pull and release the clips/clamps that secure the strut to the ball stud. There will be one one clip/clamp on each end of the strut. It does not matter which end you start with. Once the clips are released, pull on the strut to remove it from the ball stud.
+
+TODO: Image of screwdriver releasing clip
 
 ## Installing New Strut
 It's optional, but not a bad idea to wipe the ball stud area with a [towel](https://amzn.to/4bxKFCg). You could also add some light grease such as [white lithium grease](https://amzn.to/3LSj9Fj) to help the socket snap in and reduce squeaks / wear.
+
+TODO: Maybe an image of before and after?
 
 Then, install the new strut by pushing it into the ball studs. It doesn't matter which side you connect first. Once both sides are connected, give it a little tug to ensure it's fully connected.
 
