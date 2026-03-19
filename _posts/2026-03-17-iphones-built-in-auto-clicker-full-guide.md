@@ -23,23 +23,49 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 ---
 
 ## Intro
-There's a bunch of iOS auto clicker videos online, but for some reason... they're all kinda trash. They all just repeat the same things and show you how to set it up but no one really shows it in use or explains how it works. Alas, you can [rest here weary traveler](https://knowyourmeme.com/memes/rest-here-weary-traveler), [for your search is complete](https://www.youtube.com/watch?v=LJY1uzNha1k).
+There's a bunch of iOS auto clicker videos online, but for whatever reason... they're all kinda trash. They all just repeat the same things and show you how to set it up but no one really shows it in use or explains how it works. Alas, you can [rest here weary traveler](https://knowyourmeme.com/memes/rest-here-weary-traveler), [for your search of an iOS auto clicker tutorial is complete](https://www.youtube.com/watch?v=LJY1uzNha1k).
 
-## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR)
-1. [Use voice control](https://support.apple.com/guide/iphone/use-voice-control-iph2c21a3c88/ios) (recommended) [source](https://www.youtube.com/watch?v=tsJj330FU4E)
-   1. Enable siri
-   2. 🗣️ "Hey Siri, turn on voice control"
-   3. 🗣️ "Start recording gestures"
-   4. \*Perform taps\*
-   5. 🗣️ "Stop recording gestures"
-   6. Add a name for the command to reply your recorded gestures, Ex. "auto click"
-   7. 🗣️ "auto click"
-      1. Want to repeat? 🗣️ "Repeat 2 times"
-   8. 🗣️ "turn off voice control"
-      1. This will turn off voice control at the **end** of the current command.
-2. [Use switch control](https://support.apple.com/guide/iphone/intro-to-switch-control-iphc9d32b862/ios)
+## Switch Control vs. Voice Control
+There are two main ways that iOS lets you create an auto clicker: [voice control](https://support.apple.com/guide/iphone/use-voice-control-iph2c21a3c88/ios) or [switch control](https://support.apple.com/guide/iphone/intro-to-switch-control-iphc9d32b862/ios). The main difference between the two are that voice control uses your voice to... control it. Switch control uses taps on the screen and button presses.
+
+Additionally, voice control lets your record screen taps while the app of interest is open, switch control is just a blank screen where you have to remember where on the screen your taps need to be.
+
+Lastly, voice control lets you interact with the screen while it is running while switch control completely disables the touchscreen while it is running.
+
+### Comparison Table
+
+|                                                          | Voice Control                            | Switch Control                                       |
+| -------------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------- |
+| How to enable                                            | 🗣️ "Hey Siri, turn on voice control"      | Triple click home or <br> side button                |
+| Maximum recording time                                   | Unlimited? <br> I've tested up to 5min ✅ | 60s                                                  |
+| Able to run in noisy environments                        | Can be difficult                         | Yes ✅                                                |
+| Can stop recipe once one is started                      | No                                       | No                                                   |
+| Touch screen is responsive <br> once recipes are ran     | Yes ✅                                    | No                                                   |
+| Number of times you can <br> repeat a recipe             | 2 - 99                                   | Unlimited? <br>I've tested up to 500                 |
+| Recipes can be made while <br> target app is on screen   | Yes ✅                                    | No                                                   |
+| Can stop repeated recipes <br> once one of them finishes | Yes ✅                                    | No. Must wait for all repeated <br>recipes to finish |
+
+I'll let you decide which one is best for your use case. If you just need to spam click one area on the screen, either would work. If you need something a little more complex, I'd recommend voice control.
+
+## Setting up [Voice Control](https://support.apple.com/guide/iphone/use-voice-control-iph2c21a3c88/ios)
+
+   1. Settings > Siri / Apple Intelligence & Siri > Talk (& Type) to Siri
+      1. Enable Siri
+   2. Open whatever app you want to run the auto clicker in
+   3. Activate Siri, then 🗣️ "turn on voice control"
+   4. 🗣️ "Start recording gestures"
+   5. \*Perform taps\*
+   6. 🗣️ "Stop recording gestures"
+   7. Add a name for the command to reply your recorded gestures, Ex. "auto click"
+   8. 🗣️ "auto click"
+      - Want to repeat? 🗣️ "Repeat 2 times"
+   9. 🗣️ "turn off voice control"
+      - This will turn off voice control at the **end** of the current recipe
+
+## Setting up [Switch Control](https://support.apple.com/guide/iphone/intro-to-switch-control-iphc9d32b862/ios)
+
    1. Settings > Accessibility > Accessibility Shortcut
-      1. Switch Control **only**
+      1. Check switch Control **only**
    2. [Settings > Accessibility > Switch Control > Switches](https://support.apple.com/guide/iphone/set-up-and-turn-on-switch-control-iph400b2f114/ios)
       1. Add New Switch... > Screen > Full Screen > Under "System" choose Tap
    3. Settings > Accessibility > Switch Control > Recipes
@@ -50,15 +76,50 @@ There's a bunch of iOS auto clicker videos online, but for some reason... they'r
       5. Save (top right)
    4. Settings > Accessibility > Switch Control > Recipes
       1. Launch Recipe > select the name of the recipe you just created
-         1. Set this to "None" the first time you launch switch control so that you can make a selection on the popup. Afterwards, you can set this to your custom recipe.
-   5. Settings > Accessibility > Switch Control > Long Press
-      1. Turn on, leave settings as default (1.00 Second, Pause Scanning = True)
-      2.
-   6. Triple click [side button](https://support.apple.com/en-us/105103) (which turns off or locks phone)
-      1. If you have a physical home button, you can try triple clicking that if the side button does not activate switch control
-   7. Tap the screen once to run the recipe once
-      1. Want to repeat? Tap the screen multiple (idk what the max is, I've confirmed it will work at least up to 500 times)
-   8. Triple click the side button (or physical home button) to exit switch control
+         - Set this to "None" the first time you launch switch control so that you can make a selection on the popup. Afterwards, you can set this to your custom recipe.
+   5. Triple click [side button](https://support.apple.com/en-us/105103) (which turns off or locks phone), or physical home button if you have it
+   6. Tap the screen once to run the recipe once
+      - Want to repeat? Tap the screen multiple times
+         - **WARNING**: You cannot exit until all the repeated recipes finish
+         - Not sure what the maximum amount is, I've confirmed it will work at least up to 500 times
+   7. Triple click the side button (or physical home button) to exit switch control
+
+## Notes
+
+### "Trimming" Empty Space
+Both voice control and switch control "trim" empty space before the first tap and after the last tap
+
+Example: if your recipe looks as such (with `*` representing taps):
+```
+[    *    * *    ***   *     ]
+```
+Apple will "trim" that recipe into:
+```
+[*    * *    ***   *]
+```
+So if you repeat the recipe, it will look like:
+```
+[*    * *    ***   *][*    * *    ***   *]
+```
+Be aware of the "double tap" that will occur between the first recipe ending and the second recipe starting.
+
+### Exiting Recipes While They Are Running
+
+Voice control: You can lock the screen, tap the screen, say "reboot device"
+
+Switch control: Impossible to stop once started. Tapping the screen will only make it worse by repeating the recipe. My advice is to triple click your home/power button, then lock the screen and wait it out.
+
+### Recipes are "designed to be temporary"
+> "[You can also assign recipes—a set of temporary, specialized actions—to your switches.](https://support.apple.com/guide/iphone/set-up-and-turn-on-switch-control-iph400b2f114/ios)"
+
+I guess this is why Apple doesn't let you exit in the middle of recipes running?
+
+## Outro
+I'd recommend starting small. Make small recipes to get the hang of things, then learn how to repeat them, and build from there.
+
+Voice control and switch control are very powerful. But, [with great power, comes great responsibility](https://youtu.be/guuYU74wU70?t=70). 💭
+
+
 
 
 ## Tags
@@ -67,33 +128,6 @@ No jailbreak, no computer needed, no additional apps, no download, free, games, 
 Roblox, Runescape, Pokemon Go,
 
 fortnite, among us!, Brawl stars, Clash Royale, PUBG, bloons,
-
-
-## Comparison
-|                                                 | Voice Control                       | Switch Control                   |
-| ----------------------------------------------- | ----------------------------------- | -------------------------------- |
-| How to enable                                   | 🗣️ "Hey Siri, turn on voice control" | Triple click home or side button |
-| Maximum recording time                          | Unlimited? I've tested up to 5min   | 60s                              |
-| Able to run in noisy environments               | Can be difficult                    | Yes                              |
-| Can stop recipes once they are started          | No                                  | No                               |
-| Touch screen is responsive once recipes are ran | Yes                                 | No                               |
-| Number of times you can repeat a recipe         | Max 99 times                        | Unlimited? I've tested up to 500 |
-
-
-## Notes
-Both of these "trim" empty space before the first tap and after the last tap
-
-[Recipes are designed to be temporary](https://support.apple.com/guide/iphone/set-up-and-turn-on-switch-control-iph400b2f114/ios): You can also assign recipes—a set of temporary, specialized actions—to your switches.
-
-## Voice Control
-Impossible to stop once started
-    Can lock screen
-    Can say "reboot device"
-    Can at least touch the screen to switch apps or cancel things
-
-## Switch Control
-Impossible to stop once started
-    Can lock screen
 
 
 
