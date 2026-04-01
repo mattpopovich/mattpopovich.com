@@ -4,7 +4,7 @@ author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
 date: 2026-03-17 21:52:18 -0600
 categories: [Blog, TODO]    # <=2 values here: top category and sub category
-tags: [todo]                # TAG names should always be lowercase
+tags: [apple, how to, tech, tutorial, youtube, ios, iphone, ipad]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
 toc: true                   # Table of contents
@@ -34,16 +34,16 @@ Lastly, voice control lets you interact with the screen while it is running whil
 
 ### Comparison Table
 
-|                                                          | Voice Control                            | Switch Control                                       |
-| -------------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------- |
-| How to enable                                            | 🗣️ "Hey Siri, turn on voice control"      | Triple click home or <br> side button                |
-| Maximum recording time                                   | Unlimited? <br> I've tested up to 5min ✅ | 60s                                                  |
-| Able to run in noisy environments                        | Can be difficult                         | Yes ✅                                                |
-| Can stop recipe once one is started                      | No                                       | No                                                   |
-| Touch screen is responsive <br> once recipes are ran     | Yes ✅                                    | No                                                   |
-| Number of times you can <br> repeat a recipe             | 2 - 99                                   | Unlimited? <br>I've tested up to 500                 |
-| Recipes can be made while <br> target app is on screen   | Yes ✅                                    | No                                                   |
-| Can stop repeated recipes <br> once one of them finishes | Yes ✅                                    | No. Must wait for all repeated <br>recipes to finish |
+|                                                           | Voice Control                            | Switch Control                                       |
+| --------------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------- |
+| How to enable                                             | 🗣️ "Hey Siri, turn on voice control"      | Triple click home or <br> side button                |
+| Maximum recording time                                    | Unlimited? <br> I've tested up to 5min ✅ | 60s                                                  |
+| Able to run in noisy environments                         | Can be difficult                         | Yes ✅                                                |
+| Can stop recipe once one is started                       | No                                       | No                                                   |
+| Touch screen is responsive <br> while recipes are running | Yes ✅                                    | No                                                   |
+| Number of times you can <br> repeat a recipe              | 2 - 99                                   | Unlimited? <br>I've tested up to 500                 |
+| Recipes can be made while <br> target app is on screen    | Yes ✅                                    | No                                                   |
+| Can stop repeated recipes <br> once one of them finishes  | Yes ✅                                    | No. Must wait for all repeated <br>recipes to finish |
 
 I'll let you decide which one is best for your use case. If you just need to spam click one area on the screen, either would work. If you need something a little more complex, I'd recommend voice control.
 
@@ -84,7 +84,16 @@ I'll let you decide which one is best for your use case. If you just need to spa
          - Not sure what the maximum amount is, I've confirmed it will work at least up to 500 times
    7. Triple click the side button (or physical home button) to exit switch control
 
+![My app, SketchFade, in action](/assets/img/posts/2026-03-17-iphones-built-in-auto-clicker-full-guide/SketchFadePreview_LQ.m4v){: width="200" .shadow .right}
+<!-- TODO: Would be nice to be able to pause this -->
+
 ## Notes
+
+### Debugging
+
+While playing around with these, I found things a little tricky to debug... so I fixed that by making an app! It's called [SketchFade](https://apps.apple.com/app/sketch-fade/id6760681226) (visual on the right) and it's basically a sketch application where after a configurable amount of time, the sketch will fade away. There's also a resettable counter that will count how many times the screen has been touched. It's currently 99¢ in the App Store, but if you guys can [get me to 1,000 subscribers](https://www.youtube.com/@mattpopovich?sub_confirmation=1), **I will make the app free**.
+
+If you're interested in this, leave a comment below letting me know and I'll comment back once I hit 1,000 subscribers and make the app free. Also, if you can think of a better name for the app, also let me know of that in the comments!
 
 ### "Trimming" Empty Space
 Both voice control and switch control "trim" empty space before the first tap and after the last tap
@@ -105,9 +114,9 @@ Be aware of the "double tap" that will occur between the first recipe ending and
 
 ### Exiting Recipes While They Are Running
 
-Voice control: You can lock the screen, tap the screen, say "reboot device"
+<u>Voice control</u>: Saying "turn off voice control" will exit **after** the current recipe finishes. Until then, you can lock the screen, tap the screen to interact with it, or even say "reboot device" if you are in a major pickle.
 
-Switch control: Impossible to stop once started. Tapping the screen will only make it worse by repeating the recipe. My advice is to triple click your home/power button, then lock the screen and wait it out.
+<u>Switch control</u>: Impossible to stop once started. Tapping the screen will only make it worse by repeating the recipe. My advice is to triple click your home/power button, then lock the screen and wait it out.
 
 ### Recipes are "designed to be temporary"
 > "[You can also assign recipes—a set of temporary, specialized actions—to your switches.](https://support.apple.com/guide/iphone/set-up-and-turn-on-switch-control-iph400b2f114/ios)"
