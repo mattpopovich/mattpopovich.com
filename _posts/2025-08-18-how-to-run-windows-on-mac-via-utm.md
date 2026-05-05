@@ -112,10 +112,18 @@ This will download a `Win11_*.iso` which will be ~5.5GB.
   - I like to rename my VM to "Windows11arm" or similar.
 
 ### Install Windows 11
-In UTM, select the VM that we just created on the left side, then press the play button to boot up the VM and begin the installation.
 
 > To speed up installation and reduce further bandwidth, at this point you could turn off WiFi / networking. If WiFi / networking is on, Windows may try to perform *Windows Updates* during the installation.
 {: .prompt-info }
+
+In UTM, select the VM that we just created on the left side, then press the play button to boot up the VM and begin the installation.
+
+> If, whenever you press the "play" button in UTM (instructions below), you do not see the text `Press any key to boot from CD or DVD.....`, you probably downloaded the wrong version of Windows.
+>
+> You are either trying to virtualize the x64 version of Windows while you have an Apple Silicon Mac or maybe you are trying to virtualize the ARM version of Windows while you have an Intel Mac.
+>
+> Regardless, whichever version of Windows you downloaded (it will say either Arm or x64 in the filename), [download the other version of Windows](#download-windows) and try again!
+{: .prompt-warning }
 
 - Make sure you press a key when `Press any key to boot from CD or DVD...` is shown. Otherwise, you will end up at a black screen with `Shell> _`.
   - If you end up at `Shell> _`, type `exit` + press Enter. This will kick you back out to the BIOS. Use the down arrow key to go to "Continue". Press Enter.
