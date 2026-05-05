@@ -122,7 +122,7 @@ Both voice control and switch control "trim" empty space before the first tap an
 
 Example: if your recipe looks as such (with `*` representing taps):
 ```
-[*    * *    ***   *               ]
+[         *    * *    ***   *               ]
 ```
 Apple will "trim" that recipe into:
 ```
