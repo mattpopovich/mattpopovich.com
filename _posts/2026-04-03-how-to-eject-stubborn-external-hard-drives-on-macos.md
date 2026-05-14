@@ -109,7 +109,9 @@ Hopefully, it will eject successfully this time!
 
 
 
-
+## Additional Reading
+* [Blog post](https://www.alecjacobson.com/weblog/649.html) by Alec Jacobson
+* [Stack Exchange post](https://apple.stackexchange.com/questions/302416/photos-media-library-on-external-hard-drive) asking why Photos media library continues to run analysis after the Photos app has been quit (no good answer)
 
 
 
