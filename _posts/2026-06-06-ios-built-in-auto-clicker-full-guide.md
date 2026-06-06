@@ -1,9 +1,9 @@
 ---
-title: "iPhone's Built-in Auto Clicker: FULL GUIDE"
+title: "iOS's Built-in Auto Clicker: FULL GUIDE"
 author: matt_popovich           # Reference author_id in _data/authors.yml
 # Can also use `authors: [<author1_id>, <author2_id>]` for multiple entries
-date: 2026-03-17 21:52:18 -0600
-categories: [Blog, TODO]    # <=2 values here: top category and sub category
+date: 2026-06-06 02:48:18 -0600
+categories: [Blog, YouTube]    # <=2 values here: top category and sub category
 tags: [apple, how to, tech, tutorial, youtube, ios, iphone, ipad]                # TAG names should always be lowercase
 layout: post                # post is the default, we will set it to be explicit
 pin: false
@@ -14,12 +14,12 @@ mermaid: false              # Diagram generation tool via ```mermaid [...]```
 #img_cdn: https://cdn.com
 #media_subpath: /img/path/
 image:
-   path: /assets/img/posts/2026-03-17-iphones-built-in-auto-clicker-full-guide/thumbnail.jpg
+  path: /assets/img/posts/2026-06-06-ios-built-in-auto-clicker-full-guide/thumbnail.jpg
 #   width: 1200   # in pixels
 #   height: 630   # in pixels, 1.90:1 desired by chirpy
-#   alt: image alternative text
-#   show_image_in_post: false
-#description:               # A short sentence to describe the article, used when sharing links on social media and on homepage
+#   alt: iOS Voice & Switch Control - The Ultimate Guide. Make an auto clicker with no jailbreak, no additional apps, 100% free.
+  show_image_in_post: true
+description: A thorough explanation on how to use iOS's Voice Control and Switch Control to make an auto clicker
 ---
 
 ## Intro
@@ -111,7 +111,7 @@ Whenever we had the switch's source be "screen", that made the switch easy to ac
 
 If we instead have the switch source be something else (my favorites are *Back Tap > Double Tap* and *Sound > Sh*), this will allow us to use the screen while the action is running.
 
-![My app, SketchFade, in action](/assets/img/posts/2026-03-17-iphones-built-in-auto-clicker-full-guide/SketchFadePreview_LQ.m4v){: width="200" .shadow .right}
+![My app, SketchFade, in action](/assets/img/posts/2026-06-06-ios-built-in-auto-clicker-full-guide/SketchFadePreview_LQ.m4v){: width="200" .shadow .right}
 <!-- TODO: Would be nice to be able to pause this -->
 
 ### Debugging
