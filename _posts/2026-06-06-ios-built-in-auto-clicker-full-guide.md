@@ -115,27 +115,25 @@ If we instead have the switch source be something else (my favorites are *Back T
 
 <video id="autoplay-on-scroll" src="/assets/img/posts/2026-06-06-ios-built-in-auto-clicker-full-guide/SketchFadePreview_LQ.mp4" controls loop muted playsinline style="float: right; width: 200px; margin-left: 20px; margin-bottom: 15px;"></video>
 
-<!-- Only load/play the video if the user has the video in view -->
+<!-- Only load/play the video if the user has the video in 20% view. Do not put any single line comments in the below -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const video = document.getElementById("autoplay-on-scroll");
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        // If the video is visible in the viewport, play it
-        if (entry.isIntersecting) {
-          video.play().catch(error => {
-            console.log("Autoplay prevented by browser:", error);
-          });
-        } else {
-          // If the user scrolls away, pause it to save CPU/Battery
-          video.pause();
-        }
-      });
-    }, { threshold: 0.2 }); // 0.2 means trigger when 20% of the video is visible
-
-    observer.observe(video);
-  });
+  (function() {
+    var video = document.getElementById("autoplay-on-scroll");
+    if (video) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            video.play().catch(function(error) {
+              console.log("Autoplay blocked:", error);
+            });
+          } else {
+            video.pause();
+          }
+        });
+      }, { threshold: 0.2 });
+      observer.observe(video);
+    }
+  })();
 </script>
 
 ### Debugging
