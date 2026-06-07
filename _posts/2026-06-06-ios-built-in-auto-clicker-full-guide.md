@@ -65,6 +65,8 @@ I'll let you decide which one is best for your use case. If you just need to spa
 
 See a full list of voice control commands [here](https://gist.github.com/willwade/807cd631bc494039ed58b5f8304e8883).
 
+{% include embed/youtube.html id='JBH9LfAGnBI' %}
+
 ## Setting up [Switch Control](https://support.apple.com/guide/iphone/intro-to-switch-control-iphc9d32b862/ios)
 
    1. *Settings > Accessibility > Accessibility Shortcut*
@@ -111,7 +113,7 @@ Whenever we had the switch's source be "screen", that made the switch easy to ac
 
 If we instead have the switch source be something else (my favorites are *Back Tap > Double Tap* and *Sound > Sh*), this will allow us to use the screen while the action is running.
 
-![My app, SketchFade, in action](/assets/img/posts/2026-06-06-ios-built-in-auto-clicker-full-guide/SketchFadePreview_LQ.m4v){: width="200" .shadow .right}
+![My app, Sketch Fade, in action](/assets/img/posts/2026-06-06-ios-built-in-auto-clicker-full-guide/SketchFadePreview_LQ.m4v){: width="200" .shadow .right}
 <!-- TODO: Would be nice to be able to pause this -->
 
 ### Debugging
