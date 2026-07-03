@@ -24,7 +24,7 @@ description: A detailed chart of all the differences between Apple Watches
 
 {% include embed/youtube.html id='tp1taXwCnvk' %}
 
-> This article is valid as of December, 2025 (with latest watches being: Apple Watch 11, SE 3, and Ultra 3). It does not take into account watches that are released afterwards.
+> This article is valid as of July, 2026 (with latest watches being: Apple Watch 11, SE 3, and Ultra 3). It does not take into account watches that are released afterwards.
 {: .prompt-info }
 
 ## Intro
@@ -33,11 +33,11 @@ Every year, Apple comes out with a new Apple Watch, and they update their [compa
 Ken Rockwell has a [detailed comparison page](https://www.kenrockwell.com/apple/watch/compared.htm) which was very close to what I aimed to do. Mine adds color 🌈 and tries to only focus on differentiating features.
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR) / Main Differences
-Ultra 3 > Ultra 2 > 11 > 10 > Ultra 1 > 9 > SE 3**\>\>** 8 > 7 > 6 **\>\>** SE 2 **\>\>** 5 > 4 > SE 1 **\>\>** 3 **\>\>** 2 **\>\>** 1
+Ultra 3 > Ultra 2 > 11 > 10 > 9 > SE 3 **\>\>** Ultra 1 **\>\>** 8 > 7 > 6 **\>\>** SE 2 **\>\>** 5 > 4 > SE 1 **\>\>** 3 **\>\>** 2 **\>\>** 1
 
-I wouldn't get anything below an SE2. Series 5 and below are no longer getting software updates.
+I wouldn't buy anything below an SE3. Ultra 1 and below are no longer getting software updates.
 
-If possible, I would try to avoid an Ultra 1 + Series 8 or lower. I don't know how much longer Apple will be supporting them (2026 or 2027?) but do know that they will be the first ones to lose support once Apple makes that decision.
+An Ultra 1 through an SE 2 are still fine to operate if you have them. They're running the latest operating system until watchOS 27 comes out in September of 2026. Even after that, they will only be one major software version behind. They're fine to keep using but I wouldn't recommend buying them if you didn't already have them.
 
 Here's what each watch adds over the previous watch:
 * **Series 6** adds an always on screen, ECG, upgraded heart-rate sensor, blood oxygen sensor (not very useful in my opinion). Loses crash detection over the SE2
@@ -100,7 +100,7 @@ At this point, you should be down to a smaller number of potential watches. The 
   * And you don't mind paying a monthly fee for this capability
 * You want the ability to make emergency 911 calls
 
-A cellular data plan for your watch will typically cost ~$10/mo. Worth noting that even **without** a cellular data plan, the cellular watches will [still be able to make emergency calls](https://www.ecfr.gov/current/title-47/section-9.4), [even without active service](https://nct911.org/old-phones-can-call-911/). **GPS only watches cannot make emergency 911 calls if you are not nearby your phone** as they do not have the required hardware (cell modem) to place a call on their own. This is why I got my parents cellular-capable watches, even though the watches are not connected to a cell plan.
+A cellular data plan for your watch will typically cost ~$10/mo. Worth noting that even **without** a cellular data plan, the cellular watches will [still be able to make emergency calls](https://www.ecfr.gov/current/title-47/section-9.4), [even without active service](https://nct911.org/old-phones-can-call-911/). **GPS only watches cannot make emergency 911 calls if you are not nearby your phone** (or nearby known WiFi with WiFi calling enabled) as they do not have the required hardware (cell modem) to place a call on their own. This is why I got my parents cellular-capable watches, even though the watches are not connected to a cell plan.
 
 ### Features of Interest
 * If you want the best battery life (36-42hr), you'll need to get an Ultra. Otherwise, you'll have ~24-18hr of battery.
