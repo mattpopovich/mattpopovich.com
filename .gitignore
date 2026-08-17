@@ -26,8 +26,10 @@ package-lock.json
 _sass/vendors
 assets/js/dist
 
-# OSX
+# Hidden system files
+*~
 .DS_Store
+Thumbs.db
 
 # API Key
 tools/api_key.txt
