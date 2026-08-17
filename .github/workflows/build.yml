@@ -18,7 +18,7 @@ jobs:
     steps:
       # Pull our repository
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0  # for posts's lastmod
           # submodules: true
@@ -28,7 +28,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
+          ruby-version: 3.4 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
           bundler-cache: true
 
       - name: Build site
@@ -44,7 +44,7 @@ jobs:
             \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,http://www.mathmatique.com/articles/left-exercise-reader","#disqus_thread"
 
       - name: Dry-run deployment to mattpopovich.com
-        uses: easingthemes/ssh-deploy@v4.1.8
+        uses: easingthemes/ssh-deploy@v6.0.3
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.HOSTNAME }}
