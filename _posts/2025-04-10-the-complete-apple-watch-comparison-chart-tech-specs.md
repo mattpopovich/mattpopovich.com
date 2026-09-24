@@ -45,7 +45,7 @@ Here's what each watch adds over the previous watch:
 * Series 8 adds crash detection (hopefully you never need to use it)
 * **SE 3** adds a new processor, sleep apnea notifications, on-device Siri, storage increased to 64GB. Does not have ECG or ultra wideband chip.
   * This is the first major upgrade over the 6
-  * They also advertise a feature called ["double tap"](https://www.youtube.com/watch?v=pm-ZXg3uA0Y), but that is actually available in older watches as an [accessibility feature](https://www.youtube.com/watch?v=oDpIhooDyaY).
+  * They also advertise a feature called ["double tap"](https://www.youtube.com/watch?v=pm-ZXg3uA0Y), but that can mostly be recreated in older watches as an [accessibility feature](https://www.youtube.com/watch?v=oDpIhooDyaY).
 * Series 9 adds a brighter screen.
   * Newer series 9 [removed blood oxygen capability](https://www.reddit.com/r/AppleWatch/comments/199g8ag/finally_the_answer_to_if_your_apple_watch_will), but was "[added back](https://9to5mac.com/2025/08/14/apple-watch-blood-oxygen-feature-returning-in-the-u-s-today/)" in August of 2025 by moving processing to a paired iPhone.
   * "[For models of Apple Watch purchased in the United States on or after January 18, 2024 with part numbers ending in LW/A, the Blood Oxygen data analysis is performed on iPhone, and results can be viewed in the Health app.](https://support.apple.com/en-us/120358#:~:text=receive%20the%20results.-,For%20models%20of%20Apple%20Watch%20purchased%20in%20the%20United%20States,viewed%20in%20the%20Health%20app.)"
