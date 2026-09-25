@@ -24,7 +24,7 @@ description: A detailed chart of all the differences between Apple Watches
 
 {% include embed/youtube.html id='tp1taXwCnvk' %}
 
-> This article is valid as of July, 2026 (with latest watches being: Apple Watch 11, SE 3, and Ultra 3). It does not take into account watches that are released afterwards.
+> This article is valid as of October, 2026 (with latest watches being: Apple Watch 12, SE 3, and Ultra 4). It does not take into account watches that are released afterwards.
 {: .prompt-info }
 
 ## Intro
@@ -33,11 +33,11 @@ Every year, Apple comes out with a new Apple Watch, and they update their [compa
 Ken Rockwell has a [detailed comparison page](https://www.kenrockwell.com/apple/watch/compared.htm) which was very close to what I aimed to do. Mine adds color 🌈 and tries to only focus on differentiating features.
 
 ## [TL;DR](https://www.merriam-webster.com/dictionary/TL%3BDR) / Main Differences
-Ultra 3 > Ultra 2 > 11 > 10 > 9 > SE 3 **\>\>** Ultra 1 **\>\>** 8 > 7 > 6 **\>\>** SE 2 **\>\>** 5 > 4 > SE 1 **\>\>** 3 **\>\>** 2 **\>\>** 1
+Ultra 4 > Ultra 3 > Ultra 2 > 12 > 11 > 10 > 9 > SE 3 **\>\>** Ultra 1 **\>\>** 8 > 7 > 6 **\>\>** SE 2 **\>\>** 5 > 4 > SE 1 **\>\>** 3 **\>\>** 2 **\>\>** 1
 
 I wouldn't buy anything below an SE3. Ultra 1 and below are no longer getting software updates.
 
-An Ultra 1 through an SE 2 are still fine to operate if you have them. They're running the latest operating system until watchOS 27 comes out in September of 2026. Even after that, they will only be one major software version behind. They're fine to keep using but I wouldn't recommend buying them if you didn't already have them.
+An Ultra 1 through an SE 2 are still fine to operate if you have them. They're only one operating system behind (they're running watchOS 26, watchOS 27 came out in September 2026). They're fine to keep using but I wouldn't recommend buying them if you didn't already have them.
 
 Here's what each watch adds over the previous watch:
 * **Series 6** adds an always on screen, ECG, upgraded heart-rate sensor, blood oxygen sensor (not very useful in my opinion). Loses crash detection over the SE2
@@ -45,24 +45,29 @@ Here's what each watch adds over the previous watch:
 * Series 8 adds crash detection (hopefully you never need to use it)
 * **SE 3** adds a new processor, sleep apnea notifications, on-device Siri, storage increased to 64GB. Does not have ECG or ultra wideband chip.
   * This is the first major upgrade over the 6
-  * They also advertise a feature called ["double tap"](https://www.youtube.com/watch?v=pm-ZXg3uA0Y), but that is actually available in older watches as an [accessibility feature](https://www.youtube.com/watch?v=oDpIhooDyaY).
+  * They also advertise a feature called ["double tap"](https://www.youtube.com/watch?v=pm-ZXg3uA0Y), but that can mostly be recreated in older watches as an [accessibility feature](https://www.youtube.com/watch?v=oDpIhooDyaY).
 * Series 9 adds a brighter screen.
   * Newer series 9 [removed blood oxygen capability](https://www.reddit.com/r/AppleWatch/comments/199g8ag/finally_the_answer_to_if_your_apple_watch_will), but was "[added back](https://9to5mac.com/2025/08/14/apple-watch-blood-oxygen-feature-returning-in-the-u-s-today/)" in August of 2025 by moving processing to a paired iPhone.
   * "[For models of Apple Watch purchased in the United States on or after January 18, 2024 with part numbers ending in LW/A, the Blood Oxygen data analysis is performed on iPhone, and results can be viewed in the Health app.](https://support.apple.com/en-us/120358#:~:text=receive%20the%20results.-,For%20models%20of%20Apple%20Watch%20purchased%20in%20the%20United%20States,viewed%20in%20the%20Health%20app.)"
 * Series 10 adds a 2mm bigger and slightly better screen, water depth, water temperature.
   * Did not come with a blood oxygen feature but has been [added in August of 2025](https://9to5mac.com/2025/08/14/apple-watch-blood-oxygen-feature-returning-in-the-u-s-today/) by moving processing to a paired iPhone.
 * Series 11 has 30% better battery life over the 10 + adds 5G capability.
+* Series 12 adds the readiness app, audio intelligence, and a new heart sensor.
+
+----
+
 * Ultra adds scuba diving capability, 50% longer battery (vs 10), better microphones and speakers, better GPS, action button.
   * It has an older processor (same as series 6-8), does not have sleep apnea notifications, "double tap gesture", or on-device Siri.
   * 32GB capacity
-* Ultra 2 adds a brighter screen, same processor as 9+
+* **Ultra 2** adds a brighter screen, same processor as 9+
 * Ultra 3 adds a "wide-angle screen", 17% better battery life (vs Ultra 2), satellite connectivity, 5G connectivity.
+* Ultra 4 adds the readiness app, audio intelligence, 19% battery life (vs Ultra 3), and a new heart sensor.
 
 Very few people actually need the Ultra, but the extra battery life is pretty nice.
 
 ## Comparison Table
 
-This is probably what you came here for. The technical specification (tech specs) comparison table. The table is pretty big (80+ rows, 15+ columns) and is best viewed on desktop. I know there's a lot of data there (even more data at the "Full Detail" sheet). If this gives you data overload, that's totally understandable. Stick to the *[TLDR / Main Differences](#tldr--main-differences)* and *[Choosing a Watch](#choosing-a-watch)* sections for my conclusions.
+This is probably what you came here for. The technical specification (tech specs) comparison table. The table is pretty big (nearly 100 rows, 15+ columns) and is best viewed on desktop. I know there's a lot of data there (even more data at the "Full Detail" sheet). If this gives you data overload, that's totally understandable. Stick to the *[TLDR / Main Differences](#tldr--main-differences)* and *[Choosing a Watch](#choosing-a-watch)* sections for my conclusions.
 
 <iframe
 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmwLfkBE_YfgQ97XL8FMw8loxC0H6in7IR4afRTdIgDUHx6-bPiXcsyNZUkRaAghxiqYAXui2RaXsR/pubhtml?widget=true&amp;headers=false"
@@ -78,7 +83,7 @@ height="720px">
 Apple watch's main upgrade happens every ~3 years whenever the processor (SiP = System in Package) gets upgraded:
 * ~[S4 SiP](https://theapplewiki.com/wiki/T8006) = Series 4, 5, SE
 * ~[S6 SiP](https://theapplewiki.com/wiki/T8301) = Series 6, 7, 8, SE2, Ultra
-* ~[S9 SiP](https://theapplewiki.com/wiki/T8310) = Series 9, 10, 11, SE3, Ultra 2, Ultra 3
+* ~[S9 SiP](https://theapplewiki.com/wiki/T8310) = Series 9, 10, 11, 12, SE3, Ultra 2, Ultra 3, Ultra 4
 
 Even though Apple has an Ex. S6, S7, and S8 SiP, each one of those [have the same CPU](https://www.macrumors.com/2022/09/12/apple-watch-s8-chip-features-same-cpu-as-s6-and-s7/) and are thus basically the same chip, just renamed. So you won't see much (if any) performance difference between them.
 
@@ -103,16 +108,16 @@ At this point, you should be down to a smaller number of potential watches. The 
 A cellular data plan for your watch will typically cost ~$10/mo. Worth noting that even **without** a cellular data plan, the cellular watches will [still be able to make emergency calls](https://www.ecfr.gov/current/title-47/section-9.4), [even without active service](https://nct911.org/old-phones-can-call-911/). **GPS only watches cannot make emergency 911 calls if you are not nearby your phone** (or nearby known WiFi with WiFi calling enabled) as they do not have the required hardware (cell modem) to place a call on their own. This is why I got my parents cellular-capable watches, even though the watches are not connected to a cell plan.
 
 ### Features of Interest
-* If you want the best battery life (36-42hr), you'll need to get an Ultra. Otherwise, you'll have ~24-18hr of battery.
+* If you want the best battery life (36-50hr), you'll need to get an Ultra. Otherwise, you'll have ~24-18hr of battery.
   * This can be extended by turning off the "always on display".
 * ECG and blood oxygen are available on all newer watches except the SEs.
 * Sleep apnea detection, crash detection, water temperature, water depth are only available on newer models.
-* Satellite connectivity is only available in the Ultra 3.
+* Satellite connectivity is only available in the Ultra 3 and Ultra 4.
 
 ## Outro
 Thanks for reading, I hope this helped. Please let me know of any suggestions or corrections in the [comments below](#disqus_thread).
 
-The best ways to say thanks for my research are by simply following my social media accounts [here](/about) or by purchasing your watch (with no extra cost to you) through one of my [referral links](https://amzn.to/44AeduT) in the top column of the [comparison table](#comparison-table).
+The best ways to say thanks for my research are by simply following my social media accounts [here](/about), watching some of [my videos on YouTube](https://www.youtube.com/@mattpopovich), or by purchasing your watch (with no extra cost to you) through one of my [referral links](https://amzn.to/44AeduT) in the top column of the [comparison table](#comparison-table).
 
 &nbsp;
 
